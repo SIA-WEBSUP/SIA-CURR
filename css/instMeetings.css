@@ -1,0 +1,58 @@
+body {
+	background: #CAD1DB;
+}
+a:link {
+	color: #0000FF;
+}
+a:visited {
+	color: #0000FF;
+}
+a:hover {
+	color: #FFFF00;
+}
+#map {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #0000FF;
+}
+#groupName {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000;
+	white-space: nowrap;
+}
+#locName {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-style: italic;
+	color: #CC00CC;
+	font-weight: bold;
+}
+
+#disclaimer {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FF0000;
+	padding: 5px;
+}
+#meetingTable {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	border-top-color: #808080;
+	border-right-color: #808080;
+	border-bottom-color: #808080;
+	border-left-color: #808080;
+	background-color: #99CCFF;
+}
+#townTable {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	border-top-color: #0000FF;
+	border-right-color: #0000FF;
+	border-bottom-color: #0000FF;
+	border-left-color: #0000FF;
+	background-color: #99CCFF;
+}

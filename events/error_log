@@ -1,0 +1,4 @@
+[14-Feb-2020 13:03:18 America/Chicago] PHP Warning:  readfile(menu.php): failed to open stream: No such file or directory in /home4/suffolk/public_html/events/index.php on line 28
+[14-Feb-2020 13:03:18 America/Chicago] PHP Warning:  include(Scripts/googleAnalytics.php): failed to open stream: No such file or directory in /home4/suffolk/public_html/events/index.php on line 152
+[14-Feb-2020 13:03:18 America/Chicago] PHP Warning:  include(Scripts/googleAnalytics.php): failed to open stream: No such file or directory in /home4/suffolk/public_html/events/index.php on line 152
+[14-Feb-2020 13:03:18 America/Chicago] PHP Warning:  include(): Failed opening 'Scripts/googleAnalytics.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home4/suffolk/public_html/events/index.php on line 152

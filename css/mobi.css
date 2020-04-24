@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+.generalText {
+	font-family: arial;
+	font-size: x-small;
+}
+.generalTextRed {
+	font-family: arial;
+	font-size: x-small;
+	color: #FF0000;
+}
+.reprintText {
+	font-family: arial;
+	font-size: xx-small;
+}
+body {
+	background-color: #CCCCCC;
+}

@@ -1,0 +1,214 @@
+body {
+	background: #CAD1DB;
+}
+
+
+
+.interestFont {
+	font-family: "Times New Roman", Times, serif;
+	font-size: medium;
+	font-style: italic;
+	color: #CC0033;
+}
+
+
+a:link {
+	color: #0000FF;
+}
+a:visited {
+	color: #0000FF;
+}
+
+
+a:hover {
+	color: #FFFF00;
+}
+.generalText {
+	font-family: "Times New Roman", Times, serif;
+	font-size: medium;
+}
+.generalHeading {
+	font-family: "Times New Roman", Times, serif;
+	font-size: large;
+}
+
+.alertHeading {
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+	font-size: x-large;
+	color: #FF0000;
+}
+
+.alertText {
+	text-align: left;
+	font-family: "Times New Roman", Times, serif;
+	font-size: large;
+}
+
+.COVID-tableText {
+	text-align: left;
+	font-family: "Times New Roman", Times, serif;
+	font-size: medium;
+}
+
+.reprintText {
+	font-family: "Times New Roman", Times, serif;
+	font-size: small;
+	font-style: italic;
+	text-align: center;
+}
+
+.hotlineText {
+	font-family: "Times New Roman", Times, serif;
+	font-size: large;
+	color: #FF0000;
+}
+.extraLarge {
+	font-family: "Times New Roman", Times, serif;
+	font-size: x-large;
+}
+.pageHeading {
+	font-family: "Times New Roman", Times, serif;
+	font-size: x-large;
+	font-weight:bold;
+}
+.questions {
+	font-family: Arial, Helvetica, sans-serif;
+	list-style-type: decimal;
+}
+.OfficersHeading {
+	font-family: "Times New Roman", Times, serif;
+	font-size: large;
+	color: #FFFFFF;
+	text-align: center;
+}
+.generalTextBold {
+	font-family: "Times New Roman", Times, serif;
+	font-size: medium;
+	font-weight: bold;
+}
+.generalTextBoldUL {
+	font-family: "Times New Roman", Times, serif;
+	font-size: medium;
+	font-weight: bold;
+	text-decoration: underline;
+}
+#townName {
+	font-family: "Times New Roman", Times, serif;
+	font-size: medium;
+	font-weight: bold;
+	background-color: #66CCFF;
+	text-align: center;
+	border-top-style: groove;
+	border-right-style: groove;
+	border-bottom-style: groove;
+	border-left-style: groove;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+}
+#contentRedirect {
+	width: 500px;
+	margin-left: 40px;
+}
+
+#divCOVID-19 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: large;
+	margin-right: 30px;
+	margin-left: 30px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#divPreamble2 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: medium;
+	margin-right: 30px;
+	margin-left: 30px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#meetingTable {
+	font-family: "Times New Roman", Times, serif;
+	font-size: medium;
+	border-top-color: #808080;
+	border-right-color: #808080;
+	border-bottom-color: #808080;
+	border-left-color: #808080;
+	background-color: #99CCFF;
+}
+#townTable {
+	font-family: "Times New Roman", Times, serif;
+	font-size: medium;
+	border-top-color: #0000FF;
+	border-right-color: #0000FF;
+	border-bottom-color: #0000FF;
+	border-left-color: #0000FF;
+	background-color: #99CCFF;
+}
+#leftTable {
+	width:275px;
+	height:77px;
+	z-index:1;
+	position: relative;
+	left: 150px;
+}
+#rightTable {
+	width:150px;
+	height:77px;
+	z-index:2;
+	position: relative;
+	left: 431px;
+}
+/* #LocName {
+	font-family: "Times New Roman", Times, serif;
+	color: #000000; */
+}
+#GroupName {
+	font-style: normal;
+	color: #000000;
+	font-family: "Times New Roman", Times, serif;
+	font-size: medium;
+	font-weight: bold;
+}
+
+/* #LocNotes {
+	color: #000000;
+	font-family: "Times New Roman", Times, serif;
+	font-size: medium;
+}#LocAddress {
+	font-family: "Times New Roman", Times, serif;
+	font-size: medium;
+	color: #000000;
+}
+#LocOldAddress {
+	color: #000000;
+	font-family: "Times New Roman", Times, serif;
+	font-size: medium;
+}
+#LocAddress1 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: medium; */
+
+}.blink {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: blink;
+}
+ 
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    76% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}

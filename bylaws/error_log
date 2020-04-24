@@ -1,0 +1,24 @@
+[12-Jan-2015 18:03:21 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: file too short in Unknown on line 0
+[12-Jan-2015 18:03:21 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/ixed.5.4.lin' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/ixed.5.4.lin: file too short in Unknown on line 0
+[12-Jan-2015 18:40:34 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/imagick.so: file too short in Unknown on line 0
+[12-Jan-2015 18:40:34 America/Chicago] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/php54/lib/php/extensions/no-debug-non-zts-20100525/ixed.5.4.lin' - /opt/php54/lib/php/extensions/no-debug-non-zts-20100525/ixed.5.4.lin: file too short in Unknown on line 0
+[06-Mar-2019 17:58:20 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0
+[06-Mar-2019 17:58:20 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0
+[06-Mar-2019 17:58:20 America/Chicago] PHP Warning:  PHP Startup: imagick: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0
+[06-Mar-2019 17:58:21 America/Chicago] PHP Warning:  PHP Startup: SourceGuardian: Unable to initialize module
+Module compiled with module API=20100525
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0

@@ -1,0 +1,24 @@
+/* CSS Document */
+
+#Layer1 {
+	position:absolute;
+	z-index:1;
+	text-align: center;
+	font-size: 18px;
+	border: medium ridge #669999;
+	background-color: #99CC99;
+	left: 82px;
+	top: 86px;
+	padding: 20px;
+}
+.redText {
+	font-size: 18px;
+	font-weight: bold;
+	color: #FF0000;
+}
+.headerRow {
+	background-color: #CCFFCC;
+}
+.link {
+	padding:10px;
+}
