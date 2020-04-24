@@ -1,6 +1,7 @@
 <p align="left"><font size="medium" face="Times New Roman, Times, serif" style="font-style:italic" color="#CC0033">of interest to ALL</font><BR />
 <a href="/index.php"> <img src="/images/homepage.jpg" width="135" height="18"> </a>
 <a href="/mtgdircty.php"> <img src="/images/meetingdirectory.jpg" width="135" height="18"> </a>
+<a href="//2020.suffolkny-aa.org/meetings?tsml-distance=10&tsml-time=upcoming"> <img src="/images/MeetingGuide2020.jpg" width="135" height="54"> </a>
 <a href="/12stps.php"> <img src="/images/12steps.jpg" width="135" height="18"> </a>
 <a href="/12trdns.php"> <img src="/images/12traditions.jpg" width="135" height="18"> </a>
 <a href="/12concepts.php"> <img src="/images/12concepts.jpg" width="135" height="18"> </a>

@@ -42,13 +42,15 @@
               <td colspan="6" align="center"><div class="generalText">For&nbsp;<span class="hotlineText">HELP</span>&nbsp;in Suffolk County call our
                 <span class="hotlineText">24 Hour Hotline:<br />(631) 669-1124</span>
                 <br>Please do not use this HELP number for general information requests. <br> For general inquiries, please see the <a href="contact-us.php">Contact Us</a> page. </div></td>
-              </tr>
+            </tr>
               <!-- <tr>
               <td colspan="6" class="danger" align="center"><div><img border="0" src="/images/acnvrule.gif" width="600" height="10"><div class="alert">
 
               <h6 class="hotlineText generalHeading">Be Advised: The July 2nd SIA Meeting will be taking place at True North in Bohemia due to remaining issues with the Riverhead location.</h6>
             </div></td>
           </tr> -->
+            <? readfile("COVID-19.php"); ?>
+
           <!-- PREAMBLE -->
 
           <tr>
@@ -70,55 +72,20 @@
           <tr>
             <td colspan="6" align="center"><div><img border="0" src="/images/acnvrule.gif" width="600" height="10"> </div></td>
           </tr>
-    <!--
           <tr>
-            <td colspan="6" align="center"><h6 class="danger">Service Is Essential
-              Want to know more?</h6><h5><strong>Come to our BIG MEETING!</strong></h5>
+            <td colspan="6" align="center"><h5><strong>THE OTHER 24</strong></h5>
               <p class="bg-light">
-                <h6>Saturday December 14, 2019</h6>
-                <h6>From 3:00 pm - 6:00 pm</h6>
-                <h6>28 Industrial Boulevard Unit A<br />
-                  Medford, NY 11763</h6>
-                </p>
-                <p class="bg-light">
-                  <h6>There will be: <strong>There will be: Food, Fellowship and information on Service
-                    Opportuni ties.</strong> </h6>
-
-
-                    <a href="http://www.suffolkny-aa.org/bigmeeting.pdf">Download the flyer</a>
+                <h6>Monthly workshops on the traditions and concepts</h6>
+                    <h6>Workshops will be held at 6:30 pm on the first Tuesday of every month
+                        at the <a href="https://www.google.com/maps/place/113+Bay+Ave,+Patchogue,+NY+11772" target="_blank" class="generalTextBold">SIA Office</a> In Patchogue</h6>
+                    <a href="events/2020_02_04_the_other_24.pdf">Download the flyer</a>
 
                   </p>
 
-                  <hr />
-                  <h5>All event details can be found on our SIA<br /> <a href="https://suffolkny-aa.org/events/aaevents.php">events page</a></h5> 
+                  <h6>All event details can be found on our SIA<br /> <a href="https://suffolkny-aa.org/events/aaevents.php">events page</a></h6>
                 </td>
               </tr>
-    -->
               <tr>
-                <td colspan="6" align="center"><h5 class="danger"><strong>Announcing the 23rd Annual Unity Breakfast!</strong></h5>
-                  <h6>"Our Great Responsibility"</h6>
-                  <p class="bg-light">
-                    <h6>March 1, 2020</h6>
-                    <h6>From 9:00 AM - 1:00PM</h6>
-                    <h6>East Wind Catering Hall<br />
-                      5720 Rt. 25 AWading River NY</h6>
-                    </p>
-                    <p class="bg-light">
-                      <h6><li>AA & Al-Anon Keynote Speakers</li>
-<li>Sobriety Countdown</li>
-<li>Service Fair</li>
-<li>Music </li> </h6>
-
-
-                        <a href="http://www.suffolkny-aa.org/images/unityFinalrev5.pdf">Download the flyer</a>
-
-                      </p>
-                      <hr />
-
-                      <hr />
-                      <!-- <h5>All event details can be found on our SIA<br /> <a href="https://suffolkny-aa.org/events/aaevents.php">events page</a></h5> -->
-                    </td>
-                  </tr>
               <tr>
                 <td colspan="6" align="center"><div><img border="0" src="/images/acnvrule.gif" width="600" height="10"> </div></td>
               </tr>

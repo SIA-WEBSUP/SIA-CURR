@@ -1,0 +1,15 @@
+# robots.txt for http://www.suffolkny-aa.org/
+
+User-agent: *
+Disallow: /process/
+Disallow: /OLD/
+Disallow: /ui/
+Disallow: /mobi/
+Disallow: /css/
+Disallow: /cgi-bin/
+Disallow: /s-gso/
+Disallow: /whamptnmtgs.php/
+Disallow: /wislipmtgs.htm/
+Disallow: /newsite/
+Disallow: /bulletins/
+Disallow: /events/

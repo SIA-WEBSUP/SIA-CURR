@@ -37,12 +37,12 @@
               <tr>
                 <td align="left" valign="top" class="generalText"><span class="generalTextBoldUL">Chairperson</span></td>
               	<td align="left" valign="top"><img src="images/chairperson.png" /></td>
-                <td align="center" nowrap="" class="generalText"><script>hide('chairperson','Jean-Marie');</script></td>
+                <td align="center" nowrap="" class="generalText"><script>hide('chairperson','Jean Marie');</script></td>
               </tr>
               <tr>
                 <td align="left" valign="top" class="generalText"><span class="generalTextBoldUL">Alt-Chairperson</span></td>
               	<td align="left" valign="top"><img src="images/alt-chair.png" /></td>
-                <td align="center" nowrap="" class="generalText"><script>hide('alt-chair','Lee B.');</script></td>
+                <td align="center" nowrap="" class="generalText"><script>hide('alt-chair','Lee');</script></td>
               </tr>
               <tr>
                 <td align="left" valign="top" class="generalText"><span class="generalTextBoldUL">Treasurer</span></td>
@@ -52,12 +52,12 @@
               <tr>
                 <td align="left" valign="top" class="generalText"><span class="generalTextBoldUL">Corresponding Secretary</span></td>
               	<td align="left" valign="top"><img src="images/corsec.png" /></td>
-                <td align="center" nowrap="" class="generalText"><script>hide('corsec','Stacy');</script></td>
+                <td align="center" nowrap="" class="generalText"><script>hide('corsec','Stacey');</script></td>
               </tr>
               <tr>
                 <td align="left" valign="top" class="generalText"><span class="generalTextBoldUL">Recording Secretary</span></td>
               	<td align="left" valign="top"><img src="images/recsec.png" /></td>
-                <td align="center" nowrap="" class="generalText"><script>hide('recsec','Zoey');</script></td>
+                <td align="center" nowrap="" class="generalText"><script>hide('recsec','Zoie');</script></td>
               </tr>
               <tr align="center" class="contactUsText">
                 <td colspan="3" bordercolor="#FFFFFF" bgcolor="#000080"><div class="OfficersHeading">Committees</div></td>
@@ -65,7 +65,7 @@
               <tr>
                 <td align="left" valign="top" class="generalText"><span class="generalTextBoldUL">Archives</span></td>
               	<td align="left" valign="top"><img src="images/archives.png" /></td>
-                <td align="center" nowrap="" class="generalText"><script>hide('archives','-');</script></td>
+                <td align="center" nowrap="" class="generalText"><script>hide('archives','Jack');</script></td>
               </tr>
 
               <tr>
@@ -77,38 +77,38 @@
               <tr>
                 <td align="left" valign="top" class="generalText"><span class="generalTextBoldUL">Bulletin</span></td>
               	<td align="left" valign="top"><img src="images/bulletins.png" /></td>
-                <td align="center" nowrap="" class="generalText"><script>hide('bulletins','-');</script></td>
+                <td align="center" nowrap="" class="generalText"><script>hide('bulletins','Fran');</script></td>
               </tr>
               <tr>
                 <td align="left" valign="top" class="generalText"><span class="generalTextBoldUL">Correctional Facilities</span></td>
               	<td align="left" valign="top"><img src="images/correct.png" /></td>
-                <td align="center" nowrap="" class="generalText"><script>hide('correct','-');</script></td>
+                <td align="center" nowrap="" class="generalText"><script>hide('correct','Bobby');</script></td>
               </tr>
               <tr>
                 <td align="left" valign="top" class="generalText"><span class="generalTextBoldUL">Grapevine</span></td>
               	<td align="left" valign="top"><img src="images/grapevine.png" /></td>
-                <td align="center" nowrap="" class="generalText"><script>hide('grapevine','-');</script></td>
+                <td align="center" nowrap="" class="generalText"><script>hide('grapevine','Jackie');</script></td>
               </tr>
               <tr>
                 <td align="left" valign="top" class="generalText"><span class="generalTextBoldUL">Hotline</span></td>
               	<td align="left" valign="top"><img src="images/phones.png" /></td>
-                <td align="center" nowrap="" class="generalText"><script>hide('phones','-');</script></td>
+                <td align="center" nowrap="" class="generalText"><script>hide('phones','Jeff');</script></td>
               </tr>
 
               <tr>
                 <td align="left" valign="top" class="generalText"><span class="generalTextBoldUL">Institutions</span></td>
               	<td align="left" valign="top"><img src="images/institutions.png" /></td>
-                <td align="center" nowrap="" class="generalText"><script>hide('institutions','-');</script></td>
+                <td align="center" nowrap="" class="generalText"><script>hide('institutions','Kathleen');</script></td>
               </tr>
               <tr>
                 <td align="left" valign="top" class="generalText"><span class="generalTextBoldUL">Literature</span></td>
               	<td align="left" valign="top"><img src="images/books.png" /></td>
-                <td align="center" nowrap="" class="generalText"><script>hide('books','-');</script></td>
+                <td align="center" nowrap="" class="generalText"><script>hide('books','Tommy');</script></td>
               </tr>
               <tr>
                 <td align="left" valign="top" class="generalText"><span class="generalTextBoldUL">Meeting List</span></td>
               	<td align="left" valign="top"><img src="images/meetings.png" /></td>
-                <td align="center" nowrap="" class="generalText"><script>hide('meetings','-');</script></td>
+                <td align="center" nowrap="" class="generalText"><script>hide('meetings','James');</script></td>
               </tr>
 
               <tr>
@@ -132,12 +132,12 @@
               <tr>
                 <td align="left" valign="top" class="generalText"><span class="generalTextBoldUL">Public Information</span></td>
               	<td align="left" valign="top"><img src="images/pubinfo.png" /></td>
-                <td align="center" nowrap="" class="generalText"><script>hide('pubinfo','-');</script></td>
+                <td align="center" nowrap="" class="generalText"><script>hide('pubinfo','Danny');</script></td>
               </tr>
               <tr>
                 <td align="left" valign="top" class="generalText"><span class="generalTextBoldUL">Schools</span></td>
               	<td align="left" valign="top"><img src="images/schools.png" /></td>
-                <td align="center" nowrap="" class="generalText"><script>hide('schools','-');</script></td>
+                <td align="center" nowrap="" class="generalText"><script>hide('schools','Phil');</script></td>
               </tr>
               <tr>
                 <td align="left" valign="top" class="generalText"><span class="generalTextBoldUL">Share-A-Thon</span></td>
@@ -152,12 +152,12 @@
               <tr>
                 <td align="left" valign="top" class="generalText"><span class="generalTextBoldUL">Suffolk General Services Liaison</span></td>
               	<td align="left" valign="top"><img src="images/sgso-liaison.png" /></td>
-                <td align="center" nowrap="" class="generalText"><script>hide('sgso-liaison','-');</script></td>
+                <td align="center" nowrap="" class="generalText"><script>hide('sgso-liaison','Jim');</script></td>
               </tr>
               <tr>
                 <td align="left" valign="top" class="generalText"><span class="generalTextBoldUL">Third Legacy</span></td>
               	<td align="left" valign="top"><img src="images/thirdleg.png" /></td>
-                <td align="center" nowrap="" class="generalText"><script>hide('thirdleg','-');</script></td>
+                <td align="center" nowrap="" class="generalText"><script>hide('thirdleg','Jim');</script></td>
               </tr>
               <tr>
                 <td align="left" valign="top" class="generalText"><span class="generalTextBoldUL">Webmaster</span></td>

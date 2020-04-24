@@ -54,6 +54,8 @@ error_reporting(E_ALL);
 
 // set up a couple of counters to know what's added
 $newMedMtgs = 0;
+$newGLBTMtgs = 0;
+$csuspendedMtgs = 0;
 $newHCMtgs = 0;
 
 include "myutil.php";
@@ -103,6 +105,12 @@ foreach ($old_table as $recnum=>$row) {
 
     AssertOldTableHeaders($row);
 
+/*
+    // TEMP - SKIP MEETINGS AFFECTED BY COVID-19 ISSUES !!!
+    if (strpos($row['locationNotes'], "SUSPENDED") !== false) {
+        continue;
+    }
+*/
     // copy data iff headers exist in old and new table
     foreach ($new_headers as $k) {
         if (in_array($k,$old_headers)) {
@@ -123,11 +131,27 @@ foreach ($old_table as $recnum=>$row) {
                 // construct meeting_id from group_id, dayShort, and index of meeting for this day
                 $meeting_id = sprintf("%03d.%s.%d", $new_row['group_id'], $dayShort, $imtg);
 
-                // if 'meditation' occurs in notes or group name, add MED to types
+                // if 'meditation' or '11th step' occurs in notes or group name, add MED and 11 to types
                 if ((strpos(strtoupper($mtg['notes']), "MEDITATION") !== false) ||
-                    (strpos(strtoupper($new_row['group_name']), "MEDITATION") !== false)) {
+                    (strpos(strtoupper($new_row['group_name']), "MEDITATION") !== false) ||
+                    (strpos(strtoupper($mtg['notes']), "11TH STEP") !== false) ||
+                    (strpos(strtoupper($new_row['group_name']), "11TH STEP") !== false) ) {
                     $newMedMtgs++;
-                    $mtg['types'] .= " MED";
+                    $mtg['types'] .= " MED 11";
+                }
+
+                // if 'GLBT' occurs in notes or group name, add GLBT to types
+                if ((strpos(strtoupper($mtg['notes']), "GLBT") !== false) ||
+                    (strpos(strtoupper($new_row['group_name']), "GLBT") !== false)) {
+                    $newGLBTMtgs++;
+                    $mtg['types'] .= " GLBT";
+                }
+
+                // Look for meetings with SUSPENDED in locationNotes, add TC to types !!!
+                if ((strpos(strtoupper($row['locationNotes']), "SUSPENDED") !== false) ||
+                    (strpos(strtoupper($mtg['notes']), "TEMP CLOSED") !== false)){
+                    $csuspendedMtgs++;
+                    $mtg['types'] .= " TC";
                 }
 
                 // if 'hc'=='yes', add X to types
@@ -179,7 +203,9 @@ try {
 echo '<br><h1>Success!!</h1>';
 
 // how many new MED and X meetings were added
+printf("marked <b>%d</b> meetings as SUSPENDED<br>",$csuspendedMtgs);
 printf("added <b>%d</b> new meditation meetings<br>",$newMedMtgs);
+printf("added <b>%d</b> new GLBT meetings<br>",$newGLBTMtgs);
 printf("added <b>%d</b> new handicap accessible meetings<br>",$newHCMtgs);
 printf("converted <b>%d</b> group rows to <b>%d</b> meeting rows<br>", count($old_table), count($return));
 

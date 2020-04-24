@@ -25,54 +25,54 @@
               Intergroup offices, go to</div>
         </TR>
         <TR>
-          <td align="center" valign="top"><div><a href="/redirect.php?rurl=www.aa.org" target="_blank" class="generalTextBold">Alcoholics
+          <td align="center" valign="top"><div><a href="/new_redirect.php?rurl=www.aa.org" target="_blank" class="generalTextBold">Alcoholics
               Anonymous</a></div>
         </TR>
         <TR>
           <td align="center" valign="top"><div><img src="images/acnvrule.gif" width="600" height="10"></div>
         </TR>
         <TR>
-          <td align="center" valign="top"><div><a href="/redirect.php?rurl=suffolkaaarchives.com" target="_blank" class="generalTextBold">Suffolk County A.A. Archives</a></div>
+          <td align="center" valign="top"><div><a href="/new_redirect.php?rurl=suffolkaaarchives.com" target="_blank" class="generalTextBold">Suffolk County A.A. Archives</a></div>
         </TR>
         <TR>
           <td align="center" valign="top"><div><img src="images/acnvrule.gif" alt="" width="600" height="10"></div>                  
         </TR>
         <TR>
-          <td align="center" valign="top"><div><a href="/redirect.php?rurl=www.aagrapevine.org" target="_blank" class="generalTextBold">Grapevine</a></div>                  
+          <td align="center" valign="top"><div><a href="/new_redirect.php?rurl=www.aagrapevine.org" target="_blank" class="generalTextBold">Grapevine</a></div>                  
         </TR>
         <TR>
           <td align="center" valign="top"><div><img src="images/acnvrule.gif" width="600" height="10"></div>
         </TR>
         <TR>
-          <td align="center" valign="top"><div><a href="/redirect.php?rurl=www.licypaa.org" target="_blank" class="generalTextBold">L.I.C.Y.P.A.A.</a></div>                  
+          <td align="center" valign="top"><div><a href="/new_redirect.php?rurl=www.licypaa.org" target="_blank" class="generalTextBold">L.I.C.Y.P.A.A.</a></div>                  
         </TR>
         <TR>
           <td align="center" valign="top"><div><img src="images/acnvrule.gif" width="600" height="10"></div>
         </TR>
 
         <TR>
-          <td align="center" valign="top"><div class="generalText"><a href="/redirect.php?rurl=www.aaseny.org" target="_blank" class="generalTextBold">SENY Area 49 A.A.</a></div>
+          <td align="center" valign="top"><div class="generalText"><a href="/new_redirect.php?rurl=www.aaseny.org" target="_blank" class="generalTextBold">SENY Area 49 A.A.</a></div>
         </TR>
         <TR>
           <td align="center" valign="top"><div><img src="images/acnvrule.gif" width="600" height="10"></div>
         </TR>
 <!--
         <TR>
-          <td align="center" valign="top"><div class="generalText"><a href="/redirect.php?rurl=www.nassauny-aa.org" target="_blank" class="generalTextBold">Nassau County Intergroup</a></div>
+          <td align="center" valign="top"><div class="generalText"><a href="/new_redirect.php?rurl=www.nassauny-aa.org" target="_blank" class="generalTextBold">Nassau County Intergroup</a></div>
         </TR>
         <TR>
           <td align="center" valign="top"><div><img src="images/acnvrule.gif" width="600" height="10"></div>
         </TR>
 -->
         <TR>
-          <td align="center" valign="top"><a href="/redirect.php?rurl=www.aasuffolkgs-ny.org" target="_blank" class="generalTextBold">Suffolk General Service</a> 
+          <td align="center" valign="top"><a href="/new_redirect.php?rurl=www.aasuffolkgs-ny.org" target="_blank" class="generalTextBold">Suffolk General Service</a> 
         </TR>
         <TR>
           <td align="center" valign="top"><div><img src="images/acnvrule.gif" width="600" height="10"></div>
         </TR>
 <!--
         <TR>
-          <td align="center" valign="top"><a href="/redirect.php?rurl=www.aa-intergroup.org" target="_blank" class="generalTextBold">Online Intergoup</a> 
+          <td align="center" valign="top"><a href="/new_redirect.php?rurl=www.aa-intergroup.org" target="_blank" class="generalTextBold">Online Intergoup</a> 
         </TR>
         <TR>
           <td align="center" valign="top"><div><img src="images/acnvrule.gif" width="600" height="10"></div>

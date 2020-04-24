@@ -1,0 +1,866 @@
+<?php
+
+include 'process/sql-connect.php';
+
+include 'process/sql-open.php';
+
+
+
+$institutional = mysql_real_escape_string($_REQUEST["institutional"]);
+
+$locationname = mysql_real_escape_string($_REQUEST["locationname"]);
+
+$groupname = mysql_real_escape_string($_REQUEST["groupname"]);
+
+$city = mysql_real_escape_string($_REQUEST["city"]);
+
+$zip = mysql_real_escape_string($_REQUEST["zip"]);
+
+$dayid = mysql_real_escape_string($_REQUEST["dayid"]);
+
+$hour = mysql_real_escape_string($_REQUEST["hour"]);
+
+$ampm = mysql_real_escape_string($_REQUEST["ampm"]);
+
+$meet_typeid = $_REQUEST["meet_typeid"];
+
+$handicap = $_REQUEST["handicap"];
+
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Suffolk County AA Meeting Search</title>
+<style type="text/css">
+<!--
+body, td, th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.formfield {
+	width:150px;
+}
+#hintbox { /*CSS for pop up hint box */
+	position:absolute;
+	top: 0;
+	background-color: lightyellow;
+	width: 150px; /*Default width of hint.*/
+	padding: 3px;
+	border:1px solid black;
+	font:normal 11px Verdana;
+	line-height:18px;
+	z-index:100;
+	border-right: 3px solid black;
+	border-bottom: 3px solid black;
+	visibility: hidden;
+}
+.hintanchor { /*CSS for link that shows hint onmouseover*/
+	font-weight: bold;
+	color: navy;
+	margin: 3px 8px;
+}
+-->
+</style>
+<script type="text/javascript">
+
+<!-- START HINT BOX -->
+
+var horizontal_offset="9px" //horizontal offset of hint box from anchor link
+
+/////No further editting needed
+
+var vertical_offset="0" //horizontal offset of hint box from anchor link. No need to change.
+
+var ie=document.all
+
+var ns6=document.getElementById&&!document.all
+
+
+
+function getposOffset(what, offsettype){
+
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+
+var parentEl=what.offsetParent;
+
+while (parentEl!=null){
+
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+
+parentEl=parentEl.offsetParent;
+
+}
+
+return totaloffset;
+
+}
+
+
+
+function iecompattest(){
+
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+
+}
+
+
+
+function clearbrowseredge(obj, whichedge){
+
+var edgeoffset=(whichedge=="rightedge")? parseInt(horizontal_offset)*-1 : parseInt(vertical_offset)*-1
+
+if (whichedge=="rightedge"){
+
+var windowedge=ie && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-30 : window.pageXOffset+window.innerWidth-40
+
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetWidth+parseInt(horizontal_offset)
+
+}
+
+else{
+
+var windowedge=ie && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure)
+
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetHeight
+
+}
+
+return edgeoffset
+
+}
+
+
+
+function showhint(menucontents, obj, e, tipwidth){
+
+if ((ie||ns6) && document.getElementById("hintbox")){
+
+dropmenuobj=document.getElementById("hintbox")
+
+dropmenuobj.innerHTML=menucontents
+
+dropmenuobj.style.left=dropmenuobj.style.top=-500
+
+if (tipwidth!=""){
+
+dropmenuobj.widthobj=dropmenuobj.style
+
+dropmenuobj.widthobj.width=tipwidth
+
+}
+
+dropmenuobj.x=getposOffset(obj, "left")
+
+dropmenuobj.y=getposOffset(obj, "top")
+
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+obj.offsetWidth+"px"
+
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+"px"
+
+dropmenuobj.style.visibility="visible"
+
+obj.onmouseout=hidetip
+
+}
+
+}
+
+
+
+function hidetip(e){
+
+dropmenuobj.style.visibility="hidden"
+
+dropmenuobj.style.left="-500px"
+
+}
+
+
+
+function createhintbox(){
+
+var divblock=document.createElement("div")
+
+divblock.setAttribute("id", "hintbox")
+
+document.body.appendChild(divblock)
+
+}
+
+
+
+if (window.addEventListener)
+
+window.addEventListener("load", createhintbox, false)
+
+else if (window.attachEvent)
+
+window.attachEvent("onload", createhintbox)
+
+else if (document.getElementById)
+
+window.onload=createhintbox
+
+<!-- END HINT BOX -->
+
+
+
+<!-- RESET JS -->
+
+
+
+function resetdrops()
+
+{
+
+	document.getElementById('locationname').value = '';
+
+	document.getElementById('groupname').value = '';
+
+	document.getElementById('city').value = '';
+
+	document.getElementById('zip').value = '';
+
+	document.getElementById('dayid').value = '';
+
+	document.getElementById('hour').value = '';
+
+
+
+
+
+for (i=0;i<document.searchform.elements.length;i++)
+
+	{
+
+	if (document.searchform.elements[i].name == 'meet_typeid[]')
+
+		{
+
+		document.searchform.elements[i].checked = false;
+
+		}
+
+	}
+
+
+
+for (i=0;i<document.searchform.elements.length;i++)
+
+	{
+
+	if (document.searchform.elements[i].name == 'handicap')
+
+		{
+
+		document.searchform.elements[i].checked = false;
+
+		}
+
+	}
+
+
+
+}
+
+
+
+</script>
+</head>
+
+<body>
+<?php
+
+if(empty($institutional))
+
+{
+
+	$query01 = "SELECT DISTINCT * FROM getmeetings WHERE institute = '0' GROUP BY locationid ORDER BY startid ASC";
+
+	$result01 = mysql_query($query01);
+
+	while($row01 = mysql_fetch_array($result01))
+
+	{
+
+		$locations .= "recid = '" . $row01["locationid"] . "' OR ";
+
+	}
+
+	
+
+	$query02 = "SELECT DISTINCT * FROM getmeetings WHERE institute = '0' GROUP BY groupid ORDER BY startid ASC";
+
+	$result02 = mysql_query($query02);
+
+	while($row02 = mysql_fetch_array($result02))
+
+	{
+
+		$groups .= "recid = '". $row02["groupid"] . "' OR ";
+
+		
+
+	}
+
+	
+
+	$groups = substr($groups, 0,-4);
+
+	$locations = substr($locations, 0,-4);
+
+?>
+<form id="searchform" name="searchform" method="post" action="">
+  <table width="600" border="0" align="center" cellpadding="0" cellspacing="4">
+    <tr>
+      <td height="27" colspan="4" align="right"><div><strong>Today is&nbsp;
+          <?php  echo( date("l, F jS Y") );?>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></div></td>
+    </tr>
+    <tr>
+      <td height="27" colspan="2" align="left"><span style="font-size:14px"><strong>Search For Meetings</strong></span></td>
+      <td height="27" colspan="2" align="left"><span style="font-size:14px"><strong>Meeting Codes</strong></span></td>
+    </tr>
+    <tr>
+      <td width="84" align="left"><strong>Location:</strong></td>
+      <td width="207" align="left"><label>
+          <select name="locationname" id="locationname" class="formfield">
+            <option value=''>ANY</option>
+            <?php
+
+		$query20 = "SELECT DISTINCT name FROM aa_locations WHERE status = '1' AND ($locations) GROUP BY name ORDER BY name ASC";
+
+		$result20 = mysql_query($query20);
+
+		while($row20 = mysql_fetch_array($result20))
+
+		{
+
+			$locid = $row20["recid"];
+
+			$name = $row20["name"];
+
+			$uppername = strtoupper($row20["name"]);
+
+			if(stripslashes($locationname) == $name){echo "<option value=\"$name\" selected=\"selected\">$uppername</option>";}
+
+			else{echo "<option value=\"$name\">$uppername</option>";}
+
+		}
+
+		?>
+          </select>
+        </label></td>
+      <td colspan="2" rowspan="4" align="left"><table width="215" border="0" align="left" cellpadding="0" cellspacing="6">
+          <?php
+
+
+
+		$cols = 4;
+
+		$count = 0;
+
+    	$query24 = "SELECT * FROM aa_meetingtypes ORDER BY recid ASC";
+
+		$result24 = mysql_query($query24);
+
+		echo '<tr>';
+
+		while($row24 = mysql_fetch_array($result24))
+
+		{
+
+			$count++;
+
+			$this_typeid = $row24["recid"];
+
+			$typecode = $row24["typecode"];
+
+			$typename = addslashes($row24["typename"]);
+
+			echo "<td width='71'nowrap='nowrap'>";
+
+			
+
+			if(count($meet_typeid)>0)
+
+			{
+
+				foreach($meet_typeid as $value => $value2)
+
+				{
+
+					if($this_typeid == $value2){$checked = "checked";}
+
+				}
+
+			}
+
+			
+
+			echo "<input name='meet_typeid[]' type='checkbox' value='$this_typeid' $checked/> <a href='#' onMouseover=\"showhint('$typename', this, event, '150px')\">$typecode</a>";
+
+			echo "</td>";
+
+			if($count === $cols){echo '</tr><tr>'; $count=0;}
+
+			$checked = "";
+
+	  	}
+
+	  echo '</tr>';
+
+	?>
+        </table></td>
+    </tr>
+    <tr>
+      <td align="left"><strong>Group:</strong></td>
+      <td align="left"><strong>
+        <label>
+          <select name="groupname" id="groupname" class="formfield">
+            <option value=''>ANY</option>
+            <?php
+
+		$query21 = "SELECT groupname FROM aa_groups WHERE status = '1' AND ($locations) GROUP BY groupname ORDER BY groupname ASC";
+
+		$result21 = mysql_query($query21);
+
+		while($row21 = mysql_fetch_array($result21))
+
+		{
+
+			$grpid = $row21["recid"];
+
+			$grpname = $row21["groupname"];
+
+			$uppergrpname = strtoupper($row21["groupname"]);
+
+			if($grpname == stripslashes($groupname)){echo "<option value=\"$grpname\" selected=\"selected\">$uppergrpname</option>";}
+
+			else{echo "<option value=\"$grpname\">$uppergrpname</option>";}
+
+		}
+
+		?>
+          </select>
+        </label>
+        </strong></td>
+    </tr>
+    <tr>
+      <td align="left"><strong>City:</strong></td>
+      <td align="left"><strong>
+        <label>
+          <select name="city" id="city" class="formfield">
+            <option value=''>ANY</option>
+            <?php
+
+		$query29 = "SELECT DISTINCT city FROM aa_locations WHERE status = '1' GROUP BY city ORDER BY city ASC";
+
+		$result29 = mysql_query($query29);
+
+		while($row29 = mysql_fetch_array($result29))
+
+		{
+
+			$cityname = strtoupper($row29["city"]);
+
+			if($city == $cityname){echo "<option value='$cityname' selected='selected'>$cityname</option>";}
+
+			else{echo "<option value='$cityname'>$cityname</option>";}
+
+		}
+
+		?>
+          </select>
+        </label>
+        </strong></td>
+    </tr>
+    <tr>
+      <td align="left"><strong>Zip:</strong></td>
+      <td align="left"><strong>
+        <label>
+          <select name="zip" id="zip" class="formfield">
+            <option value=''>ANY</option>
+            <?php
+
+		$query30 = "SELECT DISTINCT zip FROM aa_locations WHERE status = '1'  GROUP BY zip ORDER BY zip ASC";
+
+		$result30 = mysql_query($query30);
+
+		while($row30 = mysql_fetch_array($result30))
+
+		{
+
+			$thiszipid = $row30["recid"];
+
+			$thiszip = $row30["zip"];
+
+			if($zip == $thiszip){echo "<option value='$thiszip' selected='selected'>$thiszip</option>";}
+
+			else{echo "<option value='$thiszip'>$thiszip</option>";}
+
+		}
+
+		?>
+          </select>
+        </label>
+        </strong></td>
+    </tr>
+    <tr>
+      <td align="left"><strong>Day:</strong></td>
+      <td align="left"><strong>
+        <label>
+          <select name="dayid" id="dayid" class="formfield">
+            <option value=''>ANY</option>
+            <?php
+
+		$query23 = "SELECT * FROM aa_days ORDER BY recid ASC";
+
+		$result23 = mysql_query($query23);
+
+		while($row23 = mysql_fetch_array($result23))
+
+		{
+
+			$day_id = $row23["recid"];
+
+			$day = strtoupper($row23["dayname"]);
+
+			if($dayid == $day_id){echo "<option value='$day_id' selected='selected'>$day</option>";}
+
+			else{echo "<option value='$day_id'>$day</option>";}
+
+		}
+
+		?>
+          </select>
+        </label>
+        </strong></td>
+      <td width="140" align="right"><strong>Handicap Accessible:</strong></td>
+      <td width="149" align="left"><label>
+          <input type="checkbox" name="handicap" id="handicap" value="yes" <?php if($handicap=="yes"){echo"checked";}?>/>
+        </label></td>
+    </tr>
+    <tr>
+      <td align="left"><strong>Time:</strong></td>
+      <td align="left"><strong>
+        <select name="hour" id="hour">
+          <option value=""<?php if($hour==""){echo" selected='selected'";}?>>ANY</option>
+          <?php   
+
+    $query01 = "SELECT DISTINCT * FROM getmeetings GROUP BY start_time ORDER BY startid ASC";
+
+	$result01 = mysql_query($query01);
+
+	while($row01 = mysql_fetch_array($result01))
+
+	{
+
+		$startid = $row01["startid"];
+
+		$start_time = $row01["start_time"];
+
+		echo "<option value='$startid'"; if($startid==$hour){echo" selected='selected'";} echo ">$start_time</option>";
+
+	}
+
+    ?>
+        </select>
+        </strong></td>
+      <td colspan="2" align="left"><label>
+          <input type="button" name="222" onclick="resetdrops()" id="2222" value="Reset" />
+        </label>
+        <label>
+          <input type="submit" name="button" id="button" value="Start Search" />
+        </label></td>
+    </tr>
+  </table>
+</form>
+<?php
+
+}
+
+else
+
+{
+
+	  echo "<div align='center'><b>Institutional Meetings</b></div>";
+
+}
+
+?>
+<hr width="800" size="1" />
+<div align="center"><strong>Please respect our request to NOT use this directory for mailings under any circumstances.<br />
+  <a href="otherareas.php">Meeting information in areas outside of Suffolk County</a></strong></div>
+<div align="center">&nbsp;<br />
+  <strong><a href='?institutional=y'>View Institutional Meetings</a></strong></div>
+<table width="800" border="0" align="center" cellpadding="0" cellspacing="2" style="margin-top:10px;">
+  <?php
+
+////////////////////////
+
+////////////////////////
+
+if(!empty($city)){$filters .= " AND city LIKE '%$city%'";}
+
+if(!empty($zip)){$filters .= " AND zip LIKE '%$zip%'";}
+
+if(!empty($locationname)){$filters .= " AND name LIKE '%$locationname%'";}
+
+//if(!empty($groupname)){$filters .= " AND groupname LIKE '%$groupname%'";}
+if(!empty($groupname)){$filters .= " AND groupname = '$groupname'";}
+
+if(!empty($hour)){$filters .= " AND startid = '$hour'";}
+
+if(!empty($ampm)){$filters .= " AND start_time LIKE '%$ampm%'";}
+
+if(!empty($handicap)){$filters .= " AND handicap = '1'";}
+
+if(!empty($institutional)){$filters .= " AND institute = '1'";}
+
+
+
+if(!empty($dayid)){$dayquery = "WHERE recid = '$dayid' ";}
+
+////////////////////////
+
+////////////////////////
+
+
+
+$query0 = "SELECT * FROM aa_meetingtypes";
+
+$result0 = mysql_query($query0);
+
+while($row0 = mysql_fetch_array($result0))
+
+{
+
+	$allmeetingtypes[] = $row0["recid"]."-".$row0["typecode"]."-".$row0["typename"];
+
+}
+
+
+
+if(count($meet_typeid)>0)
+
+{
+
+	$typeid_part = " AND (";
+
+	foreach($meet_typeid as $value => $value2)
+
+	{
+
+		$typeid_part .= "typeid like '%$value2%' AND "; // AND here filter out more..change to OR to show more
+
+	}
+
+	$typeid_part = substr($typeid_part,0,-4);
+
+	$typeid_part .= ")";
+
+}
+
+$filters .= $typeid_part;
+
+
+
+if(!empty($institutional)){$filters .= " AND institute = '1'";}else{$filters .= " AND institute = '0'";}
+
+
+
+$query = "SELECT * FROM aa_days ".$dayquery."ORDER BY recid ASC";
+
+$result = mysql_query($query);
+
+while($row = mysql_fetch_array($result))
+
+{
+
+	$dayid = $row["recid"];
+
+	$dayname = $row["dayname"];
+
+	
+
+$query1 = "SELECT * FROM getmeetings WHERE dayid = '$dayid' AND status = '1'".$filters." ORDER BY startid ASC";
+
+$result1 = mysql_query($query1);
+
+$rows = mysql_num_rows($result1);
+
+$total_rows += $rows;
+//echo $query1 . "<br>";
+
+if($rows>0)
+
+{
+
+?>
+  <tr>
+    <td height="30" colspan="5" align="left" valign="middle" bgcolor="#f2f2f2"><span style="font-size:14px"><strong><?php echo $dayname; ?></strong></span></td>
+  </tr>
+  <tr>
+    <td width="60" align="left" valign="top"><strong>Time</strong></td>
+    <td width="248" align="left" valign="top"><strong>Location</strong></td>
+    <td width="180" align="left" valign="top"><strong>City</strong></td>
+    <td width="260" align="left" valign="top"><strong>Group Name</strong></td>
+    <td width="90" align="left" valign="top"><strong>Meeting Type</strong></td>
+  </tr>
+  <?php
+
+while($row1 = mysql_fetch_array($result1))
+
+{
+
+	unset($totaltypes);
+
+	unset($totaltypes_hover);
+
+	
+
+	$mid = $row1["mid"];
+
+	$alltypeids = $row1["typeid"];
+
+	$loc_name = strtoupper($row1["name"]);
+
+	$start_time = $row1["start_time"];
+
+	$city = strtoupper($row1["city"]);
+
+	$groupname = strtoupper($row1["groupname"]);
+
+	
+
+	if(strlen($loc_name)>56){$loc_name = substr($loc_name,0,54)."..";} //creating shorting text for links
+
+	if(strlen($groupname)>56){$groupname = substr($groupname,0,54)."..";} //creating shorting text for links
+
+	
+
+	$alltypeids = explode(",", $alltypeids);
+
+	foreach($alltypeids as $value0 => $typeid)
+
+	{
+
+		foreach($allmeetingtypes as $value => $value2)
+
+		{
+
+			$allmeetings = explode("-", $value2);
+
+			$all_typeid = $allmeetings[0];  
+
+			$all_typecode = $allmeetings[1];
+
+			$all_typename = $allmeetings[2];
+
+			
+
+			if($typeid == $all_typeid)
+
+			{
+
+				$totaltypes .= $all_typecode.",";
+
+				$totaltypes_hover .= $all_typename.", ";
+
+			}
+
+		}
+
+	}
+
+	
+
+	$totaltypes = substr($totaltypes,0,-1); //trim trailing comma
+
+	$totaltypes_hover = str_replace("'","`",addslashes(substr($totaltypes_hover,0,-2)));  //trim trailing comma
+
+	$link = "map.php?mid=$mid";
+
+?>
+  <tr>
+    <td align="left" valign="top"><a href="<?php echo $link; ?>"><?php echo $start_time; ?></a></td>
+    <td align="left" valign="top"><a href="<?php echo $link; ?>"><?php echo $loc_name; ?></a></td>
+    <td align="left" valign="top"><a href="<?php echo $link; ?>"><?php echo $city; ?></a></td>
+    <td align="left" valign="top"><a href="<?php echo $link; ?>"><?php echo $groupname; ?></a></td>
+    <td align="left" valign="top"><a href="<?php echo $link; ?>" onMouseover="showhint('<?php echo $totaltypes_hover; ?>', this, event, '300px')"><?php echo $totaltypes; ?></a></td>
+  </tr>
+  <?php
+
+}//each meeting row
+
+}//day of week
+
+}//rows
+
+?>
+</table>
+<p align="center">
+  <?php
+
+if($total_rows == 0)
+{
+	echo "No Meetings Found, Please Try Your Search Again.";
+	echo "</br>";
+	echo "<strong><a href=\"javascript: history.go(-1)\">Back to Meeting Search Form</a></strong>";
+}
+?>
+</p>
+<table border="1" align="center" cellspacing="1">
+  <tbody>
+    <tr>
+      <td colspan="3" align="center">In the tradition of Anonymity Non-Alcoholics are welcome ONLY at meetings coded O or OD.</td>
+    </tr>
+    <tr>
+      <td colspan="3" valign="middle" align="center">Meeting Codes</td>
+    </tr>
+    <tr>
+      <td valign="middle" align="center">O - Open</td>
+      <td valign="middle" align="center">S - Step</td>
+      <td valign="middle" align="center">W - Women's</td>
+    </tr>
+    <tr>
+      <td valign="middle" align="center">OD - Open Discussion</td>
+      <td valign="middle" align="center">BB - Big Book</td>
+      <td valign="middle" align="center">M - Men's</td>
+    </tr>
+    <tr>
+      <td valign="middle" align="center">B - Beginners</td>
+      <td valign="middle" align="center">T - Traditions</td>
+      <td valign="middle" align="center">YP - Young People</td>
+    </tr>
+    <tr>
+      <td valign="middle" align="center">C - Closed</td>
+      <td valign="middle" align="center">CD - Closed Discussion</td>
+      <td valign="middle" align="center"><img src="/images/hcaccess.gif" width="20" align="absmiddle" height="20"> - Handicap Accessible</td>
+    </tr>
+    <tr>
+      <td valign="middle" align="center">GV - Grapevine</td>
+      <td valign="middle" align="center">ASL - American Sign Language</td>
+      <td valign="middle" align="center">DR - Daily Reflections</td>
+    </tr>
+    <tr>
+      <td valign="middle" align="center">SP - Spanish</td>
+      <td valign="middle" align="center">&nbsp;</td>
+      <td valign="middle" align="center">GLBT - Gay/Lesbian/Bisexual/Transgender</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
