@@ -148,8 +148,9 @@ foreach ($old_table as $recnum=>$row) {
                 }
 
                 // Look for meetings with SUSPENDED in locationNotes, add TC to types !!!
-                if ((strpos(strtoupper($row['locationNotes']), "SUSPENDED") !== false) ||
-                    (strpos(strtoupper($mtg['notes']), "TEMP CLOSED") !== false)){
+                if ((strpos(strtoupper($row['locationNotes']), "SUSPENDED") !== false)  ||
+                    (strpos(strtoupper($mtg['notes']), "TEMP CLOSED") !== false)        ||
+                    (strpos(strtoupper($row['locationNotes']), "MEETINGS MOVED ONLINE") !== false)){
                     $csuspendedMtgs++;
                     $mtg['types'] .= " TC";
                 }
