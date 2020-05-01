@@ -96,6 +96,7 @@ $all_types = array();
 $online_mtgs = array( // Most groups have one URL for all meetings, some have both group level URL and meeting URLs
     // 'GROUPID'  => array("conf_URL",	NULL,"mtg_id", "pwd"), // GROUP NAME
     '37'  => array("//zoom.us/j/6052451111?pwd=c085c0o15V1RWWWlBNkFYTmNVUE93UT09",	"(929) 205-6099","605 245 1111", "428 950"), // BAY SHORE SUNRISE SOBRIETY
+    '50'  => array("//us02web.zoom.us/j/89908618777?pwd=bTQ1V1BHdkp3WWt2MWppTytXL1ppUT09",	"(646) 876 9923 ","899 0861 8777", "162 994"), // BRENTWOOD GRATITUDE
     '67'  => array("//zoom.us/j/691630673         ","(646) 558-8656","691 630 673","850 366"), // SUNRISE SOBRIETY - 6:45AM
     '82'  => array("//zoom.us/j/6311431023        ","(631) 766-3661","631 143 1023", "Cutchogue"),     // CUTCHOGUE SUNDAY
   //'85'  => array("//us04web.zoom.us/j/742133476", NULL, NULL, NULL),                              // HOME FOR DINNER

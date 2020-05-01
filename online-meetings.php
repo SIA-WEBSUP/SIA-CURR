@@ -48,7 +48,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '307.TH.0' => array("//meet.google.com/sps-xjqn-uiu","(614) 602-6125","848 749 635", NULL), // STONY BROOK UNITY GRP
     '422.FR.0' => array("//meet.google.com/wno-mhit-zmk","(402) 824-0258","705 336 354", NULL), // ROCKY POINT UNITY GRP
     '422.SA.0' => array("//meet.google.com/wno-mhit-zmk","(402) 824-0258","705 336 354", NULL), // ROCKY POINT UNITY GRP
-    '584.TH.0' => array("//meet.google.com/mpt-bxbd-syv","(573) 667-3257","961 358 515", NULL), // OPEN BOOKS
+    //'584.TH.0' => array("//meet.google.com/mpt-bxbd-syv","(573) 667-3257","961 358 515", NULL), // OPEN BOOKS
     //'049.SU.0' => array("//zoom.us/j/604823002", "(646) 558-8656","604 823 002", NULL), // LADIES GROUP - Sun CD
     //'049.WD.0' => array("//zoom.us/j/667893124", "(646) 558-8656","667 893 124", NULL), // LADIES GROUP - Wed Step
 
