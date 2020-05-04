@@ -1,7 +1,7 @@
 <?php
 
 
-include('./process/sql-connect.php');
+include('./sql-connect.php');
 
 // use david v's credentials
 $dbuser		= isset($_GET['jdv']) ? 'suffolk_testing': $dbuser;
