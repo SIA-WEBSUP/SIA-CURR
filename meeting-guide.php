@@ -97,12 +97,12 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     // 'GROUPID'  => array("conf_URL",	NULL,"mtg_id", "pwd"), // GROUP NAME
     '37'  => array("//zoom.us/j/6052451111?pwd=c085c0o15V1RWWWlBNkFYTmNVUE93UT09",	"(929) 205-6099","605 245 1111", "428 950"), // BAY SHORE SUNRISE SOBRIETY
     '50'  => array("//us02web.zoom.us/j/89908618777?pwd=bTQ1V1BHdkp3WWt2MWppTytXL1ppUT09",	"(646) 876 9923 ","899 0861 8777", "162 994"), // BRENTWOOD GRATITUDE
-    '67'  => array("//zoom.us/j/691630673         ","(646) 558-8656","691 630 673","850 366"), // SUNRISE SOBRIETY - 6:45AM
+    '67'  => array("//zoom.us/j/691630673         ","(646) 558-8656","691 630 673","850 366"),         // SUNRISE SOBRIETY - 6:45AM
     '82'  => array("//zoom.us/j/6311431023        ","(631) 766-3661","631 143 1023", "Cutchogue"),     // CUTCHOGUE SUNDAY
-  //'85'  => array("//us04web.zoom.us/j/742133476", NULL, NULL, NULL),                              // HOME FOR DINNER
+  //'85'  => array("//us04web.zoom.us/j/742133476", NULL, NULL, NULL),                                 // HOME FOR DINNER
     '104' => array("//nyintergroup.zoom.us/j/96853910721?pwd=L1R5bmFDdVoyUFM2Szh5dUZXZU10UT09","(929) 436-2866", "968 5391 0721", "521231"), // EYE OPENER
     '104.SU.0' => array("//nyintergroup.zoom.us/j/98293111250?pwd=N3orUFNBNFpSVjZiV1JTM0Y5TVNZZz09","(929) 436-2866", "982 9311 1250", "521231"), // EYE OPENER - MENS
-    '104.SU.1' => array("//zoom.us/j/93088948413","(929) 436-2866", "930 8894 8413", "788615"), // EYE OPENER - WOMENS
+    '104.SU.1' => array("//zoom.us/j/93088948413","(929) 436-2866", "930 8894 8413", "788615"),        // EYE OPENER - WOMENS
     '126' => array("//nyintergroup.zoom.us/j/253179384", "(929) 436-2866", "253 179 384", "777"),      // HUNTINGTON STA NEW LIFE
     '157' => array("//zoom.us/j/851329515?pwd=STFwM1dOQUZUZXdrTlFZK1hIMDlnUT09","(646) 876-9923", "851 329 515", NULL), // DOING IT YOUNG
     '176' => array("//meet.google.com/gbi-rsmn-odo","(502) 430-2829","389 359 014", NULL), // NEIGHBORHOOD SOBRIETY
@@ -133,6 +133,8 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '067.TU.1' => array("//zoom.us/j/369437303","(646) 558-8656","369 437 303", "039 778"), // SUNRISE SOBRIETY - 6:45AM
     '067.SA.1' => array("//zoom.us/j/678316314","(646) 558-8656","678 316 314", "003 597"), // SUNRISE SOBRIETY - 6:45AM
     '067.SU.1' => array("//zoom.us/j/202548779","(646) 558-8656","202 548 779", "889 048"), // SUNRISE SOBRIETY - 6:45AM
+    '108.TU.0' => array("//nyintergroup.zoom.us/j/93791458968", "(929) 436-2866", "937 9145 8968", NULL), // EAST NORTHPORT SERENITY
+    '108.FR.0' => array("//nyintergroup.zoom.us/j/93791458968", "(929) 436-2866", "937 9145 8968", NULL), // EAST NORTHPORT SERENITY
     '125.TU.0' => array("//meet.google.com/cyn-npse-mto","(347) 773-0220", "266 098 222", NULL), // GREENLAWN HUNTINGTON STATION
     '125.TH.0' => array("//meet.google.com/cyn-npse-mto","(347) 773-0220", "266 098 222", NULL), // GREENLAWN HUNTINGTON STATION
     '189.TU.0' => array("//zoom.us/j/852561412?pwd=dEttYmp6UXplYzVxUEF5YWttdUxaZz09", NULL, NULL, NULL), // LONGWOOD LOVE & SERVICE
