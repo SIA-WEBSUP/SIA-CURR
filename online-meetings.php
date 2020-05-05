@@ -3,6 +3,7 @@
 $online_mtgs = array( // Most groups have one URL for all meetings, some have both group level URL and meeting URLs
     // 'GROUPID'  => array("conf_URL",	NULL,"mtg_id", "pwd"), // GROUP NAME
     '37'  => array("//zoom.us/j/6052451111?pwd=c085c0o15V1RWWWlBNkFYTmNVUE93UT09",	"(929) 205-6099","605 245 1111", "428 950"), // BAY SHORE SUNRISE SOBRIETY
+    '50'  => array("//us02web.zoom.us/j/89908618777?pwd=bTQ1V1BHdkp3WWt2MWppTytXL1ppUT09",	"(646) 876 9923 ","899 0861 8777", "162 994"), // BRENTWOOD GRATITUDE
     '67'  => array("//zoom.us/j/691630673         ","(646) 558-8656","691 630 673","850 366"), // SUNRISE SOBRIETY - 6:45AM
     '82'  => array("//zoom.us/j/6311431023        ","(631) 766-3661","631 143 1023", "Cutchogue"),     // CUTCHOGUE SUNDAY
     //'85'  => array("//us04web.zoom.us/j/742133476", NULL, NULL, NULL),                              // HOME FOR DINNER
@@ -93,10 +94,11 @@ function online_meeting_info($group_id, $meeting_id)
 {
     $notes = NULL;
     $URL = NULL;
-    $phone=NULL;
+    $phone = NULL;
+    $access_num = NULL;
+    $mtgID = NULL;
+    $pwd = NULL;
 
-
-    $conference_url = $conference_phone = $conference_mtgID = $conference_pwd = $conference_notes = #access_num = NULL;
     $conference_info = NULL;
     $access_num = NULL;
     $conference_notes = NULL;
@@ -107,56 +109,60 @@ function online_meeting_info($group_id, $meeting_id)
     } else if (array_key_exists($group_id,$online_mtgs)) {
         $conference_info = $online_mtgs[$group_id];
     }
+
     if ($conference_info) {
-        $conference_url = $conference_info[0] ? "https:" . $conference_info[0]  : NULL;
-        $conference_phone = $conference_info[1];
-        $conference_mtgID = $conference_info[2];
-        $conference_pwd = $conference_info[3];
+        $URL =  $conference_info[0] ? "https:" . $conference_info[0]  : NULL;
+        $phone =  $conference_info[1];
+        $mtgID = $conference_info[2];
+        $pwd = $conference_info[3];
 
         // append mtgID to meeting notes
-        if ($conference_mtgID && strpos($conference_url, "zoom.")) {
+        if ($mtgID && strpos($URL, "zoom.")) {
             // Display the ZOOM meeting ID for ALL ZOOM meetings to handle
             // the rare case where the group doesn't want a direct link to meeting
             // TODO: remove this now that meeting finder supports connect via zoom button
-            $online_meeting_info['notes'] .= "ZOOM Meeting ID: " . $conference_mtgID . "\n\r\n\r";
-            if ($conference_pwd) {
-                if (strpos(strtoupper($conference_pwd), "PASSWORD"))
-                    // Special Instructions for password
-                    $row['notes'] .= $conference_pwd . "\n\r\n\r";
-                else
-                    $row['notes'] .= "PWD: " . $conference_pwd . "\n\r\n\r";
+            $notes .= "ZOOM Meeting ID: " . $mtgID . "\n\r\n\r";
 
+            // append PWD if it exists
+            if ($pwd) {
+                if (strpos(strtoupper($pwd), "PASSWORD")==false) {
+                    $notes .= "PWD: "; // if password isn't spelled out, prepend "PWD:"
+                }
+                $notes .= $pwd . "\n\r\n\r";
             }
         }
         // append phone number to meeting notes
-        if ($conference_phone) {
-            $access_num = strpos($conference_phone, "Access #:");
+        if ($phone) {
+            $access_num = strpos($phone, "Access #:");
             if ($access_num) {
                 // grab access pin if it exists
-                $t = substr($conference_phone, 0, $access_num-1);
-                $access_num = substr($conference_phone, $access_num+strlen("Access #:"), strlen($conference_phone)-1);
-                $conference_phone = $t;
+                // when access number exists, use it in pace of pwd in phone$
+                $t = substr($phone, 0, $access_num-1);
+                $access_num = substr($phone, $access_num+strlen("Access #:"), strlen($phone)-1);
+                $phone = $t;
             }
-            $row['notes'] .= "To join by phone dial:\n\r  ". $conference_phone;
-            if ($conference_mtgID)
-                $row['notes'] .= " PIN: " . $conference_mtgID .  "#";
-            $row['notes'] .= "\n\r\n\r";
-        }
-        // append pwd to meeting notes
-        if ($access_num) {
-            $row['notes'] .= " ACCESS#: " . $access_num .  "#";
+            $notes .= "To join by phone dial:\n\r  ". $phone;
+            if ($mtgID)
+                $notes .= " PIN: " . $mtgID .  "#";
+            $notes .= "\n\r\n\r";
+
+            // encode phone with meeting ID and password for one tap number
+            // should look like +12125551212,,123456789#,,#,,444444#
+            $phone = "+1" . $phone . ",," . $mtgID . "#";
+            if ($access_num) {
+                $phone .= ",,#,," . $access_num . "#"; // append access no if it exists
+            } else if ($pwd){
+                $phone .= ",,#,," . $pwd . "#"; // append pwd if necessary
+            }
+            $phone = str_replace(array('(', ')','-',' '), '', $phone); //strip unnecessary chars
         }
 
-        // encode phone with meeting ID and password for one tap number
-        // should look like +12125551212,,123456789#,,#,,444444#
-        if ($conference_phone) {
-            $conference_phone = "+1" . $conference_phone . ",," . $conference_mtgID . "#";
-            if ($access_num) {
-                $conference_phone .= ",,#,," . $access_num . "#"; // append access no if it exists
-            } else if ($conference_pwd){
-                $conference_phone .= ",,#,," . $conference_pwd . "#"; // append pwd if necessary
-            }
-            $conference_phone = str_replace(array('(', ')','-',' '), '', $conference_phone); //strip unnecessary chars
+        // append acces_num to meeting notes
+        if ($access_num) {
+            $notes .= " ACCESS#: " . $access_num .  "#";
+        } else if ($pwd) {
+            $notes .= " PWD: " . $pwd .  "#";
         }
     }
+    return array('notes' => $notes, 'conference_url'=>$URL, 'conference_phone'=>$phone)
 }
