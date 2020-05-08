@@ -13,6 +13,7 @@ function array_flatten($array, $return=array()) {
     return $return;
 }
 
+header('Content-type: application/html; charset=utf-8');
 echo get_online_meetings_phone_list();
 function get_online_meetings_phone_list() {
     $type_lookup = array(
@@ -75,12 +76,12 @@ function get_online_meetings_phone_list() {
             $delimiter = "To join by phone dial:\n\r  ";
             $notes = substr($notes,strpos($meeting['notes'],$delimiter)+strlen($delimiter), strlen($notes));
 
-            $return .= "<tr></tr><td>%s</td>" . $day_lookup[$meeting['day']];
-            $return .= "<td><a href=" . $TSMLRoot . $meeting['slug'] . " target='_blank'>%s</a></td>" . $meeting['name'];
-            $return .= "<td>%s</td>" . implode($types,' ');
-            $return .=  "</tr><tr><td>%s</td>" . date("h:i A", strtotime($meeting['time']));
-            $return .= "<td>%s</td>" . $notes;
-            $return .= "<td>%s</td></tr>" . $meeting['region'];
+            $return .= "<tr></tr><td>" . $day_lookup[$meeting['day']]. "</td>" ;
+            $return .= "<td><a href=" . $TSMLRoot . $meeting['slug'] . " target='_blank'>" . $meeting['name'] . "%s</a></td>";
+            $return .= "<td> " . implode($types,' ') . " </td>" ;
+            $return .= "</tr><tr><td>". date("h:i A", strtotime($meeting['time'])) ."</td>";
+            $return .= "<td>" . $notes . "</td>";
+            $return .= "<td>" . $meeting['region']. "</td></tr>";
     }
     $return .=  "</table>";
     return $return;
