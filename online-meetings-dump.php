@@ -74,7 +74,14 @@ function get_online_meetings_phone_list() {
 
             $notes = $meeting['notes'];
             $delimiter = "To join by phone dial:\n\r  ";
-            $notes = substr($notes,strpos($meeting['notes'],$delimiter)+strlen($delimiter), strlen($notes));
+            if (($i = strpos($notes,$delimiter)) !== false)
+                $notes = substr($notes,$i + strlen($delimiter));
+
+            // check for password if access number isn't already there
+            $delimiter = ",,#,,";
+            if ( (strpos($notes, "ACCESS") === false) &&
+                (($i = strpos($meeting['conference_phone'],$delimiter)) !== false))
+                $notes .= " PWD: " . substr($meeting['conference_phone'], $i + strlen($delimiter));
 
             $return .= "</tr><tr><td>" . $day_lookup[$meeting['day']]. "</td>" ;
             $return .= "<td><a href=" . $TSMLRoot . $meeting['slug'] . " target='_blank'>" . $meeting['name'] . "</a></td>";
