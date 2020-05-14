@@ -106,6 +106,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '107' => array("//zoom.us/j/609004671"       ,"(929) 205-6099","609 004 671", NULL),            // VALLEY 8 O'CLOCK
     '126' => array("//nyintergroup.zoom.us/j/253179384", "(929) 436-2866", "253 179 384", "777"),   // HUNTINGTON STA NEW LIFE
     '157' => array("//zoom.us/j/851329515?pwd=STFwM1dOQUZUZXdrTlFZK1hIMDlnUT09","(646) 876-9923", "851 329 515", NULL), // DOING IT YOUNG
+    '168' => array("//zoom.us/j/85068453181","(646) 558-8656 Access #: 535388", "850 6845 3181", "asolution"), // LAKE RONKONKOMA GROUP
     '176' => array("//meet.google.com/gbi-rsmn-odo","(502) 430-2829","389 359 014", NULL), // NEIGHBORHOOD SOBRIETY
     '178' => array("//meet.google.com/nrp-ipeq-utg","(240) 397-5311","541 313 606",NULL),  // THE ONLY REQUIREMENT
     '230' => array("//zoom.us/j/9177565845", NULL, "917 756 5845", "767066"), // PORT JEFF INTO ACTION
@@ -115,7 +116,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '267' => array(NULL,	                        "(605) 313-5315","266 443", NULL),     // ST JAMES SUNRISE REFLECTIONS
     '289' =>      array("//us02web.zoom.us/j/6312588292", "(929) 205-6099", "631 258 8292", NULL), // SMITHTOWN SERENITY
     '289.MN.0' => array("//us02web.zoom.us/j/7173450094", "(929) 205-6099", "717 345 0094", NULL), // SMITHTOWN SERENITY - MONDAY STEP
-    '315' => array("//us04web.zoom.us/j/8727414086", NULL, "872 741 4086", "381 491"),     // WADING RIVER GROUP
+    '315' => array("//us02web.zoom.us/j/8727414086?pwd=SmtrT0Q2NzBWYW1xZFdESXJ1K0dMUT09", NULL, "872 741 4086", "381 491"), // WADING RIVER GROUP
     '375' => array("//zoom.us/join", NULL, "617 988 572","For Password please text\n\r  DeeAnn (631) 495-4912 or\n\r  Besty (631) 525-1828"), // A NEW BEGINNING (WOMEN"S GROUP)
     '437' => array("//zoom.us/join", NULL, "909 301 594","799 633"),                       // THE ONE AND ONLY
     '463' => array("//meet.google.com/vkh-sgbs-mdd","(540) 835-0196","855 547 358", NULL), // BOHO
@@ -146,6 +147,8 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '189.TH.0' => array("//zoom.us/j/604011879?pwd=T2dsZy9IYlphQVlmUm1VSk5VMk5EUT09", NULL, NULL, NULL), // LONGWOOD LOVE & SERVICE
     '238.TU.1' => array("//nyintergroup.zoom.us/j/98985905907?pwd=dDZPUGlxRk14WmdCTUY2Z2d6WHY5dz09","(515) 882-0190", "989 8590 5907", "869937"), // RIVERHEAD GROUP - BB
     '238.FR.0' => array("//nyintergroup.zoom.us/j/95971144125?pwd=R0Fud3h5bGQvRjFCdnN3SGdjYjBJUT09","(929) 436-2866", "959 7114 4125", "023267"), // RIVERHEAD GROUP - BE
+    '285.MN.1' => array("//zoom.us/j/380514478", "(929) 436 2866", "380 514 478", "918 048"),    // SOBRIETY UNLIMITED
+        '285.FR.0' => array("//zoom.us/j/380514478", "(929) 436 2866", "380 514 478", "918 048"),    // SOBRIETY UNLIMITED
     '286.MN.0' => array("//zoom.us/j/9134002353", NULL, "913 400 2353", "Smithtown1"),      // SMITHTOWN AFTERNOON GROUP
     '286.TU.0' => array("//zoom.us/j/397655961",  NULL, "397 655 961",  "letitgo"),         // SMITHTOWN AFTERNOON GROUP
     '286.WD.0' => array("//zoom.us/j/9134002353", NULL, "913 400 2353", "Smithtown1"),      // SMITHTOWN AFTERNOON GROUP
