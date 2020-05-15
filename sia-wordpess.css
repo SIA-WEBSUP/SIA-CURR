@@ -1,0 +1,37 @@
+.list_no_indent {
+    margin: 0 0 1em 0;
+}
+
+.alpha_list_no_indent {
+    list-style-type: lower-alpha;
+    margin: 0 0 1em 0;
+}
+
+.no_bullet_list{
+    list-style-type: none;
+}
+
+thead {
+    display: table-header-grou;
+    vertical-align: middle;
+    border-color: inherit;
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffa0;
+}
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.big-bold-text {
+    font-weight:600;
+    font-size:1.1rem;
+}
+
+.bigger-bold-centered-text {
+    font-weight:600;
+    font-size:1.5rem;
+    text-align:center;
+}
