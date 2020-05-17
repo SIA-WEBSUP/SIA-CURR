@@ -124,6 +124,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '499' => array("//meet.google.com/dqe-eerp-zgv","(570) 554-0159","614 095 850", NULL), // SPIRITUAL CIRCLE
     '530' => array("//meet.google.com/bpy-aijb-aqi","(301) 845-5176","836 521 984", NULL), // STONY BROOK FREETHINKERS
     '553' => array("//zoom.us/j/755341289?pwd",	    NULL, NULL, NULL),                     // AS BILL SEES IT
+    '581' => array("//zoom.us/j/504706298"         ,"(929) 205-6099 ","504 706 298", NULL),// FREEDOM FROM FEAR
     '695' => array("//zoom.us/j/4458142615",NULL,"445 814 2615", "766 504"),               // YOUNG AT HEART IN ISLIP
     '698' => array("//meet.google.com/bpy-aijb-aqi","(301) 845-5176","836 521 984", NULL), // SIA HOSTED
     '699' => array("//meet.google.com/ikn-poem-eba","(978) 435-0386","470 509 931", NULL), // WOMEN'S BACK TO BASICS
