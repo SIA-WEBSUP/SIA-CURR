@@ -110,7 +110,8 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '168' => array("//zoom.us/j/85068453181","(646) 558-8656 Access #: 535388", "850 6845 3181", "asolution"), // LAKE RONKONKOMA GROUP
     '176' => array("//meet.google.com/gbi-rsmn-odo","(502) 430-2829","389 359 014", NULL), // NEIGHBORHOOD SOBRIETY
     '178' => array("//meet.google.com/nrp-ipeq-utg","(240) 397-5311","541 313 606",NULL),  // THE ONLY REQUIREMENT
-    '230' => array("//zoom.us/j/9177565845", NULL, "917 756 5845", "767066"), // PORT JEFF INTO ACTION
+    '230' => array("//zoom.us/j/9177565845", NULL, "917 756 5845", "767066"),              // PORT JEFF INTO ACTION
+    '238' => array("//zoom.us/j/500051173", NULL, "500 051 173", "1234"),                  // AQUEBOGUE FREEDOM GROUP
     '240' => array("//zoom.us/j/4176066161?pwd=Z2Y3cnM4SjJ6dTVXN0RLUVllejJydz09","(417) 606-6161","417 606 6161","631 875 4849"), // REFLECTIONS '90
     '265' => array("//meet.google.com/vgb-qmdb-wxw","(540) 835-0174","364 022 227", NULL), // THE LITTLE RED SCHOOLHOUSE
     '266' => array("//meet.google.com/oop-cugb-edz","(858) 345-6725","612 896 653", NULL), // ST JAMES GROUP
@@ -119,7 +120,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '289.MN.0' => array("//us02web.zoom.us/j/7173450094", "(929) 205-6099", "717 345 0094", NULL), // SMITHTOWN SERENITY - MONDAY STEP
     '315' => array("//us02web.zoom.us/j/8727414086?pwd=SmtrT0Q2NzBWYW1xZFdESXJ1K0dMUT09", NULL, "872 741 4086", "381 491"), // WADING RIVER GROUP
     '375' => array("//zoom.us/join", NULL, "617 988 572","For Password please text\n\r  DeeAnn (631) 495-4912 or\n\r  Besty (631) 525-1828"), // A NEW BEGINNING (WOMEN"S GROUP)
-    '417' => array("//meet.google.com/ivi-ugdp-hhm","(617) 675-4444‬","‪643 247 749 7939", NULL),    // BAY SHORE FREETHINKERS
+    '417' => array("//meet.google.com/ivi-ugdp-hhm","(530) 425-6625 PIN: 447 762 087#‬","‪643 247 749 7939", NULL),    // BAY SHORE FREETHINKERS
     '437' => array("//zoom.us/join", NULL, "909 301 594","799 633"),                       // THE ONE AND ONLY
     '463' => array("//meet.google.com/vkh-sgbs-mdd","(540) 835-0196","855 547 358", NULL), // BOHO
     '499' => array("//meet.google.com/dqe-eerp-zgv","(570) 554-0159","614 095 850", NULL), // SPIRITUAL CIRCLE
