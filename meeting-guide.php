@@ -1,11 +1,6 @@
 <?php
 
-
 include('./sql-connect.php');
-
-// use david v's credentials
-$dbuser		= isset($_GET['jdv']) ? 'suffolk_testing': $dbuser;
-$dbpass 	= isset($_GET['jdv']) ? 'WEstaging2aa47' : $dbpass;
 
 //make sure errors are being reported
 error_reporting(E_ALL);
