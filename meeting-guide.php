@@ -125,12 +125,12 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '698' => array("//meet.google.com/bpy-aijb-aqi","(301) 845-5176","836 521 984", NULL), // SIA HOSTED
     '699' => array("//meet.google.com/ikn-poem-eba","(978) 435-0386","470 509 931", NULL), // WOMEN'S BACK TO BASICS
     // Some meetings have different URLs per meeting
-    '024.MN.0' => array("//stonybrook.zoom.us/j/477350958?pwd=K3FLd2IyMTRKaWVaUnNoYUdNV3N0dz09", NULL, NULL, NULL), // MIDDLE RD - Monday 06:45 PM - Beginners
-    '024.MN.1' => array("//stonybrook.zoom.us/j/393171818?pwd=elFCTFBkSEUxZC9NK3pURUdsQ2YvQT09", NULL, NULL, NULL), // MIDDLE RD - Monday 08:00 PM - Step
-    '024.TU.0' => array("//stonybrook.zoom.us/j/887653372?pwd=b1p3Tnp1QmZJd0M2ekNBQ2V6S1dtQT09", NULL, NULL, NULL), // MIDDLE RD - Tuesday 01:00 PM - Big Book
-    '024.FR.0' => array("//stonybrook.zoom.us/j/101771471?pwd=QmdDUWxIamNMa2x0bHNXNVphYzNVdz09", NULL, NULL, NULL), // MIDDLE RD - Friday 06:45 PM - Young Peoples
-    '024.FR.1' => array("//stonybrook.zoom.us/j/364409520?pwd=TFZNWXJqYzRLdm9vaGkxcjFKT2gxQT09", NULL, NULL, NULL), // MIDDLE RD - Friday 08:00 PM - Open Discussion
-    '024.SA.0' => array("//stonybrook.zoom.us/j/272876168?pwd=bTVEd2ZKK0VkaW4xeXYxaUhWQ2xzUT09", NULL, NULL, NULL), // MIDDLE RD - Saturday 08:00 AM - As Bill Sees It
+    '024.MN.0' => array("//us02web.zoom.us/j/86978146496?pwd=N2ppWFVzWndFcjZYSE5CMlVKK0Jidz09", NULL, "869 7814 6496", "456143"), // MIDDLE RD - Monday 06:45 PM - Beginners
+    '024.MN.1' => array("//us02web.zoom.us/j/82701536190?pwd=RTlidzcwVHB2MU9TaWNvQjlUK29oQT09", NULL, "827 0153 6190", "414151"), // MIDDLE RD - Monday 08:00 PM - Step
+    '024.TU.0' => array("//us02web.zoom.us/j/82122611427?pwd=MTR5OW0yZlR3ZEUwRE5xd1lSWmkwdz09", NULL, "821 2261 1427", "504987"), // MIDDLE RD - Tuesday 01:00 PM - Big Book
+    '024.FR.0' => array("//us02web.zoom.us/j/76390266462?pwd=SmtWOTBUN2NJVnNCaFBZQUFkK05CUT09", NULL, "763 9026 6462", "790124"), // MIDDLE RD - Friday 06:45 PM - Young Peoples
+    '024.FR.1' => array("//us02web.zoom.us/j/85739902972?pwd=SnB5VFVVVGtjR1g2NFV0YVU3QmYwUT09", NULL, "857 3990 2972", "947275"), // MIDDLE RD - Friday 08:00 PM - Open Discussion
+    '024.SA.0' => array("//us02web.zoom.us/j/85817619607?pwd=OWlsWXRsaC9lNmQwdEJMQ1g4aXBKdz09", NULL, "858 1761 9607", "218029"), // MIDDLE RD - Saturday 08:00 AM - As Bill Sees It
     '050.FR.0' => array("//us02web.zoom.us/j/89908618777?pwd=bTQ1V1BHdkp3WWt2MWppTytXL1ppUT09", "(646) 876 9923", "899 0861 8777", "162 994"), // BRENTWOOD GRATITUDE
     '067.TU.1' => array("//zoom.us/j/369437303","(646) 558-8656","369 437 303", "039 778"), // SUNRISE SOBRIETY - 6:45AM
     '067.SA.1' => array("//zoom.us/j/678316314","(646) 558-8656","678 316 314", "003 597"), // SUNRISE SOBRIETY - 6:45AM
