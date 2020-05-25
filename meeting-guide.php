@@ -106,7 +106,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '178' => array("//meet.google.com/nrp-ipeq-utg","(240) 397-5311","541 313 606",NULL),  // THE ONLY REQUIREMENT
     '230' => array("//zoom.us/j/9177565845", NULL, "917 756 5845", "767066"),              // PORT JEFF INTO ACTION
     '239' => array("//zoom.us/j/500051173", NULL, "500 051 173", "1234"),                  // AQUEBOGUE FREEDOM GROUP
-    '240' => array("//zoom.us/j/4176066161?pwd=Z2Y3cnM4SjJ6dTVXN0RLUVllejJydz09","(417) 606-6161","417 606 6161","631 875 4849"), // REFLECTIONS '90
+    '240' => array("//zoom.us/j/4176066161?pwd=Z2Y3cnM4SjJ6dTVXN0RLUVllejJydz09","(646) 558 8656 ","417 606 6161","631 875 4849"), // REFLECTIONS '90
     '265' => array("//meet.google.com/vgb-qmdb-wxw","(540) 835-0174","364 022 227", NULL), // THE LITTLE RED SCHOOLHOUSE
     '266' => array("//meet.google.com/oop-cugb-edz","(858) 345-6725","612 896 653", NULL), // ST JAMES GROUP
     '267' => array(NULL,	                        "(605) 313-5315","266 443", NULL),     // ST JAMES SUNRISE REFLECTIONS
@@ -131,7 +131,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '024.FR.0' => array("//stonybrook.zoom.us/j/101771471?pwd=QmdDUWxIamNMa2x0bHNXNVphYzNVdz09", NULL, NULL, NULL), // MIDDLE RD - Friday 06:45 PM - Young Peoples
     '024.FR.1' => array("//stonybrook.zoom.us/j/364409520?pwd=TFZNWXJqYzRLdm9vaGkxcjFKT2gxQT09", NULL, NULL, NULL), // MIDDLE RD - Friday 08:00 PM - Open Discussion
     '024.SA.0' => array("//stonybrook.zoom.us/j/272876168?pwd=bTVEd2ZKK0VkaW4xeXYxaUhWQ2xzUT09", NULL, NULL, NULL), // MIDDLE RD - Saturday 08:00 AM - As Bill Sees It
-    '050.FR.0'  => array("//us02web.zoom.us/j/89908618777?pwd=bTQ1V1BHdkp3WWt2MWppTytXL1ppUT09", "(646) 876 9923", "899 0861 8777", "162 994"), // BRENTWOOD GRATITUDE
+    '050.FR.0' => array("//us02web.zoom.us/j/89908618777?pwd=bTQ1V1BHdkp3WWt2MWppTytXL1ppUT09", "(646) 876 9923", "899 0861 8777", "162 994"), // BRENTWOOD GRATITUDE
     '067.TU.1' => array("//zoom.us/j/369437303","(646) 558-8656","369 437 303", "039 778"), // SUNRISE SOBRIETY - 6:45AM
     '067.SA.1' => array("//zoom.us/j/678316314","(646) 558-8656","678 316 314", "003 597"), // SUNRISE SOBRIETY - 6:45AM
     '067.SU.1' => array("//zoom.us/j/202548779","(646) 558-8656","202 548 779", "889 048"), // SUNRISE SOBRIETY - 6:45AM
