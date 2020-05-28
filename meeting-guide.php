@@ -124,6 +124,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '695' => array("//zoom.us/j/4458142615",NULL,"445 814 2615", "766 504"),               // YOUNG AT HEART IN ISLIP
     '698' => array("//meet.google.com/bpy-aijb-aqi","(301) 845-5176","836 521 984", NULL), // SIA HOSTED
     '699' => array("//meet.google.com/ikn-poem-eba","(978) 435-0386","470 509 931", NULL), // WOMEN'S BACK TO BASICS
+    '701' => array("/zoom.us/j/661443978", NULL,"661 443 978", NULL),                      // THE SOLUTIONS GROUP ONLINE
     // Some meetings have different URLs per meeting
     '024.MN.0' => array("//us02web.zoom.us/j/86978146496?pwd=N2ppWFVzWndFcjZYSE5CMlVKK0Jidz09", NULL, "869 7814 6496", "456143"), // MIDDLE RD - Monday 06:45 PM - Beginners
     '024.MN.1' => array("//us02web.zoom.us/j/82701536190?pwd=RTlidzcwVHB2MU9TaWNvQjlUK29oQT09", NULL, "827 0153 6190", "414151"), // MIDDLE RD - Monday 08:00 PM - Step
@@ -147,7 +148,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '238.TU.1' => array("//nyintergroup.zoom.us/j/98985905907?pwd=dDZPUGlxRk14WmdCTUY2Z2d6WHY5dz09","(515) 882-0190", "989 8590 5907", "869937"), // RIVERHEAD GROUP - BB
     '238.FR.0' => array("//nyintergroup.zoom.us/j/95971144125?pwd=R0Fud3h5bGQvRjFCdnN3SGdjYjBJUT09","(929) 436-2866", "959 7114 4125", "023267"), // RIVERHEAD GROUP - BE
     '285.MN.1' => array("//zoom.us/j/380514478", "(929) 436 2866", "380 514 478", "918 048"),    // SOBRIETY UNLIMITED
-        '285.FR.0' => array("//zoom.us/j/380514478", "(929) 436 2866", "380 514 478", "918 048"),    // SOBRIETY UNLIMITED
+    '285.FR.0' => array("//zoom.us/j/380514478", "(929) 436 2866", "380 514 478", "918 048"),    // SOBRIETY UNLIMITED
     '286.MN.0' => array("//zoom.us/j/9134002353", NULL, "913 400 2353", "Smithtown1"),      // SMITHTOWN AFTERNOON GROUP
     '286.TU.0' => array("//zoom.us/j/397655961",  NULL, "397 655 961",  "letitgo"),         // SMITHTOWN AFTERNOON GROUP
     '286.WD.0' => array("//zoom.us/j/9134002353", NULL, "913 400 2353", "Smithtown1"),      // SMITHTOWN AFTERNOON GROUP
@@ -181,7 +182,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '392'  => array("//zoom.us/j/361007173",	        NULL,"995 319 793", "#girlsrule"), // Hampton Bays Women's Group
     '433'  => array("//zoom.us/join",	                NULL,"483 772 9818", "980165"),  // Hampton Bays	Spiritual Awakening West - 11th Step Meditation Mtg
     '573.SU.1'  => array("//zoom.us/j/207160635",	        NULL,"207 160 635", "sobriety#1"), // Hampton Bays Hampton Bay Sunday Night Group
-    '192'  => array("//nyintergroup.zoom.us/j/889817053",	NULL,"889 817 053", "MTK1212"), // Montauk Montauk Group
+    '700'  => array("//nyintergroup.zoom.us/j/889817053",	NULL,"889 817 053", "MTK1212"), // Montauk Montauk Group (ONLINE ONLY)
     '190.SA.0'  => array("//zoom.us/j/532272602",	"(929) 436-2866 Access #: 556423","532 272 602", "Wilson1212"), // Montauk The Smith-Wilson Group
     '190.TH.0'  => array("//zoom.us/j/377870869",	"(929) 436-2866 Access #: 240613","377 870 869", "Wilson1212"), // Montauk The Smith-Wilson Group
     '190.TU.0'  => array("//zoom.us/j/116733466",	"(929) 436-2866 Access #: 370982","116 733 466", "Wilson1212"), // Montauk The Smith-Wilson Group
@@ -212,7 +213,7 @@ foreach ($result as $row) {
     $conference_info = NULL;
     $access_num = NULL;
 
-    if ( in_array("TC",$types)) {
+    if ( in_array("TC",$types) || in_array("ONL",$types) ) {
         // meeting_id entry takes precedence over group_id;
         if (array_key_exists($row['meeting_id'],$online_mtgs)) {
             $conference_info = $online_mtgs[$row['meeting_id']];
@@ -220,7 +221,7 @@ foreach ($result as $row) {
             $conference_info = $online_mtgs[$row['group_id']];
         }
         if ($conference_info) {
-            $types[]='ONL';
+            if (!in_array("ONL",$types)) $types[]='ONL';
             $conference_url = $conference_info[0] ? "https:" . $conference_info[0]  : NULL;
             $conference_phone = $conference_info[1];
             $conference_mtgID = $conference_info[2];
