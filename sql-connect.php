@@ -1,7 +1,7 @@
 <?
 // This is the MySQL connect file
-$dbhost = 'localhost';
-$dbuser = 'suffolk_director';
-$dbpass = 'WmR8nu4p';
+$dbhost = 'mysql.suffolkny-aa.org';
+$dbuser = 'suffolknyaaorg';
+$dbpass = '33Kfr5uB';
 $dbname = 'suffolk_meeting';
 ?>
