@@ -33,7 +33,7 @@ $dbpass 	= isset($_GET['jdv']) ? 'WEstaging2aa47' : $dbpass;
 // old table headers
 global $old_headers;
 $old_headers = ['group_id','hc','group_name',
-                'note','note1','note2','note3',
+                'note','note1','note2','note3','status',
                 'town','zone', 'address','locationName','locationNotes',
                 'locationAddress','locationCity', 'locationState','locationZip',
                 'SU','MN','TU','WD','TH','FR','SA',
@@ -44,7 +44,7 @@ $old_headers = ['group_id','hc','group_name',
 // corresponding change to SQL state in create_new_table_PDO()
 global $new_headers;
 $new_headers = ['group_id','meeting_id','hc','group_name',
-                'day','time','types','notes',
+                'day','time','types','notes','status',
                 'town','zone', 'address','locationName','locationNotes',
                 'locationAddress','locationCity', 'locationState','locationZip',
                 'yearlyContact','dateCreated','lastUpdate','print_town_name'];
@@ -52,10 +52,12 @@ $new_headers = ['group_id','meeting_id','hc','group_name',
 //make sure errors are being reported
 error_reporting(E_ALL);
 
-// set up a couple of counters to know what's added
+// set up a some counters to know what's added
 $newMedMtgs = 0;
 $newGLBTMtgs = 0;
-$csuspendedMtgs = 0;
+$cTempClosedMtgs = 0;
+$cReopenedMtgs = 0;
+$cOnlineOnlyMtgs = 0;
 $newHCMtgs = 0;
 
 include "myutil.php";
@@ -105,12 +107,6 @@ foreach ($old_table as $recnum=>$row) {
 
     AssertOldTableHeaders($row);
 
-/*
-    // TEMP - SKIP MEETINGS AFFECTED BY COVID-19 ISSUES !!!
-    if (strpos($row['locationNotes'], "SUSPENDED") !== false) {
-        continue;
-    }
-*/
     // copy data iff headers exist in old and new table
     foreach ($new_headers as $k) {
         if (in_array($k,$old_headers)) {
@@ -148,12 +144,27 @@ foreach ($old_table as $recnum=>$row) {
                 }
 
                 // Look for meetings with SUSPENDED in locationNotes, add TC to types !!!
-                if ((strpos(strtoupper($row['locationNotes']), "SUSPENDED") !== false)  ||
-                    (strpos(strtoupper($mtg['notes']), "TEMP CLOSED") !== false)        ||
-                    (strpos(strtoupper($row['locationNotes']), "MEETINGS MOVED ONLINE") !== false)){
-                    $csuspendedMtgs++;
+                if ((strpos(strtoupper($new_row['status']), "TEMP CLOSED") !== false)) {
+                    $cTempClosedMtgs++;
                     $mtg['types'] .= " TC";
                 }
+
+                // Look for ONLINE ONLY MEETING
+                if (strpos(strtoupper($new_row['status']), "ONLINE ONLY") !== false) {
+                    $cOnlineOnlyMtgs++;
+                    $mtg['types'] .= " ONL";
+                }
+
+                // Look for meetings with SUSPENDED in locationNotes, add TC to types !!!
+                if ((strpos(strtoupper($new_row['status']), "RE-OPENED") !== false)) {
+                    $cReopenedMtgs++;
+                    // use $row otherwise you'll have multiple additions of '** **'
+                    $new_row['group_name'] = '** ' . $row['group_name'] . ' ** ';
+                    //$new_row['locationNotes']  = $row['locationNotes'] . "\n\r\n\r** THIS GROUP HAS CONFIRMED THAT THEY'VE RE-OPENED **";
+                    $mtg['notes'] .= "\n\r\n\r** THIS GROUP HAS CONFIRMED THAT THEY'VE RE-OPENED **";
+                    $mtg['types'] .= " FF";
+                }
+
 
                 // if 'hc'=='yes', add X to types
                 if (strtoupper($new_row['hc']) == 'YES') {
@@ -203,8 +214,10 @@ try {
 // output new table
 echo '<br><h1>Success!!</h1>';
 
-// how many new MED and X meetings were added
-printf("marked <b>%d</b> meetings as SUSPENDED<br>",$csuspendedMtgs);
+// how many new TC, ONL, MED, GLBT and X meetings were added
+printf("marked <b>%d</b> meetings as ONLINE ONLY<br>",$cOnlineOnlyMtgs);
+printf("marked <b>%d</b> meetings as SUSPENDED<br>",$cTempClosedMtgs);
+printf("marked <b>%d</b> meetings as RE-OPENED<br>",$cReopenedMtgs);
 printf("added <b>%d</b> new meditation meetings<br>",$newMedMtgs);
 printf("added <b>%d</b> new GLBT meetings<br>",$newGLBTMtgs);
 printf("added <b>%d</b> new handicap accessible meetings<br>",$newHCMtgs);
@@ -225,6 +238,7 @@ function create_new_table_PDO($pdo) {
             `time` TIME NOT NULL,
             `types` VARCHAR(25) DEFAULT NULL,
             `notes` VARCHAR(100) DEFAULT NULL,
+            `status` VARCHAR(50) DEFAULT NULL,
             `town` VARCHAR(255) NOT NULL,
             `zone` INT(2) DEFAULT NULL,
             `address` VARCHAR(150) DEFAULT NULL,
