@@ -163,9 +163,9 @@ foreach ($old_table as $recnum=>$row) {
                     $new_row['group_name'] = '** ' . $row['group_name'] . ' ** ';
                     //$new_row['locationNotes']  = $row['locationNotes'] . "\n\r\n\r** THIS GROUP HAS CONFIRMED THAT THEY'VE RE-OPENED **";
 
-                    $BYO = array_map(function ($s) { return ucfirst($s);},
-                        array_intersect(["coffee", "book", "chair",],
-                            explode(',', strtolower($new_row['status']))));
+                    $BYO = array_map(function ($s) {return ucfirst($s);},
+                        array_intersect([ "coffee", "book", "chair",],
+                            explode(',',strtolower($new_row['status']))));
                     if ($BYO) {
                         $mtg['notes'] .= "<br><br>** COVID notes: BYO " . implode(" / ", $BYO);
                     }
@@ -236,6 +236,9 @@ printf("added <b>%d</b> new handicap accessible meetings<br>",$newHCMtgs);
 printf("converted <b>%d</b> group rows to <b>%d</b> meeting rows<br>", count($old_table), count($return));
 
 print_as_table($return);
+
+function mystrtoupper($s) {strtoupper($s);}
+
 
 function create_new_table_PDO($pdo) {
     $sql_create_new_table = <<<SQL_CREATE_NEW_TABLE
