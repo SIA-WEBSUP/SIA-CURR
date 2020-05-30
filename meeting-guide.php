@@ -74,12 +74,14 @@ $type_lookup = array(
 	'T' => 'TR', // Tradition
     'TC' => 'TC', // Temp Closure
 	'TOPIC' => 'D', // Topic
-	'W' => 'W', // Womens
+ 	'W' => 'W', // Womens
 	'WC' => array('W', 'C'), // Womens, Closed
 	'WCD' => array('W', 'C', 'D'), // Womens, Closed, Discussion
 	'WS' => array('W', 'ST'), // Womens, Step Meeting
 	'YP' => 'Y', // Young People
 	'X' => 'X', // Handicap
+    'UNK' => 'UNK', // COVID Reopen Status Unknown
+    'ROPN' => 'ROPN' // COVID Reopen Status Confirmed
 );
 
 $type_keys = array_keys($type_lookup);

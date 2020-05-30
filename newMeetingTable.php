@@ -58,6 +58,7 @@ $newGLBTMtgs = 0;
 $cTempClosedMtgs = 0;
 $cReopenedMtgs = 0;
 $cOnlineOnlyMtgs = 0;
+$cStatusUnknownMtgs = 0;
 $newHCMtgs = 0;
 
 include "myutil.php";
@@ -147,22 +148,37 @@ foreach ($old_table as $recnum=>$row) {
                 if ((strpos(strtoupper($new_row['status']), "TEMP CLOSED") !== false)) {
                     $cTempClosedMtgs++;
                     $mtg['types'] .= " TC";
-                }
+                } else
 
                 // Look for ONLINE ONLY MEETING
                 if (strpos(strtoupper($new_row['status']), "ONLINE ONLY") !== false) {
                     $cOnlineOnlyMtgs++;
                     $mtg['types'] .= " ONL";
-                }
+                } else
 
                 // Look for meetings with SUSPENDED in locationNotes, add TC to types !!!
-                if ((strpos(strtoupper($new_row['status']), "RE-OPENED") !== false)) {
+                if ((strpos(strtoupper($new_row['status']), "REOPENED") !== false)) {
                     $cReopenedMtgs++;
                     // use $row otherwise you'll have multiple additions of '** **'
                     $new_row['group_name'] = '** ' . $row['group_name'] . ' ** ';
                     //$new_row['locationNotes']  = $row['locationNotes'] . "\n\r\n\r** THIS GROUP HAS CONFIRMED THAT THEY'VE RE-OPENED **";
-                    $mtg['notes'] .= "\n\r\n\r** THIS GROUP HAS CONFIRMED THAT THEY'VE RE-OPENED **";
-                    $mtg['types'] .= " FF";
+
+                    $BYOS = [ "coffee", "book", "chair",];
+                    //$BYO = array_intersect($BYOS, explode(',',$new_row['status']));
+                    $BYO = array_map(function ($s) {return ucfirst($s);}, array_intersect([ "coffee", "book", "chair",],explode(',',strtolower($new_row['status']))));
+                    var_dump($BYOS);var_dump($BYO);
+//                   foreach ($BYOS as $b) {
+//                       if (strpos(strtoupper($new_row['status']), strtoupper($b)) !== false)
+//                           $BYO[] = $b;
+//                   }
+                    if ($BYO) {
+                        $mtg['notes'] .= "<br><br>** COVID notes: BYO " . implode(" / ", $BYO);
+                    }
+                    $mtg['notes'] .= "<br><br>** THIS GROUP HAS CONFIRMED THAT THEY'VE RE-OPENED **";
+                    $mtg['types'] .= " ROPN";
+                } else {
+                    $cStatusUnknownMtgs++;
+                    $mtg['types'] .= " UNK";
                 }
 
 
@@ -214,10 +230,11 @@ try {
 // output new table
 echo '<br><h1>Success!!</h1>';
 
-// how many new TC, ONL, MED, GLBT and X meetings were added
+// counters for different types of meetings
 printf("marked <b>%d</b> meetings as ONLINE ONLY<br>",$cOnlineOnlyMtgs);
 printf("marked <b>%d</b> meetings as SUSPENDED<br>",$cTempClosedMtgs);
 printf("marked <b>%d</b> meetings as RE-OPENED<br>",$cReopenedMtgs);
+printf("marked <b>%d</b> meetings as COVID STATUS UNKNOWN<br>",$cStatusUnknownMtgs);
 printf("added <b>%d</b> new meditation meetings<br>",$newMedMtgs);
 printf("added <b>%d</b> new GLBT meetings<br>",$newGLBTMtgs);
 printf("added <b>%d</b> new handicap accessible meetings<br>",$newHCMtgs);
