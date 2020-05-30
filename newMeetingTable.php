@@ -161,16 +161,26 @@ foreach ($old_table as $recnum=>$row) {
                     $cReopenedMtgs++;
                     // use $row otherwise you'll have multiple additions of '** **'
                     $new_row['group_name'] = '** ' . $row['group_name'] . ' ** ';
+                    $mtg['notes'] .= "<br><br>** COVID RE-OPENED CONFIRMED **";
+                    $mtg['types'] .= " ROPN";
                     //$new_row['locationNotes']  = $row['locationNotes'] . "\n\r\n\r** THIS GROUP HAS CONFIRMED THAT THEY'VE RE-OPENED **";
 
+                    // Required Stuff
+                    $BYO = array_map(function ($s) { return ucfirst($s);},
+                        array_intersect(["mask",],
+                            explode(' ', strtolower($new_row['status']))));
+                    if ($BYO) {
+                        $mtg['notes'] .= "<br><br>** COVID REQUIRED: " . implode(" / ", $BYO);
+                    }
+
+                    // BYO Stuff
                     $BYO = array_map(function ($s) { return ucfirst($s);},
                         array_intersect(["coffee", "book", "chair",],
-                            explode(',', strtolower($new_row['status']))));
+                            explode(' ', strtolower($new_row['status']))));
                     if ($BYO) {
-                        $mtg['notes'] .= "<br><br>** COVID notes: BYO " . implode(" / ", $BYO);
+                        $mtg['notes'] .= "<br><br>** COVID BYO: " . implode(" / ", $BYO);
                     }
-                    $mtg['notes'] .= "<br><br>** THIS GROUP HAS CONFIRMED THAT THEY'VE RE-OPENED **";
-                    $mtg['types'] .= " ROPN";
+
                 } else {
                     $cStatusUnknownMtgs++;
                     $mtg['types'] .= " UNK";
