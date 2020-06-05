@@ -126,8 +126,9 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '695' => array("//zoom.us/j/4458142615",NULL,"445 814 2615", "766 504"),               // YOUNG AT HEART IN ISLIP
     '698' => array("//meet.google.com/bpy-aijb-aqi","(301) 845-5176","836 521 984", NULL), // SIA HOSTED
     '699' => array("//meet.google.com/ikn-poem-eba","(978) 435-0386","470 509 931", NULL), // WOMEN'S BACK TO BASICS
-    '701' => array("//zoom.us/j/661443978", NULL,"661 443 978", NULL),                      // THE SOLUTIONS GROUP ONLINE
-    '702' => array("//zoom.us/j/500561044", NULL,"500 561 044", "12steps"),                 // SUFFOLK ONLINE
+    '701' => array("//zoom.us/j/661443978", NULL,"661 443 978", NULL),                     // THE SOLUTIONS GROUP ONLINE
+    '702' => array("//zoom.us/j/500561044", NULL,"500 561 044", "12steps"),                // SUFFOLK ONLINE
+    '703' => array("//zoom.us/j/84592881281", NULL,"845 9288 1281", NULL),                 // HOLBROOK LOVE N' SHARE (ONLINE)
     // Some meetings have different URLs per meeting
     '024.MN.0' => array("//us02web.zoom.us/j/86978146496?pwd=N2ppWFVzWndFcjZYSE5CMlVKK0Jidz09", NULL, "869 7814 6496", "456143"), // MIDDLE RD - Monday 06:45 PM - Beginners
     '024.MN.1' => array("//us02web.zoom.us/j/82701536190?pwd=RTlidzcwVHB2MU9TaWNvQjlUK29oQT09", NULL, "827 0153 6190", "414151"), // MIDDLE RD - Monday 08:00 PM - Step
