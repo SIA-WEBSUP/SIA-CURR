@@ -96,7 +96,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '49'  => array("//zoom.us/j/96572842469"     ,"(646) 558-8656","965 7284 2469", NULL),          // BRENTWOOD LADIES GROUP
     '67'  => array("//zoom.us/j/691630673"       ,"(646) 558-8656","691 630 673","850 366"),        // SUNRISE SOBRIETY - 6:45AM
     '82'  => array("//zoom.us/j/6311431023"      ,"(631) 766-3661","631 143 1023", "Cutchogue"),    // CUTCHOGUE SUNDAY
-  //'85'  => array("//us04web.zoom.us/j/742133476", NULL, NULL, NULL),                              // HOME FOR DINNER
     '104' => array("//nyintergroup.zoom.us/j/96853910721?pwd=L1R5bmFDdVoyUFM2Szh5dUZXZU10UT09","(929) 436-2866", "968 5391 0721", "521231"), // EYE OPENER
     '104.SU.0' => array("//nyintergroup.zoom.us/j/98293111250?pwd=N3orUFNBNFpSVjZiV1JTM0Y5TVNZZz09","(929) 436-2866", "982 9311 1250", "521231"), // EYE OPENER - MENS
     '104.SU.1' => array("//nyintergroup.zoom.us/j/94537387870?pwd=TWhvbjcxTzJzM2VhakQ2bEIydmFqZz09","(929) 436-2866", "945 3738 7870", "788615"), // EYE OPENER - WOMENS
@@ -161,9 +160,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '307.TH.0' => array("//meet.google.com/sps-xjqn-uiu","(614) 602-6125","848 749 635", NULL),  // STONY BROOK UNITY GRP
     '422.FR.0' => array("//meet.google.com/wno-mhit-zmk","(402) 824-0258","705 336 354", NULL),  // ROCKY POINT UNITY GRP
     '422.SA.0' => array("//meet.google.com/wno-mhit-zmk","(402) 824-0258","705 336 354", NULL),  // ROCKY POINT UNITY GRP
-    //'584.TH.0' => array("//meet.google.com/mpt-bxbd-syv","(573) 667-3257","961 358 515", NULL), // OPEN BOOKS
-    //'049.SU.0' => array("//zoom.us/j/604823002", "(646) 558-8656","604 823 002", NULL), // LADIES GROUP - Sun CD
-    //'049.WD.0' => array("//zoom.us/j/667893124", "(646) 558-8656","667 893 124", NULL), // LADIES GROUP - Wed Step
 
     // East End Meetings:
     '1'  => array("//zoom.us/j/812452820",	            NULL,"812 452 820", NULL),      // Ammagansett Sunday Beginners
