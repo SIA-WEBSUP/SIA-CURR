@@ -158,8 +158,12 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '286.FR.0' => array("//zoom.us/j/9134002353", NULL, "913 400 2353", "Smithtown1"),      // SMITHTOWN AFTERNOON GROUP
     '286.SA.0' => array("//zoom.us/j/9134002353", NULL, "913 400 2353", "Smithtown1"),      // SMITHTOWN AFTERNOON GROUP
     '307.TH.0' => array("//meet.google.com/sps-xjqn-uiu","(614) 602-6125","848 749 635", NULL),  // STONY BROOK UNITY GRP
+    '366.SU.0'  => array("//zoom.us/j/790355954", NULL, "790 355 954", "cowharbor"),        // NORTHPORT COW HARBOR
+    '366.TU.0'  => array("//zoom.us/j/751707060", NULL, "751 707 060", "cowharbor"),        // NORTHPORT COW HARBOR
+    '366.SA.0'  => array("//zoom.us/j/360801140", NULL, "360 801 140", "cowharbor"),        // NORTHPORT COW HARBOR
     '422.FR.0' => array("//meet.google.com/wno-mhit-zmk","(402) 824-0258","705 336 354", NULL),  // ROCKY POINT UNITY GRP
     '422.SA.0' => array("//meet.google.com/wno-mhit-zmk","(402) 824-0258","705 336 354", NULL),  // ROCKY POINT UNITY GRP
+    '591.MN.0'  => array("//zoom.us/j/531387530", NULL, "531 387 530", "cowharbor"),        // NORTHPORT COW HARBOR
 
     // East End Meetings:
     '1'  => array("//zoom.us/j/812452820",	            NULL,"812 452 820", NULL),      // Ammagansett Sunday Beginners
