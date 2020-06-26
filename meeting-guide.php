@@ -99,8 +99,8 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '104' => array("//nyintergroup.zoom.us/j/96853910721?pwd=L1R5bmFDdVoyUFM2Szh5dUZXZU10UT09","(929) 436-2866", "968 5391 0721", "521231"), // EYE OPENER
     '104.SU.0' => array("//nyintergroup.zoom.us/j/98293111250?pwd=N3orUFNBNFpSVjZiV1JTM0Y5TVNZZz09","(929) 436-2866", "982 9311 1250", "521231"), // EYE OPENER - MENS
     '104.SU.1' => array("//nyintergroup.zoom.us/j/94537387870?pwd=TWhvbjcxTzJzM2VhakQ2bEIydmFqZz09","(929) 436-2866", "945 3738 7870", "788615"), // EYE OPENER - WOMENS
-    '107' => array("//zoom.us/j/609004671"       ,"(929) 205-6099","609 004 671", NULL),            // VALLEY 8 O'CLOCK
-    '142' => array("//zoom.us/j/7354181748"      ,"(929) 205-6099","735 418 1748", NULL),           // TOUCHSTONES GROUP
+    '107' => array("//zoom.us/j/609004671"       ,"(929) 205-6099","609 004 671", NULL),   // VALLEY 8 O'CLOCK
+    '142' => array("//zoom.us/j/7354181748"      , NULL, "735 418 1748", "HAUPPAUGE"),     // TOUCHSTONES GROUP
     '126' => array("//nyintergroup.zoom.us/j/253179384", "(929) 436-2866", "253 179 384", "777"),   // HUNTINGTON STA NEW LIFE
     '157' => array("//zoom.us/j/851329515?pwd=STFwM1dOQUZUZXdrTlFZK1hIMDlnUT09","(646) 876-9923", "851 329 515", NULL), // DOING IT YOUNG
     '168' => array("//zoom.us/j/85068453181","(646) 558-8656 Access #: 535388", "850 6845 3181", "asolution"), // LAKE RONKONKOMA GROUP
