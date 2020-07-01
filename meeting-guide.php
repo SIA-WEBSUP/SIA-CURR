@@ -96,9 +96,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '49'  => array("//zoom.us/j/96572842469"     ,"(646) 558-8656","965 7284 2469", NULL),          // BRENTWOOD LADIES GROUP
     '67'  => array("//zoom.us/j/691630673"       ,"(646) 558-8656","691 630 673","850 366"),        // SUNRISE SOBRIETY - 6:45AM
     '82'  => array("//zoom.us/j/6311431023"      ,"(631) 766-3661","631 143 1023", "Cutchogue"),    // CUTCHOGUE SUNDAY
-    '104' => array("//nyintergroup.zoom.us/j/96853910721?pwd=L1R5bmFDdVoyUFM2Szh5dUZXZU10UT09","(929) 436-2866", "968 5391 0721", "521231"), // EYE OPENER
-    '104.SU.0' => array("//nyintergroup.zoom.us/j/98293111250?pwd=N3orUFNBNFpSVjZiV1JTM0Y5TVNZZz09","(929) 436-2866", "982 9311 1250", "521231"), // EYE OPENER - MENS
-    '104.SU.1' => array("//nyintergroup.zoom.us/j/94537387870?pwd=TWhvbjcxTzJzM2VhakQ2bEIydmFqZz09","(929) 436-2866", "945 3738 7870", "788615"), // EYE OPENER - WOMENS
     '107' => array("//zoom.us/j/609004671"       ,"(929) 205-6099","609 004 671", NULL),   // VALLEY 8 O'CLOCK
     '142' => array("//zoom.us/j/7354181748"      , NULL, "735 418 1748", "HAUPPAUGE"),     // TOUCHSTONES GROUP
     '126' => array("//nyintergroup.zoom.us/j/253179384", "(929) 436-2866", "253 179 384", "777"),   // HUNTINGTON STA NEW LIFE
@@ -130,6 +127,10 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '701' => array("//zoom.us/j/661443978", NULL,"661 443 978", NULL),                     // THE SOLUTIONS GROUP ONLINE
     '702' => array("//zoom.us/j/500561044", NULL,"500 561 044", "12steps"),                // SUFFOLK ONLINE
     '703' => array("//zoom.us/j/84592881281", NULL,"845 9288 1281", NULL),                 // HOLBROOK LOVE N' SHARE (ONLINE)
+    '704' => array("//nyintergroup.zoom.us/j/96853910721?pwd=L1R5bmFDdVoyUFM2Szh5dUZXZU10UT09","(929) 436-2866", "968 5391 0721", "521231"), // EYE OPENER
+    '704.SU.0' => array("//nyintergroup.zoom.us/j/98293111250?pwd=N3orUFNBNFpSVjZiV1JTM0Y5TVNZZz09","(929) 436-2866", "982 9311 1250", "521231"), // EYE OPENER - MENS
+    '704.SU.1' => array("//nyintergroup.zoom.us/j/94537387870?pwd=TWhvbjcxTzJzM2VhakQ2bEIydmFqZz09","(929) 436-2866", "945 3738 7870", "788615"), // EYE OPENER - WOMENS
+
     // Some meetings have different URLs per meeting
     '024.MN.0' => array("//us02web.zoom.us/j/86978146496?pwd=N2ppWFVzWndFcjZYSE5CMlVKK0Jidz09", NULL, "869 7814 6496", "456143"), // MIDDLE RD - Monday 06:45 PM - Beginners
     '024.MN.1' => array("//us02web.zoom.us/j/82701536190?pwd=RTlidzcwVHB2MU9TaWNvQjlUK29oQT09", NULL, "827 0153 6190", "414151"), // MIDDLE RD - Monday 08:00 PM - Step
