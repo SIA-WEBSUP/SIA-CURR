@@ -128,42 +128,60 @@ foreach ($old_table as $recnum=>$row) {
                 // construct meeting_id from group_id, dayShort, and index of meeting for this day
                 $meeting_id = sprintf("%03d.%s.%d", $new_row['group_id'], $dayShort, $imtg);
 
+                // we're going to do a bunch of comparisons
+                // let's make some things upper case once at the top
+                // not we make things lower case again for some comparisons below
+
+                $mtg_notes =  strtoupper($mtg['notes']);
+                $new_row['group_name'] = strtoupper($new_row['group_name']);
+                $new_row['status'] = strtoupper($new_row['status']);
+
                 // if 'meditation' or '11th step' occurs in notes or group name, add MED and 11 to types
-                if ((strpos(strtoupper($mtg['notes']), "MEDITATION") !== false) ||
-                    (strpos(strtoupper($new_row['group_name']), "MEDITATION") !== false) ||
-                    (strpos(strtoupper($mtg['notes']), "11TH STEP") !== false) ||
-                    (strpos(strtoupper($new_row['group_name']), "11TH STEP") !== false) ) {
+                if ((strpos($mtg_notes, "MEDITATION") !== false) ||
+                    (strpos($new_row['group_name'], "MEDITATION") !== false) ||
+                    (strpos($mtg_notes, "11TH STEP") !== false) ||
+                    (strpos($new_row['group_name'], "11TH STEP") !== false) ) {
                     $newMedMtgs++;
                     $mtg['types'] .= " MED 11";
                 }
 
                 // if 'GLBT' occurs in notes or group name, add GLBT to types
-                if ((strpos(strtoupper($mtg['notes']), "GLBT") !== false) ||
-                    (strpos(strtoupper($new_row['group_name']), "GLBT") !== false)) {
+                if ((strpos($mtg_notes, "GLBT") !== false) ||
+                    (strpos($new_row['group_name'], "GLBT") !== false)) {
                     $newGLBTMtgs++;
                     $mtg['types'] .= " GLBT";
                 }
 
-                // Look for meetings with SUSPENDED in locationNotes, add TC to types !!!
-                if ((strpos(strtoupper($new_row['status']), "TEMP CLOSED") !== false)) {
+                // TEMP CLOSED meetings
+                if ((strpos($new_row['status'], "TEMP CLOSED") !== false)) {
                     $cTempClosedMtgs++;
                     $mtg['types'] .= " TC";
                 } else
 
-                // Look for ONLINE ONLY MEETING
-                if (strpos(strtoupper($new_row['status']), "ONLINE ONLY") !== false) {
+                // ONLINE ONLY meetings
+                if (strpos($new_row['status'], "ONLINE ONLY") !== false) {
                     $cOnlineOnlyMtgs++;
                     $mtg['types'] .= " ONL";
                 } else
 
-                // Look for meetings with SUSPENDED in locationNotes, add TC to types !!!
-                if ((strpos(strtoupper($new_row['status']), "REOPENED") !== false)) {
+                // REOPENED meetings
+                if (strpos($new_row['status'], "REOPENED") !== false) {
                     $cReopenedMtgs++;
                     // use $row otherwise you'll have multiple additions of '** **'
                     $new_row['group_name'] = '** ' . $row['group_name'] . ' ** ';
                     $new_row['locationNotes']  = $row['locationNotes'] . "<br><br>** COVID RE-OPENED CONFIRMED **";
                     //$mtg['notes'] .= "<br><br>** COVID RE-OPENED CONFIRMED **";
                     $mtg['types'] .= " ROPN";
+
+                    // HYBRID
+                    if(strpos($new_row['status'], "HYBRID") != false) {
+                        $mtg['notes']  = $row['locationNotes'] . "<br><br>HYBRID MEETING";
+                    }
+
+                    // Meeting OUTDOORS
+                    if(strpos($new_row['status'], "OUTDOORS") != false) {
+                        $mtg['notes']  = $row['locationNotes'] . "<br><br>OUTDOOR MEETING";
+                    }
 
                     // Required Stuff
                     $BYO = array_map(function ($s) { return ucfirst($s);},

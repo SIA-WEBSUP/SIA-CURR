@@ -120,7 +120,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '417' => array("//meet.google.com/ivi-ugdp-hhm","(530) 425-6625 PIN: 447 762 087#‬","‪643 247 749 7939", NULL),    // BAY SHORE FREETHINKERS
     '437' => array("//zoom.us/join", NULL, "909 301 594","799 633"),                       // THE ONE AND ONLY
     '499' => array("//meet.google.com/dqe-eerp-zgv","(570) 554-0159","614 095 850", NULL), // SPIRITUAL CIRCLE
-    '530' => array("https://us02web.zoom.us/j/84350888563?pwd=MGZnaGNiYnEvQVRCT2RLZXdtVC8vdz09","(929) 436-2866","843 5088 8563", "297 082"), // STONY BROOK FREETHINKERS
+    '530' => array("//us02web.zoom.us/j/84350888563?pwd=MGZnaGNiYnEvQVRCT2RLZXdtVC8vdz09","(929) 436-2866","843 5088 8563", "297 082"), // STONY BROOK FREETHINKERS
 //    '530' => array("//meet.google.com/bpy-aijb-aqi","(301) 845-5176","836 521 984", NULL), // STONY BROOK FREETHINKERS
     '553' => array("//zoom.us/j/755341289?pwd",	    NULL, NULL, NULL),                     // AS BILL SEES IT
     '581' => array("//zoom.us/j/504706298"         ,"(929) 205-6099 ","504 706 298", NULL),// FREEDOM FROM FEAR
@@ -186,7 +186,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '094.WD.0'  => array("//nyintergroup.zoom.us/j/94867360733",	NULL,"948 6736 0733", "Green123"), // East Hampton Keep it Green
     '392'  => array("//zoom.us/j/361007173",	        NULL,"995 319 793", "#girlsrule"), // Hampton Bays Women's Group
     '433'  => array("//zoom.us/join",	                NULL,"483 772 9818", "980165"),  // Hampton Bays	Spiritual Awakening West - 11th Step Meditation Mtg
-    '573.SU.1'  => array("//zoom.us/j/207160635",	        NULL,"207 160 635", "sobriety#1"), // Hampton Bays Hampton Bay Sunday Night Group
+    '573.SU.2'  => array("//zoom.us/j/207160635",	        NULL,"207 160 635", "sobriety#1"), // Hampton Bays Hampton Bay Sunday Night Group
     '700'  => array("//nyintergroup.zoom.us/j/889817053",	NULL,"889 817 053", "MTK1212"), // Montauk Montauk Group (ONLINE ONLY)
     '190.SA.0'  => array("//zoom.us/j/532272602",	"(929) 436-2866 Access #: 556423","532 272 602", "Wilson1212"), // Montauk The Smith-Wilson Group
     '190.TH.0'  => array("//zoom.us/j/377870869",	"(929) 436-2866 Access #: 240613","377 870 869", "Wilson1212"), // Montauk The Smith-Wilson Group
@@ -233,6 +233,11 @@ foreach ($result as $row) {
             $conference_pwd = $conference_info[3];
 
             if (strlen($row['notes'])>0) $row['notes'] .= "\n\r"; // Assume we'll be appending something
+
+            // BAD BAD HACK
+            // if this in an online meeting that's part of a group that has reopened
+            // clear out the notes ... oops ... easiest way to take care of this special case
+            if (in_array("ROPN",$types)) $row['notes'] = '';
 
             // append mtgID to meeting notes
             if ($conference_mtgID && strpos($conference_url, "zoom.")) {
