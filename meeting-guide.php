@@ -94,7 +94,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     // 'GROUPID'  => array("conf_URL","conf_telephone","mtg_id", "pwd"), // GROUP NAME
     '37'  => array("//zoom.us/j/6052451111?pwd=c085c0o15V1RWWWlBNkFYTmNVUE93UT09",	"(929) 205-6099","605 245 1111", "428 950"), // BAY SHORE SUNRISE SOBRIETY
     '49'  => array("//zoom.us/j/96572842469"     ,"(646) 558-8656","965 7284 2469", NULL),          // BRENTWOOD LADIES GROUP
-    '67'  => array("//zoom.us/j/691630673"       ,"(646) 558-8656","691 630 673","850 366"),        // SUNRISE SOBRIETY - 6:45AM
     '82'  => array("//zoom.us/j/6311431023"      ,"(631) 766-3661","631 143 1023", "Cutchogue"),    // CUTCHOGUE SUNDAY
     '107' => array("//zoom.us/j/609004671"       ,"(929) 205-6099","609 004 671", NULL),   // VALLEY 8 O'CLOCK
     '142' => array("//zoom.us/j/7354181748"      , NULL, "735 418 1748", "HAUPPAUGE"),     // TOUCHSTONES GROUP
@@ -114,7 +113,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '315' => array("//us02web.zoom.us/j/8727414086?pwd=SmtrT0Q2NzBWYW1xZFdESXJ1K0dMUT09", NULL, "872 741 4086", "381 491"), // WADING RIVER GROUP
     '351' => array("//us02web.zoom.us/j/86239050147?pwd=NmhOSkxLbXdMYlVYV1BDclhSOG50dz09", "(646) 558-8656", "862 3905 0147","502 128"), // SOUTHAMPTON MONDAY CLOSED DISCUSSION GROUP
     '375' => array("//zoom.us/join", NULL, "617 988 572","For Password please text\n\r  DeeAnn (631) 495-4912 or\n\r  Besty (631) 525-1828"), // A NEW BEGINNING (WOMEN"S GROUP)
-    '417' => array("//meet.google.com/ivi-ugdp-hhm","(530) 425-6625 PIN: 447 762 087#‬","‪643 247 749 7939", NULL),    // BAY SHORE FREETHINKERS
+    '417' => array("//meet.google.com/ivi-ugdp-hhm","(530) 425-6625‬","447 762 087", NULL),    // BAY SHORE FREETHINKERS
     '437' => array("//zoom.us/join", NULL, "909 301 594","799 633"),                       // THE ONE AND ONLY
     '499' => array("//meet.google.com/dqe-eerp-zgv","(570) 554-0159","614 095 850", NULL), // SPIRITUAL CIRCLE
     '530' => array("//us02web.zoom.us/j/84350888563?pwd=MGZnaGNiYnEvQVRCT2RLZXdtVC8vdz09","(929) 436-2866","843 5088 8563", "297 082"), // STONY BROOK FREETHINKERS
@@ -130,6 +129,10 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '704' => array("//nyintergroup.zoom.us/j/96853910721?pwd=L1R5bmFDdVoyUFM2Szh5dUZXZU10UT09","(929) 436-2866", "968 5391 0721", "521231"), // EYE OPENER
     '704.SU.0' => array("//nyintergroup.zoom.us/j/98293111250?pwd=N3orUFNBNFpSVjZiV1JTM0Y5TVNZZz09","(929) 436-2866", "982 9311 1250", "521231"), // EYE OPENER - MENS
     '704.SU.1' => array("//nyintergroup.zoom.us/j/94537387870?pwd=TWhvbjcxTzJzM2VhakQ2bEIydmFqZz09","(929) 436-2866", "945 3738 7870", "788615"), // EYE OPENER - WOMENS
+    '705'      => array("//zoom.us/j/369437303","(646) 558-8656","369 437 303", "039 778"), // SUNRISE SOBRIETY - 6:45AM
+    '705.TU.1' => array("//zoom.us/j/691630673","(646) 558-8656","691 630 673", "850 366"), // SUNRISE SOBRIETY - TUES 7AM
+    '705.SA.1' => array("//zoom.us/j/678316314","(646) 558-8656","678 316 314", "003 597"), // SUNRISE SOBRIETY - WOMENS 8AM
+    '705.SU.1' => array("//zoom.us/j/202548779","(646) 558-8656","202 548 779", "889 048"), // SUNRISE SOBRIETY - MENS 8AM
 
     // Some meetings have different URLs per meeting
     '024.MN.0' => array("//us02web.zoom.us/j/86978146496?pwd=N2ppWFVzWndFcjZYSE5CMlVKK0Jidz09", NULL, "869 7814 6496", "456143"), // MIDDLE RD - Monday 06:45 PM - Beginners
@@ -138,9 +141,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '024.FR.0' => array("//us02web.zoom.us/j/76390266462?pwd=SmtWOTBUN2NJVnNCaFBZQUFkK05CUT09", NULL, "763 9026 6462", "790124"), // MIDDLE RD - Friday 06:45 PM - Young Peoples
     '024.FR.1' => array("//us02web.zoom.us/j/85739902972?pwd=SnB5VFVVVGtjR1g2NFV0YVU3QmYwUT09", NULL, "857 3990 2972", "947275"), // MIDDLE RD - Friday 08:00 PM - Open Discussion
     '024.SA.0' => array("//us02web.zoom.us/j/85817619607?pwd=OWlsWXRsaC9lNmQwdEJMQ1g4aXBKdz09", NULL, "858 1761 9607", "218029"), // MIDDLE RD - Saturday 08:00 AM - As Bill Sees It
-    '067.TU.1' => array("//zoom.us/j/369437303","(646) 558-8656","369 437 303", "039 778"), // SUNRISE SOBRIETY - 6:45AM
-    '067.SA.1' => array("//zoom.us/j/678316314","(646) 558-8656","678 316 314", "003 597"), // SUNRISE SOBRIETY - 6:45AM
-    '067.SU.1' => array("//zoom.us/j/202548779","(646) 558-8656","202 548 779", "889 048"), // SUNRISE SOBRIETY - 6:45AM
     '070.MN.0' => array("//zoom.us/j/897671585", NULL,"897 671 585", "123456 "), // CENTERPORT UNITY AT GREENLAWN
     '070.TH.0' => array("//zoom.us/j/145730967", NULL,"145 730 967", "123456 "), // CENTERPORT UNITY AT GREENLAWN
     '070.SA.0' => array("//zoom.us/j/696332623", NULL,"696 332 623", "123456 "), // CENTERPORT UNITY AT GREENLAWN
@@ -226,6 +226,18 @@ foreach ($result as $row) {
         } else if (array_key_exists($row['group_id'],$online_mtgs)) {
             $conference_info = $online_mtgs[$row['group_id']];
         }
+
+        // BAD BAD HACK #1
+        // if this in an online meeting or is still TC for
+        // a group whose other meetings have reopened
+        // clear out the notes ... oops ... easiest way to take care of this special case
+        // and remove ROPN type since TC & ROPN are mutually exclusive
+        // and arguably ROPN and ONL are also mutually exclusive
+        if (in_array("ROPN",$types)) {
+            $row['notes'] = '';
+            $types = array_diff($types,['ROPN']);
+        }
+
         if ($conference_info) {
             if (!in_array("ONL",$types)) $types[]='ONL';
             $conference_url = $conference_info[0] ? "https:" . $conference_info[0]  : NULL;
@@ -235,10 +247,16 @@ foreach ($result as $row) {
 
             if (strlen($row['notes'])>0) $row['notes'] .= "\n\r"; // Assume we'll be appending something
 
-            // BAD BAD HACK
-            // if this in an online meeting that's part of a group that has reopened
+            // BAD BAD HACK #1
+            // if this in an online meeting or is still TC for
+            // a group whose other meetings have reopened
             // clear out the notes ... oops ... easiest way to take care of this special case
-            if (in_array("ROPN",$types)) $row['notes'] = '';
+            // and remove ROPN type since TC & ROPN are mutually exclusive
+            // and arguably ROPN and ONL are also mutually exclusive
+            if (in_array("ROPN",$types)) {
+                $row['notes'] = '';
+                $types = array_diff($types,['ROPN']);
+            }
 
             // append mtgID to meeting notes
             if ($conference_mtgID && strpos($conference_url, "zoom.")) {
