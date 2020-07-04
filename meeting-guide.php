@@ -149,6 +149,9 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '108.FR.0' => array("//nyintergroup.zoom.us/j/93791458968", "(929) 436-2866", "937 9145 8968", NULL), // EAST NORTHPORT SERENITY
     '125.TU.0' => array("//meet.google.com/cyn-npse-mto","(347) 773-0220", "266 098 222", NULL), // GREENLAWN HUNTINGTON STATION
     '125.TH.0' => array("//meet.google.com/cyn-npse-mto","(347) 773-0220", "266 098 222", NULL), // GREENLAWN HUNTINGTON STATION
+    '187.SU.0' => array("//zoom.us/j/91048231165", NULL, "910 4823 1165", "070 984"),  // MELVILLE SWEET AIR - SUN DR
+    '187.WD.0' => array("//zoom.us/j/71228734268", NULL, "712 2873 4268", "serenity"), // MELVILLE SWEET AIR - WED BE
+    '187.TH.0' => array("//zoom.us/j/9278322441", NULL, "927 8322 441 ", "YS650"),     // MELVILLE SWEET AIR - THU BB
     '189.TU.0' => array("//zoom.us/j/852561412?pwd=dEttYmp6UXplYzVxUEF5YWttdUxaZz09", NULL, NULL, NULL), // LONGWOOD LOVE & SERVICE
     '189.TH.0' => array("//zoom.us/j/604011879?pwd=T2dsZy9IYlphQVlmUm1VSk5VMk5EUT09", NULL, NULL, NULL), // LONGWOOD LOVE & SERVICE
     '238.TU.1' => array("//nyintergroup.zoom.us/j/98985905907?pwd=dDZPUGlxRk14WmdCTUY2Z2d6WHY5dz09","(515) 882-0190", "989 8590 5907", "869937"), // RIVERHEAD GROUP - BB
