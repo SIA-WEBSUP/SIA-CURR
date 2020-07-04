@@ -251,17 +251,6 @@ foreach ($result as $row) {
 
             if (strlen($row['notes'])>0) $row['notes'] .= "\n\r"; // Assume we'll be appending something
 
-            // BAD BAD HACK #1
-            // if this in an online meeting or is still TC for
-            // a group whose other meetings have reopened
-            // clear out the notes ... oops ... easiest way to take care of this special case
-            // and remove ROPN type since TC & ROPN are mutually exclusive
-            // and arguably ROPN and ONL are also mutually exclusive
-            if (in_array("ROPN",$types)) {
-                $row['notes'] = '';
-                $types = array_diff($types,['ROPN']);
-            }
-
             // append mtgID to meeting notes
             if ($conference_mtgID && strpos($conference_url, "zoom.")) {
                 // Display the ZOOM meeting ID for ALL ZOOM meetings to handle
