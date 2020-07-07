@@ -184,11 +184,10 @@ foreach ($old_table as $recnum=>$row) {
                     }
 
                     // Required Stuff
-                    $BYO = array_map(function ($s) { return ucfirst($s);},
-                        array_intersect(["mask",],
-                            explode(' ', strtolower($new_row['status']))));
+                    $BYO = array_intersect(["Mask"=>"mask","Social Distancing"=>"dist"],
+                            explode(' ', strtolower($new_row['status'])));
                     if ($BYO) {
-                        $mtg['notes'] .= "<br><br>COVID REQUIRED " . implode(" / ", $BYO);
+                        $mtg['notes'] .= "<br><br>COVID REQUIRED " . implode(" & ", array_flip($BYO));
                     }
 
                     // BYO Stuff
@@ -278,7 +277,7 @@ function create_new_table_PDO($pdo) {
             `day` CHAR(10) NOT NULL,
             `time` TIME NOT NULL,
             `types` VARCHAR(25) DEFAULT NULL,
-            `notes` VARCHAR(100) DEFAULT NULL,
+            `notes` VARCHAR(255) DEFAULT NULL,
             `status` VARCHAR(50) DEFAULT NULL,
             `town` VARCHAR(255) NOT NULL,
             `zone` INT(2) DEFAULT NULL,
