@@ -153,6 +153,9 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '187.TH.0' => array("//zoom.us/j/9278322441", NULL, "927 8322 441 ", "YS650"),     // MELVILLE SWEET AIR - THU BB
     '189.TU.0' => array("//zoom.us/j/852561412?pwd=dEttYmp6UXplYzVxUEF5YWttdUxaZz09", NULL, NULL, NULL), // LONGWOOD LOVE & SERVICE
     '189.TH.0' => array("//zoom.us/j/604011879?pwd=T2dsZy9IYlphQVlmUm1VSk5VMk5EUT09", NULL, NULL, NULL), // LONGWOOD LOVE & SERVICE
+    '203.SU.0' => array("//zoom.us/j/414657828", NULL, "414 657 828", "northport"),    // NORTHPORT FREE AT LAST
+    '203.TH.0' => array("//zoom.us/j/414657828", NULL, "575 115 331", "northport"),    // NORTHPORT FREE AT LAST
+    '203.SA.0' => array("//zoom.us/j/414657828", NULL, "855 934 327", "northport"),    // NORTHPORT FREE AT LAST
     '238.TU.1' => array("//nyintergroup.zoom.us/j/98985905907?pwd=dDZPUGlxRk14WmdCTUY2Z2d6WHY5dz09","(515) 882-0190", "989 8590 5907", "869937"), // RIVERHEAD GROUP - BB
     '238.FR.0' => array("//nyintergroup.zoom.us/j/95971144125?pwd=R0Fud3h5bGQvRjFCdnN3SGdjYjBJUT09","(929) 436-2866", "959 7114 4125", "023267"), // RIVERHEAD GROUP - BE
     '285.MN.1' => array("//zoom.us/j/380514478", "(929) 436 2866", "380 514 478", "918 048"),    // SOBRIETY UNLIMITED
