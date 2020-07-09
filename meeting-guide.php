@@ -107,7 +107,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '240' => array("//zoom.us/j/4176066161?pwd=Z2Y3cnM4SjJ6dTVXN0RLUVllejJydz09","(646) 558 8656 ","417 606 6161","631 875 4849"), // REFLECTIONS '90
     '265' => array("//meet.google.com/vgb-qmdb-wxw","(540) 835-0174","364 022 227", NULL), // THE LITTLE RED SCHOOLHOUSE
     '266' => array("//meet.google.com/oop-cugb-edz","(858) 345-6725","612 896 653", NULL), // ST JAMES GROUP
-    '267' => array(NULL,	                        "(605) 313-5315","266 443", NULL),     // ST JAMES SUNRISE REFLECTIONS
     '289' =>      array("//us02web.zoom.us/j/6312588292", "(929) 205-6099", "631 258 8292", "serenity"), // SMITHTOWN SERENITY
     '289.MN.0' => array("//us02web.zoom.us/j/7173450094", "(929) 205-6099", "717 345 0094", "serenity"), // SMITHTOWN SERENITY - MONDAY STEP
     '315' => array("//us02web.zoom.us/j/8727414086?pwd=SmtrT0Q2NzBWYW1xZFdESXJ1K0dMUT09", NULL, "872 741 4086", "381 491"), // WADING RIVER GROUP
@@ -133,6 +132,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '705.TU.1' => array("//zoom.us/j/369437303","(646) 558-8656","369 437 303", "039 778"), // SUNRISE SOBRIETY - 6:45AM
     '705.SA.1' => array("//zoom.us/j/678316314","(646) 558-8656","678 316 314", "003 597"), // SUNRISE SOBRIETY - WOMENS 8AM
     '705.SU.1' => array("//zoom.us/j/202548779","(646) 558-8656","202 548 779", "889 048"), // SUNRISE SOBRIETY - MENS 8AM
+    '707' => array(NULL,	                        "(605) 313-5315","266 443", NULL),     // ST JAMES SUNRISE REFLECTIONS
 
     // Some meetings have different URLs per meeting
     '024.MN.0' => array("//us02web.zoom.us/j/86978146496?pwd=N2ppWFVzWndFcjZYSE5CMlVKK0Jidz09", NULL, "869 7814 6496", "456143"), // MIDDLE RD - Monday 06:45 PM - Beginners
@@ -163,7 +163,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '286.TH.0' => array("//zoom.us/j/397655961",  NULL, "397 655 961",  "letitgo"),         // SMITHTOWN AFTERNOON GROUP
     '286.FR.0' => array("//zoom.us/j/9134002353", NULL, "913 400 2353", "Smithtown1"),      // SMITHTOWN AFTERNOON GROUP
     '286.SA.0' => array("//zoom.us/j/9134002353", NULL, "913 400 2353", "Smithtown1"),      // SMITHTOWN AFTERNOON GROUP
-    '307.TH.0' => array("//meet.google.com/sps-xjqn-uiu","(614) 602-6125","848 749 635", NULL),  // STONY BROOK UNITY GRP
+//  '307.TH.0' => array("//meet.google.com/sps-xjqn-uiu","(614) 602-6125","848 749 635", NULL),  // STONY BROOK UNITY GRP
     '356.FR.0' => array("//zoom.us/j/299922586", NULL, "299 922 586", "Home"),              // MATTITUCK MEN'S GROUP
     '366.SU.0' => array("//zoom.us/j/790355954", NULL, "790 355 954", "cowharbor"),         // NORTHPORT COW HARBOR
     '366.TU.0' => array("//zoom.us/j/751707060", NULL, "751 707 060", "cowharbor"),         // NORTHPORT COW HARBOR
