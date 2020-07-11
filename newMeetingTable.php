@@ -184,10 +184,10 @@ foreach ($old_table as $recnum=>$row) {
                     }
 
                     // Required Stuff
-                    $BYO = array_intersect(["Mask"=>"mask","Social Distancing"=>"dist"],
+                    $BYO = array_intersect(["Mask Required"=>"mask","Mask Optional"=>"maskopt","Social Distancing"=>"dist"],
                             explode(' ', strtolower($new_row['status'])));
                     if ($BYO) {
-                        $mtg['notes'] .= "<br><br>COVID REQUIRED " . implode(" & ", array_flip($BYO));
+                        $mtg['notes'] .= "<br><br>COVID " . implode(" & ", array_flip($BYO));
                     }
 
                     // BYO Stuff
