@@ -175,12 +175,12 @@ foreach ($old_table as $recnum=>$row) {
 
                     // HYBRID
                     if(strpos($new_row['status'], "HYBRID") != false) {
-                        $mtg['notes']  = $row['locationNotes'] . "<br><br>HYBRID MEETING";
+                        $mtg['notes'] .= $mtg['notes'] . "<br><br>HYBRID MEETING";
                     }
 
-                    // Meeting OUTDOORS
-                    if(strpos($new_row['status'], "OUTDOORS") != false) {
-                        $mtg['notes']  = $row['locationNotes'] . "<br><br>OUTDOOR MEETING";
+                    // Meeting OUTDOOR
+                    if(strpos($new_row['status'], "OUTDOOR") != false) {
+                        $mtg['notes'] .= $mtg['notes'] . "<br><br>OUTDOOR MEETING";
                     }
 
                     // Required Stuff
