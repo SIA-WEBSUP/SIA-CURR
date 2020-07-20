@@ -93,7 +93,6 @@ $all_types = array();
 $online_mtgs = array( // Most groups have one URL for all meetings, some have both group level URL and meeting URLs
     // 'GROUPID'  => array("conf_URL","conf_telephone","mtg_id", "pwd"), // GROUP NAME
     '37'  => array("//zoom.us/j/6052451111?pwd=c085c0o15V1RWWWlBNkFYTmNVUE93UT09",	"(929) 205-6099","605 245 1111", "428 950"), // BAY SHORE SUNRISE SOBRIETY
-    '49'  => array("//zoom.us/j/96572842469"     ,"(646) 558-8656","965 7284 2469", NULL),          // BRENTWOOD LADIES GROUP
     '82'  => array("//zoom.us/j/6311431023"      ,"(631) 766-3661","631 143 1023", "Cutchogue"),    // CUTCHOGUE SUNDAY
     '107' => array("//zoom.us/j/609004671"       ,"(929) 205-6099","609 004 671", NULL),   // VALLEY 8 O'CLOCK
     '142' => array("//zoom.us/j/7354181748"      , NULL, "735 418 1748", "HAUPPAUGE"),     // TOUCHSTONES GROUP
@@ -143,6 +142,9 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '024.FR.0' => array("//us02web.zoom.us/j/76390266462?pwd=SmtWOTBUN2NJVnNCaFBZQUFkK05CUT09", NULL, "763 9026 6462", "790124"), // MIDDLE RD - Friday 06:45 PM - Young Peoples
     '024.FR.1' => array("//us02web.zoom.us/j/85739902972?pwd=SnB5VFVVVGtjR1g2NFV0YVU3QmYwUT09", NULL, "857 3990 2972", "947275"), // MIDDLE RD - Friday 08:00 PM - Open Discussion
     '024.SA.0' => array("//us02web.zoom.us/j/85817619607?pwd=OWlsWXRsaC9lNmQwdEJMQ1g4aXBKdz09", NULL, "858 1761 9607", "218029"), // MIDDLE RD - Saturday 08:00 AM - As Bill Sees It
+    '049.SU.0' => array("//zoom.us/j/96572842469" ,"(646) 558-8656", "965 7284 2469", NULL),     // BRENTWOOD LADIES GROUP
+    '049.SU.1' => array("//zoom.us/j/604823002"   ,"(646) 558-8656", "604 823 002", NULL),       // BRENTWOOD LADIES GROUP
+    '049.WD.0' => array("//zoom.us/j/667893124"   ,"(646) 558-8656", "667 893 124", NULL),       // BRENTWOOD LADIES GROUP
     '070.MN.0' => array("//zoom.us/j/897671585", NULL,"897 671 585", "123456 "), // CENTERPORT UNITY AT GREENLAWN
     '070.TH.0' => array("//zoom.us/j/145730967", NULL,"145 730 967", "123456 "), // CENTERPORT UNITY AT GREENLAWN
     '070.SA.0' => array("//zoom.us/j/696332623", NULL,"696 332 623", "123456 "), // CENTERPORT UNITY AT GREENLAWN
