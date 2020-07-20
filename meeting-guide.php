@@ -107,6 +107,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '240' => array("//zoom.us/j/4176066161?pwd=Z2Y3cnM4SjJ6dTVXN0RLUVllejJydz09","(646) 558 8656 ","417 606 6161","631 875 4849"), // REFLECTIONS '90
     '265' => array("//meet.google.com/vgb-qmdb-wxw","(540) 835-0174","364 022 227", NULL), // THE LITTLE RED SCHOOLHOUSE
     '266' => array("//meet.google.com/oop-cugb-edz","(858) 345-6725","612 896 653", NULL), // ST JAMES GROUP
+    '278' => array("//us02web.zoom.us/j/6875352258", "(646) 558 8656", "687 535 2258", NULL), // SHELTER ISLAND GROUP
     '289' =>      array("//us02web.zoom.us/j/6312588292", "(929) 205-6099", "631 258 8292", "serenity"), // SMITHTOWN SERENITY
     '289.MN.0' => array("//us02web.zoom.us/j/7173450094", "(929) 205-6099", "717 345 0094", "serenity"), // SMITHTOWN SERENITY - MONDAY STEP
     '315' => array("//us02web.zoom.us/j/8727414086?pwd=SmtrT0Q2NzBWYW1xZFdESXJ1K0dMUT09", NULL, "872 741 4086", "381 491"), // WADING RIVER GROUP
@@ -119,6 +120,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
 //    '530' => array("//meet.google.com/bpy-aijb-aqi","(301) 845-5176","836 521 984", NULL), // STONY BROOK FREETHINKERS
     '553' => array("//zoom.us/j/755341289?pwd",	    NULL, NULL, NULL),                     // AS BILL SEES IT
     '581' => array("//zoom.us/j/504706298"         ,"(929) 205-6099 ","504 706 298", NULL),// FREEDOM FROM FEAR
+    '606' => array("//zoom.us/j/86781747581",NULL,"867 8174 7581", "Text for password access: 631-388-0876 or 631-889-1613"), // PORT JEFF TRUE FRIENDS WOMENS
     '695' => array("//zoom.us/j/4458142615",NULL,"445 814 2615", "766 504"),               // YOUNG AT HEART IN ISLIP
     '698' => array("//meet.google.com/bpy-aijb-aqi","(301) 845-5176","836 521 984", NULL), // SIA HOSTED
     '699' => array("//meet.google.com/ikn-poem-eba","(978) 435-0386","470 509 931", NULL), // WOMEN'S BACK TO BASICS
