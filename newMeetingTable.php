@@ -169,25 +169,30 @@ foreach ($old_table as $recnum=>$row) {
                     $cReopenedMtgs++;
                     // use $row otherwise you'll have multiple additions of '** **'
                     $new_row['group_name'] = '** ' . $row['group_name'] . ' ** ';
-                    $new_row['locationNotes']  = $row['locationNotes'] . "<br><br>** COVID RE-OPENED CONFIRMED **";
+                    $new_row['locationNotes']  = $row['locationNotes'] . "<br><br>** COVID REOPENED CONFIRMED **";
                     //$mtg['notes'] .= "<br><br>** COVID RE-OPENED CONFIRMED **";
                     $mtg['types'] .= " ROPN";
 
                     // HYBRID
                     if(strpos($new_row['status'], "HYBRID") != false) {
-                        $mtg['notes'] .= $mtg['notes'] . "<br><br>HYBRID MEETING";
+                        $mtg['notes'] .= "<br><br>HYBRID MEETING";
                     }
 
                     // Meeting OUTDOOR
                     if(strpos($new_row['status'], "OUTDOOR") != false) {
-                        $mtg['notes'] .= $mtg['notes'] . "<br><br>OUTDOOR MEETING";
+                        $mtg['notes'] .= "<br><br>OUTDOOR MEETING";
                     }
 
                     // Required Stuff
-                    $BYO = array_intersect(["Mask Required"=>"mask","Mask Optional"=>"maskopt","Social Distancing"=>"dist"],
+                    $BYO = array_intersect(["Mask Required"=>"mask",
+                                            "Mask Optional"=>"maskopt",
+                                            "Social Distancing Required"=>"dist",
+                                            "No food or beverages"=>"nofood",
+                                            ],
                             explode(' ', strtolower($new_row['status'])));
                     if ($BYO) {
-                        $mtg['notes'] .= "<br><br>COVID " . implode(" & ", array_flip($BYO));
+                        foreach($BYO as $k=>$v)
+                            $mtg['notes'] .= "<br><br>COVID " . $k;
                     }
 
                     // BYO Stuff
