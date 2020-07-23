@@ -107,7 +107,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '240' => array("//zoom.us/j/4176066161?pwd=Z2Y3cnM4SjJ6dTVXN0RLUVllejJydz09","(646) 558 8656 ","417 606 6161","631 875 4849"), // REFLECTIONS '90
     '265' => array("//meet.google.com/vgb-qmdb-wxw","(540) 835-0174","364 022 227", NULL), // THE LITTLE RED SCHOOLHOUSE
     '266' => array("//meet.google.com/oop-cugb-edz","(858) 345-6725","612 896 653", NULL), // ST JAMES GROUP
-    '278' => array("//us02web.zoom.us/j/6875352258", "(646) 558 8656", "687 535 2258", NULL), // SHELTER ISLAND GROUP
     '289' =>      array("//us02web.zoom.us/j/6312588292", "(929) 205-6099", "631 258 8292", "serenity"), // SMITHTOWN SERENITY
     '289.MN.0' => array("//us02web.zoom.us/j/7173450094", "(929) 205-6099", "717 345 0094", "serenity"), // SMITHTOWN SERENITY - MONDAY STEP
     '315' => array("//us02web.zoom.us/j/8727414086?pwd=SmtrT0Q2NzBWYW1xZFdESXJ1K0dMUT09", NULL, "872 741 4086", "381 491"), // WADING RIVER GROUP
@@ -163,6 +162,8 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '203.SA.0' => array("//zoom.us/j/414657828", NULL, "855 934 327", "northport"),    // NORTHPORT FREE AT LAST
     '238.TU.1' => array("//nyintergroup.zoom.us/j/98985905907?pwd=dDZPUGlxRk14WmdCTUY2Z2d6WHY5dz09","(515) 882-0190", "989 8590 5907", "869937"), // RIVERHEAD GROUP - BB
     '238.FR.0' => array("//nyintergroup.zoom.us/j/95971144125?pwd=R0Fud3h5bGQvRjFCdnN3SGdjYjBJUT09","(929) 436-2866", "959 7114 4125", "023267"), // RIVERHEAD GROUP - BE
+    '278.WD.0' => array("//us02web.zoom.us/j/6875352258", "(646) 558 8656", "687 535 2258", NULL), // SHELTER ISLAND GROUP
+    '278.SA.0' => array("//us02web.zoom.us/j/5205564408", "(646) 558 8656", "520 556 4408", NULL), // SHELTER ISLAND GROUP
     '285.MN.1' => array("//zoom.us/j/380514478", "(929) 436 2866", "380 514 478", "918 048"),    // SOBRIETY UNLIMITED
     '285.FR.0' => array("//zoom.us/j/380514478", "(929) 436 2866", "380 514 478", "918 048"),    // SOBRIETY UNLIMITED
     '286.MN.0' => array("//zoom.us/j/9134002353", NULL, "913 400 2353", "Smithtown1"),      // SMITHTOWN AFTERNOON GROUP
@@ -171,6 +172,8 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '286.TH.0' => array("//zoom.us/j/397655961",  NULL, "397 655 961",  "letitgo"),         // SMITHTOWN AFTERNOON GROUP
     '286.FR.0' => array("//zoom.us/j/9134002353", NULL, "913 400 2353", "Smithtown1"),      // SMITHTOWN AFTERNOON GROUP
     '286.SA.0' => array("//zoom.us/j/9134002353", NULL, "913 400 2353", "Smithtown1"),      // SMITHTOWN AFTERNOON GROUP
+    '304.WD.0' => array("//zoom.us/j/5907152081", NULL, "590 715 2081", "524 283" ),        // SOUTHOLD SETTLERS
+    '304.TH.0' => array("//zoom.us/j/5907152081", NULL, "590 715 2081", "524 283" ),        // SOUTHOLD SETTLERS
 //  '307.TH.0' => array("//meet.google.com/sps-xjqn-uiu","(614) 602-6125","848 749 635", NULL),  // STONY BROOK UNITY GRP
     '356.FR.0' => array("//zoom.us/j/299922586", NULL, "299 922 586", "Home"),              // MATTITUCK MEN'S GROUP
     '366.SU.0' => array("//zoom.us/j/790355954", NULL, "790 355 954", "cowharbor"),         // NORTHPORT COW HARBOR
@@ -302,7 +305,12 @@ foreach ($result as $row) {
                 }
                 $conference_phone = str_replace(array('(', ')','-',' '), '', $conference_phone); //strip unnecessary chars
             }
+        } else  if (in_array("ONL",$types)) {
+            // meeting marked as ONL but no online connection info provided
+            // ONL meeting type will be stripped by plugin since no connection info provided
+            $row['notes'] .= " No online meeting connection info provided by group\n\r\n\r";
         }
+
     }
 
 	//$all_types = array_merge($all_types, $types);
