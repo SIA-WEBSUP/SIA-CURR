@@ -187,7 +187,7 @@ foreach ($old_table as $recnum=>$row) {
                     $BYO = array_intersect(["Mask Required"=>"mask",
                                             "Mask Optional"=>"maskopt",
                                             "Social Distancing Required"=>"dist",
-                                            "Contact Tracing Log"=>"log",
+                                            "Contact Tracing Log Kept"=>"log",
                                             "No food or beverages"=>"nofood",
                                             ],
                             explode(' ', strtolower($new_row['status'])));
