@@ -162,8 +162,9 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '203.SA.0' => array("//zoom.us/j/414657828", NULL, "855 934 327", "northport"),    // NORTHPORT FREE AT LAST
     '238.TU.1' => array("//nyintergroup.zoom.us/j/98985905907?pwd=dDZPUGlxRk14WmdCTUY2Z2d6WHY5dz09","(515) 882-0190", "989 8590 5907", "869937"), // RIVERHEAD GROUP - BB
     '238.FR.0' => array("//nyintergroup.zoom.us/j/95971144125?pwd=R0Fud3h5bGQvRjFCdnN3SGdjYjBJUT09","(929) 436-2866", "959 7114 4125", "023267"), // RIVERHEAD GROUP - BE
-    '278.WD.0' => array("//us02web.zoom.us/j/6875352258", "(646) 558 8656", "687 535 2258", NULL), // SHELTER ISLAND GROUP
-    '278.SA.0' => array("//us02web.zoom.us/j/5205564408", "(646) 558 8656", "520 556 4408", NULL), // SHELTER ISLAND GROUP
+    '278.WD.0' => array("//us02web.zoom.us/j/6875352258",  "(646) 558 8656", "687 535 2258", NULL), // SHELTER ISLAND GROUP
+    '278.SA.0' => array("//us02web.zoom.us/j/88572542344", "(646) 558 8656", "885 7254 2344",NULL), // SHELTER ISLAND GROUP
+    '279.FR.0' => array("//us02web.zoom.us/j/5205564408",  "(646) 558 8656", "520 556 4408", NULL), // SHELTER ISLAND GROUP
     '285.MN.1' => array("//zoom.us/j/380514478", "(929) 436 2866", "380 514 478", "918 048"),    // SOBRIETY UNLIMITED
     '285.FR.0' => array("//zoom.us/j/380514478", "(929) 436 2866", "380 514 478", "918 048"),    // SOBRIETY UNLIMITED
     '286.MN.0' => array("//zoom.us/j/9134002353", NULL, "913 400 2353", "Smithtown1"),      // SMITHTOWN AFTERNOON GROUP
