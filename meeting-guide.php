@@ -107,7 +107,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '240' => array("//zoom.us/j/4176066161?pwd=Z2Y3cnM4SjJ6dTVXN0RLUVllejJydz09","(646) 558 8656 ","417 606 6161","631 875 4849"), // REFLECTIONS '90
     '265' => array("//meet.google.com/vgb-qmdb-wxw","(540) 835-0174","364 022 227", NULL), // THE LITTLE RED SCHOOLHOUSE
     '266' => array("//meet.google.com/oop-cugb-edz","(858) 345-6725","612 896 653", NULL), // ST JAMES GROUP
-    '280' => array(NULL, "(978) 990-5000 Access code#: 891 721", NULL, NULL),              // SHELTER ISLAND KEEP IT SIMPLE
+    '280' => array(NULL, "(978) 990-5000 Access #: 891 721", NULL, NULL),              // SHELTER ISLAND KEEP IT SIMPLE
     '289' =>      array("//us02web.zoom.us/j/6312588292", "(929) 205-6099", "631 258 8292", "serenity"), // SMITHTOWN SERENITY
     '289.MN.0' => array("//us02web.zoom.us/j/7173450094", "(929) 205-6099", "717 345 0094", "serenity"), // SMITHTOWN SERENITY - MONDAY STEP
     '315' => array("//us02web.zoom.us/j/8727414086?pwd=SmtrT0Q2NzBWYW1xZFdESXJ1K0dMUT09", NULL, "872 741 4086", "381 491"), // WADING RIVER GROUP
