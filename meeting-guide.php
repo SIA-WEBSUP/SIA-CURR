@@ -108,10 +108,8 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '265' => array("//meet.google.com/vgb-qmdb-wxw","(540) 835-0174","364 022 227", NULL), // THE LITTLE RED SCHOOLHOUSE
     '266' => array("//meet.google.com/oop-cugb-edz","(858) 345-6725","612 896 653", NULL), // ST JAMES GROUP
     '280' => array(NULL, "(978) 990-5000 Access #:           891 721", NULL, NULL),              // SHELTER ISLAND KEEP IT SIMPLE
-    '289' =>      array("//us02web.zoom.us/j/6312588292", "(929) 205-6099", "631 258 8292", "serenity"), // SMITHTOWN SERENITY
-    '289.MN.0' => array("//us02web.zoom.us/j/7173450094", "(929) 205-6099", "717 345 0094", "serenity"), // SMITHTOWN SERENITY - MONDAY STEP
-//    '289' =>      array("//us02web.zoom.us/j/4313933180", "(929) 205-6099", "431 393 3180", "serenity"), // SMITHTOWN SERENITY
-//    '289.MN.0' => array("//us02web.zoom.us/j/99588718966", "(929) 205-6099", "995 8871 8966", "serenity"), // SMITHTOWN SERENITY - MONDAY STEP
+    '289' =>      array("//us02web.zoom.us/j/4313933180", "(929) 436-2866", "431 393 3180", "serenity"),    // SMITHTOWN SERENITY
+    '289.MN.0' => array("//us02web.zoom.us/j/99588718966", "(929) 436-2866 ", "995 8871 8966", "serenity"), // SMITHTOWN SERENITY - MONDAY STEP
     '315' => array("//us02web.zoom.us/j/8727414086?pwd=SmtrT0Q2NzBWYW1xZFdESXJ1K0dMUT09", NULL, "872 741 4086", "381 491"), // WADING RIVER GROUP
     '351' => array("//us02web.zoom.us/j/86239050147?pwd=NmhOSkxLbXdMYlVYV1BDclhSOG50dz09", "(646) 558-8656", "862 3905 0147","502 128"), // SOUTHAMPTON MONDAY CLOSED DISCUSSION GROUP
     '375' => array("//zoom.us/join", NULL, "617 988 572","For Password please text\n\r  DeeAnn (631) 495-4912 or\n\r  Besty (631) 525-1828"), // A NEW BEGINNING (WOMEN"S GROUP)
@@ -156,6 +154,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '108.FR.0' => array("//nyintergroup.zoom.us/j/93791458968", "(929) 436-2866", "937 9145 8968", NULL), // EAST NORTHPORT SERENITY
     '125.TU.0' => array("//meet.google.com/cyn-npse-mto","(347) 773-0220", "266 098 222", NULL), // GREENLAWN HUNTINGTON STATION
     '125.TH.0' => array("//meet.google.com/cyn-npse-mto","(347) 773-0220", "266 098 222", NULL), // GREENLAWN HUNTINGTON STATION
+    '145.TU.0' => array("//zoom.us/j/5922356616", NULL, "592 2356 616", NULL),         // HUNTINGTON GROUP
     '187.SU.0' => array("//zoom.us/j/91048231165", NULL, "910 4823 1165", "070 984"),  // MELVILLE SWEET AIR - SUN DR
     '187.WD.0' => array("//zoom.us/j/71228734268", NULL, "712 2873 4268", "serenity"), // MELVILLE SWEET AIR - WED BE
     '187.TH.0' => array("//zoom.us/j/9278322441", NULL, "927 8322 441 ", "YS650"),     // MELVILLE SWEET AIR - THU BB
