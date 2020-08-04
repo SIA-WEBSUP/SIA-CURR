@@ -137,7 +137,9 @@ foreach ($old_table as $recnum=>$row) {
                 $new_row['status'] = strtoupper($new_row['status']);
 
                 // if 'meditation' or '11th step' occurs in notes or group name, add MED and 11 to types
-                if ((strpos($mtg_notes, "MEDITATION") !== false) ||
+                // kluge, don't add meditation type if note says (begins with 5 min meditation)
+                if (((strpos($mtg_notes, "MEDITATION") !== false) &&
+                     (strpos($mtg_notes, "BEGINS WITH 5 MIN MEDITATION") === false)) ||
                     (strpos($new_row['group_name'], "MEDITATION") !== false) ||
                     (strpos($mtg_notes, "11TH STEP") !== false) ||
                     (strpos($new_row['group_name'], "11TH STEP") !== false) ) {
