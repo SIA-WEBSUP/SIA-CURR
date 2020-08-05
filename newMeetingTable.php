@@ -168,10 +168,11 @@ foreach ($old_table as $recnum=>$row) {
 
                 // REOPENED meetings
                 if (strpos($new_row['status'], "REOPENED") !== false) {
-                    $cReopenedMtgs++;
+                    if (strpos($mtg['types'], "TC") === false && strpos($mtg['types'], "ONL") === false)
+                        $cReopenedMtgs++;
                     // use $row otherwise you'll have multiple additions of '** **'
-                    $new_row['group_name'] = '** ' . $row['group_name'] . ' ** ';
-                    $new_row['locationNotes']  = $row['locationNotes'] . "<br><br>** COVID REOPENED CONFIRMED **";
+                    //$new_row['group_name'] = '** ' . $row['group_name'] . ' ** ';
+                    //$new_row['locationNotes']  = $row['locationNotes'] . "<br><br>** COVID REOPENED CONFIRMED **";
                     //$mtg['notes'] .= "<br><br>** COVID RE-OPENED CONFIRMED **";
                     $mtg['types'] .= " ROPN";
 
