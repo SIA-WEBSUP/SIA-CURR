@@ -100,6 +100,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '126' => array("//nyintergroup.zoom.us/j/253179384", "(929) 436-2866", "253 179 384", "777"),   // HUNTINGTON STA NEW LIFE
     '157' => array("//zoom.us/j/851329515?pwd=STFwM1dOQUZUZXdrTlFZK1hIMDlnUT09","(646) 876-9923", "851 329 515", NULL), // DOING IT YOUNG
     '168' => array("//zoom.us/j/85068453181","(646) 558-8656 Access #: 535388", "850 6845 3181", "asolution"), // LAKE RONKONKOMA GROUP
+    '173' => array("//zoom.us/j/699580490"  , NULL, "699 580 490", "014 700"),             // LINDENHURST GROUP
     '176' => array("//meet.google.com/gbi-rsmn-odo","(502) 430-2829","389 359 014", NULL), // NEIGHBORHOOD SOBRIETY
     '178' => array("//meet.google.com/nrp-ipeq-utg","(240) 397-5311","541 313 606",NULL),  // THE ONLY REQUIREMENT
     '230' => array("//zoom.us/j/9177565845", NULL, "917 756 5845", "767066"),              // PORT JEFF INTO ACTION
@@ -317,9 +318,11 @@ foreach ($result as $row) {
             $row['notes'] .= " No online meeting connection info provided by group\n\r\n\r";
         }
 
+    } else if ( in_array("ROPN",$types) ) {
+        $row['group_name'] .= ' (REOPENED CONFIRMED)';
     }
 
-	//$all_types = array_merge($all_types, $types);
+        //$all_types = array_merge($all_types, $types);
 	$types = array_filter($types, function($type) use ($type_keys) {
 		return in_array($type, $type_keys);
 	});
