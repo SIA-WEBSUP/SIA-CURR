@@ -93,8 +93,9 @@ $all_types = array();
 $online_mtgs = array( // Most groups have one URL for all meetings, some have both group level URL and meeting URLs
     // 'GROUPID'  => array("conf_URL","conf_telephone","mtg_id", "pwd"), // GROUP NAME
     '37'  => array("//zoom.us/j/6052451111?pwd=c085c0o15V1RWWWlBNkFYTmNVUE93UT09",	"(929) 205-6099","605 245 1111", "428 950"), // BAY SHORE SUNRISE SOBRIETY
-    '82'  => array("//zoom.us/j/6311431023" ,"(631) 766-3661", "631 143 1023", "Cutchogue"), // CUTCHOGUE SUNDAY
     '40'  => array("//zoom.us/j/364969933"  ,"(929) 205-6099", "364 969 933", "422 921"),  // BELLPORT GROUP
+    '82'  => array("//zoom.us/j/6311431023" ,"(631) 766-3661", "631 143 1023", "Cutchogue"), // CUTCHOGUE SUNDAY
+    '83'  => array("//zoom.us/j/94672171612", NULL, "946 7217 1612", "cutchogue"),         // CUTCHOGUE STEP GROUP
     '107' => array("//zoom.us/j/609004671"  ,"(929) 205-6099", "609 004 671", NULL),       // VALLEY 8 O'CLOCK
     '142' => array("//zoom.us/j/7354181748" , NULL, "735 418 1748", "HAUPPAUGE"),          // TOUCHSTONES GROUP
     '126' => array("//nyintergroup.zoom.us/j/253179384", "(929) 436-2866", "253 179 384", "777"),   // HUNTINGTON STA NEW LIFE
@@ -110,7 +111,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '266' => array("//meet.google.com/oop-cugb-edz","(858) 345-6725","612 896 653", NULL), // ST JAMES GROUP
     '280' => array(NULL, "(978) 990-5000 Access #:           891 721", NULL, NULL),              // SHELTER ISLAND KEEP IT SIMPLE
     '289' =>      array("//us02web.zoom.us/j/4313933180", "(929) 436-2866", "431 393 3180", "serenity"),    // SMITHTOWN SERENITY
-    '289.MN.0' => array("//us02web.zoom.us/j/99588718966", "(929) 436-2866 ", "995 8871 8966", "serenity"), // SMITHTOWN SERENITY - MONDAY STEP
+    '289.MN.1' => array("//us02web.zoom.us/j/99588718966", "(929) 436-2866 ", "995 8871 8966", "serenity"), // SMITHTOWN SERENITY - MONDAY STEP
     '315' => array("//us02web.zoom.us/j/8727414086?pwd=SmtrT0Q2NzBWYW1xZFdESXJ1K0dMUT09", NULL, "872 741 4086", "381 491"), // WADING RIVER GROUP
     '351' => array("//us02web.zoom.us/j/86239050147?pwd=NmhOSkxLbXdMYlVYV1BDclhSOG50dz09", "(646) 558-8656", "862 3905 0147","502 128"), // SOUTHAMPTON MONDAY CLOSED DISCUSSION GROUP
     '375' => array("//zoom.us/join", NULL, "617 988 572","For Password please text\n\r  DeeAnn (631) 495-4912 or\n\r  Besty (631) 525-1828"), // A NEW BEGINNING (WOMEN"S GROUP)
@@ -252,11 +253,11 @@ foreach ($result as $row) {
         // BAD BAD HACK #1
         // if this in an online meeting or is still TC for
         // a group whose other meetings have reopened
-        // clear out the notes ... oops ... easiest way to take care of this special case
+        // clear out COVID NOTES ... oops ... easiest way to take care of this special case
         // and remove ROPN type since TC & ROPN are mutually exclusive
         // and arguably ROPN and ONL are also mutually exclusive
         if (in_array("ROPN",$types)) {
-            $row['notes'] = '';
+            $row['notes'] = substr($row['notes'],0,strpos($row['notes'],'¤COVID¤')) . "\n\r";
             $types = array_diff($types,['ROPN']);
         }
 
@@ -320,6 +321,7 @@ foreach ($result as $row) {
 
     } else if ( in_array("ROPN",$types) ) {
         $row['group_name'] .= ' (REOPENED CONFIRMED)';
+        $row['notes'] = str_replace('¤COVID¤', '', $row['notes'] );
     }
 
         //$all_types = array_merge($all_types, $types);
