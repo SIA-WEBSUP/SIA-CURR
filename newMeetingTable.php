@@ -176,6 +176,10 @@ foreach ($old_table as $recnum=>$row) {
                     //$mtg['notes'] .= "<br><br>** COVID RE-OPENED CONFIRMED **";
                     $mtg['types'] .= " ROPN";
 
+                    // add token to separate COVID notes from other notes
+                    // this will allow us to remove COVID notes from ONL and TC meetings
+                    $mtg['notes'] .= "¤COVID¤";
+
                     // HYBRID
                     if(strpos($new_row['status'], "HYBRID") != false) {
                         $mtg['notes'] .= "<br><br>HYBRID MEETING";
