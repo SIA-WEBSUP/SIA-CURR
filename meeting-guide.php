@@ -111,7 +111,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '266' => array("//meet.google.com/oop-cugb-edz","(858) 345-6725","612 896 653", NULL), // ST JAMES GROUP
     '280' => array(NULL, "(978) 990-5000 Access #:           891 721", NULL, NULL),              // SHELTER ISLAND KEEP IT SIMPLE
     '289' =>      array("//us02web.zoom.us/j/4313933180", "(929) 436-2866", "431 393 3180", "serenity"),    // SMITHTOWN SERENITY
-    '289.MN.1' => array("//us02web.zoom.us/j/99588718966", "(929) 436-2866 ", "995 8871 8966", "serenity"), // SMITHTOWN SERENITY - MONDAY STEP
     '315' => array("//us02web.zoom.us/j/8727414086?pwd=SmtrT0Q2NzBWYW1xZFdESXJ1K0dMUT09", NULL, "872 741 4086", "381 491"), // WADING RIVER GROUP
     '351' => array("//us02web.zoom.us/j/86239050147?pwd=NmhOSkxLbXdMYlVYV1BDclhSOG50dz09", "(646) 558-8656", "862 3905 0147","502 128"), // SOUTHAMPTON MONDAY CLOSED DISCUSSION GROUP
     '375' => array("//zoom.us/join", NULL, "617 988 572","For Password please text\n\r  DeeAnn (631) 495-4912 or\n\r  Besty (631) 525-1828"), // A NEW BEGINNING (WOMEN"S GROUP)
@@ -147,7 +146,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '024.FR.0' => array("//us02web.zoom.us/j/76390266462?pwd=SmtWOTBUN2NJVnNCaFBZQUFkK05CUT09", NULL, "763 9026 6462", "790124"), // MIDDLE RD - Friday 06:45 PM - Young Peoples
     '024.FR.1' => array("//us02web.zoom.us/j/85739902972?pwd=SnB5VFVVVGtjR1g2NFV0YVU3QmYwUT09", NULL, "857 3990 2972", "947275"), // MIDDLE RD - Friday 08:00 PM - Open Discussion
     '024.SA.0' => array("//us02web.zoom.us/j/85817619607?pwd=OWlsWXRsaC9lNmQwdEJMQ1g4aXBKdz09", NULL, "858 1761 9607", "218029"), // MIDDLE RD - Saturday 08:00 AM - As Bill Sees It
-    '049.SU.0' => array("//zoom.us/j/96572842469" ,"(646) 558-8656", "965 7284 2469", NULL),     // BRENTWOOD LADIES GROUP
+    '049.SU.0' => array("//zoom.us/j/4925480677"  ,"(646) 558-8656", "492 548 0677", NULL),      // BRENTWOOD LADIES GROUP
     '049.SU.1' => array("//zoom.us/j/604823002"   ,"(646) 558-8656", "604 823 002", NULL),       // BRENTWOOD LADIES GROUP
     '049.WD.0' => array("//zoom.us/j/667893124"   ,"(646) 558-8656", "667 893 124", NULL),       // BRENTWOOD LADIES GROUP
     '070.MN.0' => array("//zoom.us/j/897671585", NULL,"897 671 585", "123456 "), // CENTERPORT UNITY AT GREENLAWN
