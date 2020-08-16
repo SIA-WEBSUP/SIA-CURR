@@ -147,9 +147,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '024.FR.0' => array("//us02web.zoom.us/j/76390266462?pwd=SmtWOTBUN2NJVnNCaFBZQUFkK05CUT09", NULL, "763 9026 6462", "790124"), // MIDDLE RD - Friday 06:45 PM - Young Peoples
     '024.FR.1' => array("//us02web.zoom.us/j/85739902972?pwd=SnB5VFVVVGtjR1g2NFV0YVU3QmYwUT09", NULL, "857 3990 2972", "947275"), // MIDDLE RD - Friday 08:00 PM - Open Discussion
     '024.SA.0' => array("//us02web.zoom.us/j/85817619607?pwd=OWlsWXRsaC9lNmQwdEJMQ1g4aXBKdz09", NULL, "858 1761 9607", "218029"), // MIDDLE RD - Saturday 08:00 AM - As Bill Sees It
-    '049.SU.0' => array("//zoom.us/j/4925480677"  ,"(646) 558-8656", "492 548 0677", NULL),      // BRENTWOOD LADIES GROUP
-    '049.SU.1' => array("//zoom.us/j/604823002"   ,"(646) 558-8656", "604 823 002", NULL),       // BRENTWOOD LADIES GROUP
-    '049.WD.0' => array("//zoom.us/j/667893124"   ,"(646) 558-8656", "667 893 124", NULL),       // BRENTWOOD LADIES GROUP
     '070.MN.0' => array("//zoom.us/j/897671585", NULL,"897 671 585", "123456 "), // CENTERPORT UNITY AT GREENLAWN
     '070.TH.0' => array("//zoom.us/j/145730967", NULL,"145 730 967", "123456 "), // CENTERPORT UNITY AT GREENLAWN
     '070.SA.0' => array("//zoom.us/j/696332623", NULL,"696 332 623", "123456 "), // CENTERPORT UNITY AT GREENLAWN
