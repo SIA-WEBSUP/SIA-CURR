@@ -43,13 +43,26 @@
                 <span class="hotlineText">24 Hour Hotline:<br />(631) 669-1124</span>
                 <br>Please do not use this HELP number for general information requests. <br> For general inquiries, please see the <a href="contact-us.php">Contact Us</a> page. </div></td>
             </tr>
-              <!-- <tr>
-              <td colspan="6" class="danger" align="center"><div><img border="0" src="/images/acnvrule.gif" width="600" height="10"><div class="alert">
 
-              <h6 class="hotlineText generalHeading">Be Advised: The July 2nd SIA Meeting will be taking place at True North in Bohemia due to remaining issues with the Riverhead location.</h6>
-            </div></td>
-          </tr> -->
-            <? readfile("COVID-19.php"); ?>
+            <tr>
+                <td colspan="6" align="center"><div><img border="0" src="/images/acnvrule.gif" width="600" height="10"> </div></td>
+            </tr>
+            <tr>
+                <td colspan="6" class="alertHeading"> NEW SIA WEBSITE NOW AVAILABLE</td>
+            </tr>
+            <tr style="background-color:rgba(255,0,0,.3);">
+                <td colspan="6" > <div id="divCOVID-19" class="text-center">
+                        <h5> This site has been retired and is no longer being updated!!!.</h5>
+                        <h5> Please visit <a href="https://suffolkny-aa.org">
+                            SUFFOLKNY-AA.org</a> to access the new website and the most current information</h5>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6" align="center"><div><img border="0" src="/images/acnvrule.gif" width="600" height="10"> </div></td>
+            </tr>
+
+
 
           <!-- PREAMBLE -->
 
