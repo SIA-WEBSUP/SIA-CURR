@@ -7,8 +7,21 @@
     margin: 0 0 1em 0;
 }
 
-.no_bullet_list{
+.no_bullet_list {
     list-style-type: none;
+}
+
+.flush-left {
+    margin-left: -1em;
+}
+
+.compact-list {
+    margin: 0;
+}
+
+.compact-list-2 {
+    margin: 0;
+    list-style-type: circle;
 }
 
 thead {
@@ -21,17 +34,183 @@ thead {
 tr:nth-child(odd) {
     background-color: #ffffa0;
 }
+
 tr:nth-child(even) {
     background-color: #ffffff;
 }
 
 .big-bold-text {
-    font-weight:600;
-    font-size:1.1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 .bigger-bold-centered-text {
-    font-weight:600;
-    font-size:1.5rem;
-    text-align:center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.type-unk {
+    opacity: .75;
+}
+
+.type-unk small {
+    font-weight: bold;
+    color: #E08000 !important;
+}
+
+.type-ropn small {
+    font-weight: bold;
+    color: #008000 !important;
+}
+
+.ai1ec_event {
+    background-color: white;
+}
+
+.committees-col-left {
+    text-align: center;
+    border-left-width: 12px;
+}
+
+/************* committees ************/
+
+.committees-col-right {
+    border-right-width: 12px;
+}
+
+.committees-header {
+}
+/********************/
+.border-archives-left {
+    border-left-color: cornsilk;
+}
+
+.border-archives-right {
+    border-right-color: cornsilk;
+}
+/********************/
+
+.border-big-meeeting-left {
+    border-left-color: darkblue;
+}
+
+.border-big-meeting-right {
+    border-right-color: darkblue;
+}
+/********************/
+
+.border-bulletin-left {
+    border-left-color: magenta;
+}
+
+.border-bulletin-right {
+    border-right-color: magenta;
+}
+/********************/
+
+.border-correct-left {
+    border-left-color: yellow;
+}
+
+.border-correct-right {
+    border-right-color: yellow;
+}
+/********************/
+
+.border-institutions-left {
+    border-left-color: limegreen;
+}
+
+.border-institutions-right {
+    border-right-color: limegreen;
+}
+/********************/
+
+.border-books-left {
+    border-left-color: orange;
+}
+
+.border-books-right {
+    border-right-color: orange;
+}
+/********************/
+
+.border-meetings-left {
+    border-left-color: deeppink;
+}
+
+.border-meetings-right {
+    border-right-color: deeppink;
+}
+/********************/
+
+.border-grapevine-left {
+    border-left-color: darkgreen;
+}
+
+.border-grapevine-right {
+    border-right-color: darkgreen;
+}
+/********************/
+
+.border-hotline-left {
+    border-left-color: red;
+}
+
+.border-hotline-right {
+    border-right-color: red;
+}
+/********************/
+
+.border-pubinfo-left {
+    border-left-color: royalblue;
+}
+
+.border-pubinfo-right {
+    border-right-color: royalblue;
+}
+/********************/
+
+.border-schools-left {
+    border-left-color: orange;
+}
+
+.border-schools-right {
+    border-right-color: orange;
+}
+/********************/
+
+.border-share-left {
+    border-left-color: firebrick;
+}
+.border-share-right {
+    border-right-color: firebrick;
+}
+/********************/
+
+.border-spec-events-left {
+    border-left-color: lawngreen;
+}
+
+.border-spec-events-right {
+    border-right-color: lawngreen;
+}
+/********************/
+
+.border-thirdleg-left {
+    border-left-color: darkmagenta;
+}
+
+.border-thirdleg-right {
+    border-right-color: darkmagenta;
+}
+/********************/
+
+.border-websup-left {
+    border-left-color: cornflowerblue;
+}
+
+.border-websup-right {
+    border-right-color: cornflowerblue;
 }
