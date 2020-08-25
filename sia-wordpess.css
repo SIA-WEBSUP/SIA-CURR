@@ -91,7 +91,7 @@ tr:nth-child(even) {
 }
 /********************/
 
-.border-big-meeeting-left {
+.border-big-meeting-left {
     border-left-color: darkblue;
 }
 
@@ -170,8 +170,17 @@ tr:nth-child(even) {
 .border-pubinfo-right {
     border-right-color: royalblue;
 }
-/********************/
 
+/********************/
+.border-siaoffice-left {
+    border-left-color: mediumpurple;
+}
+
+.border-siaoffice-right {
+    border-right-color: mediumpurple;
+}
+
+/********************/
 .border-schools-left {
     border-left-color: orange;
 }
