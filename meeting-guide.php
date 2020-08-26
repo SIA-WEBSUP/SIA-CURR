@@ -97,6 +97,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '49'  => array("//zoom.us/j/4925480677" ,"(646) 558-8656", "492 548 0677", NULL),      // BRENTWOOD LADIES GROUP
     '82'  => array("//zoom.us/j/6311431023" ,"(631) 766-3661", "631 143 1023", "Cutchogue"), // CUTCHOGUE SUNDAY
     '83'  => array("//zoom.us/j/94672171612?pwd=Y3owSW9Iaks2dHVZbTNDSk16RmQ4dz09", "(929) 205-6099", "946 7217 1612", "cutchogue"), // CUTCHOGUE STEP GROUP
+    '85'  => array("//zoom.us/j/742133476"  , NULL, "742 133 476", NULL),                  // HOME FOR DINNER
     '107' => array("//zoom.us/j/609004671"  ,"(929) 205-6099", "609 004 671", NULL),       // VALLEY 8 O'CLOCK
     '142' => array("//zoom.us/j/7354181748" , NULL, "735 418 1748", "HAUPPAUGE"),          // TOUCHSTONES GROUP
     '126' => array("//nyintergroup.zoom.us/j/253179384", "(929) 436-2866", "253 179 384", "777"),   // HUNTINGTON STA NEW LIFE
@@ -121,7 +122,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '499' => array("//meet.google.com/dqe-eerp-zgv","(570) 554-0159","614 095 850", NULL), // SPIRITUAL CIRCLE
     '530' => array("//us02web.zoom.us/j/84350888563?pwd=MGZnaGNiYnEvQVRCT2RLZXdtVC8vdz09","(929) 436-2866","843 5088 8563", "297 082"), // STONY BROOK FREETHINKERS
 //    '530' => array("//meet.google.com/bpy-aijb-aqi","(301) 845-5176","836 521 984", NULL), // STONY BROOK FREETHINKERS
-    '553' => array("//zoom.us/j/755341289?pwd", NULL, NULL, NULL),                         // AS BILL SEES IT
+    '553' => array("//zoom.us/j/755341289", NULL, NULL, NULL),                         // AS BILL SEES IT
     '581' => array("//zoom.us/j/504706298", "(929) 205-6099", "504 706 298", NULL),        // FREEDOM FROM FEAR
     '601' => array("//zoom.us/j/98558565837", NULL, "985 5856 5837", "631 740"),           // CONNECT THE DOTS
     '606' => array("//zoom.us/j/86781747581",NULL,"867 8174 7581", "Text for password access: 631-388-0876 or 631-889-1613"), // PORT JEFF TRUE FRIENDS WOMENS
