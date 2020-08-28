@@ -217,11 +217,11 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '580'  => array("//zoom.us/j/845720420",	        NULL,"845 720 420", "#geekinout"), // Riverhead Back to Books
     '262'  => array(NULL, "(515) 604-9094","790 452 210", NULL),                        // Sag Harbor Spiritual Solution
     '301'  => array("//zoom.us/j/175307047",	"(646) 568-7788","175 307 047", NULL),  // Southampton Friday Night Group (Our Lady of Poland)
-    '346'  => array("//zoom.us/j/6312831935",	        NULL,"631 283 1935", NULL),     // Southampton First Things First
     '317.MN.0'  => array("//nyintergroup.zoom.us/j/553131814",	"929 436 2866 Access #: 860059","553 131 814", "letmein"), // Wainscott	Lincoln & Lee
     '317.WD.0'  => array("//nyintergroup.zoom.us/j/553131814",	"929 436 2866 Access #: 860059","553 131 814", "letmein"), // Wainscott	Lincoln & Lee
     '378'  => array("//zoom.us/j/175307047",            NULL,"175 307 047", NULL),      // Wainscott MIRACLES HAPPEN
     '439'  => array("//zoom.us/j/697601579",            NULL,"697 601 579", NULL),      // Water Mill WATER MILL SUNDAY NIGHT BEGINNER'S
+    '711'  => array("//zoom.us/j/6312831935",	        NULL,"631 283 1935", NULL),     // Southampton First Things First (ONLINE)
 );
 
 //fetch data
