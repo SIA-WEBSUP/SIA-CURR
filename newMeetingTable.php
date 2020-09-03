@@ -190,12 +190,21 @@ foreach ($old_table as $recnum=>$row) {
                         $mtg['notes'] .= "<br><br>OUTDOOR MEETING";
                     }
 
+                    // Attendance Limit() - parse string in between parens
+                    if(strpos($new_row['status'], 'LIMIT(') != false) {
+                        $str =$new_row['status'];
+                        $firstpos=strpos($str, 'LIMIT(')+strlen('LIMIT(');
+                        $lastpos=strpos(substr($str,$firstpos), ')');
+                        $mtg['notes'] .='<br><br> ' . $limit=substr ($str, $firstpos, $lastpos) . ' attendees MAX';
+                    }
+
                     // Required Stuff
                     $BYO = array_intersect(["Mask Required"=>"mask",
                                             "Mask Optional"=>"maskopt",
                                             "Social Distancing Required"=>"dist",
                                             "Contact Tracing Log Kept"=>"log",
-                                            "No food or beverages"=>"nofood",
+                                            "No food or beverages served"=>"nofoodserved",
+                                            "No food or beverages allowed"=>"nofoodallowed"
                                             ],
                             explode(' ', strtolower($new_row['status'])));
                     if ($BYO) {
