@@ -106,12 +106,13 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '173' => array("//zoom.us/j/699580490"  , NULL, "699 580 490", "014 700"),             // LINDENHURST GROUP
     '176' => array("//meet.google.com/gbi-rsmn-odo","(502) 430-2829","389 359 014", NULL), // NEIGHBORHOOD SOBRIETY
     '178' => array("//meet.google.com/nrp-ipeq-utg","(240) 397-5311","541 313 606",NULL),  // THE ONLY REQUIREMENT
+    '198' => array(NULL ,"(415) 655-0001 Access #: 132 373 9253", NULL, NULL),             // NORTH BABYLON JUST FOR TODAY
     '230' => array("//zoom.us/j/9177565845", NULL, "917 756 5845", "767066"),              // PORT JEFF INTO ACTION
     '239' => array("//zoom.us/j/500051173", NULL, "500 051 173", "1234"),                  // AQUEBOGUE FREEDOM GROUP
     '240' => array("//zoom.us/j/4176066161?pwd=Z2Y3cnM4SjJ6dTVXN0RLUVllejJydz09","(646) 558 8656 ","417 606 6161","631 875 4849"), // REFLECTIONS '90
     '265' => array("//meet.google.com/vgb-qmdb-wxw","(540) 835-0174","364 022 227", NULL), // THE LITTLE RED SCHOOLHOUSE
     '266' => array("//meet.google.com/oop-cugb-edz","(858) 345-6725","612 896 653", NULL), // ST JAMES GROUP
-    '280' => array(NULL, "(978) 990-5000 Access #:           891 721", NULL, NULL),              // SHELTER ISLAND KEEP IT SIMPLE
+    '280' => array(NULL, "(978) 990-5000 Access #: 891 721", NULL, NULL),              // SHELTER ISLAND KEEP IT SIMPLE
     '289' =>      array("//us02web.zoom.us/j/4313933180", "(929) 436-2866", "431 393 3180", "serenity"),    // SMITHTOWN SERENITY
     '315' => array("//us02web.zoom.us/j/8727414086?pwd=SmtrT0Q2NzBWYW1xZFdESXJ1K0dMUT09", NULL, "872 741 4086", "381 491"), // WADING RIVER GROUP
     '351' => array("//us02web.zoom.us/j/86239050147?pwd=NmhOSkxLbXdMYlVYV1BDclhSOG50dz09", "(646) 558-8656", "862 3905 0147","502 128"), // SOUTHAMPTON MONDAY CLOSED DISCUSSION GROUP
