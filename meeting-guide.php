@@ -109,7 +109,8 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '198' => array(NULL ,"(415) 655-0001 Access #: 132 373 9253", NULL, NULL),             // NORTH BABYLON JUST FOR TODAY
     '215' => array("//us02web.zoom.us/j/6913867484?pwd=Q1FGRTZCenM4OVJhR0o3bWwzcCs5UT09", "(646) 876 9923", "691 386 7484", "350 155"), // PATCHOGUE GROUP
     '230' => array("//zoom.us/j/9177565845", NULL, "917 756 5845", "767066"),              // PORT JEFF INTO ACTION
-    '239' => array("//zoom.us/j/500051173", NULL, "500 051 173", "1234"),                  // AQUEBOGUE FREEDOM GROUP
+//  '239' => array("//zoom.us/j/500051173", NULL, "500 051 173", "1234"),                  // AQUEBOGUE FREEDOM GROUP
+    '239' => array("//zoom.us/j/3572366731?pwd=amlwY1RQdjlsUHFZUDFZeVk3SFowUT09", NULL, "357 236 6731", "1234"), // AQUEBOGUE FREEDOM GROUP
     '240' => array("//zoom.us/j/4176066161?pwd=Z2Y3cnM4SjJ6dTVXN0RLUVllejJydz09","(646) 558 8656 ","417 606 6161","631 875 4849"), // REFLECTIONS '90
     '265' => array("//meet.google.com/vgb-qmdb-wxw","(540) 835-0174","364 022 227", NULL), // THE LITTLE RED SCHOOLHOUSE
     '266' => array("//meet.google.com/oop-cugb-edz","(858) 345-6725","612 896 653", NULL), // ST JAMES GROUP
@@ -188,7 +189,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '366.TU.0' => array("//zoom.us/j/751707060", NULL, "751 707 060", "cowharbor"),         // NORTHPORT COW HARBOR
     '366.SA.0' => array("//zoom.us/j/360801140", NULL, "360 801 140", "cowharbor"),         // NORTHPORT COW HARBOR
     '422.FR.0' => array("//meet.google.com/wno-mhit-zmk","(402) 824-0258","705 336 354", NULL),  // ROCKY POINT UNITY GRP
-    '422.SA.0' => array("//meet.google.com/wno-mhit-zmk","(402) 824-0258","705 336 354", NULL),  // ROCKY POINT UNITY GRP
+//  '422.SA.0' => array("//meet.google.com/wno-mhit-zmk","(402) 824-0258","705 336 354", NULL),  // ROCKY POINT UNITY GRP
     '591.MN.0' => array("//zoom.us/j/531387530", NULL, "531 387 530", "cowharbor"),         // NORTHPORT COW HARBOR
 
     // East End Meetings:
