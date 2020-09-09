@@ -92,6 +92,7 @@ $all_types = array();
 
 $online_mtgs = array( // Most groups have one URL for all meetings, some have both group level URL and meeting URLs
     // 'GROUPID'  => array("conf_URL","conf_telephone","mtg_id", "pwd"), // GROUP NAME
+    '20'  => array("//zoom.us/j/86070647539"  , NULL, "860 7064 7539", "Email babylonbridgetosobriety@suffolkny-aa.org for the password"),  // BABYLON BRIDGE TO SOBRIETY
     '37'  => array("//zoom.us/j/6052451111?pwd=c085c0o15V1RWWWlBNkFYTmNVUE93UT09",	"(929) 205-6099","605 245 1111", "428 950"), // BAY SHORE SUNRISE SOBRIETY
     '40'  => array("//zoom.us/j/364969933"  ,"(929) 205-6099", "364 969 933", "422 921"),  // BELLPORT GROUP
     '49'  => array("//zoom.us/j/4925480677" ,"(646) 558-8656", "492 548 0677", NULL),      // BRENTWOOD LADIES GROUP
