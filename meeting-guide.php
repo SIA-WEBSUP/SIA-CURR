@@ -120,6 +120,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '289' =>      array("//us02web.zoom.us/j/4313933180", "(929) 436-2866", "431 393 3180", "serenity"),    // SMITHTOWN SERENITY
     '315' => array("//us02web.zoom.us/j/8727414086?pwd=SmtrT0Q2NzBWYW1xZFdESXJ1K0dMUT09", NULL, "872 741 4086", "381 491"), // WADING RIVER GROUP
     '351' => array("//us02web.zoom.us/j/86239050147?pwd=NmhOSkxLbXdMYlVYV1BDclhSOG50dz09", "(646) 558-8656", "862 3905 0147","502 128"), // SOUTHAMPTON MONDAY CLOSED DISCUSSION GROUP
+    '356' => array("//zoom.us/j/299922586", NULL, "299 922 586", "Home"),                  // MATTITUCK MEN'S GROUP
     '375' => array("//zoom.us/join", NULL, "617 988 572","For Password please text\n\r  DeeAnn (631) 495-4912 or\n\r  Besty (631) 525-1828"), // A NEW BEGINNING (WOMEN"S GROUP)
     '417' => array("//meet.google.com/ivi-ugdp-hhm","(530) 425-6625‬","447 762 087", NULL), // BAY SHORE FREETHINKERS
     '437' => array("//zoom.us/join", NULL, "909 301 594","799 633"),                       // THE ONE AND ONLY
@@ -187,7 +188,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '304.WD.0' => array("//zoom.us/j/5907152081", NULL, "590 715 2081", "524 283" ),        // SOUTHOLD SETTLERS
     '304.TH.0' => array("//zoom.us/j/5907152081", NULL, "590 715 2081", "524 283" ),        // SOUTHOLD SETTLERS
 //  '307.TH.0' => array("//meet.google.com/sps-xjqn-uiu","(614) 602-6125","848 749 635", NULL),  // STONY BROOK UNITY GRP
-    '356.FR.0' => array("//zoom.us/j/299922586", NULL, "299 922 586", "Home"),              // MATTITUCK MEN'S GROUP
     '366.SU.0' => array("//zoom.us/j/790355954", NULL, "790 355 954", "cowharbor"),         // NORTHPORT COW HARBOR
     '366.TU.0' => array("//zoom.us/j/751707060", NULL, "751 707 060", "cowharbor"),         // NORTHPORT COW HARBOR
     '366.SA.0' => array("//zoom.us/j/360801140", NULL, "360 801 140", "cowharbor"),         // NORTHPORT COW HARBOR
