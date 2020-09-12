@@ -108,7 +108,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '173' => array("//zoom.us/j/699580490"  , NULL, "699 580 490", "014 700"),             // LINDENHURST GROUP
     '176' => array("//meet.google.com/gbi-rsmn-odo","(502) 430-2829","389 359 014", NULL), // NEIGHBORHOOD SOBRIETY
     '178' => array("//meet.google.com/nrp-ipeq-utg","(240) 397-5311","541 313 606",NULL),  // THE ONLY REQUIREMENT
-    '198' => array(NULL ,"(415) 655-0001 Access #: 132 373 9253", NULL, NULL),             // NORTH BABYLON JUST FOR TODAY
     '215' => array("//us02web.zoom.us/j/6913867484?pwd=Q1FGRTZCenM4OVJhR0o3bWwzcCs5UT09", "(646) 876 9923", "691 386 7484", "350 155"), // PATCHOGUE GROUP
     '230' => array("//zoom.us/j/9177565845", NULL, "917 756 5845", "767066"),              // PORT JEFF INTO ACTION
 //  '239' => array("//zoom.us/j/500051173", NULL, "500 051 173", "1234"),                  // AQUEBOGUE FREEDOM GROUP
@@ -147,6 +146,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '705.SU.1' => array("//zoom.us/j/202548779","(646) 558-8656","202 548 779", "889 048"), // SUNRISE SOBRIETY - MENS 8AM
     '707' => array(NULL, "(605) 313-5315","266 443", NULL),                                 // ST JAMES SUNRISE REFLECTIONS
     '710' => array("//meet.google.com/gxy-fyrz-vhg","(617) 675-4444","408 561 509 8435‬", NULL), // A MOMENT OF CLARITY
+    '713' => array(NULL ,"(415) 655-0001 Access #: 132 373 9253", NULL, NULL),             // NORTH BABYLON JUST FOR TODAY
 
     // Some meetings have different URLs per meeting
     '024.MN.0' => array("//us02web.zoom.us/j/86978146496?pwd=N2ppWFVzWndFcjZYSE5CMlVKK0Jidz09", NULL, "869 7814 6496", "456143"), // MIDDLE RD - Monday 06:45 PM - Beginners
