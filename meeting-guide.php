@@ -99,7 +99,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '82'  => array("//zoom.us/j/6311431023" ,"(631) 766-3661", "631 143 1023", "Cutchogue"), // CUTCHOGUE SUNDAY
     '83'  => array("//zoom.us/j/94672171612?pwd=Y3owSW9Iaks2dHVZbTNDSk16RmQ4dz09", "(929) 205-6099", "946 7217 1612", "cutchogue"), // CUTCHOGUE STEP GROUP
     '85'  => array("//zoom.us/j/742133476"  , NULL, "742 133 476", NULL),                  // HOME FOR DINNER
-    '92'  => array("//zoom.us/j/97702600345", NULL, "977 0260 0345", "bonac"),             // SPRINGS FIREPLACE GROUP
+    '92'  => array("//nyintergroup.zoom.us/j/97702600345?pwd=MTJneE1OSG1CVE9mWFFaMFJ2L2lkQT09", "(929) 436-2866", "977 0260 0345", "bonac"), // SPRINGS FIREPLACE GROUP
     '107' => array("//zoom.us/j/609004671"  ,"(929) 205-6099", "609 004 671", NULL),       // VALLEY 8 O'CLOCK
     '142' => array("//zoom.us/j/7354181748" , NULL, "735 418 1748", "HAUPPAUGE"),          // TOUCHSTONES GROUP
     '126' => array("//nyintergroup.zoom.us/j/253179384", "(929) 436-2866", "253 179 384", "777"),   // HUNTINGTON STA NEW LIFE
@@ -204,7 +204,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '56'  => array("//zoom.us/j/378504990",         	NULL,"378 504 990", "236746"),  // Bridgehampton Haygroup Keep It Simple
     '58'  => array("//nyintergroup.zoom.us/j/99572734568",	NULL,"995 7273 4568", "130529"), // Bridgehampton East End Young People
     '91'  => array("//zoom.us/j/7914635469",	        NULL,"791 463 5469", NULL),     // East Hampton Group
-    //'92'  => array("//zoom.us/j/8483284889",	        NULL,"848 328 4889", "bonac"),  // SPRINGS FIREPLACE GROUP
     '96'  => array("//zoom.us/j/625731737",	"(929) 436-2866","625 731 737", NULL),      // Sunday Step
     '97'  => array("//zoom.us/j/489358693",	                NULL,"489 358 693", "email the group at soberwomenseast@yahoo.com"), // Sober Woman's East
     '365'  => array("//zoom.us/j/279125585",	        NULL,"279 125 585", "KISS"),    // East Hampton Keep It Simple
