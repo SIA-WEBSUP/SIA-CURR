@@ -115,8 +115,9 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '240' => array("//zoom.us/j/4176066161?pwd=Z2Y3cnM4SjJ6dTVXN0RLUVllejJydz09","(646) 558 8656 ","417 606 6161","631 875 4849"), // REFLECTIONS '90
     '265' => array("//meet.google.com/vgb-qmdb-wxw","(540) 835-0174","364 022 227", NULL), // THE LITTLE RED SCHOOLHOUSE
     '266' => array("//meet.google.com/oop-cugb-edz","(858) 345-6725","612 896 653", NULL), // ST JAMES GROUP
-    '280' => array(NULL, "(978) 990-5000 Access #: 891 721", NULL, NULL),              // SHELTER ISLAND KEEP IT SIMPLE
-    '289' =>      array("//us02web.zoom.us/j/4313933180", "(929) 436-2866", "431 393 3180", "serenity"),    // SMITHTOWN SERENITY
+    '280' => array(NULL, "(978) 990-5000 Access #: 891 721", NULL, NULL),                  // SHELTER ISLAND KEEP IT SIMPLE
+    '287' => array("//zoom.us/j/5973540591", "(929) 436-2866", "597 354 0591", "hope364"), // SMITHTOWN GROUP
+    '289' => array("//us02web.zoom.us/j/4313933180", "(929) 436-2866", "431 393 3180", "serenity"),    // SMITHTOWN SERENITY
     '315' => array("//us02web.zoom.us/j/8727414086?pwd=SmtrT0Q2NzBWYW1xZFdESXJ1K0dMUT09", NULL, "872 741 4086", "381 491"), // WADING RIVER GROUP
     '351' => array("//us02web.zoom.us/j/86239050147?pwd=NmhOSkxLbXdMYlVYV1BDclhSOG50dz09", "(646) 558-8656", "862 3905 0147","502 128"), // SOUTHAMPTON MONDAY CLOSED DISCUSSION GROUP
     '356' => array("//zoom.us/j/299922586", NULL, "299 922 586", "Home"),                  // MATTITUCK MEN'S GROUP
@@ -126,8 +127,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '447' => array("//zoom.us/j/5100430468", NULL, "510 043 0468","154 618"),              // 10 AM GROUP
     '499' => array("//meet.google.com/dqe-eerp-zgv","(570) 554-0159","614 095 850", NULL), // SPIRITUAL CIRCLE
     '530' => array("//us02web.zoom.us/j/84350888563?pwd=MGZnaGNiYnEvQVRCT2RLZXdtVC8vdz09","(929) 436-2866","843 5088 8563", "297 082"), // STONY BROOK FREETHINKERS
-//    '530' => array("//meet.google.com/bpy-aijb-aqi","(301) 845-5176","836 521 984", NULL), // STONY BROOK FREETHINKERS
-//    '553' => array("//zoom.us/j/755341289", NULL, NULL, NULL),                         // AS BILL SEES IT
     '581' => array("//zoom.us/j/504706298", "(929) 205-6099", "504 706 298", NULL),        // FREEDOM FROM FEAR
     '601' => array("//zoom.us/j/98558565837", NULL, "985 5856 5837", "631 740"),           // CONNECT THE DOTS
     '606' => array("//zoom.us/j/86781747581",NULL,"867 8174 7581", "Text for password access: 631-388-0876 or 631-889-1613"), // PORT JEFF TRUE FRIENDS WOMENS
@@ -187,7 +186,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '286.SA.0' => array("//zoom.us/j/9134002353", NULL, "913 400 2353", "Smithtown1"),      // SMITHTOWN AFTERNOON GROUP
     '304.WD.0' => array("//zoom.us/j/5907152081", NULL, "590 715 2081", "524 283" ),        // SOUTHOLD SETTLERS
     '304.TH.0' => array("//zoom.us/j/5907152081", NULL, "590 715 2081", "524 283" ),        // SOUTHOLD SETTLERS
-//  '307.TH.0' => array("//meet.google.com/sps-xjqn-uiu","(614) 602-6125","848 749 635", NULL),  // STONY BROOK UNITY GRP
     '366.SU.0' => array("//zoom.us/j/790355954", NULL, "790 355 954", "cowharbor"),         // NORTHPORT COW HARBOR
     '366.TU.0' => array("//zoom.us/j/751707060", NULL, "751 707 060", "cowharbor"),         // NORTHPORT COW HARBOR
     '366.SA.0' => array("//zoom.us/j/360801140", NULL, "360 801 140", "cowharbor"),         // NORTHPORT COW HARBOR
@@ -221,7 +219,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '190.WD.0'  => array("//zoom.us/j/115649907",	"(929) 436-2866 Access #: 692971","115 649 907", "Wilson1212"), // Montauk The Smith-Wilson Group
     '580'  => array("//zoom.us/j/845720420",	        NULL,"845 720 420", "#geekinout"), // Riverhead Back to Books
     '262'  => array(NULL, "(515) 604-9094","790 452 210", NULL),                        // Sag Harbor Spiritual Solution
-//  '301'  => array("//zoom.us/j/175307047",	"(646) 568-7788","175 307 047", NULL),  // Southampton Friday Night Group (Our Lady of Poland)
+//  '   301'  => array("//zoom.us/j/175307047",	"(646) 568-7788","175 307 047", NULL),  // Southampton Friday Night Group (Our Lady of Poland)
     '317.MN.0'  => array("//nyintergroup.zoom.us/j/553131814",	"929 436 2866 Access #: 860059","553 131 814", "letmein"), // Wainscott	Lincoln & Lee
     '317.WD.0'  => array("//nyintergroup.zoom.us/j/553131814",	"929 436 2866 Access #: 860059","553 131 814", "letmein"), // Wainscott	Lincoln & Lee
     '378'  => array("//zoom.us/j/175307047",            NULL,"175 307 047", NULL),      // Wainscott MIRACLES HAPPEN
