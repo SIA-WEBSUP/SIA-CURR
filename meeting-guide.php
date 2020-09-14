@@ -194,7 +194,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '591.MN.0' => array("//zoom.us/j/531387530", NULL, "531 387 530", "cowharbor"),         // NORTHPORT COW HARBOR
 
     // East End Meetings:
-    '1'  => array("//zoom.us/j/812452820",	            NULL,"812 452 820", NULL),      // Ammagansett Sunday Beginners
+//  '1'  => array("//zoom.us/j/812452820",	            NULL,"812 452 820", NULL),      // Ammagansett Sunday Beginners
     '2'  => array("//nyintergroup.zoom.us/j/6554056699", NULL,"655 405 6699", NULL),    // Ammagansett AM
     '3'  => array("//nyintergroup.zoom.us/j/992780763",	NULL,"992 780 763", "mensroom"),// Ammagansett The Mens Room
     '7'  => array("//zoom.us/j/479172809",	            NULL, "479 172 809", "916836"), // Ammagansett	ROUND ROBIN
