@@ -115,6 +115,8 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '240' => array("//zoom.us/j/4176066161?pwd=Z2Y3cnM4SjJ6dTVXN0RLUVllejJydz09","(646) 558 8656 ","417 606 6161","631 875 4849"), // REFLECTIONS '90
     '265' => array("//meet.google.com/vgb-qmdb-wxw","(540) 835-0174","364 022 227", NULL), // THE LITTLE RED SCHOOLHOUSE
     '266' => array("//meet.google.com/oop-cugb-edz","(858) 345-6725","612 896 653", NULL), // ST JAMES GROUP
+    '278' => array("//us02web.zoom.us/j/88572542344", "(646) 558 8656", "885 7254 2344",NULL), // SHELTER ISLAND GROUP
+    '279' => array("//us02web.zoom.us/j/5205564408",  "(646) 558 8656", "520 556 4408", NULL), // SHELTER ISLAND NEW BEGINNINGS
     '280' => array(NULL, "(978) 990-5000 Access #: 891 721", NULL, NULL),                  // SHELTER ISLAND KEEP IT SIMPLE
     '287' => array("//zoom.us/j/5973540591", "(929) 436-2866", "597 354 0591", "hope364"), // SMITHTOWN GROUP
     '289' => array("//us02web.zoom.us/j/4313933180", "(929) 436-2866", "431 393 3180", "serenity"),    // SMITHTOWN SERENITY
@@ -173,9 +175,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '203.SA.0' => array("//zoom.us/j/414657828", NULL, "855 934 327", "northport"),    // NORTHPORT FREE AT LAST
     '238.TU.1' => array("//nyintergroup.zoom.us/j/98985905907?pwd=dDZPUGlxRk14WmdCTUY2Z2d6WHY5dz09","(515) 882-0190", "989 8590 5907", "869937"), // RIVERHEAD GROUP - BB
     '238.FR.0' => array("//nyintergroup.zoom.us/j/95971144125?pwd=R0Fud3h5bGQvRjFCdnN3SGdjYjBJUT09","(929) 436-2866", "959 7114 4125", "023267"), // RIVERHEAD GROUP - BE
-    '278.WD.0' => array("//us02web.zoom.us/j/6875352258",  "(646) 558 8656", "687 535 2258", NULL), // SHELTER ISLAND GROUP
-    '278.SA.0' => array("//us02web.zoom.us/j/88572542344", "(646) 558 8656", "885 7254 2344",NULL), // SHELTER ISLAND GROUP
-    '279.FR.0' => array("//us02web.zoom.us/j/5205564408",  "(646) 558 8656", "520 556 4408", NULL), // SHELTER ISLAND GROUP
     '285.MN.1' => array("//zoom.us/j/380514478", "(929) 436 2866", "380 514 478", "918 048"),    // SOBRIETY UNLIMITED
     '285.FR.0' => array("//zoom.us/j/380514478", "(929) 436 2866", "380 514 478", "918 048"),    // SOBRIETY UNLIMITED
     '286.MN.0' => array("//zoom.us/j/9134002353", NULL, "913 400 2353", "Smithtown1"),      // SMITHTOWN AFTERNOON GROUP
@@ -344,6 +343,7 @@ foreach ($result as $row) {
 		'day' => array_search($row['day'], $day_lookup),
 		'time' => date('H:i', strtotime($row['time'])),
 		'name' => $row['group_name'],
+//		'group' => $row['group_name'],
 		'types' => $types,
 		'location' => $row['locationName'],
 		'address' => $row['locationAddress'],
