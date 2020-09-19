@@ -110,6 +110,8 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '178' => array("//meet.google.com/nrp-ipeq-utg","(240) 397-5311","541 313 606",NULL),  // THE ONLY REQUIREMENT
     '215' => array("//us02web.zoom.us/j/6913867484?pwd=Q1FGRTZCenM4OVJhR0o3bWwzcCs5UT09", "(646) 876 9923", "691 386 7484", "350 155"), // PATCHOGUE GROUP
     '230' => array("//zoom.us/j/9177565845", NULL, "917 756 5845", "767066"),              // PORT JEFF INTO ACTION
+    '237'      => array("//zoom.us/j/699794136", NULL, "699 794 136", "809363"),           // REMSENBURG BASIC SOBRIETY
+    '237.WD.0' => array("//zoom.us/j/409580451", NULL, "409 580 451", "497252"),           // REMSENBURG BASIC SOBRIETY
 //  '239' => array("//zoom.us/j/500051173", NULL, "500 051 173", "1234"),                  // AQUEBOGUE FREEDOM GROUP
     '239' => array("//zoom.us/j/3572366731?pwd=amlwY1RQdjlsUHFZUDFZeVk3SFowUT09", NULL, "357 236 6731", "1234"), // AQUEBOGUE FREEDOM GROUP
     '240' => array("//zoom.us/j/4176066161?pwd=Z2Y3cnM4SjJ6dTVXN0RLUVllejJydz09","(646) 558 8656 ","417 606 6161","631 875 4849"), // REFLECTIONS '90
