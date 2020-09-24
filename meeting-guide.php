@@ -104,7 +104,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '142' => array("//zoom.us/j/7354181748" , NULL, "735 418 1748", "HAUPPAUGE"),          // TOUCHSTONES GROUP
     '126' => array("//nyintergroup.zoom.us/j/253179384", "(929) 436-2866", "253 179 384", "777"),   // HUNTINGTON STA NEW LIFE
     '157' => array("//zoom.us/j/851329515?pwd=STFwM1dOQUZUZXdrTlFZK1hIMDlnUT09","(646) 876-9923", "851 329 515", "DIY"), // DOING IT YOUNG
-    '168' => array("//zoom.us/j/85068453181","(646) 558-8656 Access #: 535388", "850 6845 3181", "asolution"), // LAKE RONKONKOMA GROUP
+    '168' => array("//zoom.us/j/85068453181","(646) 558-8656 Passcode: : 535388", "850 6845 3181", "asolution"), // LAKE RONKONKOMA GROUP
     '173' => array("//zoom.us/j/699580490"  , NULL, "699 580 490", "014 700"),             // LINDENHURST GROUP
     '176' => array("//meet.google.com/gbi-rsmn-odo","(502) 430-2829","389 359 014", NULL), // NEIGHBORHOOD SOBRIETY
     '178' => array("//meet.google.com/nrp-ipeq-utg","(240) 397-5311","541 313 606",NULL),  // THE ONLY REQUIREMENT
@@ -119,7 +119,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '266' => array("//meet.google.com/oop-cugb-edz","(858) 345-6725","612 896 653", NULL), // ST JAMES GROUP
     '278' => array("//us02web.zoom.us/j/88572542344", "(646) 558 8656", "885 7254 2344",NULL), // SHELTER ISLAND GROUP
     '279' => array("//us02web.zoom.us/j/5205564408",  "(646) 558 8656", "520 556 4408", NULL), // SHELTER ISLAND NEW BEGINNINGS
-    '280' => array(NULL, "(978) 990-5000 Access #: 891 721", NULL, NULL),                  // SHELTER ISLAND KEEP IT SIMPLE
+    '280' => array(NULL, "(978) 990-5000 Passcode: : 891 721", NULL, NULL),                  // SHELTER ISLAND KEEP IT SIMPLE
     '287' => array("//zoom.us/j/5973540591", "(929) 436-2866", "597 354 0591", "hope364"), // SMITHTOWN GROUP
     '289' => array("//us02web.zoom.us/j/4313933180", "(929) 436-2866", "431 393 3180", "serenity"),    // SMITHTOWN SERENITY
     '315' => array("//us02web.zoom.us/j/8727414086?pwd=SmtrT0Q2NzBWYW1xZFdESXJ1K0dMUT09", NULL, "872 741 4086", "381 491"), // WADING RIVER GROUP
@@ -137,7 +137,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '695' => array("//zoom.us/j/4458142615",NULL,"445 814 2615", "766 504"),               // YOUNG AT HEART IN ISLIP
     '698' => array("//meet.google.com/bpy-aijb-aqi","(301) 845-5176","836 521 984", NULL), // SIA HOSTED
     '699' => array("//meet.google.com/ikn-poem-eba","(978) 435-0386","470 509 931", NULL), // WOMEN'S BACK TO BASICS
-    '701' => array("//zoom.us/j/661443978?pwd=YUtRYS9nM3U5dnJtaGZTbld0ZkMvZz09", "(646) 558 8656","661 443 978", "solutions"), // THE SOLUTIONS GROUP ONLINE
+    '701' => array("//zoom.us/j/661443978?pwd=YUtRYS9nM3U5dnJtaGZTbld0ZkMvZz09", "(646) 558-8656 Passcode: : 480959897","661 443 978", "solutions"), // THE SOLUTIONS GROUP ONLINE
     '702' => array("//zoom.us/j/500561044", NULL,"500 561 044", "12steps"),                // SUFFOLK ONLINE
     '703' => array("//zoom.us/j/84592881281", NULL,"845 9288 1281", NULL),                 // HOLBROOK LOVE N' SHARE (ONLINE)
     '704' => array("//nyintergroup.zoom.us/j/96853910721?pwd=L1R5bmFDdVoyUFM2Szh5dUZXZU10UT09","(929) 436-2866","968 5391 0721","521231"), // EYE OPENER
@@ -149,7 +149,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '705.SU.1' => array("//zoom.us/j/202548779","(646) 558-8656","202 548 779", "889 048"), // SUNRISE SOBRIETY - MENS 8AM
     '707' => array(NULL, "(605) 313-5315","266 443", NULL),                                 // ST JAMES SUNRISE REFLECTIONS
     '710' => array("//meet.google.com/gxy-fyrz-vhg","(617) 675-4444","408 561 509 8435‬", NULL), // A MOMENT OF CLARITY
-    '713' => array(NULL ,"(415) 655-0001 Access #: 132 373 9253", NULL, NULL),             // NORTH BABYLON JUST FOR TODAY
+    '713' => array(NULL ,"(415) 655-0001 Passcode: : 132 373 9253", NULL, NULL),             // NORTH BABYLON JUST FOR TODAY
 
     // Some meetings have different URLs per meeting
     '024.MN.0' => array("//us02web.zoom.us/j/86978146496?pwd=N2ppWFVzWndFcjZYSE5CMlVKK0Jidz09", NULL, "869 7814 6496", "456143"), // MIDDLE RD - Monday 06:45 PM - Beginners
@@ -214,15 +214,15 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '433'  => array("//zoom.us/join",	                NULL,"483 772 9818", "980165"),  // Hampton Bays	Spiritual Awakening West - 11th Step Meditation Mtg
     '573.SU.2'  => array("//zoom.us/j/207160635",	        NULL,"207 160 635", "sobriety#1"), // Hampton Bays Hampton Bay Sunday Night Group
     '700'  => array("//nyintergroup.zoom.us/j/889817053",	NULL,"889 817 053", "MTK1212"), // Montauk Montauk Group (ONLINE ONLY)
-    '190.SA.0'  => array("//zoom.us/j/532272602",	"(929) 436-2866 Access #: 556423","532 272 602", "Wilson1212"), // Montauk The Smith-Wilson Group
-    '190.TH.0'  => array("//zoom.us/j/377870869",	"(929) 436-2866 Access #: 240613","377 870 869", "Wilson1212"), // Montauk The Smith-Wilson Group
-    '190.TU.0'  => array("//zoom.us/j/116733466",	"(929) 436-2866 Access #: 370982","116 733 466", "Wilson1212"), // Montauk The Smith-Wilson Group
-    '190.WD.0'  => array("//zoom.us/j/115649907",	"(929) 436-2866 Access #: 692971","115 649 907", "Wilson1212"), // Montauk The Smith-Wilson Group
+    '190.SA.0'  => array("//zoom.us/j/532272602",	"(929) 436-2866 Passcode: : 556423","532 272 602", "Wilson1212"), // Montauk The Smith-Wilson Group
+    '190.TH.0'  => array("//zoom.us/j/377870869",	"(929) 436-2866 Passcode: : 240613","377 870 869", "Wilson1212"), // Montauk The Smith-Wilson Group
+    '190.TU.0'  => array("//zoom.us/j/116733466",	"(929) 436-2866 Passcode: : 370982","116 733 466", "Wilson1212"), // Montauk The Smith-Wilson Group
+    '190.WD.0'  => array("//zoom.us/j/115649907",	"(929) 436-2866 Passcode: : 692971","115 649 907", "Wilson1212"), // Montauk The Smith-Wilson Group
     '580'  => array("//zoom.us/j/845720420",	        NULL,"845 720 420", "#geekinout"), // Riverhead Back to Books
     '262'  => array(NULL, "(515) 604-9094","790 452 210", NULL),                        // Sag Harbor Spiritual Solution
 //  '   301'  => array("//zoom.us/j/175307047",	"(646) 568-7788","175 307 047", NULL),  // Southampton Friday Night Group (Our Lady of Poland)
-    '317.MN.0'  => array("//nyintergroup.zoom.us/j/553131814",	"929 436 2866 Access #: 860059","553 131 814", "letmein"), // Wainscott	Lincoln & Lee
-    '317.WD.0'  => array("//nyintergroup.zoom.us/j/553131814",	"929 436 2866 Access #: 860059","553 131 814", "letmein"), // Wainscott	Lincoln & Lee
+    '317.MN.0'  => array("//nyintergroup.zoom.us/j/553131814",	"929 436 2866 Passcode: : 860059","553 131 814", "letmein"), // Wainscott	Lincoln & Lee
+    '317.WD.0'  => array("//nyintergroup.zoom.us/j/553131814",	"929 436 2866 Passcode: : 860059","553 131 814", "letmein"), // Wainscott	Lincoln & Lee
     '378'  => array("//zoom.us/j/175307047",            NULL,"175 307 047", NULL),      // Wainscott MIRACLES HAPPEN
     '439'  => array("//zoom.us/j/697601579",            NULL,"697 601 579", NULL),      // Water Mill WATER MILL SUNDAY NIGHT BEGINNER'S
     '711'  => array("//zoom.us/j/6312831935",	        NULL,"631 283 1935", NULL),     // Southampton First Things First (ONLINE)
@@ -287,31 +287,31 @@ foreach ($result as $row) {
             }
             // append phone number to meeting notes
             if ($conference_phone) {
-                $access_num = strpos($conference_phone, "Access #:");
+                $access_num = strpos($conference_phone, "Passcode: :");
                 if ($access_num) {
-                    // grab access pin if it exists
+                    // grab numeric passcode if it exists
                     $t = substr($conference_phone, 0, $access_num-1);
-                    $access_num = substr($conference_phone, $access_num+strlen("Access #:"), strlen($conference_phone)-1);
+                    $access_num = substr($conference_phone, $access_num+strlen("Passcode: :"), strlen($conference_phone)-1);
                     $conference_phone = $t;
                 }
                 $row['notes'] .= "To join by phone dial:\n\r  ". $conference_phone;
-                if ($conference_mtgID)
-                    $row['notes'] .= " PIN: " . $conference_mtgID .  "#";
-                $row['notes'] .= "\n\r\n\r";
+                if ($conference_mtgID) {
+                    $row['notes'] .= "\n\r\n\rMtg ID: " . $conference_mtgID . "#";
+                }
             }
             // append pwd to meeting notes
             if ($access_num) {
-                $row['notes'] .= " ACCESS#: " . $access_num .  "#";
+                $row['notes'] .= "\n\r\n\rPasscode: " . $access_num .  "#";
             }
 
             // encode phone with meeting ID and password for one tap number
-            // should look like +12125551212,,123456789#,,#,,444444#
+            // should look like +12125551212,,123456789#,,,,,,0#,,444444#
             if ($conference_phone) {
-                $conference_phone = "+1" . $conference_phone . ",," . $conference_mtgID . "#";
+                $conference_phone = "+1" . $conference_phone . ",," . $conference_mtgID . "#,,,,,,0#";
                 if ($access_num) {
-                    $conference_phone .= ",,#,," . $access_num . "#"; // append access no if it exists
+                    $conference_phone .= ",," . $access_num . "#"; // append access no if it exists
                 } else if ($conference_pwd){
-                    $conference_phone .= ",,#,," . $conference_pwd . "#"; // append pwd if necessary
+                    $conference_phone .= ",," . $conference_pwd . "#"; // append pwd if necessary
                 }
                 $conference_phone = str_replace(array('(', ')','-',' '), '', $conference_phone); //strip unnecessary chars
             }
