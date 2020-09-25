@@ -102,6 +102,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '92'  => array("//nyintergroup.zoom.us/j/97702600345?pwd=MTJneE1OSG1CVE9mWFFaMFJ2L2lkQT09", "(929) 436-2866", "977 0260 0345", "bonac"), // SPRINGS FIREPLACE GROUP
     '107' => array("//zoom.us/j/609004671"  ,"(929) 205-6099", "609 004 671", NULL),       // VALLEY 8 O'CLOCK
     '142' => array("//zoom.us/j/7354181748" , NULL, "735 418 1748", "HAUPPAUGE"),          // TOUCHSTONES GROUP
+    '149' => array("//zoom.us/j/81871381919" , NULL, "818 7138 1919", "056887"),           // SOBRIETY HILL
     '126' => array("//nyintergroup.zoom.us/j/253179384", "(929) 436-2866", "253 179 384", "777"),   // HUNTINGTON STA NEW LIFE
     '157' => array("//zoom.us/j/851329515?pwd=STFwM1dOQUZUZXdrTlFZK1hIMDlnUT09","(646) 876-9923", "851 329 515", "DIY"), // DOING IT YOUNG
     '168' => array("//zoom.us/j/85068453181","(646) 558-8656 Passcode: : 535388", "850 6845 3181", "asolution"), // LAKE RONKONKOMA GROUP
