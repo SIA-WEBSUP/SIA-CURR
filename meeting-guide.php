@@ -2,6 +2,8 @@
 
 include('./sql-connect.php');
 
+$fGetStats = isset($_GET['stats']);
+
 //make sure errors are being reported
 error_reporting(E_ALL);
 
@@ -383,5 +385,16 @@ if (headers_sent()) {
 }
 
 //output
-header('Content-type: application/json; charset=utf-8');
-echo $return;
+if (!$fGetStats) {
+    header('Content-type: application/json; charset=utf-8');
+    echo $return;
+    } else {
+    $online_groups=array();
+    foreach (array_keys($online_mtgs) as $mtgID) {
+        $mtgID = strval($mtgID);
+        $i = strpos($mtgID,'.');
+        $groupID =  ($i===false) ? $mtgID : substr($mtgID,0,$i-1);
+        $online_groups[$groupID]=true;
+    }
+    echo "<br><br>Total Online Groups = " . count($online_groups);
+}
