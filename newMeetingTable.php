@@ -202,6 +202,7 @@ foreach ($old_table as $recnum=>$row) {
                     $BYO = array_intersect(["Mask Required"=>"mask",
                                             "Mask Optional"=>"maskopt",
                                             "Social Distancing Required"=>"dist",
+                                            "Temperature Taken"=>"tt",
                                             "Contact Tracing Log Kept"=>"log",
                                             "No food or beverages served"=>"nofoodserved",
                                             "No food or beverages allowed"=>"nofoodallowed"
