@@ -138,6 +138,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '447' => array("//zoom.us/j/5100430468", NULL, "510 043 0468","154 618"),              // 10 AM GROUP
     '499' => array("//meet.google.com/dqe-eerp-zgv","(570) 554-0159","614 095 850", NULL), // SPIRITUAL CIRCLE
     '530' => array("//us02web.zoom.us/j/84350888563?pwd=MGZnaGNiYnEvQVRCT2RLZXdtVC8vdz09","(929) 436-2866","843 5088 8563", "297 082"), // STONY BROOK FREETHINKERS
+    '535' => array("//zoom.us/j", NULL, NULL, NULL), // FISHER ISLAND
     '581' => array("//zoom.us/j/504706298", "(929) 205-6099", "504 706 298", NULL),        // FREEDOM FROM FEAR
     '572' => array("//zoom.us/j/2830231736", NULL, "283 023 1736", "253666"),              // HUNTINGTON STA WE CAN RECOVER
     '601' => array("//zoom.us/j/98558565837", NULL, "985 5856 5837", "631 740"),           // CONNECT THE DOTS
