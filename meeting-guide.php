@@ -272,19 +272,8 @@ foreach ($result as $row) {
             $conference_info = $online_mtgs[$row['group_id']];
         }
 
-        // BAD BAD HACK #1
-        // if this in an online meeting or is still TC for
-        // a group whose other meetings have reopened
-        // clear out COVID NOTES ... oops ... easiest way to take care of this special case
-        // and remove ROPN type since TC & ROPN are mutually exclusive
-        // and arguably ROPN and ONL are also mutually exclusive
-        if (in_array("ROPN",$types)) {
-            $row['notes'] = substr($row['notes'],0,strpos($row['notes'],'¤COVID¤')) . "\n\r";
-            $types = array_diff($types,['ROPN']);
-        }
-
         if ($conference_info) {
-            if (!in_array("ONL",$types)) $types[]='ONL';
+            if (!in_array("ONL",$types)) $types[]='ONL'; // TC case
             $cOnlineMeetings++;
             $conference_url = $conference_info[0] ? "https:" . $conference_info[0]  : NULL;
             $conference_phone = $conference_info[1];
@@ -339,12 +328,11 @@ foreach ($result as $row) {
         } else  if (in_array("ONL",$types)) {
             // meeting marked as ONL but no online connection info provided
             // ONL meeting type will be stripped by plugin since no connection info provided
-            $row['notes'] .= " No online meeting connection info provided by group\n\r\n\r";
+            $row['notes'] .= " ERROR - missing online meeting connection info - contact websup@suffolkny-aa.org\n\r\n\r";
         }
 
     } else if ( in_array("ROPN",$types) ) {
         $row['group_name'] .= ' (REOPENED CONFIRMED)';
-        $row['notes'] = str_replace('¤COVID¤', '', $row['notes'] );
     }
 
         //$all_types = array_merge($all_types, $types);

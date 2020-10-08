@@ -158,75 +158,68 @@ foreach ($old_table as $recnum=>$row) {
                 if ((strpos($new_row['status'], "TEMP CLOSED") !== false)) {
                     $cTempClosedMtgs++;
                     $mtg['types'] .= " TC";
-                } else
+                }
 
                 // ONLINE ONLY meetings
                 if (strpos($new_row['status'], "ONLINE ONLY") !== false) {
                     $cOnlineOnlyMtgs++;
                     $mtg['types'] .= " ONL";
-                } else
-
-                // REOPENED meetings
-                if (strpos($new_row['status'], "REOPENED") !== false) {
-                    if (strpos($mtg['types'], "TC") === false && strpos($mtg['types'], "ONL") === false)
-                        $cReopenedMtgs++;
-                    // use $row otherwise you'll have multiple additions of '** **'
-                    //$new_row['group_name'] = '** ' . $row['group_name'] . ' ** ';
-                    //$new_row['locationNotes']  = $row['locationNotes'] . "<br><br>** COVID REOPENED CONFIRMED **";
-                    //$mtg['notes'] .= "<br><br>** COVID RE-OPENED CONFIRMED **";
-                    $mtg['types'] .= " ROPN";
-
-                    // add token to separate COVID notes from other notes
-                    // this will allow us to remove COVID notes from ONL and TC meetings
-                    $mtg['notes'] .= "¤COVID¤";
-
-                    // HYBRID
-                    if(strpos($new_row['status'], "HYBRID") != false) {
-                        $mtg['notes'] .= "<br><br>HYBRID MEETING";
-                    }
-
-                    // Meeting OUTDOOR
-                    if(strpos($new_row['status'], "OUTDOOR") != false) {
-                        $mtg['notes'] .= "<br><br>OUTDOOR MEETING";
-                    }
-
-                    // Attendance Limit() - parse string in between parens
-                    if(strpos($new_row['status'], 'LIMIT(') != false) {
-                        $str =$new_row['status'];
-                        $firstpos=strpos($str, 'LIMIT(')+strlen('LIMIT(');
-                        $lastpos=strpos(substr($str,$firstpos), ')');
-                        $mtg['notes'] .='<br><br> ' . $limit=substr ($str, $firstpos, $lastpos) . ' attendees MAX';
-                    }
-
-                    // Required Stuff
-                    $BYO = array_intersect(["Mask Required"=>"mask",
-                                            "Mask Optional"=>"maskopt",
-                                            "Social Distancing Required"=>"dist",
-                                            "Temperature Taken"=>"tt",
-                                            "Contact Tracing Log Kept"=>"log",
-                                            "No food or beverages served"=>"nofoodserved",
-                                            "No food or beverages allowed"=>"nofoodallowed"
-                                            ],
-                            explode(' ', strtolower($new_row['status'])));
-                    if ($BYO) {
-                        foreach($BYO as $k=>$v)
-                            $mtg['notes'] .= "<br><br>COVID " . $k;
-                    }
-
-                    // BYO Stuff
-                    $BYO = array_map(function ($s) { return ucfirst($s);},
-                        array_intersect(["coffee", "book", "chair",],
-                            explode(' ', strtolower($new_row['status']))));
-                    if ($BYO) {
-                        //var_dump(implode(" / ", $BYO));
-                        $mtg['notes'] .= "<br><br>COVID BYO " . implode(" / ", $BYO);
-                    }
-
-                } else {
-                    $cStatusUnknownMtgs++;
-                    $mtg['types'] .= " UNK";
                 }
 
+                if (strpos($mtg['types'], "TC") === false && strpos($mtg['types'], "ONL") === false ) {
+                    // REOPENED meetings
+                    if (strpos($new_row['status'], "REOPENED") === false) {
+                        // UNKNOWN meetings
+                        $cStatusUnknownMtgs++;
+                        $mtg['types'] .= " UNK";
+                    } else {
+                        // REOPENED meetings
+                        $cReopenedMtgs++;
+                        $mtg['types'] .= " ROPN";
+
+                        // HYBRID
+                        if(strpos($new_row['status'], "HYBRID") != false) {
+                            $mtg['notes'] .= "<br><br>HYBRID MEETING";
+                        }
+
+                        // Meeting OUTDOOR
+                        if(strpos($new_row['status'], "OUTDOOR") != false) {
+                            $mtg['notes'] .= "<br><br>OUTDOOR MEETING";
+                        }
+
+                        // Attendance Limit() - parse string in between parens
+                        if(strpos($new_row['status'], 'LIMIT(') != false) {
+                            $str =$new_row['status'];
+                            $firstpos=strpos($str, 'LIMIT(')+strlen('LIMIT(');
+                            $lastpos=strpos(substr($str, $firstpos), ')');
+                            $mtg['notes'] .='<br><br> ' . substr ($str, $firstpos, $lastpos) . ' attendees MAX';
+                        }
+
+                        // Required Stuff
+                        $BYO = array_intersect(["Mask Required"=>"mask",
+                            "Mask Optional"=>"maskopt",
+                            "Social Distancing Required"=>"dist",
+                            "Temperature Taken"=>"tt",
+                            "Contact Tracing Log Kept"=>"log",
+                            "No food or beverages served"=>"nofoodserved",
+                            "No food or beverages allowed"=>"nofoodallowed"
+                        ],
+                            explode(' ', strtolower($new_row['status'])));
+                        if ($BYO) {
+                            foreach($BYO as $k=>$v)
+                                $mtg['notes'] .= "<br><br>COVID " . $k;
+                        }
+
+                        // BYO Stuff
+                        $BYO = array_map(function ($s) { return ucfirst($s);},
+                            array_intersect(["coffee", "book", "chair",],
+                                explode(' ', strtolower($new_row['status']))));
+                        if ($BYO) {
+                            //var_dump(implode(" / ", $BYO));
+                            $mtg['notes'] .= "<br><br>COVID BYO " . implode(" / ", $BYO);
+                        }
+                    } // REOPENED
+                } // UNKNOWN or REOPENED
 
                 // if 'hc'=='yes', add X to types
                 if (strtoupper($new_row['hc']) == 'YES') {
