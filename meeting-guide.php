@@ -222,7 +222,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '3'  => array("//nyintergroup.zoom.us/j/992780763",	NULL,"992 780 763", "mensroom"),// Ammagansett The Mens Room
     '7'  => array("//zoom.us/j/479172809",	            NULL, "479 172 809", "916836"), // Ammagansett	ROUND ROBIN
     '500'  => array("//zoom.us/j/231147035",	        NULL,"231 147 035", "505622"),  // Ammagansett Happy Hour
-    '56'  => array("//zoom.us/j/378504990",         	NULL,"378 504 990", "236746"),  // Bridgehampton Haygroup Keep It Simple
+    '56'  => array("//us02web.zoom.us/j/378504990?pwd=YkYrNUJVRTY0UVBSNDNOWERVVjVVUT09", NULL,"378 504 990", "236746"),  // Bridgehampton Hayground Keep It Simple
     '58'  => array("//nyintergroup.zoom.us/j/99572734568",	NULL,"995 7273 4568", "130529"), // Bridgehampton East End Young People
     '91'  => array("//zoom.us/j/7914635469",	        NULL,"791 463 5469", NULL),     // East Hampton Group
     '96'  => array("//zoom.us/j/625731737",	"(929) 436-2866","625 731 737", NULL),      // Sunday Step
