@@ -132,7 +132,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '279' => array("//us02web.zoom.us/j/5205564408",  "(646) 558 8656", "520 556 4408", NULL), // SHELTER ISLAND NEW BEGINNINGS
     '280' => array(NULL, "(978) 990-5000 Passcode: 891 721", NULL, NULL),                  // SHELTER ISLAND KEEP IT SIMPLE
     '287' => array("//zoom.us/j/5973540591", "(929) 436-2866", "597 354 0591", "hope364"), // SMITHTOWN GROUP
-    '289' => array("//us02web.zoom.us/j/4313933180", "(929) 436-2866", "431 393 3180", "serenity"),    // SMITHTOWN SERENITY
+    '289' => array("//nyintergroup.zoom.us/j/4313933180?pwd=aU1lS2lXbXlNcUprZW5TdVN0T0Z1dz09", "(929) 436-2866", "431 393 3180", "serenity"),    // SMITHTOWN SERENITY
     '315' => array("//us02web.zoom.us/j/8727414086?pwd=SmtrT0Q2NzBWYW1xZFdESXJ1K0dMUT09", NULL, "872 741 4086", "381491"), // WADING RIVER GROUP
     '351' => array("//us02web.zoom.us/j/86239050147?pwd=NmhOSkxLbXdMYlVYV1BDclhSOG50dz09", "(646) 558-8656", "862 3905 0147","502128"), // SOUTHAMPTON MONDAY CLOSED DISCUSSION GROUP
 //    '356' => array("//zoom.us/j/299922586", NULL, "299 922 586", "Home"),                  // MATTITUCK MEN'S GROUP
