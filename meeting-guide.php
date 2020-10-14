@@ -380,6 +380,41 @@ sort($all_types);
 dd($all_types);
 */
 
+// dump some stats instead of the JSON
+if ($fGetStats) {
+    $online_groups=array();
+    foreach (array_keys($online_mtgs) as $mtgID) {
+        $mtgID = strval($mtgID);
+        $i = strpos($mtgID,'.');
+        $groupID =  ($i===false) ? $mtgID : substr($mtgID,0,$i-1);
+        $online_groups[$groupID]=true;
+    }
+
+    $types_stats=array();
+    $TC = 0;
+    foreach ($return as $meeting) {
+        if (in_array("TC",$meeting['types']) && !in_array("ONL",$meeting['types']) )
+            $TC++;
+        foreach($meeting['types'] as $type) {
+            $types_stats[$type] = isset($types_stats[$type]) ? $types_stats[$type]+1 : 1;
+        }
+    }
+    echo "Total Online Meetings = " . $cOnlineMeetings;
+    echo "<br><br>Total Online Groups = " . count($online_groups);
+    echo "<br><br>True TC count = " . $TC;
+    echo "<br><br>";
+
+    echo '<table style=\"width:100%\"><tr>';
+    echo "</tr><tr>";
+    foreach($types_stats as $t=>$c) {
+        printf("<td>%s</td><td>%s</td>>", $t, $c);
+        echo "</tr><tr>";
+    }
+    echo "</table>";
+    exit;
+}
+
+
 //encode JSON
 $return = json_encode($return);
 if (json_last_error()) {
@@ -392,17 +427,5 @@ if (headers_sent()) {
 }
 
 //output
-if (!$fGetStats) {
-    header('Content-type: application/json; charset=utf-8');
-    echo $return;
-    } else {
-    $online_groups=array();
-    foreach (array_keys($online_mtgs) as $mtgID) {
-        $mtgID = strval($mtgID);
-        $i = strpos($mtgID,'.');
-        $groupID =  ($i===false) ? $mtgID : substr($mtgID,0,$i-1);
-        $online_groups[$groupID]=true;
-    }
-    echo "Total Online Meetings = " . $cOnlineMeetings;
-    echo "<br><br>Total Online Groups = " . count($online_groups);
-}
+header('Content-type: application/json; charset=utf-8');
+echo $return;
