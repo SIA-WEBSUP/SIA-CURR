@@ -384,10 +384,8 @@ dd($all_types);
 if ($fGetStats) {
     $online_groups=array();
     foreach (array_keys($online_mtgs) as $mtgID) {
-        $mtgID = strval($mtgID);
-        $i = strpos($mtgID,'.');
-        $groupID =  ($i===false) ? $mtgID : substr($mtgID,0,$i-1);
-        $online_groups[$groupID]=true;
+        $groupID = explode('.',$mtgID);
+        $online_groups[$groupID[0]] = isset($online_groups[$groupID[0]]) ? $online_groups[$groupID[0]]+1 : 1;
     }
 
     $types_stats=array();
@@ -401,7 +399,7 @@ if ($fGetStats) {
     }
     echo "Total Online Meetings = " . $cOnlineMeetings;
     echo "<br><br>Total Online Groups = " . count($online_groups);
-    echo "<br><br>True TC count = " . $TC;
+    echo "<br><br>True TC count (TC but not ONL) = " . $TC;
     echo "<br><br>";
 
     echo '<table style=\"width:100%\"><tr>';
