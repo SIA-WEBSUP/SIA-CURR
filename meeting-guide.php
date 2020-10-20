@@ -3,6 +3,11 @@
 include('./sql-connect.php');
 
 $fGetStats = isset($_GET['stats']);
+$fUnknown = isset($_GET['unk']) ? ($_GET['unk']=='true') : false;
+
+// printf("<br>fGetStats =  %s" , ($fGetStats==true)  ? "TRUE" : "FALSE");
+// printf("<br>fUnknown =  %s" , ($fUnknown==true)  ? "TRUE" : "FALSE");
+//exit;
 
 //make sure errors are being reported
 error_reporting(E_ALL);
@@ -162,7 +167,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '705.SA.1' => array("//zoom.us/j/678316314","(646) 558-8656","678 316 314", "003597"), // SUNRISE SOBRIETY - WOMENS 8AM
     '705.SU.1' => array("//zoom.us/j/202548779","(646) 558-8656","202 548 779", "889048"), // SUNRISE SOBRIETY - MENS 8AM
     '707' => array(NULL, "(605) 313-5315","266 443", NULL),                                 // ST JAMES SUNRISE REFLECTIONS
-    '710' => array("//meet.google.com/gxy-fyrz-vhg","(617) 675-4444","408 561 509 8435‬", NULL), // A MOMENT OF CLARITY
+    '710' => array("//nyintergroup.zoom.us/j/99111309723","(929) 436-2866 ","991 1130 9723", "0188"), // A MOMENT OF CLARITY
     '713' => array(NULL ,"(415) 655-0001 Passcode: 132 373 9253", NULL, NULL),             // NORTH BABYLON JUST FOR TODAY
     '717' => array("//zoom.us/j/9224960248" ,"(929) 205-6099", "922 496 0248", NULL),      // DEER PARK ZOOM INTO ACTION
 
@@ -338,6 +343,15 @@ foreach ($result as $row) {
         $row['group_name'] .= ' (REOPENED CONFIRMED)';
     }
 
+    // mark all UNK meetings as UNK also
+    if (!$fUnknown) {
+        if ( in_array("UNK",$types) ) {
+            $types[] = "TC";
+            if ($fGetStats)
+                printf("<br> %s %s UNK->TC",$row['meeting_id'], $row['group_name']);
+        }
+    }
+
         //$all_types = array_merge($all_types, $types);
 	$types = array_filter($types, function($type) use ($type_keys) {
 		return in_array($type, $type_keys);
@@ -346,6 +360,7 @@ foreach ($result as $row) {
 		return $type_lookup[$type];
 	}, $types);
 	$types = array_flatten($types);
+
 
 	//add C whenever meeting is not O
 	//if (!in_array($types, 'O')) $types[] = 'C';
