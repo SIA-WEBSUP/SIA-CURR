@@ -167,7 +167,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '705.SA.1' => array("//zoom.us/j/678316314","(646) 558-8656","678 316 314", "003597"), // SUNRISE SOBRIETY - WOMENS 8AM
     '705.SU.1' => array("//zoom.us/j/202548779","(646) 558-8656","202 548 779", "889048"), // SUNRISE SOBRIETY - MENS 8AM
     '707' => array(NULL, "(605) 313-5315","266 443", NULL),                                 // ST JAMES SUNRISE REFLECTIONS
-    '710' => array("//nyintergroup.zoom.us/j/99111309723","(929) 436-2866 ","991 1130 9723", "0188"), // A MOMENT OF CLARITY
+    '710' => array("//nyintergroup.zoom.us/j/99111309723?pwd=dXlHcUU1SEIya0pjSEV5NVU3NVJadz09","(929) 436-2866 ","991 1130 9723", "0188"), // A MOMENT OF CLARITY
     '713' => array(NULL ,"(415) 655-0001 Passcode: 132 373 9253", NULL, NULL),             // NORTH BABYLON JUST FOR TODAY
     '717' => array("//zoom.us/j/9224960248" ,"(929) 205-6099", "922 496 0248", NULL),      // DEER PARK ZOOM INTO ACTION
 
