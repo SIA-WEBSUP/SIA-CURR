@@ -147,6 +147,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '437' => array("//zoom.us/join", NULL, "909 301 594","799633"),                       // THE ONE AND ONLY
     '447' => array("//zoom.us/j/5100430468", NULL, "510 043 0468","154618"),              // 10 AM GROUP
     '499' => array("//meet.google.com/dqe-eerp-zgv","(570) 554-0159","614 095 850", NULL), // SPIRITUAL CIRCLE
+//    '526' => array("//meet.google.com/xxe-yqte-sgs","(225) 681-3343","466 412 473", NULL), // SAT EVE LIVING WITH SOBRIETY
     '530' => array("//us02web.zoom.us/j/84350888563?pwd=MGZnaGNiYnEvQVRCT2RLZXdtVC8vdz09","(929) 436-2866","843 5088 8563", "297082"), // STONY BROOK FREETHINKERS
     '535' => array("//zoom.us/j", NULL, NULL, NULL), // FISHER ISLAND
     '581' => array("//zoom.us/j/504706298", "(929) 205-6099", "504 706 298", NULL),        // FREEDOM FROM FEAR
@@ -282,6 +283,7 @@ foreach ($result as $row) {
 
         if ($conference_info) {
             if (!in_array("ONL",$types)) $types[]='ONL'; // TC case
+            if (!in_array("TC",$types)) $types[]='TC';   // HYBRID case
             $cOnlineMeetings++;
             $conference_url = $conference_info[0] ? "https:" . $conference_info[0]  : NULL;
             $conference_phone = $conference_info[1];
