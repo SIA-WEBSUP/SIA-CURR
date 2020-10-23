@@ -103,7 +103,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     // 'GROUPID'  => array("conf_URL","conf_telephone","mtg_id", "pwd"), // GROUP NAME
     '20'  => array("//zoom.us/j/86070647539"  , NULL, "860 7064 7539", "Email babylonbridgetosobriety@suffolkny-aa.org for the password"),  // BABYLON BRIDGE TO SOBRIETY
     '37'  => array("//zoom.us/j/6052451111?pwd=UmpvbWJEcHhzbFpzckNnRGJLVjRuUT09", "(929) 205-6099 Passcode: 2043231","605 245 1111", "Sunrise"), // BAY SHORE SUNRISE SOBRIETY
-    '40'  => array("//zoom.us/j/364969933"  ,"(929) 205-6099", "364 969 933", "422921"),  // BELLPORT GROUP
+    '40'  => array("//zoom.us/j/364969933"  ,"(929) 205-6099", "364 969 933", "422921"),   // BELLPORT GROUP
     '49'  => array("//zoom.us/j/4925480677" ,"(646) 558-8656", "492 548 0677", NULL),      // BRENTWOOD LADIES GROUP
     '61'  => array("//zoom.us/j/482418696" , NULL, "482 418 696", "406883"),               // BROOKHAVEN HAPPY HOUR
     '61.WD.1'  => array("//zoom.us/j/571032502" , NULL, "571032502", "951700"),            // BROOKHAVEN HAPPY HOUR WED BEG
@@ -119,7 +119,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '142' => array("//zoom.us/j/7354181748" , NULL, "735 418 1748", "HAUPPAUGE"),          // TOUCHSTONES GROUP
     '157' => array("//zoom.us/j/851329515?pwd=STFwM1dOQUZUZXdrTlFZK1hIMDlnUT09","(646) 876-9923", "851 329 515", "DIY"), // DOING IT YOUNG
     '168' => array("//zoom.us/j/85068453181","(646) 558-8656 Passcode: 535388", "850 6845 3181", "asolution"), // LAKE RONKONKOMA GROUP
-    '173' => array("//zoom.us/j/699580490"  , NULL, "699 580 490", "014700"),             // LINDENHURST GROUP
+    '173' => array("//zoom.us/j/699580490"  , NULL, "699 580 490", "014700"),              // LINDENHURST GROUP
     '176' => array("//meet.google.com/gbi-rsmn-odo","(502) 430-2829","389 359 014", NULL), // NEIGHBORHOOD SOBRIETY
     '178' => array("//meet.google.com/nrp-ipeq-utg","(240) 397-5311","541 313 606",NULL),  // THE ONLY REQUIREMENT
     '181' => array("//nyintergroup.zoom.us/j/682689475?pwd=Rzl1L0RRQmc2bEdaTjdkVzgzS0k4QT09", NULL, "682 689 475", "mattituck"), // MATTITUCK MID WEEK
@@ -140,21 +140,23 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '287' => array("//zoom.us/j/5973540591", "(929) 436-2866", "597 354 0591", "hope364"), // SMITHTOWN GROUP
     '289' => array("//nyintergroup.zoom.us/j/4313933180?pwd=aU1lS2lXbXlNcUprZW5TdVN0T0Z1dz09", "(929) 436-2866", "431 393 3180", "serenity"),    // SMITHTOWN SERENITY
     '315' => array("//us02web.zoom.us/j/8727414086?pwd=SmtrT0Q2NzBWYW1xZFdESXJ1K0dMUT09", NULL, "872 741 4086", "381491"), // WADING RIVER GROUP
+    '324' => array("//us02web.zoom.us/j/173718981", NULL, "173 718 981", "088492"),        // WEST ISLIP GOOD SOBRIETY
     '351' => array("//us02web.zoom.us/j/86239050147?pwd=NmhOSkxLbXdMYlVYV1BDclhSOG50dz09", "(646) 558-8656", "862 3905 0147","502128"), // SOUTHAMPTON MONDAY CLOSED DISCUSSION GROUP
     '356' => array("//zoom.us/j/299922586", NULL, "299 922 586", "Home"),                  // MATTITUCK MEN'S GROUP
     '375' => array("//zoom.us/join", NULL, "617 988 572","For Password please text\n\r  DeeAnn (631) 495-4912 or\n\r  Besty (631) 525-1828"), // A NEW BEGINNING (WOMEN"S GROUP)
     '417' => array("//meet.google.com/ivi-ugdp-hhm","(530) 425-6625‬","447 762 087", NULL), // BAY SHORE FREETHINKERS
-    '437' => array("//zoom.us/join", NULL, "909 301 594","799633"),                       // THE ONE AND ONLY
-    '447' => array("//zoom.us/j/5100430468", NULL, "510 043 0468","154618"),              // 10 AM GROUP
+    '437' => array("//zoom.us/join", NULL, "909 301 594","799633"),                        // THE ONE AND ONLY
+    '447' => array("//zoom.us/j/5100430468", NULL, "510 043 0468","154618"),               // 10 AM GROUP
     '499' => array("//meet.google.com/dqe-eerp-zgv","(570) 554-0159","614 095 850", NULL), // SPIRITUAL CIRCLE
 //    '526' => array("//meet.google.com/xxe-yqte-sgs","(225) 681-3343","466 412 473", NULL), // SAT EVE LIVING WITH SOBRIETY
     '530' => array("//us02web.zoom.us/j/84350888563?pwd=MGZnaGNiYnEvQVRCT2RLZXdtVC8vdz09","(929) 436-2866","843 5088 8563", "297082"), // STONY BROOK FREETHINKERS
     '535' => array("//zoom.us/j", NULL, NULL, NULL), // FISHER ISLAND
+    '538' => array("//us02web.zoom.us/j/3238843983?pwd=Y0c2V21LUnVQTkRTOUM1U3lPWGNvQT09", NULL, "323 884 3983", "592340"), // SELDEN ONE DAY AT A TIME
     '581' => array("//zoom.us/j/504706298", "(929) 205-6099", "504 706 298", NULL),        // FREEDOM FROM FEAR
     '572' => array("//zoom.us/j/2830231736", NULL, "283 023 1736", "253666"),              // HUNTINGTON STA WE CAN RECOVER
-    '601' => array("//zoom.us/j/98558565837", NULL, "985 5856 5837", "631740"),           // CONNECT THE DOTS
+    '601' => array("//zoom.us/j/98558565837", NULL, "985 5856 5837", "631740"),            // CONNECT THE DOTS
     '606' => array("//zoom.us/j/86781747581",NULL,"867 8174 7581", "Text for password access: 631-388-0876 or 631-889-1613"), // PORT JEFF TRUE FRIENDS WOMENS
-    '695' => array("//zoom.us/j/4458142615",NULL,"445 814 2615", "766504"),               // YOUNG AT HEART IN ISLIP
+    '695' => array("//zoom.us/j/4458142615",NULL,"445 814 2615", "766504"),                // YOUNG AT HEART IN ISLIP
     '698' => array("//meet.google.com/bpy-aijb-aqi","(301) 845-5176","836 521 984", NULL), // SIA HOSTED
     '699' => array("//meet.google.com/ikn-poem-eba","(978) 435-0386","470 509 931", NULL), // WOMEN'S BACK TO BASICS
     '701' => array("//zoom.us/j/661443978?pwd=YUtRYS9nM3U5dnJtaGZTbld0ZkMvZz09", "(646) 558-8656 Passcode: 480959897","661 443 978", "solutions"), // THE SOLUTIONS GROUP ONLINE
@@ -167,7 +169,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '705.TU.1' => array("//zoom.us/j/369437303","(646) 558-8656","369 437 303", "039778"), // SUNRISE SOBRIETY - 6:45AM
     '705.SA.1' => array("//zoom.us/j/678316314","(646) 558-8656","678 316 314", "003597"), // SUNRISE SOBRIETY - WOMENS 8AM
     '705.SU.1' => array("//zoom.us/j/202548779","(646) 558-8656","202 548 779", "889048"), // SUNRISE SOBRIETY - MENS 8AM
-    '707' => array(NULL, "(605) 313-5315","266 443", NULL),                                 // ST JAMES SUNRISE REFLECTIONS
+    '707' => array(NULL, "(605) 313-5315","266 443", NULL),                                // ST JAMES SUNRISE REFLECTIONS
     '710' => array("//nyintergroup.zoom.us/j/99111309723?pwd=dXlHcUU1SEIya0pjSEV5NVU3NVJadz09","(929) 436-2866 ","991 1130 9723", "0188"), // A MOMENT OF CLARITY
     '713' => array(NULL ,"(415) 655-0001 Passcode: 132 373 9253", NULL, NULL),             // NORTH BABYLON JUST FOR TODAY
     '717' => array("//zoom.us/j/9224960248" ,"(929) 205-6099", "922 496 0248", NULL),      // DEER PARK ZOOM INTO ACTION
