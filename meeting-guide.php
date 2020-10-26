@@ -189,6 +189,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
 //    '125.TU.0' => array("//meet.google.com/cyn-npse-mto","(347) 773-0220", "266 098 222", NULL), // GREENLAWN HUNTINGTON STATION
 //    '125.TH.0' => array("//meet.google.com/cyn-npse-mto","(347) 773-0220", "266 098 222", NULL), // GREENLAWN HUNTINGTON STATION
     '145.TU.0' => array("//zoom.us/j/5922356616", NULL, "592 2356 616", NULL),         // HUNTINGTON GROUP
+    '149.MN.0' => array("//zoom.us/j/93114868696" , NULL, "931 1486 8696", "980540"),  // SOBRIETY HILL
     '149.FR.0' => array("//zoom.us/j/81871381919" , NULL, "818 7138 1919", "056887"),  // SOBRIETY HILL
     '152.SU.1' => array("//nyintergroup.zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
     '152.MN.1' => array("//nyintergroup.zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
@@ -285,7 +286,8 @@ foreach ($result as $row) {
 
         if ($conference_info) {
             if (!in_array("ONL",$types)) $types[]='ONL'; // TC case
-            if (!in_array("TC",$types)) $types[]='TC';   // HYBRID case
+            //if (!in_array("TC",$types) &&                // HYBRID case
+            //    $row['status']!='ONLINE ONLY') $types[]='TC';   //Special case ONLINE ONLY meetings
             $cOnlineMeetings++;
             $conference_url = $conference_info[0] ? "https:" . $conference_info[0]  : NULL;
             $conference_phone = $conference_info[1];
