@@ -196,11 +196,12 @@ foreach ($old_table as $recnum=>$row) {
                         }
 
                         // Required Stuff
-                        $BYO = array_intersect(["Mask Required"=>"mask",
-                            "Mask Optional"=>"maskopt",
-                            "Social Distancing Required"=>"dist",
+                        $BYO = array_intersect([
                             "Temperature Taken"=>"tt",
                             "Contact Tracing Log Kept"=>"log",
+                            "Mask Required"=>"mask",
+                            "Mask Optional"=>"maskopt",
+                            "Social Distancing Required"=>"dist",
                             "No food or beverages served"=>"nofoodserved",
                             "No food or beverages allowed"=>"nofoodallowed"
                         ],
