@@ -344,7 +344,8 @@ foreach ($result as $row) {
         }
 
     } else if ( in_array("ROPN",$types) ) {
-        $row['group_name'] .= ' (REOPENED CONFIRMED)';
+//        no longer needed now that STATUS UNKNOWN meetings are no longer being pushed to meeting guide app
+//        $row['group_name'] .= ' (REOPENED CONFIRMED)';
     }
 
     // mark all UNK meetings as UNK also
