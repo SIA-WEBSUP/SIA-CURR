@@ -203,7 +203,8 @@ foreach ($old_table as $recnum=>$row) {
                             "Mask Optional"=>"maskopt",
                             "Social Distancing Required"=>"dist",
                             "No food or beverages served"=>"nofoodserved",
-                            "No food or beverages allowed"=>"nofoodallowed"
+                            "No food or beverages allowed"=>"nofoodallowed",
+                            "No food allowed / BYO beverage"=>"nofoodbevok",
                         ],
                             explode(' ', strtolower($new_row['status'])));
                         if ($BYO) {
