@@ -197,10 +197,9 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '152.TH.1' => array("//nyintergroup.zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
     '152.FR.1' => array("//nyintergroup.zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
     '152.SA.1' => array("//nyintergroup.zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
-    '187.SU.0' => array("//zoom.us/j/91048231165", NULL, "910 4823 1165", "070984"),  // MELVILLE SWEET AIR - SUN DR
-    '187.WD.0' => array("//zoom.us/j/71228734268", NULL, "712 2873 4268", "serenity"), // MELVILLE SWEET AIR - WED BE
-    '187.WD.1' => array("//zoom.us/j/99698446006", "(929) 436-2866", "996 9844 6006", "GETSOBER"), // MELVILLE SWEET AIR - WED STEP
-    '187.TH.0' => array("//zoom.us/j/9278322441", NULL, "927 8322 441 ", "YS650"),     // MELVILLE SWEET AIR - THU BB
+    '187.SU.1' => array("//zoom.us/j/91048231165", NULL, "910 4823 1165", "070984"),  // MELVILLE SWEET AIR - SUN DR
+    '187.WD.1' => array("//zoom.us/j/71228734268", NULL, "712 2873 4268", "serenity"), // MELVILLE SWEET AIR - WED BE
+    '187.TH.1' => array("//zoom.us/j/9278322441", NULL, "927 8322 441 ", "YS650"),     // MELVILLE SWEET AIR - THU BB
     '189.TU.0' => array("//zoom.us/j/852561412?pwd=dEttYmp6UXplYzVxUEF5YWttdUxaZz09", NULL, NULL, NULL), // LONGWOOD LOVE & SERVICE
     '189.TH.0' => array("//zoom.us/j/604011879?pwd=T2dsZy9IYlphQVlmUm1VSk5VMk5EUT09", NULL, NULL, NULL), // LONGWOOD LOVE & SERVICE
     '203.SU.0' => array("//zoom.us/j/414657828", NULL, "414 657 828", "northport"),    // NORTHPORT FREE AT LAST
