@@ -176,12 +176,12 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '720' => array("//us02web.zoom.us/j/84653368848?pwd=aGoxbnFETngwT2ZFVWZiVmlLMThCZz09#success" , NULL, "846 5336 8848", "893172"), // PATCHOGUE WOMEN IN RECOVERY
 
     // Some meetings have different URLs per meeting
-    '024.MN.0' => array("//us02web.zoom.us/j/86978146496?pwd=N2ppWFVzWndFcjZYSE5CMlVKK0Jidz09", NULL, "869 7814 6496", "456143"), // MIDDLE RD - Monday 06:45 PM - Beginners
-    '024.MN.1' => array("//us02web.zoom.us/j/82701536190?pwd=RTlidzcwVHB2MU9TaWNvQjlUK29oQT09", NULL, "827 0153 6190", "414151"), // MIDDLE RD - Monday 08:00 PM - Step
+    '024.MN.2' => array("//us02web.zoom.us/j/86978146496?pwd=N2ppWFVzWndFcjZYSE5CMlVKK0Jidz09", NULL, "869 7814 6496", "456143"), // MIDDLE RD - Monday 06:45 PM - Beginners
+    '024.MN.3' => array("//us02web.zoom.us/j/82701536190?pwd=RTlidzcwVHB2MU9TaWNvQjlUK29oQT09", NULL, "827 0153 6190", "414151"), // MIDDLE RD - Monday 08:00 PM - Step
     '024.TU.0' => array("//us02web.zoom.us/j/82122611427?pwd=MTR5OW0yZlR3ZEUwRE5xd1lSWmkwdz09", NULL, "821 2261 1427", "504987"), // MIDDLE RD - Tuesday 01:00 PM - Big Book
-    '024.FR.0' => array("//us02web.zoom.us/j/76390266462?pwd=SmtWOTBUN2NJVnNCaFBZQUFkK05CUT09", NULL, "763 9026 6462", "790124"), // MIDDLE RD - Friday 06:45 PM - Young Peoples
-    '024.FR.1' => array("//us02web.zoom.us/j/85739902972?pwd=SnB5VFVVVGtjR1g2NFV0YVU3QmYwUT09", NULL, "857 3990 2972", "947275"), // MIDDLE RD - Friday 08:00 PM - Open Discussion
-    '024.SA.0' => array("//us02web.zoom.us/j/85817619607?pwd=OWlsWXRsaC9lNmQwdEJMQ1g4aXBKdz09", NULL, "858 1761 9607", "218029"), // MIDDLE RD - Saturday 08:00 AM - As Bill Sees It
+    '024.FR.2' => array("//us02web.zoom.us/j/76390266462?pwd=SmtWOTBUN2NJVnNCaFBZQUFkK05CUT09", NULL, "763 9026 6462", "790124"), // MIDDLE RD - Friday 06:45 PM - Young Peoples
+    '024.FR.3' => array("//us02web.zoom.us/j/85739902972?pwd=SnB5VFVVVGtjR1g2NFV0YVU3QmYwUT09", NULL, "857 3990 2972", "947275"), // MIDDLE RD - Friday 08:00 PM - Open Discussion
+    '024.SA.1' => array("//us02web.zoom.us/j/85817619607?pwd=OWlsWXRsaC9lNmQwdEJMQ1g4aXBKdz09", NULL, "858 1761 9607", "218029"), // MIDDLE RD - Saturday 08:00 AM - As Bill Sees It
     '070.MN.0' => array("//zoom.us/j/897671585", NULL,"897 671 585", "123456"), // CENTERPORT UNITY AT GREENLAWN
     '070.TH.0' => array("//zoom.us/j/145730967", NULL,"145 730 967", "123456"), // CENTERPORT UNITY AT GREENLAWN
     '070.SA.0' => array("//zoom.us/j/696332623", NULL,"696 332 623", "123456"), // CENTERPORT UNITY AT GREENLAWN
