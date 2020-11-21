@@ -1,4 +1,4 @@
-<?php
+AD<?php
 
 include('./sql-connect.php');
 
@@ -145,6 +145,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '287' => array("//zoom.us/j/5973540591", NULL, "597 354 0591", "hope364"),             // SMITHTOWN GROUP
     '289' => array("//nyintergroup.zoom.us/j/4313933180?pwd=aU1lS2lXbXlNcUprZW5TdVN0T0Z1dz09", "(929) 436-2866", "431 393 3180", "serenity"),    // SMITHTOWN SERENITY
     '315' => array("//us02web.zoom.us/j/8727414086?pwd=SmtrT0Q2NzBWYW1xZFdESXJ1K0dMUT09", NULL, "872 741 4086", "381491"), // WADING RIVER GROUP
+    '316' => array("//us02web.zoom.us/j/4427989869", NULL, "442 798 9869", "BillW"),       // 11th STEP MEDITATION WORKSHOP
     '324' => array("//us02web.zoom.us/j/173718981", NULL, "173 718 981", "088492"),        // WEST ISLIP GOOD SOBRIETY
     '351' => array("//us02web.zoom.us/j/86239050147?pwd=NmhOSkxLbXdMYlVYV1BDclhSOG50dz09", "(646) 558-8656", "862 3905 0147","502128"), // SOUTHAMPTON MONDAY CLOSED DISCUSSION GROUP
     '356' => array("//zoom.us/j/299922586", NULL, "299 922 586", "Home"),                  // MATTITUCK MEN'S GROUP
@@ -165,6 +166,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '698' => array("//meet.google.com/bpy-aijb-aqi","(301) 845-5176","836 521 984", NULL), // SIA HOSTED
     '699' => array("//meet.google.com/ikn-poem-eba","(978) 435-0386","470 509 931", NULL), // WOMEN'S BACK TO BASICS
     '701' => array("//zoom.us/j/661443978?pwd=YUtRYS9nM3U5dnJtaGZTbld0ZkMvZz09", "(646) 558-8656 Passcode: 480959897","661 443 978", "solutions"), // THE SOLUTIONS GROUP ONLINE
+    '548' => array("//zoom.us/j/661443978?pwd=YUtRYS9nM3U5dnJtaGZTbld0ZkMvZz09", "(646) 558-8656 Passcode: 480959897","661 443 978", "solutions"), // T-DAY BIG BOOK MEET-A-THON
     '702' => array("//zoom.us/j/500561044", NULL,"500 561 044", "12steps"),                // SUFFOLK ONLINE
     '703' => array("//zoom.us/j/84592881281", NULL,"845 9288 1281", "sober2020"),          // HOLBROOK LOVE N' SHARE (ONLINE)
     '704' => array("//nyintergroup.zoom.us/j/96853910721?pwd=L1R5bmFDdVoyUFM2Szh5dUZXZU10UT09","(929) 436-2866","968 5391 0721","521231"), // EYE OPENER
