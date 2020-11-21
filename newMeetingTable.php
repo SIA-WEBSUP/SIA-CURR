@@ -126,7 +126,7 @@ foreach ($old_table as $recnum=>$row) {
             foreach ($mtgs as $imtg => $mtg) {
 
                 // construct meeting_id from group_id, dayShort, and index of meeting for this day
-                $meeting_id = sprintf("%03d.%s.%d", $new_row['group_id'], $dayShort, $imtg);
+                $meeting_id = sprintf("%03d.%s.%02d", $new_row['group_id'], $dayShort, $imtg);
 
                 // we're going to do a bunch of comparisons
                 // let's make some things upper case once at the top
@@ -289,7 +289,7 @@ function create_new_table_PDO($pdo) {
             DROP TABLE IF EXISTS `new_meeting`;
             CREATE TABLE `new_meeting` (
             `group_id` INT(4) NOT NULL,
-            `meeting_id` CHAR(8) NOT NULL,
+            `meeting_id` CHAR(10) NOT NULL,
             `hc` CHAR(3) DEFAULT NULL COMMENT 'If HC then use Yes, If not then check NULL box.',
             `group_name` VARCHAR(100) NOT NULL DEFAULT '',
             `day` CHAR(10) NOT NULL,
