@@ -166,6 +166,17 @@ foreach ($old_table as $recnum=>$row) {
                     $mtg['types'] .= " ONL";
                 }
 
+                // HYBRID
+                // If the meeting is already typed as ONL, do NOT mark it as HYBRID
+                // this is an non-HYBRID ONL meeting in an otherwise HYBRID group
+                // otherwise all HYBRID meetings are also ONL
+                if(strpos($mtg['types'], "ONL") === false &&
+                    strpos($mtg['types'], "NHY") === false &&
+                    strpos($new_row['status'], "HYBRID") != false) {
+                    $mtg['types'] .= " HY";
+                    $mtg['notes'] .= "<br><br>HYBRID MEETING (live and online portions held simultaneously as one meeting)";
+                }
+
                 if (strpos($mtg['types'], "TC") === false && strpos($mtg['types'], "ONL") === false ) {
                     // REOPENED meetings
                     if (strpos($new_row['status'], "REOPENED") === false) {
@@ -176,11 +187,6 @@ foreach ($old_table as $recnum=>$row) {
                         // REOPENED meetings
                         $cReopenedMtgs++;
                         $mtg['types'] .= " ROPN";
-
-                        // HYBRID
-                        if(strpos($new_row['status'], "HYBRID") != false) {
-                            $mtg['notes'] .= "<br><br>HYBRID MEETING";
-                        }
 
                         // Meeting OUTDOOR
                         if(strpos($new_row['status'], "OUTDOOR") != false) {
@@ -295,7 +301,7 @@ function create_new_table_PDO($pdo) {
             `day` CHAR(10) NOT NULL,
             `time` TIME NOT NULL,
             `types` VARCHAR(25) DEFAULT NULL,
-            `notes` VARCHAR(255) DEFAULT NULL,
+            `notes` VARCHAR(500) DEFAULT NULL,
             `status` VARCHAR(50) DEFAULT NULL,
             `town` VARCHAR(255) NOT NULL,
             `zone` INT(2) DEFAULT NULL,
