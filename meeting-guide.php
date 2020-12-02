@@ -123,13 +123,13 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '142' => array("//zoom.us/j/7354181748" , NULL, "735 418 1748", "HAUPPAUGE"),          // TOUCHSTONES GROUP
     '157' => array("//zoom.us/j/851329515?pwd=STFwM1dOQUZUZXdrTlFZK1hIMDlnUT09","(646) 876-9923", "851 329 515", "DIY"), // DOING IT YOUNG
     '168' => array("//zoom.us/j/85068453181","(646) 558-8656 Passcode: 535388", "850 6845 3181", "asolution"), // LAKE RONKONKOMA GROUP
-    '173' => array("//zoom.us/j/699580490"  , NULL, "699 580 490", "014700"),              // LINDENHURST GROUP
+    '173' => array("//us02web.zoom.us/j/699580490?pwd=YWwwUURkVTlENkl5ejBRc3NtbkZ0UT09"  , NULL, "699 580 490", "014700"), // LINDENHURST GROUP
     '176' => array("//meet.google.com/gbi-rsmn-odo","(502) 430-2829","389 359 014", NULL), // NEIGHBORHOOD SOBRIETY
     '178' => array("//meet.google.com/nrp-ipeq-utg","(240) 397-5311","541 313 606",NULL),  // THE ONLY REQUIREMENT
     '181' => array("//nyintergroup.zoom.us/j/682689475?pwd=Rzl1L0RRQmc2bEdaTjdkVzgzS0k4QT09", NULL, "682 689 475", "mattituck"), // MATTITUCK MID WEEK
     '198' => array("//zoom.us/j/4666501565?pwd=V1FuTFJnMG1tcmVVdmxyaDhZbHNpdz09", "(929) 205-6099", "466 650 1565","595631"),    // NORTH BABYLON JUST FOR TODAY
     '215' => array("//us02web.zoom.us/j/6913867484?pwd=Q1FGRTZCenM4OVJhR0o3bWwzcCs5UT09", "(646) 876 9923", "691 386 7484", "350155"), // PATCHOGUE GROUP
-    '218' => array(NULL, "(978) 990-5000 Passcode: 817 579#", NULL, NULL),                 // PATCHOGUE MORNING GROUP
+    '218' => array(NULL, "(978) 990-5000 Passcode: 817 579", NULL, NULL),                  // PATCHOGUE MORNING GROUP
     '228' => array("//zoom.us/j/5274153100", NULL, "527 415 3100", NULL),                  // PORT JEFF SOBRIETY FIRST
     '230' => array("//us02web.zoom.us/j/9177565845?pwd=MDBGQnNDdDhIazZrRURTWnkwaWJodz09", NULL, "917 756 5845", "767066"),              // PORT JEFF INTO ACTION
     '237'      => array("//nyintergroup.zoom.us/j/699794136?pwd=cktiMmxXT3RpV2phZ3E2VXdPWmxCZz09", "(929) 436-2866", "699 794 136", "809363"), // REMSENBURG BASIC SOBRIETY
