@@ -89,7 +89,7 @@ $type_lookup = array(
 	'YP' => 'Y', // Young People
 	'X' => 'X', // Handicap
     'UNK' => 'UNK', // COVID Reopen Status Unknown
-su    'ROPN' => 'ROPN', // COVID Reopen Status Confirmed
+    'ROPN' => 'ROPN', // COVID Reopen Status Confirmed
     'HY' => 'HY', // COVID Hybrid
 );
 
