@@ -121,6 +121,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '126' => array("//nyintergrioup.zoom.us/j/253179384?pwd=MUlYaGVQZ2lLczcvd1FnWFVRTWkyUT09", "(929) 436-2866", "253 179 384", "777"),   // HUNTINGTON STA NEW LIFE
     '125' => array("//meet.google.com/cyn-npse-mto", "(347) 773-0220", "266 098 222", NULL), // GREENLAWN HUNTINGTON STATION
     '142' => array("//zoom.us/j/7354181748" , NULL, "735 418 1748", "HAUPPAUGE"),          // TOUCHSTONES GROUP
+    '145' => array("//zoom.us/j/5922356616", NULL, "592 2356 616", NULL),                  // HUNTINGTON GROUP
     '157' => array("//zoom.us/j/851329515?pwd=STFwM1dOQUZUZXdrTlFZK1hIMDlnUT09","(646) 876-9923", "851 329 515", "DIY"), // DOING IT YOUNG
     '168' => array("//zoom.us/j/85068453181","(646) 558-8656 Passcode: 535388", "850 6845 3181", "asolution"), // LAKE RONKONKOMA GROUP
     '173' => array("//us02web.zoom.us/j/699580490?pwd=YWwwUURkVTlENkl5ejBRc3NtbkZ0UT09"  , NULL, "699 580 490", "014700"), // LINDENHURST GROUP
@@ -129,7 +130,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '181' => array("//nyintergroup.zoom.us/j/682689475?pwd=Rzl1L0RRQmc2bEdaTjdkVzgzS0k4QT09", NULL, "682 689 475", "mattituck"), // MATTITUCK MID WEEK
     '198' => array("//zoom.us/j/4666501565?pwd=V1FuTFJnMG1tcmVVdmxyaDhZbHNpdz09", "(929) 205-6099", "466 650 1565","595631"),    // NORTH BABYLON JUST FOR TODAY
     '215' => array("//us02web.zoom.us/j/6913867484?pwd=Q1FGRTZCenM4OVJhR0o3bWwzcCs5UT09", "(646) 876 9923", "691 386 7484", "350155"), // PATCHOGUE GROUP
-    '218' => array(NULL, "(978) 990-5000 Passcode: 817 579", NULL, NULL),                  // PATCHOGUE MORNING GROUP
+    '218' => array(NULL, "(978) 990-5000 Access Code: 817 579", NULL, NULL),               // PATCHOGUE MORNING GROUP
     '228' => array("//zoom.us/j/5274153100", NULL, "527 415 3100", NULL),                  // PORT JEFF SOBRIETY FIRST
     '230' => array("//us02web.zoom.us/j/9177565845?pwd=MDBGQnNDdDhIazZrRURTWnkwaWJodz09", NULL, "917 756 5845", "767066"),              // PORT JEFF INTO ACTION
     '237'      => array("//nyintergroup.zoom.us/j/699794136?pwd=cktiMmxXT3RpV2phZ3E2VXdPWmxCZz09", "(929) 436-2866", "699 794 136", "809363"), // REMSENBURG BASIC SOBRIETY
@@ -144,7 +145,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '267' => array(NULL, "(605) 313-5315 Access Code: 266443#", NULL, NULL, NULL),         // ST JAMES SUNRISE REFLECTIONS
     '278' => array("//us02web.zoom.us/j/88572542344", "(646) 558 8656", "885 7254 2344",NULL), // SHELTER ISLAND GROUP
     '279' => array("//us02web.zoom.us/j/5205564408",  "(646) 558 8656", "520 556 4408", NULL), // SHELTER ISLAND NEW BEGINNINGS
-    '280' => array(NULL, "(978) 990-5000 Passcode: 891 721", NULL, NULL),                  // SHELTER ISLAND KEEP IT SIMPLE
+    '280' => array(NULL, "(978) 990-5000 Access Code: 891 721", NULL, NULL),                  // SHELTER ISLAND KEEP IT SIMPLE
     '287' => array("//zoom.us/j/5973540591", NULL, "597 354 0591", "hope364"),             // SMITHTOWN GROUP
     '289' => array("//nyintergroup.zoom.us/j/4313933180?pwd=aU1lS2lXbXlNcUprZW5TdVN0T0Z1dz09", "(929) 436-2866", "431 393 3180", "serenity"), // SMITHTOWN SERENITY
     '315' => array("//us02web.zoom.us/j/8727414086?pwd=SmtrT0Q2NzBWYW1xZFdESXJ1K0dMUT09", NULL, "872 741 4086", "381491"), // WADING RIVER GROUP
@@ -176,7 +177,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '704.SU.0' => array("//nyintergroup.zoom.us/j/98293111250?pwd=N3orUFNBNFpSVjZiV1JTM0Y5TVNZZz09","(929) 436-2866", "982 9311 1250", "521231"), // EYE OPENER - MENS
     '704.SU.1' => array("//nyintergroup.zoom.us/j/94537387870?pwd=TWhvbjcxTzJzM2VhakQ2bEIydmFqZz09","(929) 436-2866", "945 3738 7870", "788615"), // EYE OPENER - WOMENS
     '705'      => array("//zoom.us/j/691630673","(646) 558-8656","691 630 673", "850366"), // SUNRISE SOBRIETY -
-//    '707' => array(NULL, "(605) 313-5315 Access Code: 266443#", NULL, NULL, NULL),         // ST JAMES SUNRISE REFLECTIONS
     '710' => array("//nyintergroup.zoom.us/j/99111309723?pwd=dXlHcUU1SEIya0pjSEV5NVU3NVJadz09","(929) 436-2866 ","991 1130 9723", "0188"), // A MOMENT OF CLARITY
     '717' => array("//zoom.us/j/9224960248" ,"(929) 205-6099", "922 496 0248", NULL),      // DEER PARK ZOOM INTO ACTION
     '720' => array("//us02web.zoom.us/j/84653368848?pwd=aGoxbnFETngwT2ZFVWZiVmlLMThCZz09#success" , NULL, "846 5336 8848", "893172"), // PATCHOGUE WOMEN IN RECOVERY
@@ -193,7 +193,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '070.SA.00' => array("//zoom.us/j/696332623", NULL,"696 332 623", "123456"),        // CENTERPORT UNITY AT GREENLAWN
 //    '125.TU.00' => array("//meet.google.com/cyn-npse-mto","(347) 773-0220", "266 098 222", NULL), // GREENLAWN HUNTINGTON STATION
 //    '125.TH.00' => array("//meet.google.com/cyn-npse-mto","(347) 773-0220", "266 098 222", NULL), // GREENLAWN HUNTINGTON STATION
-    '145.TU.00' => array("//zoom.us/j/5922356616", NULL, "592 2356 616", NULL),         // HUNTINGTON GROUP
     '149.MN.00' => array("//zoom.us/j/93114868696" , NULL, "931 1486 8696", "980540"),  // SOBRIETY HILL
     '149.FR.00' => array("//zoom.us/j/81871381919" , NULL, "818 7138 1919", "056887"),  // SOBRIETY HILL
     '152.SU.01' => array("//nyintergroup.zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
@@ -340,13 +339,19 @@ foreach ($result as $row) {
             // encode phone with meeting ID and password for one tap number
             // should look like +12125551212,,123456789#,,,,,,0#,,444444#
             if ($conference_phone) {
-                $conference_phone = "+1" . $conference_phone . ",," . $conference_mtgID . "#,,,,,,0#";
-                if ($access_num) {
-                    $conference_phone .= ",," . $access_num . "#"; // append access no if it exists
-                } else if ($conference_pwd){
-                    $conference_phone .= ",," . $conference_pwd . "#"; // append pwd if necessary
+                if (strpos($conference_phone, "Access Code: "))
+                {
+                    $conference_phone =  "+1" . str_replace("Access Code: ",",,,", $conference_phone) . "#";
+                } else {
+                    $conference_phone = "+1" . $conference_phone . ",," . $conference_mtgID . "#,,,,,,0#";
+                    if ($access_num) {
+                        $conference_phone .= ",," . $access_num . "#"; // append access no if it exists
+                    } else if ($conference_pwd){
+                        $conference_phone .= ",," . $conference_pwd . "#"; // append pwd if necessary
+                    }
                 }
                 $conference_phone = str_replace(array('(', ')','-',' '), '', $conference_phone); //strip unnecessary chars
+
             }
         } else  if (in_array("ONL",$types)) {
             // meeting marked as ONL but no online connection info provided
