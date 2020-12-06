@@ -157,6 +157,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
 //    '417' => array("//meet.google.com/ivi-ugdp-hhm","(530) 425-6625‬","447 762 087", NULL), // BAY SHORE FREETHINKERS
     '437' => array("//zoom.us/join", NULL, "909 301 594","799633"),                        // THE ONE AND ONLY
     '447' => array("//zoom.us/j/5100430468", NULL, "510 043 0468","154618"),               // 10 AM GROUP
+    '495' => array("//zoom.us/j/201969569", NULL, "201969569","154618"),                   // COMMACK NEW SOIL
     '499' => array("//meet.google.com/dqe-eerp-zgv","(570) 554-0159","614 095 850", NULL), // SPIRITUAL CIRCLE
     '526' => array("//meet.google.com/xxe-yqte-sgs","(225) 681-3343","466 412 473", NULL), // SAT EVE LIVING WITH SOBRIETY
     '530' => array("//us02web.zoom.us/j/84350888563?pwd=MGZnaGNiYnEvQVRCT2RLZXdtVC8vdz09","(929) 436-2866","843 5088 8563", "297082"), // STONY BROOK FREETHINKERS
