@@ -159,7 +159,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '447' => array("//zoom.us/j/5100430468", NULL, "510 043 0468","154618"),               // 10 AM GROUP
     '495' => array("//zoom.us/j/201969569", NULL, "201 969 569","164164"),                   // COMMACK NEW SOIL
     '499' => array("//meet.google.com/dqe-eerp-zgv","(570) 554-0159","614 095 850", NULL), // SPIRITUAL CIRCLE
-    '526' => array("//meet.google.com/xxe-yqte-sgs","(225) 681-3343","466 412 473", NULL), // SAT EVE LIVING WITH SOBRIETY
+    '526' => array("//us02web.zoom.us/j/88919781896?pwd=cGdqS3hDV2wxODJiSnA2QlFQcGNjQT09","(929) 205-6099","889 1978 1896", "504797"), // SAT EVE LIVING WITH SOBRIETY
     '530' => array("//us02web.zoom.us/j/84350888563?pwd=MGZnaGNiYnEvQVRCT2RLZXdtVC8vdz09","(929) 436-2866","843 5088 8563", "297082"), // STONY BROOK FREETHINKERS
     '535' => array("//zoom.us/j", NULL, NULL, NULL), // FISHER ISLAND
     '538' => array("//us02web.zoom.us/j/3238843983?pwd=Y0c2V21LUnVQTkRTOUM1U3lPWGNvQT09", NULL, "323 884 3983", "592340"), // SELDEN ONE DAY AT A TIME
@@ -177,7 +177,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '704' => array("//nyintergroup.zoom.us/j/96853910721?pwd=L1R5bmFDdVoyUFM2Szh5dUZXZU10UT09","(929) 436-2866","968 5391 0721","521231"), // EYE OPENER
     '704.SU.0' => array("//nyintergroup.zoom.us/j/98293111250?pwd=N3orUFNBNFpSVjZiV1JTM0Y5TVNZZz09","(929) 436-2866", "982 9311 1250", "521231"), // EYE OPENER - MENS
     '704.SU.1' => array("//nyintergroup.zoom.us/j/94537387870?pwd=TWhvbjcxTzJzM2VhakQ2bEIydmFqZz09","(929) 436-2866", "945 3738 7870", "788615"), // EYE OPENER - WOMENS
-    '705'      => array("//zoom.us/j/691630673","(646) 558-8656","691 630 673", "850366"), // SUNRISE SOBRIETY -
+    '705'      => array("//zoom.us/j/691630673","(646) 558-8656","691 630 673", "850366"), // CENTER MORICHES SUNRISE SOBRIETY -
     '710' => array("//nyintergroup.zoom.us/j/99111309723?pwd=dXlHcUU1SEIya0pjSEV5NVU3NVJadz09","(929) 436-2866 ","991 1130 9723", "0188"), // A MOMENT OF CLARITY
     '717' => array("//zoom.us/j/9224960248" ,"(929) 205-6099", "922 496 0248", NULL),      // DEER PARK ZOOM INTO ACTION
     '720' => array("//us02web.zoom.us/j/84653368848?pwd=aGoxbnFETngwT2ZFVWZiVmlLMThCZz09#success" , NULL, "846 5336 8848", "893172"), // PATCHOGUE WOMEN IN RECOVERY
