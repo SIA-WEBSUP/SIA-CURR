@@ -219,7 +219,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '285.FR.00' => array("//zoom.us/j/380514478", "(929) 436 2866", "380 514 478", "918048"),    // SOBRIETY UNLIMITED
     '286.MN.00' => array("//zoom.us/j/9134002353", NULL, "913 400 2353", "Smithtown1"), // SMITHTOWN AFTERNOON GROUP
     '286.TU.00' => array("//zoom.us/j/397655961",  NULL, "397 655 961",  "letitgo"),    // SMITHTOWN AFTERNOON GROUP
-    '286.WD.00' => array("//zoom.us/j/9134002353", NULL, "913 400 2353", "Smithtown1"), // SMITHTOWN AFTERNOON GROUP
+    '286.WD.00' => array("//nyintergroup.zoom.us/my/group1pm?pwd=QXJtWjJkN0lCQ3d3U2ZjQnlLdXVoZz09", NULL, "913 400 2353", "Smithtown1"), // SMITHTOWN AFTERNOON GROUP
     '286.TH.00' => array("//zoom.us/j/397655961",  NULL, "397 655 961",  "letitgo"),    // SMITHTOWN AFTERNOON GROUP
     '286.FR.00' => array("//zoom.us/j/9134002353", NULL, "913 400 2353", "Smithtown1"), // SMITHTOWN AFTERNOON GROUP
     '286.SA.00' => array("//zoom.us/j/9134002353", NULL, "913 400 2353", "Smithtown1"), // SMITHTOWN AFTERNOON GROUP
