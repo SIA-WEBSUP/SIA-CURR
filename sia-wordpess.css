@@ -75,6 +75,10 @@ tr:nth-child(even) {
 
 /************* committees ************/
 
+.green-background {
+    background-color: #40ff80;
+}
+
 .committees-col-right {
     border-right-width: 12px;
 }
