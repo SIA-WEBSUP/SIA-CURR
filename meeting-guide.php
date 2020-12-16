@@ -148,7 +148,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '278' => array("//us02web.zoom.us/j/88572542344", "(646) 558 8656", "885 7254 2344",NULL), // SHELTER ISLAND GROUP
     '279' => array("//us02web.zoom.us/j/5205564408",  "(646) 558 8656", "520 556 4408", NULL), // SHELTER ISLAND NEW BEGINNINGS
     '280' => array(NULL, "(978) 990-5000 Access Code: 891 721", NULL, NULL),               // SHELTER ISLAND KEEP IT SIMPLE
-    '287' => array("//zoom.us/j/5973540591", NULL, "597 354 0591", "hope364"),             // SMITHTOWN GROUP
+    '287' => array("//us02web.zoom.us/j/5973540591?pwd=dS9sZnp2ZXRuMHlubnlFUFNBWkplQT09", NULL, "597 354 0591", "hope364"),             // SMITHTOWN GROUP
     '289' => array("//nyintergroup.zoom.us/j/4313933180?pwd=aU1lS2lXbXlNcUprZW5TdVN0T0Z1dz09", "(929) 436-2866", "431 393 3180", "serenity"), // SMITHTOWN SERENITY
     '315' => array("//us02web.zoom.us/j/8727414086?pwd=SmtrT0Q2NzBWYW1xZFdESXJ1K0dMUT09", NULL, "872 741 4086", "381491"), // WADING RIVER GROUP
     '316' => array("//nyintergroup.zoom.us/j/4427989869?pwd=dEw4eG1FUnFHbVFHczVBZ1lCVmpaZz09", NULL, "442 798 9869", "BillW"), // 11th STEP MEDITATION WORKSHOP
