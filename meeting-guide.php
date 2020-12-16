@@ -254,7 +254,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '392'  => array("//zoom.us/j/995319793",	        NULL,"995 319 793", "#girlsrule"), // Hampton Bays Women's Group
     '433'  => array("//zoom.us/join",	                NULL,"483 772 9818", "980165"),  // Hampton Bays	Spiritual Awakening West - 11th Step Meditation Mtg
     '573.SU.02'  => array("//zoom.us/j/207160635",	        NULL,"207 160 635", "sobriety#1"), // Hampton Bays Hampton Bay Sunday Night Group
-    '700'  => array("//nyintergroup.zoom.us/j/889817053",	NULL,"889 817 053", "MTK1212"), // Montauk Montauk Group (ONLINE ONLY)
+    '700'  => array("//nyintergroup.zoom.us/j/889817053?pwd=eFhpbkk0VEZFN0M2dndMcTdqSFJBZz09",	NULL,"889 817 053", "MTK1212"), // Montauk Montauk Group (ONLINE ONLY)
     '190.SA.00'  => array("//zoom.us/j/532272602",	"(929) 436-2866 Passcode: 556423","532 272 602", "Wilson1212"), // Montauk The Smith-Wilson Group
     '190.TH.00'  => array("//zoom.us/j/377870869",	"(929) 436-2866 Passcode: 240613","377 870 869", "Wilson1212"), // Montauk The Smith-Wilson Group
     '190.TU.00'  => array("//zoom.us/j/116733466",	"(929) 436-2866 Passcode: 370982","116 733 466", "Wilson1212"), // Montauk The Smith-Wilson Group
