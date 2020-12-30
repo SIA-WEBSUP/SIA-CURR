@@ -158,7 +158,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '351' => array("//us02web.zoom.us/j/86239050147?pwd=NmhOSkxLbXdMYlVYV1BDclhSOG50dz09", "(646) 558-8656", "862 3905 0147","502128"), // SOUTHAMPTON MONDAY CLOSED DISCUSSION GROUP
     '356' => array("//zoom.us/j/299922586", NULL, "299 922 586", "Home"),                  // MATTITUCK MEN'S GROUP
     '375' => array("//zoom.us/join", NULL, "617 988 572","For Password please text\n\r  DeeAnn (631) 495-4912 or\n\r  Besty (631) 525-1828"), // A NEW BEGINNING (WOMEN"S GROUP)
-    '417' => array("//meet.google.com/ivi-ugdp-hhm","(530) 425-6625‬","447 762 087", NULL), // BAY SHORE FREETHINKERS
+    '417' => array("//meet.google.com/ivi-ugdp-hhm","(530) 425-6625","447 762 087", NULL), // BAY SHORE FREETHINKERS
     '437' => array("//us02web.zoom.us/j/909301594?pwd=U1c1eU9WQzhFUjVXb3hPYmM0VGh6QT09", NULL, "909 301 594","799633"), // THE ONE AND ONLY
     '447' => array("//zoom.us/j/5100430468", NULL, "510 043 0468","154618"),               // 10 AM GROUP
     '495' => array("//zoom.us/j/201969569", NULL, "201 969 569","164164"),                 // COMMACK NEW SOIL
@@ -210,7 +210,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '187.SU.01' => array("//zoom.us/j/91048231165", NULL, "910 4823 1165", "070984"),   // MELVILLE SWEET AIR - SUN DR
     '187.WD.01' => array("//zoom.us/j/71228734268", NULL, "712 2873 4268", "serenity"), // MELVILLE SWEET AIR - WED BE
     '187.TH.00' => array("//zoom.us/j/9278322441", NULL, "927 8322 441 ", "YS650"),     // MELVILLE SWEET AIR - THU MED
-    '189.TU.00' => array("//zoom.us/j/852561412?pwd=dEttYmp6UXplYzVxUEF5YWttdUxaZz09", NULL, NULL, NULL), // LONGWOOD LOVE & SERVICE
+    '189.TU.00' => array("//zoom.us/j/852561412?pwd=dEttYmp6UXplYzVxUEF5YWttdUxaZz09", NULL, "852 561 412", "12345"), // LONGWOOD LOVE & SERVICE
     '189.TH.00' => array("//zoom.us/j/604011879?pwd=T2dsZy9IYlphQVlmUm1VSk5VMk5EUT09", NULL, NULL, NULL), // LONGWOOD LOVE & SERVICE
     '203.SU.00' => array("//zoom.us/j/414657828", NULL, "414 657 828", "northport"),    // NORTHPORT FREE AT LAST
     '203.TH.00' => array("//zoom.us/j/414657828", NULL, "575 115 331", "northport"),    // NORTHPORT FREE AT LAST
