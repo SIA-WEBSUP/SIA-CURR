@@ -133,7 +133,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '181' => array("//nyintergroup.zoom.us/j/682689475?pwd=Rzl1L0RRQmc2bEdaTjdkVzgzS0k4QT09", NULL, "682 689 475", "mattituck"), // MATTITUCK MID WEEK
     '185' => array("//zoom.us/j/6819531957 ", NULL, "681 953 1957", "800330"),             // MELVILLE GROUP
     '198' => array("//zoom.us/j/4666501565?pwd=V1FuTFJnMG1tcmVVdmxyaDhZbHNpdz09", "(929) 205-6099", "466 650 1565","595631"),    // NORTH BABYLON JUST FOR TODAY
-    '204' => array("//nyintergroup.zoom.us/j/961398452?pwd=mZJvIwQu9xE", "(929) 205-6099", "961 398 452","018783"),     // NORTHPORT TRINITY GROUP
+    '204' => array("//zoom.us/j/98973931417", "(929) 205-6099", "989 7393 1417","532292"),     // NORTHPORT TRINITY GROUP
     '548' => array("//zoom.us/j/961398452?pwd=mZJvIwQu9xE", "(929) 205-6099", "961 398 452","018783"),     // NEW YEAR'S MEET-A-THON
     '589' => array("//zoom.us/j/961398452?pwd=mZJvIwQu9xE", "(929) 205-6099", "961 398 452","018783"),     // NEW YEAR'S MEET-A-THON
     '215' => array("//us02web.zoom.us/j/6913867484?pwd=Q1FGRTZCenM4OVJhR0o3bWwzcCs5UT09", "(646) 876 9923", "691 386 7484", "350155"), // PATCHOGUE GROUP
