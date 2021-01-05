@@ -134,8 +134,8 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '185' => array("//zoom.us/j/6819531957 ", NULL, "681 953 1957", "800330"),             // MELVILLE GROUP
     '198' => array("//zoom.us/j/4666501565?pwd=V1FuTFJnMG1tcmVVdmxyaDhZbHNpdz09", "(929) 205-6099", "466 650 1565","595631"),    // NORTH BABYLON JUST FOR TODAY
     '204' => array("//nyintergroup.zoom.us/j/961398452?pwd=mZJvIwQu9xE", "(929) 205-6099", "961 398 452","018783"),     // NORTHPORT TRINITY GROUP
-    '548' => array("//nyintergroup.zoom.us/j/961398452?pwd=mZJvIwQu9xE", "(929) 205-6099", "961 398 452","018783"),     // NEW YEAR'S MEET-A-THON
-    '589' => array("//nyintergroup.zoom.us/j/961398452?pwd=mZJvIwQu9xE", "(929) 205-6099", "961 398 452","018783"),     // NEW YEAR'S MEET-A-THON
+    '548' => array("//zoom.us/j/961398452?pwd=mZJvIwQu9xE", "(929) 205-6099", "961 398 452","018783"),     // NEW YEAR'S MEET-A-THON
+    '589' => array("//zoom.us/j/961398452?pwd=mZJvIwQu9xE", "(929) 205-6099", "961 398 452","018783"),     // NEW YEAR'S MEET-A-THON
     '215' => array("//us02web.zoom.us/j/6913867484?pwd=Q1FGRTZCenM4OVJhR0o3bWwzcCs5UT09", "(646) 876 9923", "691 386 7484", "350155"), // PATCHOGUE GROUP
     '218' => array(NULL, "(978) 990-5000 Access Code: 817 579", NULL, NULL),               // PATCHOGUE MORNING GROUP
     '228' => array("//zoom.us/j/5274153100", NULL, "527 415 3100", NULL),                  // PORT JEFF SOBRIETY FIRST
@@ -150,7 +150,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '265' => array("//meet.google.com/vgb-qmdb-wxw","(540) 835-0174","364 002 227", NULL), // THE LITTLE RED SCHOOLHOUSE
     '266' => array("//meet.google.com/oop-cugb-edz","(858) 345-6725","612 896 653", NULL), // ST JAMES GROUP
     '267' => array(NULL, "(605) 313-5315 Access Code: 266443#", NULL, NULL),         // ST JAMES SUNRISE REFLECTIONS
-    '278' => array("//us02web.zoom.us/j/88572542344", "(646) 558 8656", "885 7254 2344",NULL), // SHELTER ISLAND GROUP
+    '278' => array("//us02web.zoom.us/j/85230470449", "(646) 558 8656", "852 3047 0449",NULL), // SHELTER ISLAND GROUP
     '279' => array("//us02web.zoom.us/j/5205564408",  "(646) 558 8656", "520 556 4408", NULL), // SHELTER ISLAND NEW BEGINNINGS
     '280' => array(NULL, "(978) 990-5000 Access Code: 891 721", NULL, NULL),               // SHELTER ISLAND KEEP IT SIMPLE
     '287' => array("//us02web.zoom.us/j/5973540591?pwd=dS9sZnp2ZXRuMHlubnlFUFNBWkplQT09", NULL, "597 354 0591", "hope364"),             // SMITHTOWN GROUP
