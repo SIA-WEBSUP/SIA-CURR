@@ -108,7 +108,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '37'  => array("//zoom.us/j/6052451111?pwd=UmpvbWJEcHhzbFpzckNnRGJLVjRuUT09", "(929) 205-6099 Passcode: 2043231","605 245 1111", "Sunrise"), // BAY SHORE SUNRISE SOBRIETY
     '40'  => array("//zoom.us/j/364969933"  ,"(929) 205-6099", "364 969 933", "422921"),   // BELLPORT GROUP
     '49'  => array("//zoom.us/j/4925480677" ,"(646) 558-8656", "492 548 0677", NULL),      // BRENTWOOD LADIES GROUP
-    '60'  => array("//us02web.zoom.us/j/5427380223?pwd=NGdCRkVPTkZ1bCtRMzINanViT256dz09", "(929) 205-6099", "542 738 0223", "257257"), // BROOKHAVEN WOMEN'S GROUP
+    '60'  => array("https://us02web.zoom.us/j/214128575?pwd=ZlBoZU9RQm83aUUvQUQzRFJmVUNnUT09", "(929) 205-6099", "214 128 575", "05856123"), // BROOKHAVEN WOMEN'S GROUP
     '61'  => array("//zoom.us/j/482418696" , NULL, "482 418 696", "406883"),               // BROOKHAVEN HAPPY HOUR
     '061.WD.00'  => array("//zoom.us/j/571032502" , NULL, "571032502", "951700"),          // BROOKHAVEN HAPPY HOUR WED BEG
     '82'  => array("//zoom.us/j/6311431023" ,"(631) 766-3661", "631 143 1023", "Cutchogue"), // CUTCHOGUE SUNDAY
