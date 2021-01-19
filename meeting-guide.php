@@ -108,7 +108,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '37'  => array("//zoom.us/j/6052451111?pwd=UmpvbWJEcHhzbFpzckNnRGJLVjRuUT09", "(929) 205-6099 Passcode: 2043231","605 245 1111", "Sunrise"), // BAY SHORE SUNRISE SOBRIETY
     '40'  => array("//zoom.us/j/364969933"  ,"(929) 205-6099", "364 969 933", "422921"),   // BELLPORT GROUP
     '49'  => array("//zoom.us/j/4925480677" ,"(646) 558-8656", "492 548 0677", NULL),      // BRENTWOOD LADIES GROUP
-    '60'  => array("https://us02web.zoom.us/j/214128575?pwd=ZlBoZU9RQm83aUUvQUQzRFJmVUNnUT09", "(929) 205-6099", "214 128 575", "05856123"), // BROOKHAVEN WOMEN'S GROUP
+    '60'  => array("//us02web.zoom.us/j/214128575?pwd=ZlBoZU9RQm83aUUvQUQzRFJmVUNnUT09", "(929) 205-6099", "214 128 575", "05856123"), // BROOKHAVEN WOMEN'S GROUP
     '61'  => array("//zoom.us/j/482418696" , NULL, "482 418 696", "406883"),               // BROOKHAVEN HAPPY HOUR
     '061.WD.00'  => array("//zoom.us/j/571032502" , NULL, "571032502", "951700"),          // BROOKHAVEN HAPPY HOUR WED BEG
     '82'  => array("//zoom.us/j/6311431023" ,"(631) 766-3661", "631 143 1023", "Cutchogue"), // CUTCHOGUE SUNDAY
@@ -246,7 +246,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '7'  => array("//zoom.us/j/479172809",	            NULL, "479 172 809", "916836"), // Ammagansett	ROUND ROBIN
     '500'  => array("//zoom.us/j/231147035",	        NULL,"231 147 035", "505622"),  // Ammagansett Happy Hour
     '56'  => array("//us02web.zoom.us/j/378504990?pwd=YkYrNUJVRTY0UVBSNDNOWERVVjVVUT09", NULL,"378 504 990", "236746"),  // Bridgehampton Hayground Keep It Simple
-    '58'  => array("//nyintergroup.zoom.us/j/99572734568",	NULL,"995 7273 4568", "130529"), // Bridgehampton East End Young People
+//    '58'  => array("//nyintergroup.zoom.us/j/99572734568",	NULL,"995 7273 4568", "130529"), // Bridgehampton East End Young People
     '91'  => array("//zoom.us/j/7914635469","(929) 205-6099","791 463 5469", NULL),     // East Hampton Group
     '96'  => array("//zoom.us/j/625731737",	"(929) 436-2866","625 731 737", NULL),      // Sunday Step
     '97'  => array("//zoom.us/j/489358693",	                NULL,"489 358 693", "email the group at soberwomenseast@yahoo.com"), // Sober Woman's East
