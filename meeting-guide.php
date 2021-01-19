@@ -160,6 +160,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '324' => array("//us02web.zoom.us/j/173718981?pwd=eDg1NDRmOXJ0WkdPVmdRWFJpcTBUdz09", NULL, "173 718 981", "088492"),       // WEST ISLIP GOOD SOBRIETY
     '351' => array("//us02web.zoom.us/j/86239050147?pwd=NmhOSkxLbXdMYlVYV1BDclhSOG50dz09", "(646) 558-8656", "862 3905 0147","502128"), // SOUTHAMPTON MONDAY CLOSED DISCUSSION GROUP
     '356' => array("//zoom.us/j/299922586", NULL, "299 922 586", "Home"),                  // MATTITUCK MEN'S GROUP
+    '366' => array("//zoom.us/j/2888620729", NULL, "288 862 0729", "main"),                // NORTHPORT COW HARBOR
     '375' => array("//zoom.us/join", NULL, "617 988 572","For Password please text\n\r  DeeAnn (631) 495-4912 or\n\r  Besty (631) 525-1828"), // A NEW BEGINNING (WOMEN"S GROUP)
     '417' => array("//meet.google.com/ivi-ugdp-hhm","(530) 425-6625","447 762 087", NULL), // BAY SHORE FREETHINKERS
     '437' => array("//us02web.zoom.us/j/909301594?pwd=U1c1eU9WQzhFUjVXb3hPYmM0VGh6QT09", NULL, "909 301 594","799633"), // THE ONE AND ONLY
@@ -232,9 +233,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '286.SA.00' => array("//nyintergroup.zoom.us/my/group1pm?pwd=QXJtWjJkN0lCQ3d3U2ZjQnlLdXVoZz09", NULL, "913 400 2353", "Smithtown1"), // SMITHTOWN AFTERNOON GROUP
     '304.WD.00' => array("//zoom.us/j/5907152081", NULL, "590 715 2081", "524283" ),    // SOUTHOLD SETTLERS
     '304.TH.00' => array("//zoom.us/j/5907152081", NULL, "590 715 2081", "524283" ),    // SOUTHOLD SETTLERS
-    '366.SU.00' => array("//zoom.us/j/790355954", NULL, "790 355 954", "cowharbor"),    // NORTHPORT COW HARBOR
-    '366.TU.00' => array("//zoom.us/j/751707060", NULL, "751 707 060", "cowharbor"),    // NORTHPORT COW HARBOR
-    '366.SA.00' => array("//zoom.us/j/360801140", NULL, "360 801 140", "cowharbor"),    // NORTHPORT COW HARBOR
     '422.FR.00' => array("//meet.google.com/wno-mhit-zmk","(402) 824-0258","705 336 354", NULL),  // ROCKY POINT UNITY GRP
 //  '422.SA.00' => array("//meet.google.com/wno-mhit-zmk","(402) 824-0258","705 336 354", NULL),  // ROCKY POINT UNITY GRP
     '591.MN.00' => array("//zoom.us/j/531387530", NULL, "531 387 530", "cowharbor"),    // NORTHPORT COW HARBOR
