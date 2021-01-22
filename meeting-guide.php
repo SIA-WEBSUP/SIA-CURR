@@ -126,6 +126,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '145' => array("//zoom.us/j/5922356616", NULL, "592 2356 616", NULL),                  // HUNTINGTON GROUP
     '157' => array("//zoom.us/j/851329515?pwd=STFwM1dOQUZUZXdrTlFZK1hIMDlnUT09","(646) 876-9923", "851 329 515", "DIY"), // DOING IT YOUNG
     '160' => array("//zoom.us/j/9664942327", NULL, "966 494 2327", NULL),                  // ISLIP TERRACE GROUP
+    '165.TU.01' => array("//zoom.us/j/928611989", NULL, "928 611 989", "729964"),          // KINGS PARK GROUP
     '168' => array("//zoom.us/j/85068453181","(646) 558-8656 Passcode: 535388", "850 6845 3181", "asolution"), // LAKE RONKONKOMA GROUP
     '173' => array("//us02web.zoom.us/j/699580490?pwd=YWwwUURkVTlENkl5ejBRc3NtbkZ0UT09"  , NULL, "699 580 490", "014700"), // LINDENHURST GROUP
     '176' => array("//meet.google.com/gbi-rsmn-odo","(502) 430-2829","389 359 014", NULL), // NEIGHBORHOOD SOBRIETY
@@ -133,7 +134,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '181' => array("//nyintergroup.zoom.us/j/682689475?pwd=Rzl1L0RRQmc2bEdaTjdkVzgzS0k4QT09", NULL, "682 689 475", "mattituck"), // MATTITUCK MID WEEK
     '185' => array("//us02web.zoom.us/j/6819531957?pwd=MTBlalRTVGNRN3lvaGEwS1FZNnVldz09", NULL, "681 953 1957", "800330"),             // MELVILLE GROUP
     '198' => array("//zoom.us/j/4666501565?pwd=V1FuTFJnMG1tcmVVdmxyaDhZbHNpdz09", "(929) 205-6099", "466 650 1565","595631"),    // NORTH BABYLON JUST FOR TODAY
-    '204' => array("//zoom.us/j/98973931417", "(929) 205-6099", "989 7393 1417","532292"),     // NORTHPORT TRINITY GROUPb
+    '204' => array("//zoom.us/j/98973931417", "(929) 205-6099", "989 7393 1417","532292"),     // NORTHPORT TRINITY GROUP
     '548' => array("//zoom.us/j/961398452?pwd=mZJvIwQu9xE", "(929) 205-6099", "961 398 452","018783"),     // NEW YEAR'S MEET-A-THON
     '589' => array("//zoom.us/j/961398452?pwd=mZJvIwQu9xE", "(929) 205-6099", "961 398 452","018783"),     // NEW YEAR'S MEET-A-THON
     '215' => array("//us02web.zoom.us/j/6913867484?pwd=Q1FGRTZCenM4OVJhR0o3bWwzcCs5UT09", "(646) 876 9923", "691 386 7484", "350155"), // PATCHOGUE GROUP
@@ -160,6 +161,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '324' => array("//us02web.zoom.us/j/173718981?pwd=eDg1NDRmOXJ0WkdPVmdRWFJpcTBUdz09", NULL, "173 718 981", "088492"),       // WEST ISLIP GOOD SOBRIETY
     '351' => array("//us02web.zoom.us/j/86239050147?pwd=NmhOSkxLbXdMYlVYV1BDclhSOG50dz09", "(646) 558-8656", "862 3905 0147","502128"), // SOUTHAMPTON MONDAY CLOSED DISCUSSION GROUP
     '356' => array("//zoom.us/j/299922586", NULL, "299 922 586", "Home"),                  // MATTITUCK MEN'S GROUP
+    '366' => array("//zoom.us/j/2888620729", NULL, "288 862 0729", "main"),                // NORTHPORT COW HARBOR
     '375' => array("//zoom.us/join", NULL, "617 988 572","For Password please text\n\r  DeeAnn (631) 495-4912 or\n\r  Besty (631) 525-1828"), // A NEW BEGINNING (WOMEN"S GROUP)
     '417' => array("//meet.google.com/ivi-ugdp-hhm","(530) 425-6625","447 762 087", NULL), // BAY SHORE FREETHINKERS
     '437' => array("//us02web.zoom.us/j/909301594?pwd=U1c1eU9WQzhFUjVXb3hPYmM0VGh6QT09", NULL, "909 301 594","799633"), // THE ONE AND ONLY
@@ -232,9 +234,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '286.SA.00' => array("//nyintergroup.zoom.us/my/group1pm?pwd=QXJtWjJkN0lCQ3d3U2ZjQnlLdXVoZz09", NULL, "913 400 2353", "Smithtown1"), // SMITHTOWN AFTERNOON GROUP
     '304.WD.00' => array("//zoom.us/j/5907152081", NULL, "590 715 2081", "524283" ),    // SOUTHOLD SETTLERS
     '304.TH.00' => array("//zoom.us/j/5907152081", NULL, "590 715 2081", "524283" ),    // SOUTHOLD SETTLERS
-    '366.SU.00' => array("//zoom.us/j/790355954", NULL, "790 355 954", "cowharbor"),    // NORTHPORT COW HARBOR
-    '366.TU.00' => array("//zoom.us/j/751707060", NULL, "751 707 060", "cowharbor"),    // NORTHPORT COW HARBOR
-    '366.SA.00' => array("//zoom.us/j/360801140", NULL, "360 801 140", "cowharbor"),    // NORTHPORT COW HARBOR
     '422.FR.00' => array("//meet.google.com/wno-mhit-zmk","(402) 824-0258","705 336 354", NULL),  // ROCKY POINT UNITY GRP
 //  '422.SA.00' => array("//meet.google.com/wno-mhit-zmk","(402) 824-0258","705 336 354", NULL),  // ROCKY POINT UNITY GRP
     '591.MN.00' => array("//zoom.us/j/531387530", NULL, "531 387 530", "cowharbor"),    // NORTHPORT COW HARBOR
@@ -246,6 +245,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '7'  => array("//zoom.us/j/479172809",	            NULL, "479 172 809", "916836"), // Ammagansett	ROUND ROBIN
     '500'  => array("//zoom.us/j/231147035",	        NULL,"231 147 035", "505622"),  // Ammagansett Happy Hour
     '56'  => array("//us02web.zoom.us/j/378504990?pwd=YkYrNUJVRTY0UVBSNDNOWERVVjVVUT09", NULL,"378 504 990", "236746"),  // Bridgehampton Hayground Keep It Simple
+//    '58'  => array("//nyintergroup.zoom.us/j/99572734568",	NULL,"995 7273 4568", "130529"), // Bridgehampton East End Young People
     '91'  => array("//zoom.us/j/7914635469","(929) 205-6099","791 463 5469", NULL),     // East Hampton Group
     '96'  => array("//zoom.us/j/625731737",	"(929) 436-2866","625 731 737", NULL),      // Sunday Step
     '97'  => array("//zoom.us/j/489358693",	                NULL,"489 358 693", "email the group at soberwomenseast@yahoo.com"), // Sober Woman's East
