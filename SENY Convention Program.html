@@ -489,6 +489,7 @@ Click on any underlined text to enter Room
     }
     .time {
         text-align:center;
+        width:90px;
     }
     .title {
         text-align:center;
@@ -498,6 +499,23 @@ Click on any underlined text to enter Room
         text-align:center;
         font-size:.9em;
     }
+
+    .gold-border {
+        border: 8px solid #b98322;
+    }
+
+    .silver-border {
+        border: 8px solid #aeaeae;
+    }
+
+    .bronze-border {
+        border: 8px solid #a77a4d;
+    }
+
+    .copper-border {
+        border: 8px solid #6B382C;
+    }
+
     .gold {
         background-color: #b98322;
     }
@@ -513,30 +531,75 @@ Click on any underlined text to enter Room
         background-color: #AB786C;
     }
 </style>
-<table>
-    <tbody>
-    <tr>
-        <td class="workshop time">6:00PM - 7:00PM</td>
-        <td class="workshop gold"><dl><dd class="title">&ldquo;kick off meeting&rdquo;</dd><dd class="host">putnam</dd></dl></td>
-        <td class="workshop silver"><dl><dd class="title">al-anon i</dd><dd class="host">al-anon</dd></dl></td>
-        <td class="workshop bronze"><dl><dd class="title">alateen meeting</dd><dd class="host">al-anon</dd></dl></td>
-        <td class="workshop copper"><dl><dd class="title">spanish meeting i</dd><dd class="host">hispanic</dd></dl></td>
-    </tr>
 
-    <tr>
-        <td class="workshop time">7:00PM - 9:00PM</td>
-        <td class="workshop gold"><dl><dd class="title">opening meeting</dd><dd class="host">convention chair</dd></dl></td>
-        <td class="workshop silver"><dl><dd class="title">no meeting</dd><dd class="host"></dd></dl></td>
-        <td class="workshop bronze"><dl><dd class="title">no meeting</dd><dd class="host"></dd></dl></td>
-        <td class="workshop copper"><dl><dd class="title">no meeting</dd><dd class="host"></dd></dl></td>
-    </tr>
+<div style="overflow-x: auto;">
+    <table style="margin:2em auto;table-layout:fixed;width:900px;">
+        <tbody>
+        <tr>
+            <td class="workshop time">6:00 PM - 7:00 PM</td>
+            <td class="workshop gold"><dl><dd class="title">&ldquo;kick off meeting&rdquo;</dd><dd class="host">putnam</dd></dl></td>
+            <td class="workshop silver"><dl><dd class="title">al-anon i</dd><dd class="host">al-anon</dd></dl></td>
+            <td class="workshop bronze"><dl><dd class="title">alateen meeting</dd><dd class="host">al-anon</dd></dl></td>
+            <td class="workshop copper"><dl><dd class="title">spanish meeting i</dd><dd class="host">hispanic</dd></dl></td>
+        </tr>
 
-    <tr>
-        <td class="workshop time">9:00PM - 10:00PM</td>
-        <td class="workshop gold"><dl><dd class="title">entertainment 1</dd><dd class="host">entertainment</dd></dl></td>
-        <td class="workshop silver"><dl><dd class="title">entertainment 2</dd><dd class="host">entertainment</dd></dl></td>
-        <td class="workshop bronze"><dl><dd class="title">YPAA meeting 1</dd><dd class="host">YPAA</dd></dl></td>
-        <td class="workshop copper"><dl><dd class="title">alkathon meeting 1</dd><dd class="host">alkathon</dd></dl></td>
-    </tr>
-    </tbody>
-</table>
+        <tr>
+            <td class="workshop time">7:00 PM - 9:00 PM</td>
+            <td class="workshop gold"><dl><dd class="title">opening meeting</dd><dd class="host">convention chair</dd></dl></td>
+            <td class="workshop silver"><dl><dd class="title">no meeting</dd><dd class="host"></dd></dl></td>
+            <td class="workshop bronze"><dl><dd class="title">no meeting</dd><dd class="host"></dd></dl></td>
+            <td class="workshop copper"><dl><dd class="title">no meeting</dd><dd class="host"></dd></dl></td>
+        </tr>
+
+        <tr>
+            <td class="workshop time">9:00 PM - 10:00 PM</td>
+            <td class="workshop gold"><dl><dd class="title">entertainment 1</dd><dd class="host">entertainment</dd></dl></td>
+            <td class="workshop silver"><dl><dd class="title">entertainment 2</dd><dd class="host">entertainment</dd></dl></td>
+            <td class="workshop bronze"><dl><dd class="title">YPAA meeting 1</dd><dd class="host">YPAA</dd></dl></td>
+            <td class="workshop copper"><dl><dd class="title">alkathon meeting 1</dd><dd class="host">alkathon</dd></dl></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div style="overflow-x: auto;">
+
+    <table style="margin:2em auto;border-spacing:2px;border-collapse:separate;table-layout:fixed;width:900px">
+
+        <tbody>
+        <tr>
+            <td class="workshop time" style="font-size:.8em"><br>Start Time -<br>End Time</td>
+            <td class="workshop title gold">gold</td>
+            <td class="workshop title silver">silver</td>
+            <td class="workshop title silver">bronze</td>
+            <td class="workshop title silver">copper</td>
+        </tr>
+        <tr>
+            <td class="workshop time">6:00 PM - 7:00 PM</td>
+            <td class="workshop gold-border"><dl><dd class="title">&ldquo;kick off meeting&rdquo;</dd><dd class="host">putnam</dd></dl></td>
+            <td class="workshop silver-border"><dl><dd class="title">al-anon i</dd><dd class="host">al-anon</dd></dl></td>
+            <td class="workshop bronze-border"><dl><dd class="title">alateen meeting</dd><dd class="host">al-anon</dd></dl></td>
+            <td class="workshop copper-border"><dl><dd class="title">spanish meeting i</dd><dd class="host">hispanic</dd></dl></td>
+        </tr>
+
+        <tr>
+            <td class="workshop time">7:00 PM - 9:00 PM</td>
+            <td class="workshop gold-border"><dl><dd class="title">opening meeting</dd><dd class="host">convention chair</dd></dl></td>
+            <td class="workshop silver-border"><dl><dd class="title">no meeting</dd><dd class="host"></dd></dl></td>
+            <td class="workshop bronze-border"><dl><dd class="title">no meeting</dd><dd class="host"></dd></dl></td>
+            <td class="workshop copper-border"><dl><dd class="title">no meeting</dd><dd class="host"></dd></dl></td>
+        </tr>
+
+        <tr>
+            <td class="workshop time">9:00 PM - 10:00 PM</td>
+            <td class="workshop gold-border"><dl><dd class="title">entertainment 1</dd><dd class="host">entertainment</dd></dl></td>
+            <td class="workshop silver-border"><dl><dd class="title">entertainment 2</dd><dd class="host">entertainment</dd></dl></td>
+            <td class="workshop bronze-border"><dl><dd class="title">YPAA meeting 1</dd><dd class="host">YPAA</dd></dl></td>
+            <td class="workshop copper-border"><dl><dd class="title">alkathon meeting 1</dd><dd class="host">alkathon</dd></dl></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div style="overflow-x: auto;">
+
+</div>
