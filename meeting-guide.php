@@ -112,7 +112,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '60'  => array("//us02web.zoom.us/j/214128575?pwd=ZlBoZU9RQm83aUUvQUQzRFJmVUNnUT09", "(929) 205-6099", "214 128 575", "05856123"), // BROOKHAVEN WOMEN'S GROUP
     '61'  => array("//zoom.us/j/482418696" , NULL, "482 418 696", "406883"),               // BROOKHAVEN HAPPY HOUR
     '061.WD.00'  => array("//zoom.us/j/571032502" , NULL, "571032502", "951700"),          // BROOKHAVEN HAPPY HOUR WED BEG
-    '64'  => array("//us02web.zoom.us/j/878684515?pwd=eDlkVklaaDZVYXg5U3JaV3kwOUE3Zz09" , NULL, NULL, NULL), // CENTEREACH GROUP
+    '64'  => array("//us02web.zoom.us/j/878684515?pwd=eDlkVklaaDZVYXg5U3JaV3kwOUE3Zz09", NULL, "878 684 515", "379626"), // CENTEREACH GROUP
     '82'  => array("//zoom.us/j/6311431023" ,"(631) 766-3661", "631 143 1023", "Cutchogue"), // CUTCHOGUE SUNDAY
     '83'  => array("//zoom.us/j/94672171612?pwd=Y3owSW9Iaks2dHVZbTNDSk16RmQ4dz09", "(929) 205-6099", "946 7217 1612", "cutchogue"), // CUTCHOGUE STEP GROUP
     '85'  => array("//zoom.us/j/86589024896"  , NULL, "865 8902 4896", "438051"),          // HOME FOR DINNER
