@@ -149,9 +149,9 @@ foreach ($old_table as $recnum=>$row) {
 
                 // if 'GLBT' occurs in notes or group name, add GLBT to types
                 if ((strpos($mtg_notes, "GLBT") !== false) ||
-                    (strpos($new_row['group_name'], "GLBT") !== false)) {
+                    (strpos($new_row['group_name'], "LGBTQ") !== false)) {
                     $newGLBTMtgs++;
-                    $mtg['types'] .= " GLBT";
+                    $mtg['types'] .= " LGBTQ";
                 }
 
                 // TEMP CLOSED meetings
