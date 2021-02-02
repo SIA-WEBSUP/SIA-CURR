@@ -136,6 +136,10 @@ foreach ($old_table as $recnum=>$row) {
                 $new_row['group_name'] = strtoupper($new_row['group_name']);
                 $new_row['status'] = strtoupper($new_row['status']);
 
+                // if group is marked for deletion, skip all together
+                if(strpos($new_row['status'], "MARKED FOR DELETION") !== false)
+                    continue;
+
                 // if 'meditation' or '11th step' occurs in notes or group name, add MED and 11 to types
                 // kluge, don't add meditation type if note says (begins with 5 min meditation)
                 if (((strpos($mtg_notes, "MEDITATION") !== false) &&
