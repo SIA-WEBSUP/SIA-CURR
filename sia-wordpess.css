@@ -24,6 +24,10 @@
     list-style-type: circle;
 }
 
+.hide-me {
+    display:none;
+}
+
 thead {
     display: table-header-group;
     vertical-align: middle;
@@ -31,13 +35,14 @@ thead {
     text-align: left;
 }
 
-tr:nth-child(odd) {
+.striped tr:nth-child(odd) {
     background-color: #ffffa0;
 }
 
-tr:nth-child(even) {
+.striped tr:nth-child(even) {
     background-color: #ffffff;
 }
+
 
 .big-bold-text {
     font-weight: 600;
@@ -238,4 +243,9 @@ tr:nth-child(even) {
     background-color: #073FE0;
     color: white;
     text-align:center;
+}
+
+.ai1ec_event {
+    padding: 1em;
+    background-color: #FFFCEF;
 }
