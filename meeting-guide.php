@@ -156,6 +156,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '278' => array("//us02web.zoom.us/j/85230470449", "(646) 558 8656", "852 3047 0449",NULL), // SHELTER ISLAND GROUP
     '279' => array("//us02web.zoom.us/j/5205564408",  "(646) 558 8656", "520 556 4408", NULL), // SHELTER ISLAND NEW BEGINNINGS
     '280' => array(NULL, "(978) 990-5000 Access Code: 891 721", NULL, NULL),               // SHELTER ISLAND KEEP IT SIMPLE
+    '286' => array("//nyintergroup.zoom.us/my/group1pm?pwd=QXJtWjJkN0lCQ3d3U2ZjQnlLdXVoZz09", NULL, "913 400 2353", "Smithtown1"), // SMITHTOWN AFTERNOON GROUP
     '287' => array("//us02web.zoom.us/j/5973540591?pwd=dS9sZnp2ZXRuMHlubnlFUFNBWkplQT09", NULL, "597 354 0591", "hope364"),             // SMITHTOWN GROUP
     '289' => array("//nyintergroup.zoom.us/j/4313933180?pwd=aU1lS2lXbXlNcUprZW5TdVN0T0Z1dz09", "(929) 436-2866", "431 393 3180", "serenity"), // SMITHTOWN SERENITY
     '315' => array("//us02web.zoom.us/j/8727414086?pwd=SmtrT0Q2NzBWYW1xZFdESXJ1K0dMUT09", NULL, "872 741 4086", "381491"), // WADING RIVER GROUP
@@ -204,7 +205,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '070.TH.00' => array("//zoom.us/j/145730967", NULL,"145 730 967", "123456"),        // CENTERPORT UNITY AT GREENLAWN
     '070.SA.00' => array("//zoom.us/j/696332623", NULL,"696 332 623", "123456"),        // CENTERPORT UNITY AT GREENLAWN
     '125.TU.01' => array("//meet.google.com/cyn-npse-mto","(347) 773-0220", "266 098 222", NULL), // GREENLAWN HUNTINGTON STATION
-   '125.TH.01' => array("//meet.google.com/cyn-npse-mto","(347) 773-0220", "266 098 222", NULL), // GREENLAWN HUNTINGTON STATION
+    '125.TH.01' => array("//meet.google.com/cyn-npse-mto","(347) 773-0220", "266 098 222", NULL), // GREENLAWN HUNTINGTON STATION
     '149.MN.00' => array("//zoom.us/j/93114868696" , NULL, "931 1486 8696", "980540"),  // SOBRIETY HILL
     '149.FR.00' => array("//zoom.us/j/81871381919" , NULL, "818 7138 1919", "056887"),  // SOBRIETY HILL
     '152.SU.01' => array("//nyintergroup.zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
@@ -226,12 +227,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '250.TH.00' => array("//zoom.us/j/500561044", NULL, "500 561 044", "12steps"),      // CLEARY SCHOOL
     '285.MN.01' => array("//zoom.us/j/380514478", "(929) 436 2866", "380 514 478", "918048"),    // SOBRIETY UNLIMITED
     '285.FR.00' => array("//zoom.us/j/380514478", "(929) 436 2866", "380 514 478", "918048"),    // SOBRIETY UNLIMITED
-    '286.MN.00' => array("//nyintergroup.zoom.us/my/group1pm?pwd=QXJtWjJkN0lCQ3d3U2ZjQnlLdXVoZz09", NULL, "913 400 2353", "Smithtown1"), // SMITHTOWN AFTERNOON GROUP
-    '286.TU.00' => array("//zoom.us/j/397655961",  NULL, "397 655 961",  "letitgo"),    // SMITHTOWN AFTERNOON GROUP
-    '286.WD.00' => array("//nyintergroup.zoom.us/my/group1pm?pwd=QXJtWjJkN0lCQ3d3U2ZjQnlLdXVoZz09", NULL, "913 400 2353", "Smithtown1"), // SMITHTOWN AFTERNOON GROUP
-    '286.TH.00' => array("//zoom.us/j/397655961",  NULL, "397 655 961",  "letitgo"),    // SMITHTOWN AFTERNOON GROUP
-    '286.FR.00' => array("//nyintergroup.zoom.us/my/group1pm?pwd=QXJtWjJkN0lCQ3d3U2ZjQnlLdXVoZz09", NULL, "913 400 2353", "Smithtown1"), // SMITHTOWN AFTERNOON GROUP
-    '286.SA.00' => array("//nyintergroup.zoom.us/my/group1pm?pwd=QXJtWjJkN0lCQ3d3U2ZjQnlLdXVoZz09", NULL, "913 400 2353", "Smithtown1"), // SMITHTOWN AFTERNOON GROUP
     '304.WD.00' => array("//zoom.us/j/5907152081", NULL, "590 715 2081", "524283" ),    // SOUTHOLD SETTLERS
     '304.TH.00' => array("//zoom.us/j/5907152081", NULL, "590 715 2081", "524283" ),    // SOUTHOLD SETTLERS
     '422.FR.00' => array("//meet.google.com/wno-mhit-zmk","(402) 824-0258","705 336 354", NULL),  // ROCKY POINT UNITY GRP
