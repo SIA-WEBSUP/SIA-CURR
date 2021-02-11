@@ -188,7 +188,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '704.SU.00' => array("//nyintergroup.zoom.us/j/98293111250?pwd=N3orUFNBNFpSVjZiV1JTM0Y5TVNZZz09","(929) 436-2866", "982 9311 1250", "521231"), // EYE OPENER - MENS
     '704.SU.01' => array("//nyintergroup.zoom.us/j/94537387870?pwd=TWhvbjcxTzJzM2VhakQ2bEIydmFqZz09","(929) 436-2866", "945 3738 7870", "788615"), // EYE OPENER - WOMENS
     '705'      => array("//zoom.us/j/691630673","(646) 558-8656","691 630 673", "850366"), // CENTER MORICHES SUNRISE SOBRIETY -
-    '710' => array("//nyintergroup.zoom.us/j/99111309723?pwd=dXlHcUU1SEIya0pjSEV5NVU3NVJadz09","(929) 436-2866 ","991 1130 9723", "0188"), // A MOMENT OF CLARITY
+    '710' => array("//zoom.us/j/99111309723?pwd=dXlHcUU1SEIya0pjSEV5NVU3NVJadz09","(929) 436-2866 ","991 1130 9723", "0188"), // A MOMENT OF CLARITY
     '717' => array("//zoom.us/j/9224960248" ,"(929) 205-6099", "922 496 0248", NULL),      // DEER PARK ZOOM INTO ACTION
     '720' => array("//us02web.zoom.us/j/84653368848?pwd=aGoxbnFETngwT2ZFVWZiVmlLMThCZz09", "(929) 205-6099", "846 5336 8848", "893172"), // PATCHOGUE WOMEN IN RECOVERY
     '725' => array("//us02web.zoom.us/j/89098266160?pwd=NkhZWjM3UjNHdHE4QUFscUM1NTR3Zz09", "(929) 205-6099", "890 9826 6160", "538517"), // PORT JEFF WELCOME AS YOU ARE
@@ -208,13 +208,13 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '125.TH.01' => array("//meet.google.com/cyn-npse-mto","(347) 773-0220", "266 098 222", NULL), // GREENLAWN HUNTINGTON STATION
     '149.MN.00' => array("//zoom.us/j/93114868696" , NULL, "931 1486 8696", "980540"),  // SOBRIETY HILL
     '149.FR.00' => array("//zoom.us/j/81871381919" , NULL, "818 7138 1919", "056887"),  // SOBRIETY HILL
-    '152.SU.01' => array("//nyintergroup.zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
-    '152.MN.01' => array("//nyintergroup.zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
-    '152.TU.01' => array("//nyintergroup.zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
-    '152.WD.02' => array("//nyintergroup.zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
-    '152.TH.01' => array("//nyintergroup.zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
-    '152.FR.01' => array("//nyintergroup.zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
-    '152.SA.01' => array("//nyintergroup.zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
+    '152.SU.01' => array("//zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
+    '152.MN.01' => array("//zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
+    '152.TU.01' => array("//zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
+    '152.WD.02' => array("//zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
+    '152.TH.01' => array("//zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
+    '152.FR.01' => array("//zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
+    '152.SA.01' => array("//zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
     '187.SU.01' => array("//zoom.us/j/91048231165", NULL, "910 4823 1165", "070984"),   // MELVILLE SWEET AIR - SUN DR
     '187.WD.01' => array("//zoom.us/j/71228734268", NULL, "712 2873 4268", "serenity"), // MELVILLE SWEET AIR - WED BE
     '187.TH.00' => array("//zoom.us/j/9278322441", NULL, "927 8322 441", "YS650"),      // MELVILLE SWEET AIR - THU MED
