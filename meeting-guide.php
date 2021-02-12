@@ -312,11 +312,18 @@ foreach ($result as $row) {
 
             if (strlen($row['notes'])>0) $row['notes'] .= "\n\r\n\r"; // Assume we'll be appending something
 
-            // append mtgID to meeting notes
-            if ($conference_mtgID && strpos($conference_url, "zoom.")) {
-                // Display the ZOOM meeting ID for ALL ZOOM meetings to handle
-                // the rare case where the group doesn't want a direct link to meeting
-                $row['notes'] .= "ZOOM Meeting ID: " . $conference_mtgID . "\n\r\n\r";
+            // append mtgID and PWD to meeting notes
+            if ($conference_mtgID) {
+                // Display the meeting ID
+                if(strpos($conference_url, "zoom")) {
+                    $row['notes'] .= "ZOOM Meeting ID: " . $conference_mtgID . "\n\r\n\r";
+                } else
+                {
+                    if (preg_match('@^.*/(.*)$@',$conference_url,$mtgID)) {
+                    $row['notes'] .=  "Google Meeting ID: " . $mtgID[1] . "\n\r\n\r";
+                    }
+                }
+
                 if ($conference_pwd) {
                     if (strpos($conference_pwd, "Password"))
                         // Special Instructions for password
@@ -336,7 +343,7 @@ foreach ($result as $row) {
                 }
                 $row['notes'] .= "To join by phone dial:\n\r  ". $conference_phone;
                 if ($conference_mtgID) {
-                    $row['notes'] .= "\n\r\n\rMtg ID: " . $conference_mtgID . "#";
+                    $row['notes'] .= "\n\r\n\rDial-in Meeting ID: " . $conference_mtgID . "#";
                 }
             }
             // append pwd to meeting notes
