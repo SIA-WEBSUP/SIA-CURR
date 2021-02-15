@@ -200,7 +200,9 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '024.TU.00' => array("//us02web.zoom.us/j/82122611427?pwd=MTR5OW0yZlR3ZEUwRE5xd1lSWmkwdz09", NULL, "821 2261 1427", "504987"), // MIDDLE RD - Tuesday 01:00 PM - Big Book
     '024.FR.00' => array("//us02web.zoom.us/j/76390266462?pwd=SmtWOTBUN2NJVnNCaFBZQUFkK05CUT09", NULL, "763 9026 6462", "790124"), // MIDDLE RD - Friday 06:45 PM - Young Peoples
     '024.FR.01' => array("//us02web.zoom.us/j/85739902972?pwd=SnB5VFVVVGtjR1g2NFV0YVU3QmYwUT09", NULL, "857 3990 2972", "947275"), // MIDDLE RD - Friday 08:00 PM - Open Discussion
-    '024.SA.00' => array("//us02web.zoom.us/j/85817619607?pwd=OWlsWXRsaC9lNmQwdEJMQ1g4aXBKdz09", NULL, "858 1761 9607", "218029"), // MIDDLE RD - Saturday 08:00 AM - As Bill Sees It
+    '074.TU.00' => array("//zoom.us/j/989277427?pwd=TDkyNktpdUtycC9aMkt4L1ZYVm1XQT09", NULL, "989 277 427", "154332"),     // COLD SPRING HARBOR GROUP
+    '074.WD.00' => array("//zoom.us/j/85268084017?pwd=bGFickxMZEN3UGlQS3hydFFqSHJwQT09", NULL, "852 6808 4017", "803083"), // COLD SPRING HARBOR GROUP
+    '074.FR.00' => array("//zoom.us/j/923882817?pwd=SUgzSXYwVTRvUXZEODg0RnVtTkZBdz09", NULL, "923 882 817", "673790"),     // COLD SPRING HARBOR GROUP
     '070.MN.00' => array("//zoom.us/j/897671585", NULL,"897 671 585", "123456"),        // CENTERPORT UNITY AT GREENLAWN
     '070.TH.00' => array("//zoom.us/j/145730967", NULL,"145 730 967", "123456"),        // CENTERPORT UNITY AT GREENLAWN
     '070.SA.00' => array("//zoom.us/j/696332623", NULL,"696 332 623", "123456"),        // CENTERPORT UNITY AT GREENLAWN
