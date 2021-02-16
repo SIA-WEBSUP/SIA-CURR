@@ -117,7 +117,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '83'  => array("//zoom.us/j/94672171612?pwd=Y3owSW9Iaks2dHVZbTNDSk16RmQ4dz09", "(929) 205-6099", "946 7217 1612", "cutchogue"), // CUTCHOGUE STEP GROUP
     '85'  => array("//zoom.us/j/86589024896"  , NULL, "865 8902 4896", "438051"),          // HOME FOR DINNER
     '88'  => array("//zoom.us/j/4234489821?pwd=eTlJRHpWa2tJNUVjS0gzRFArNlovQT09", NULL, "423 448 9821", "21212"), // DIX HILLS SUNDAY SOBRIETY
-    '92'  => array("//nyintergroup.zoom.us/j/97702600345?pwd=MTJneE1OSG1CVE9mWFFaMFJ2L2lkQT09", "(929) 436-2866", "977 0260 0345", "bonac"), // SPRINGS FIREPLACE GROUP
+    '92'  => array("//zoom.us/j/97702600345?pwd=MTJneE1OSG1CVE9mWFFaMFJ2L2lkQT09", "(929) 436-2866", "977 0260 0345", "bonac"), // SPRINGS FIREPLACE GROUP
     '107' => array("//zoom.us/j/609004671"  ,"(929) 205-6099", "609 004 671", NULL),       // VALLEY 8 O'CLOCK
     '108' => array("//us02web.zoom.us/j/93791458968?pwd=SXI4cUpNYUZBVUJhenR2cTVHalhldz09", "(929) 436-2866 Passcode: 81153151", "937 9145 8968", "Cedar164"), // EAST NORTHPORT SERENITY
     '121' => array("//us02web.zoom.us/j/81839410326?pwd=RUd5YjdNMUFxZzRPQ2twaFRmWWxYZz09", NULL, "818 3941 0326", "164164"), // FORT SALONGA WORKSHOP
@@ -144,8 +144,8 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '228' => array("//zoom.us/j/5274153100", NULL, "527 415 3100", NULL),                  // PORT JEFF SOBRIETY FIRST
     '230' => array("//us02web.zoom.us/j/9177565845?pwd=MDBGQnNDdDhIazZrRURTWnkwaWJodz09", NULL, "917 756 5845", "767066"),              // PORT JEFF INTO ACTION
     '235' => array("//zoom.us/j/230755324", NULL, "230 755 324", "097235"),                // WESTHAMPTON MEN'S TELL IT LIKE IT IS
-    '237'      => array("//nyintergroup.zoom.us/j/699794136?pwd=cktiMmxXT3RpV2phZ3E2VXdPWmxCZz09", "(929) 436-2866", "699 794 136", "809363"), // REMSENBURG BASIC SOBRIETY
-    '237.WD.0' => array("//nyintergroup.zoom.us/j/409580451?pwd=Vk1OZXFuOEpRUVFxY01heHpoMTY3UT09", "(929) 436-2866", "409 580 451", "497252"), // REMSENBURG BASIC SOBRIETY
+    '237'      => array("//zoom.us/j/699794136?pwd=cktiMmxXT3RpV2phZ3E2VXdPWmxCZz09", "(929) 436-2866", "699 794 136", "809363"), // REMSENBURG BASIC SOBRIETY
+    '237.WD.0' => array("//zoom.us/j/409580451?pwd=Vk1OZXFuOEpRUVFxY01heHpoMTY3UT09", "(929) 436-2866", "409 580 451", "497252"), // REMSENBURG BASIC SOBRIETY
     '239' => array("//zoom.us/j/3572366731?pwd=amlwY1RQdjlsUHFZUDFZeVk3SFowUT09", NULL, "357 236 6731", "1234"), // AQUEBOGUE FREEDOM GROUP
     '240' => array("//zoom.us/j/4176066161?pwd=Z2Y3cnM4SjJ6dTVXN0RLUVllejJydz09","(646) 558 8656 ","417 606 6161","6318754849"), // REFLECTIONS '90
     '248' => array("//zoom.us/j/829531250","(646) 558 8656","829 531 250","150362"),       // ROCKY POINT SERENITY AT SHOREHAM
@@ -160,7 +160,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '287' => array("//us02web.zoom.us/j/5973540591?pwd=dS9sZnp2ZXRuMHlubnlFUFNBWkplQT09", NULL, "597 354 0591", "hope364"),      // SMITHTOWN GROUP
     '289' => array("//zoom.us/j/4313933180?pwd=aU1lS2lXbXlNcUprZW5TdVN0T0Z1dz09", "(929) 436-2866 Passcode: 88959231", "431 393 3180", "serenity"), // SMITHTOWN SERENITY
     '315' => array("//us02web.zoom.us/j/8727414086?pwd=SmtrT0Q2NzBWYW1xZFdESXJ1K0dMUT09", NULL, "872 741 4086", "381491"), // WADING RIVER GROUP
-    '316' => array("//nyintergroup.zoom.us/j/4427989869?pwd=dEw4eG1FUnFHbVFHczVBZ1lCVmpaZz09", NULL, "442 798 9869", "BillW"), // 11th STEP MEDITATION WORKSHOP
+    '316' => array("//zoom.us/j/4427989869?pwd=dEw4eG1FUnFHbVFHczVBZ1lCVmpaZz09", NULL, "442 798 9869", "BillW"), // 11th STEP MEDITATION WORKSHOP
     '324' => array("//us02web.zoom.us/j/173718981?pwd=eDg1NDRmOXJ0WkdPVmdRWFJpcTBUdz09", NULL, "173 718 981", "088492"),       // WEST ISLIP GOOD SOBRIETY
     '351' => array("//us02web.zoom.us/j/86239050147?pwd=NmhOSkxLbXdMYlVYV1BDclhSOG50dz09", "(646) 558-8656", "862 3905 0147","502128"), // SOUTHAMPTON MONDAY CLOSED DISCUSSION GROUP
     '356' => array("//zoom.us/j/299922586", NULL, "299 922 586", "Home"),                  // MATTITUCK MEN'S GROUP
@@ -184,9 +184,9 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '699' => array("//meet.google.com/ikn-poem-eba","(978) 435-0386","470 509 931", NULL), // WOMEN'S BACK TO BASICS
     '701' => array("//us02web.zoom.us/j/661443978?pwd=YUtRYS9nM3U5dnJtaGZTbld0ZkMvZz09", "(646) 558-8656 Passcode: 480959897","661 443 978", "solutions"), // THE SOLUTIONS GROUP ONLINE
     '702' => array("//zoom.us/j/500561044", NULL,"500 561 044", "12steps"),                // SUFFOLK ONLINE
-    '704' => array("//nyintergroup.zoom.us/j/96853910721?pwd=L1R5bmFDdVoyUFM2Szh5dUZXZU10UT09","(929) 436-2866","968 5391 0721","521231"), // EYE OPENER
-    '704.SU.00' => array("//nyintergroup.zoom.us/j/98293111250?pwd=N3orUFNBNFpSVjZiV1JTM0Y5TVNZZz09","(929) 436-2866", "982 9311 1250", "521231"), // EYE OPENER - MENS
-    '704.SU.01' => array("//nyintergroup.zoom.us/j/94537387870?pwd=TWhvbjcxTzJzM2VhakQ2bEIydmFqZz09","(929) 436-2866", "945 3738 7870", "788615"), // EYE OPENER - WOMENS
+    '704' => array("//zoom.us/j/96853910721?pwd=L1R5bmFDdVoyUFM2Szh5dUZXZU10UT09","(929) 436-2866","968 5391 0721","521231"), // EYE OPENER
+    '704.SU.00' => array("//zoom.us/j/98293111250?pwd=N3orUFNBNFpSVjZiV1JTM0Y5TVNZZz09","(929) 436-2866", "982 9311 1250", "521231"), // EYE OPENER - MENS
+    '704.SU.01' => array("//zoom.us/j/94537387870?pwd=TWhvbjcxTzJzM2VhakQ2bEIydmFqZz09","(929) 436-2866", "945 3738 7870", "788615"), // EYE OPENER - WOMENS
     '705'      => array("//zoom.us/j/691630673","(646) 558-8656","691 630 673", "850366"), // CENTER MORICHES SUNRISE SOBRIETY -
     '710' => array("//zoom.us/j/99111309723?pwd=dXlHcUU1SEIya0pjSEV5NVU3NVJadz09","(929) 436-2866 ","991 1130 9723", "0188"), // A MOMENT OF CLARITY
     '717' => array("//zoom.us/j/9224960248" ,"(929) 205-6099", "922 496 0248", NULL),      // DEER PARK ZOOM INTO ACTION
@@ -236,38 +236,35 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '591.MN.00' => array("//zoom.us/j/531387530", NULL, "531 387 530", "cowharbor"),    // NORTHPORT COW HARBOR
 
     // East End Meetings:
-//  '1'  => array("//zoom.us/j/812452820",	            NULL,"812 452 820", NULL),      // Ammagansett Sunday Beginners
-    '2'  => array("//nyintergroup.zoom.us/j/6554056699", NULL,"655 405 6699", NULL),    // Ammagansett AM
-    '3'  => array("//nyintergroup.zoom.us/j/992780763",	NULL,"992 780 763", "mensroom"),// Ammagansett The Mens Room
-    '7'  => array("//zoom.us/j/479172809",	            NULL, "479 172 809", "916836"), // Ammagansett	ROUND ROBIN
-    '500'  => array("//zoom.us/j/231147035",	        NULL,"231 147 035", "505622"),  // Ammagansett Happy Hour
+    '2'  => array("//zoom.us/j/6554056699",          NULL,"655 405 6699", NULL),        // Ammagansett AM
+    '3'  => array("//zoom.us/j/992780763",	         NULL,"992 780 763", "mensroom"),   // Ammagansett The Mens Room
+    '7'  => array("//zoom.us/j/479172809",	         NULL, "479 172 809", "916836"),    // Ammagansett	ROUND ROBIN
+    '500'  => array("//zoom.us/j/231147035",	     NULL,"231 147 035", "505622"),     // Ammagansett Happy Hour
     '56'  => array("//us02web.zoom.us/j/378504990?pwd=YkYrNUJVRTY0UVBSNDNOWERVVjVVUT09", NULL,"378 504 990", "236746"),  // Bridgehampton Hayground Keep It Simple
-//    '58'  => array("//nyintergroup.zoom.us/j/99572734568",	NULL,"995 7273 4568", "130529"), // Bridgehampton East End Young People
     '91'  => array("//zoom.us/j/7914635469","(929) 205-6099","791 463 5469", NULL),     // East Hampton Group
     '96'  => array("//zoom.us/j/625731737",	"(929) 436-2866","625 731 737", NULL),      // Sunday Step
-    '97'  => array("//zoom.us/j/489358693",	                NULL,"489 358 693", "email the group at soberwomenseast@yahoo.com"), // Sober Woman's East
-    '303'  => array("//zoom.us/j/219568346",	        NULL,"219 568 346", NULL),      // SOUTHOLD WEEKENDERS
-    '365'  => array("//zoom.us/j/279125585",	        NULL,"279 125 585", "KISS"),    // East Hampton Keep It Simple
-    '418'  => array("//zoom.us/j/361007173",	        NULL,"361 007 173", "b2b001"),  // East Hampton Back to Basics
-    '094.SA.00'  => array("//zoom.us/j/997866134",	    NULL,"997 866 134", "Green123"), // East Hampton Keep it Green
-    '094.SU.00'  => array("//zoom.us/j/876167885",	    NULL,"876 167 885", "Green123"), // East Hampton Keep it Green
-    '094.WD.00'  => array("//zoom.us/j/94867360733",	NULL,"948 6736 0733", "Green123"), // East Hampton Keep it Green
-    '392'  => array("//zoom.us/j/995319793",	        NULL,"995 319 793", "#girlsrule"), // Hampton Bays Women's Group
-    '433'  => array("//zoom.us/join",	                NULL,"483 772 9818", "980165"),  // Hampton Bays	Spiritual Awakening West - 11th Step Meditation Mtg
-    '573.SU.02'  => array("//zoom.us/j/207160635",	        NULL,"207 160 635", "sobriety#1"), // Hampton Bays Hampton Bay Sunday Night Group
-    '700'  => array("//nyintergroup.zoom.us/j/889817053?pwd=eFhpbkk0VEZFN0M2dndMcTdqSFJBZz09",	NULL,"889 817 053", "MTK1212"), // Montauk Montauk Group (ONLINE ONLY)
+    '97'  => array("//zoom.us/j/489358693",	         NULL,"489 358 693", "email the group at soberwomenseast@yahoo.com"), // Sober Woman's East
+    '303'  => array("//zoom.us/j/219568346",	     NULL,"219 568 346", NULL),         // SOUTHOLD WEEKENDERS
+    '365'  => array("//zoom.us/j/279125585",	     NULL,"279 125 585", "KISS"),       // East Hampton Keep It Simple
+    '418'  => array("//zoom.us/j/361007173",	     NULL,"361 007 173", "b2b001"),     // East Hampton Back to Basics
+    '094.SA.00'  => array("//zoom.us/j/997866134",   NULL,"997 866 134", "Green123"),   // East Hampton Keep it Green
+    '094.SU.00'  => array("//zoom.us/j/876167885",   NULL,"876 167 885", "Green123"),   // East Hampton Keep it Green
+    '094.WD.00'  => array("//zoom.us/j/94867360733", NULL,"948 6736 0733", "Green123"), // East Hampton Keep it Green
+    '392' => array("//zoom.us/j/995319793",	         NULL,"995 319 793", "#girlsrule"), // Hampton Bays Women's Group
+    '433' => array("//zoom.us/join",	             NULL,"483 772 9818", "980165"),    // Hampton Bays	Spiritual Awakening West - 11th Step Meditation Mtg
+    '573.SU.02'  => array("//zoom.us/j/207160635",	 NULL,"207 160 635", "sobriety#1"), // Hampton Bays Hampton Bay Sunday Night Group
+    '700'  => array("//zoom.us/j/889817053?pwd=eFhpbkk0VEZFN0M2dndMcTdqSFJBZz09",	NULL,"889 817 053", "MTK1212"), // Montauk Montauk Group (ONLINE ONLY)
     '190.SA.00'  => array("//zoom.us/j/532272602",	"(929) 436-2866 Passcode: 556423","532 272 602", "Wilson1212"), // Montauk The Smith-Wilson Group
     '190.TH.00'  => array("//zoom.us/j/377870869",	"(929) 436-2866 Passcode: 240613","377 870 869", "Wilson1212"), // Montauk The Smith-Wilson Group
     '190.TU.00'  => array("//zoom.us/j/116733466",	"(929) 436-2866 Passcode: 370982","116 733 466", "Wilson1212"), // Montauk The Smith-Wilson Group
     '190.WD.00'  => array("//zoom.us/j/115649907",	"(929) 436-2866 Passcode: 692971","115 649 907", "Wilson1212"), // Montauk The Smith-Wilson Group
-    '580'  => array("//zoom.us/j/845720420",	        NULL,"845 720 420", "#geekinout"), // Riverhead Back to Books
-    '262'  => array(NULL, "(515) 604-9094","790 452 210", NULL),                        // Sag Harbor Spiritual Solution
-//  '   301'  => array("//zoom.us/j/175307047",	"(646) 568-7788","175 307 047", NULL),  // Southampton Friday Night Group (Our Lady of Poland)
-    '317.MN.00'  => array("//nyintergroup.zoom.us/j/553131814",	"929 436 2866 Passcode: 860059","553 131 814", "letmein"), // Wainscott	Lincoln & Lee
-    '317.WD.00'  => array("//nyintergroup.zoom.us/j/553131814",	"929 436 2866 Passcode: 860059","553 131 814", "letmein"), // Wainscott	Lincoln & Lee
-    '378'  => array("//zoom.us/j/175307047",            NULL,"175 307 047", NULL),      // Wainscott MIRACLES HAPPEN
-    '439'  => array("//zoom.us/j/697601579",            NULL,"697 601 579", NULL),      // Water Mill WATER MILL SUNDAY NIGHT BEGINNER'S
-    '711'  => array("//zoom.us/j/6312831935",	        NULL,"631 283 1935", "1935"),   // Southampton First Things First (ONLINE)
+    '580' => array("//zoom.us/j/845720420",	        NULL,"845 720 420", "#geekinout"),  // Riverhead Back to Books
+    '262' => array(NULL, "(515) 604-9094","790 452 210", NULL),                         // Sag Harbor Spiritual Solution
+    '317.MN.00'  => array("//zoom.us/j/553131814",	"929 436 2866 Passcode: 860059","553 131 814", "letmein"), // Wainscott	Lincoln & Lee
+    '317.WD.00'  => array("//zoom.us/j/553131814",	"929 436 2866 Passcode: 860059","553 131 814", "letmein"), // Wainscott	Lincoln & Lee
+    '378' => array("//zoom.us/j/175307047",           NULL,"175 307 047", NULL),         // Wainscott MIRACLES HAPPEN
+    '439' => array("//zoom.us/j/697601579",           NULL,"697 601 579", NULL),         // Water Mill WATER MILL SUNDAY NIGHT BEGINNER'S
+    '711' => array("//zoom.us/j/6312831935",	      NULL,"631 283 1935", "1935"),      // Southampton First Things First (ONLINE)
 );
 
 //fetch data
