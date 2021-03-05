@@ -160,7 +160,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '287' => array("//us02web.zoom.us/j/5973540591?pwd=dS9sZnp2ZXRuMHlubnlFUFNBWkplQT09", NULL, "597 354 0591", "hope364"),      // SMITHTOWN GROUP
     '289' => array("//zoom.us/j/4313933180?pwd=aU1lS2lXbXlNcUprZW5TdVN0T0Z1dz09", "(929) 436-2866 Passcode: 88959231", "431 393 3180", "serenity"), // SMITHTOWN SERENITY
     '315' => array("//us02web.zoom.us/j/8727414086?pwd=SmtrT0Q2NzBWYW1xZFdESXJ1K0dMUT09", NULL, "872 741 4086", "381491"), // WADING RIVER GROUP
-    '316' => array("//zoom.us/j/4427989869?pwd=dEw4eG1FUnFHbVFHczVBZ1lCVmpaZz09", NULL, "442 798 9869", "BillW"), // 11th STEP MEDITATION WORKSHOP
+    '316' => array("//zoom.us/j/4427989869?pwd=dEw4eG1FUnFHbVFHczVBZ1lCVmpaZz09", "(929) 205-6099 Passcode: 543559", "442 798 9869", "BillW"), // 11th STEP MEDITATION WORKSHOP
     '324' => array("//us02web.zoom.us/j/173718981?pwd=eDg1NDRmOXJ0WkdPVmdRWFJpcTBUdz09", NULL, "173 718 981", "088492"),       // WEST ISLIP GOOD SOBRIETY
     '351' => array("//us02web.zoom.us/j/86239050147?pwd=NmhOSkxLbXdMYlVYV1BDclhSOG50dz09", "(646) 558-8656", "862 3905 0147","502128"), // SOUTHAMPTON MONDAY CLOSED DISCUSSION GROUP
     '356' => array("//zoom.us/j/299922586", NULL, "299 922 586", "Home"),                  // MATTITUCK MEN'S GROUP
