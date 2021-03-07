@@ -122,9 +122,9 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '107' => array("//zoom.us/j/609004671"  ,"(929) 205-6099", "609 004 671", NULL),       // VALLEY 8 O'CLOCK
     '108' => array("//us02web.zoom.us/j/93791458968?pwd=SXI4cUpNYUZBVUJhenR2cTVHalhldz09", "(929) 436-2866 Passcode: 81153151", "937 9145 8968", "Cedar164"), // EAST NORTHPORT SERENITY
     '121' => array("//us02web.zoom.us/j/81839410326?pwd=RUd5YjdNMUFxZzRPQ2twaFRmWWxYZz09", NULL, "818 3941 0326", "164164"), // FORT SALONGA WORKSHOP
-    '126' => array("//nyintergrioup.zoom.us/j/253179384?pwd=MUlYaGVQZ2lLczcvd1FnWFVRTWkyUT09", "(929) 436-2866", "253 179 384", "777"),   // HUNTINGTON STA NEW LIFE
-    '142' => array("//zoom.us/j/7354181748?pwd=KzNvWnkwSXlPVGI0T01lL3JJOUFHUT09" , NULL, "735 418 1748", "HAUPPAUGE"), // TOUCHSTONES GROUP
     '143' => array("//zoom.us/j/84592881281", NULL,"845 9288 1281", NULL),                 // HOLBROOK LOVE N' SHARE
+    '126' => array("//zoom.us/j/253179384?pwd=MUlYaGVQZ2lLczcvd1FnWFVRTWkyUT09", "(929) 436-2866", "253 179 384", "777"),    // HUNTINGTON STA NEW LIFE
+    '142' => array("//zoom.us/j/7354181748?pwd=KzNvWnkwSXlPVGI0T01lL3JJOUFHUT09" , NULL, "735 418 1748", "HAUPPAUGE"), // TOUCHSTONES GROUP
     '145' => array("//zoom.us/j/5922356616", NULL, "592 2356 616", NULL),                  // HUNTINGTON GROUP
     '157' => array("//zoom.us/j/851329515?pwd=STFwM1dOQUZUZXdrTlFZK1hIMDlnUT09","(646) 876-9923", "851 329 515", "DIY"), // DOING IT YOUNG
     '160' => array("//zoom.us/j/9664942327", NULL, "966 494 2327", NULL),                  // ISLIP TERRACE GROUP
