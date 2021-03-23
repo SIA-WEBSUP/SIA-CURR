@@ -260,7 +260,7 @@ function notes_full($array_notes, $notes){
     $notes_full = '';
     // add ALL element if it exists
     if ((count($array_notes) > 0) && array_key_exists('ALL',$array_notes)) {
-        $notes_full = $array_notes['ALL'] . ' ' ;
+        $notes_full = $array_notes['ALL'] . '<br>' ;
     }
 
     foreach ($notes as $note) {
