@@ -12,6 +12,9 @@ function my_theme_enqueue_styles() {
     );
 }
 
+include('custom-shortcodes.php');
+
+/*
 function php_execute($html){
     if(strpos($html,"<"."?php")!==false){ 
         ob_start();
@@ -23,6 +26,7 @@ function php_execute($html){
     return $html;
 }
 add_filter('widget_text','php_execute',100);
+*/
 
 /* Custom Function for TSML Plugin */
 
