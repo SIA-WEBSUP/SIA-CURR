@@ -119,6 +119,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '85'  => array("//zoom.us/j/86589024896"  , NULL, "865 8902 4896", "438051"),          // HOME FOR DINNER
     '88'  => array("//zoom.us/j/4234489821?pwd=eTlJRHpWa2tJNUVjS0gzRFArNlovQT09", NULL, "423 448 9821", "21212"), // DIX HILLS SUNDAY SOBRIETY
     '92'  => array("//zoom.us/j/97702600345?pwd=MTJneE1OSG1CVE9mWFFaMFJ2L2lkQT09", "(929) 436-2866", "977 0260 0345", "bonac"), // SPRINGS FIREPLACE GROUP
+    '105' => array(NULL ,"(712) 432-7900 Passcode: 793461", NULL, NULL),                   // E NORTHPORT BIG BOOK GROUP
     '107' => array("//zoom.us/j/609004671"  ,"(929) 205-6099", "609 004 671", NULL),       // VALLEY 8 O'CLOCK
     '108' => array("//us02web.zoom.us/j/93791458968?pwd=SXI4cUpNYUZBVUJhenR2cTVHalhldz09", "(929) 436-2866 Passcode: 81153151", "937 9145 8968", "Cedar164"), // EAST NORTHPORT SERENITY
     '121' => array("//us02web.zoom.us/j/81839410326?pwd=RUd5YjdNMUFxZzRPQ2twaFRmWWxYZz09", NULL, "818 3941 0326", "164164"), // FORT SALONGA WORKSHOP
@@ -166,6 +167,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '356' => array("//zoom.us/j/299922586", NULL, "299 922 586", "Home"),                  // MATTITUCK MEN'S GROUP
     '366' => array("//zoom.us/j/2888620729", NULL, "288 862 0729", "main"),                // NORTHPORT COW HARBOR
     '375' => array("//zoom.us/join", NULL, "617 988 572","For Password please text\n\r  DeeAnn (631) 495-4912 or\n\r  Besty (631) 525-1828"), // A NEW BEGINNING (WOMEN"S GROUP)
+    '395' => array("//zoom.us/j/9014766046", NULL, "901 476 6046", "45196aa"),             // MANORVILLE SOUTH STREET SOBRIETY
     '417' => array("//meet.google.com/ivi-ugdp-hhm","(530) 425-6625","447 762 087", NULL), // BAY SHORE FREETHINKERS
     '425' => array("//zoom.us/j/81599541140", NULL, "815 9954 1140","Godcalling"),         // GOD CALLING
     '437' => array("//us02web.zoom.us/j/909301594?pwd=U1c1eU9WQzhFUjVXb3hPYmM0VGh6QT09", NULL, "909 301 594","799633"), // THE ONE AND ONLY
@@ -242,8 +244,8 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     // East End Meetings:
     '2'  => array("//zoom.us/j/6554056699",          NULL,"655 405 6699", NULL),        // Ammagansett AM
     '3'  => array("//zoom.us/j/992780763",	         NULL,"992 780 763", "mensroom"),   // Ammagansett The Mens Room
-    '7'  => array("//zoom.us/j/479172809",	         NULL, "479 172 809", "916836"),    // Ammagansett	ROUND ROBIN
-    '500'  => array("//zoom.us/j/231147035",	     NULL,"231 147 035", "505622"),     // Ammagansett Happy Hour
+    '7'  => array("//zoom.us/j/479172809",	         NULL,"479 172 809", "916836"),     // Ammagansett ROUND ROBIN
+    '500'  => array("//zoom.us/j/84454518684",	     NULL,"844 5451 8684", "505622"),   // Ammagansett Happy Hour
     '56'  => array("//us02web.zoom.us/j/378504990?pwd=YkYrNUJVRTY0UVBSNDNOWERVVjVVUT09", NULL,"378 504 990", "236746"),  // Bridgehampton Hayground Keep It Simple
     '91'  => array("//zoom.us/j/7914635469","(929) 205-6099","791 463 5469", NULL),     // East Hampton Group
     '96'  => array("//zoom.us/j/625731737",	"(929) 436-2866","625 731 737", NULL),      // Sunday Step
