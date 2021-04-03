@@ -151,7 +151,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '240' => array("//zoom.us/j/4176066161?pwd=Z2Y3cnM4SjJ6dTVXN0RLUVllejJydz09","(646) 558 8656 ","417 606 6161","6318754849"), // REFLECTIONS '90
     '248' => array("//zoom.us/j/829531250","(646) 558 8656","829 531 250","150362"),       // ROCKY POINT SERENITY AT SHOREHAM
     '252' => array("//us04web.zoom.us/j/181483609?pwd=Z3FvZEMrejhZRUtmWXpNU3JIWFhOdz09", NULL, NULL, NULL), // RONKONKOMA BREAKFAST CLUB
-//    '265' => array("//meet.google.com/vgb-qmdb-wxw","(540) 835-0174","364 002 227", NULL), // THE LITTLE RED SCHOOLHOUSE
+    '265' => array("//meet.google.com/vgb-qmdb-wxw","(540) 835-0174","364 002 227", NULL), // THE LITTLE RED SCHOOLHOUSE
     '266' => array("//meet.google.com/oop-cugb-edz","(858) 345-6725","612 896 653", NULL), // ST JAMES GROUP
     '267' => array(NULL, "(605) 313-5315 Access Code: 266443#", NULL, NULL),               // ST JAMES SUNRISE REFLECTIONS
     '278' => array("//us02web.zoom.us/j/85230470449", "(646) 558 8656", "852 3047 0449",NULL), // SHELTER ISLAND GROUP
