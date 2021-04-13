@@ -119,6 +119,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '85'  => array("//zoom.us/j/86589024896"  , NULL, "865 8902 4896", "438051"),          // HOME FOR DINNER
     '88'  => array("//zoom.us/j/4234489821?pwd=eTlJRHpWa2tJNUVjS0gzRFArNlovQT09", NULL, "423 448 9821", "21212"), // DIX HILLS SUNDAY SOBRIETY
     '92'  => array("//zoom.us/j/97702600345?pwd=MTJneE1OSG1CVE9mWFFaMFJ2L2lkQT09", "(929) 436-2866", "977 0260 0345", "bonac"), // SPRINGS FIREPLACE GROUP
+    '105' => array(NULL ,"(712) 432-7900 Passcode: 793461", NULL, NULL),                   // E NORTHPORT BIG BOOK GROUP
     '107' => array("//zoom.us/j/609004671"  ,"(929) 205-6099", "609 004 671", NULL),       // VALLEY 8 O'CLOCK
     '108' => array("//us02web.zoom.us/j/93791458968?pwd=SXI4cUpNYUZBVUJhenR2cTVHalhldz09", "(929) 436-2866 Passcode: 81153151", "937 9145 8968", "Cedar164"), // EAST NORTHPORT SERENITY
     '121' => array("//us02web.zoom.us/j/81839410326?pwd=RUd5YjdNMUFxZzRPQ2twaFRmWWxYZz09", NULL, "818 3941 0326", "164164"), // FORT SALONGA WORKSHOP
@@ -168,8 +169,9 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '375' => array("//zoom.us/join", NULL, "617 988 572","For Password please text\n\r  DeeAnn (631) 495-4912 or\n\r  Besty (631) 525-1828"), // A NEW BEGINNING (WOMEN"S GROUP)
     '395' => array("//zoom.us/j/9014766046", NULL, "901 476 6046", "45196aa"),             // MANORVILLE SOUTH STREET SOBRIETY
     '417' => array("//meet.google.com/ivi-ugdp-hhm","(530) 425-6625","447 762 087", NULL), // BAY SHORE FREETHINKERS
+    '425' => array("//zoom.us/j/81599541140", NULL, "815 9954 1140","Godcalling"),         // GOD CALLING
     '437' => array("//us02web.zoom.us/j/909301594?pwd=U1c1eU9WQzhFUjVXb3hPYmM0VGh6QT09", NULL, "909 301 594","799633"), // THE ONE AND ONLY
-    '447' => array("//zoom.us/j/5100430468", NULL, "510 043 0468","154618"),               // 10 AM GROUP
+    '447' => array("//zoom.us/j/2596701737", NULL, "259 670 1737","silkworth"),            // 10 AM GROUP
     '495' => array("//zoom.us/j/201969569", NULL, "201 969 569","164164"),                 // COMMACK NEW SOIL
     '499' => array("//meet.google.com/dqe-eerp-zgv","(570) 554-0159","614 095 850", NULL), // SPIRITUAL CIRCLE
     '526' => array("//us02web.zoom.us/j/88919781896?pwd=cGdqS3hDV2wxODJiSnA2QlFQcGNjQT09","(929) 205-6099","889 1978 1896", "504797"), // SAT EVE LIVING WITH SOBRIETY
@@ -184,7 +186,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '695' => array("//zoom.us/j/4458142615",NULL,"445 814 2615", "766504"),                // YOUNG AT HEART IN ISLIP
     '698' => array("//meet.google.com/bpy-aijb-aqi","(301) 845-5176","836 521 984", NULL), // SIA HOSTED
     '699' => array("//meet.google.com/ikn-poem-eba","(978) 435-0386","470 509 931", NULL), // WOMEN'S BACK TO BASICS
-    '701' => array("//us02web.zoom.us/j/661443978?pwd=YUtRYS9nM3U5dnJtaGZTbld0ZkMvZz09", "(646) 558-8656 Passcode: 480959897","661 443 978", "solutions"), // THE SOLUTIONS GROUP ONLINE
+    '701' => array("//us02web.zoom.us/j/661443978?pwd=TDZMV2xkMjZuOUNDYkFpVnVBK2l3Zz09", "(646) 558-8656 Passcode: 356622327","661 443 978", "spiritual"), // THE SOLUTIONS GROUP ONLINE
     '702' => array("//zoom.us/j/500561044", NULL,"500 561 044", "12steps"),                // SUFFOLK ONLINE
     '704' => array("//zoom.us/j/96853910721?pwd=L1R5bmFDdVoyUFM2Szh5dUZXZU10UT09","(929) 436-2866","968 5391 0721","521231"), // EYE OPENER
     '704.SU.00' => array("//zoom.us/j/98293111250?pwd=N3orUFNBNFpSVjZiV1JTM0Y5TVNZZz09","(929) 436-2866", "982 9311 1250", "521231"), // EYE OPENER - MENS
@@ -196,6 +198,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '725' => array("//us02web.zoom.us/j/89098266160?pwd=NkhZWjM3UjNHdHE4QUFscUM1NTR3Zz09", "(929) 205-6099", "890 9826 6160", "538517"), // PORT JEFF WELCOME AS YOU ARE
     '726' => array("//us02web.zoom.us/j/817779951?pwd=byt3dHJrQ2UzMnFnTU1ZbVFWbkNtdz09", "(646) 558-8656", "817 779 951", "11782"), // CHERRY GROVE OFF-ISLAND GROUP (LGBTQ+)
     '728' => array("//us02web.zoom.us/j/2095091328", NULL, "209 509 1328", "sober2"),      // OUR COMMON JOURNEY
+    '729' => array("//us02web.zoom.us/j/82166416812", NULL, "821 6641 6812", "sober2"),    // GRAPEVINE STORY HOUR
 
     // Some meetings have different URLs per meeting
     '024.MN.00' => array("//us02web.zoom.us/j/86978146496?pwd=N2ppWFVzWndFcjZYSE5CMlVKK0Jidz09", NULL, "869 7814 6496", "456143"), // MIDDLE RD - Monday 06:45 PM - Beginners
