@@ -6,7 +6,7 @@ function get_formatted_date_function($atts = array()) {
 	$atts = shortcode_atts(array(
 		'date' => 'today',
 		'time' => '',
-		'format' => 'D, M jS @ gA'
+		'format' => 'D,  M jS @ gA'
 	), $atts);
 
 	// add placeholder for supscripting ordinal suffixes
