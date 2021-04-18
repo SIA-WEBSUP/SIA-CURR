@@ -267,7 +267,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '190.WD.00'  => array("//zoom.us/j/115649907",	"(929) 436-2866 Passcode: 692971","115 649 907", "Wilson1212"), // Montauk The Smith-Wilson Group
     '580' => array("//zoom.us/j/845720420",	        NULL,"845 720 420", "#geekinout"),  // Riverhead Back to Books
     '262' => array(NULL, "(515) 604-9094","790 452 210", NULL),                         // Sag Harbor Spiritual Solution
-    '262.SA.00' => array("//zoom.us/j/94699728008?pwd=NXB0aVBiSmNjRml0WXVCS1NPL1I0UT09", "(929) 205-6099","946 9972 8008", "sssh1994"), // Sag Harbor Spiritual Solution SATURDAY                       // Sag Harbor Spiritual Solution
+    '262.SA.00' => array("//zoom.us/j/94699728008?pwd=NXB0aVBiSmNjRml0WXVCS1NPL1I0UT09", "(929) 205-6099 Passcode: 71091234","946 9972 8008", "sssh1994"), // Sag Harbor Spiritual Solution SATURDAY                       // Sag Harbor Spiritual Solution
     '317.MN.00'  => array("//zoom.us/j/553131814",	"929 436 2866 Passcode: 860059","553 131 814", "letmein"), // Wainscott	Lincoln & Lee
     '317.WD.00'  => array("//zoom.us/j/553131814",	"929 436 2866 Passcode: 860059","553 131 814", "letmein"), // Wainscott	Lincoln & Lee
     '378' => array("//zoom.us/j/175307047",           NULL,"175 307 047", NULL),         // Wainscott MIRACLES HAPPEN
