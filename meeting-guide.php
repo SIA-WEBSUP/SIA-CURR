@@ -133,10 +133,10 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '168' => array("//zoom.us/j/85068453181","(646) 558-8656 Passcode: 535388", "850 6845 3181", "asolution"), // LAKE RONKONKOMA GROUP
     '173' => array("//us02web.zoom.us/j/699580490?pwd=YWwwUURkVTlENkl5ejBRc3NtbkZ0UT09"  , NULL, "699 580 490", "014700"), // LINDENHURST GROUP
     '176' => array("//meet.google.com/gbi-rsmn-odo","(502) 430-2829","389 359 014", NULL), // NEIGHBORHOOD SOBRIETY
-    '178' => array("//meet.google.com/nrp-ipeq-utg","(240) 397-5311","541 313 606",NULL),  // THE ONLY REQUIREMENT
-    '185' => array("//us02web.zoom.us/j/6819531957?pwd=MTBlalRTVGNRN3lvaGEwS1FZNnVldz09", NULL, "681 953 1957", "800330"),             // MELVILLE GROUP
-    '198' => array("//zoom.us/j/4666501565?pwd=V1FuTFJnMG1tcmVVdmxyaDhZbHNpdz09", "(929) 205-6099", "466 650 1565","595631"),    // NORTH BABYLON JUST FOR TODAY
-    '204' => array("//zoom.us/j/98973931417", "(929) 205-6099", "989 7393 1417","532292"),     // NORTHPORT TRINITY GROUP
+    '178' => array("//us02web.zoom.us/j/4614019987?pwd=VnhYaEQwenBIOVhibGd6akwrcjIyQT09","(929) 205-6099 Passcode: 59241764","461 401 9987","SERENITY"),  // THE ONLY REQUIREMENT
+    '185' => array("//us02web.zoom.us/j/6819531957?pwd=MTBlalRTVGNRN3lvaGEwS1FZNnVldz09", NULL, "681 953 1957", "800330"),   // MELVILLE GROUP
+    '198' => array("//zoom.us/j/4666501565?pwd=V1FuTFJnMG1tcmVVdmxyaDhZbHNpdz09", "(929) 205-6099", "466 650 1565","595631"),// NORTH BABYLON JUST FOR TODAY
+    '204' => array("//zoom.us/j/98973931417", "(929) 205-6099", "989 7393 1417","532292"), // NORTHPORT TRINITY GROUP
     '548' => array("//zoom.us/j/961398452?pwd=mZJvIwQu9xE", "(929) 205-6099", "961 398 452","018783"),     // NEW YEAR'S MEET-A-THON
     '589' => array("//zoom.us/j/961398452?pwd=mZJvIwQu9xE", "(929) 205-6099", "961 398 452","018783"),     // NEW YEAR'S MEET-A-THON
     '215' => array("//us02web.zoom.us/j/6913867484?pwd=Q1FGRTZCenM4OVJhR0o3bWwzcCs5UT09", "(646) 876 9923", "691 386 7484", "350155"), // PATCHOGUE GROUP
