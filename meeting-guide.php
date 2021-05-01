@@ -168,7 +168,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '366' => array("//zoom.us/j/2888620729", NULL, "288 862 0729", "main"),                // NORTHPORT COW HARBOR
     '375' => array("//zoom.us/join", NULL, "617 988 572","For Password please text\n\r  DeeAnn (631) 495-4912 or\n\r  Besty (631) 525-1828"), // A NEW BEGINNING (WOMEN"S GROUP)
     '395' => array("//zoom.us/j/9014766046", NULL, "901 476 6046", "45196aa"),             // MANORVILLE SOUTH STREET SOBRIETY
-    '417' => array("//meet.google.com/ivi-ugdp-hhm","(530) 425-6625","447 762 087", NULL), // BAY SHORE FREETHINKERS
+    '417' => array("//meet.google.com/zrf-ugcr-tfx", NULL, NULL, NULL),                    // BAY SHORE FREETHINKERS
     '425' => array("//zoom.us/j/81599541140", NULL, "815 9954 1140","Godcalling"),         // GOD CALLING
     '437' => array("//us02web.zoom.us/j/909301594?pwd=U1c1eU9WQzhFUjVXb3hPYmM0VGh6QT09", NULL, "909 301 594","799633"), // THE ONE AND ONLY
     '447' => array("//zoom.us/j/2596701737", NULL, "259 670 1737","silkworth"),            // 10 AM GROUP
@@ -198,7 +198,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '725' => array("//us02web.zoom.us/j/89098266160?pwd=NkhZWjM3UjNHdHE4QUFscUM1NTR3Zz09", "(929) 205-6099", "890 9826 6160", "538517"), // PORT JEFF WELCOME AS YOU ARE
     '726' => array("//us02web.zoom.us/j/817779951?pwd=byt3dHJrQ2UzMnFnTU1ZbVFWbkNtdz09", "(646) 558-8656", "817 779 951", "11782"), // CHERRY GROVE OFF-ISLAND GROUP (LGBTQ+)
     '728' => array("//us02web.zoom.us/j/2095091328", NULL, "209 509 1328", "sober2"),      // OUR COMMON JOURNEY
-    '729' => array("//us02web.zoom.us/j/82166416812", NULL, "821 6641 6812", "sober2"),    // GRAPEVINE STORY HOUR
+    '729' => array("//us02web.zoom.us/j/2387900906?pwd=V1Fhbm1sYVBQdzVCM1E5amVpZ0E1UT09", NULL, "238 7900 906", "e-mail GRAPEVINESTORYHOUR@gmail.com for Password"), // GRAPEVINE STORY HOUR
 
     // Some meetings have different URLs per meeting
     '024.MN.00' => array("//us02web.zoom.us/j/86978146496?pwd=N2ppWFVzWndFcjZYSE5CMlVKK0Jidz09", NULL, "869 7814 6496", "456143"), // MIDDLE RD - Monday 06:45 PM - Beginners
@@ -266,8 +266,9 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '190.TU.00'  => array("//zoom.us/j/116733466",	"(929) 436-2866 Passcode: 370982","116 733 466", "Wilson1212"), // Montauk The Smith-Wilson Group
     '190.WD.00'  => array("//zoom.us/j/115649907",	"(929) 436-2866 Passcode: 692971","115 649 907", "Wilson1212"), // Montauk The Smith-Wilson Group
     '580' => array("//zoom.us/j/845720420",	        NULL,"845 720 420", "#geekinout"),  // Riverhead Back to Books
-    '262' => array(NULL, "(515) 604-9094","790 452 210", NULL),                         // Sag Harbor Spiritual Solution
-    '262.SA.00' => array("//zoom.us/j/94699728008?pwd=NXB0aVBiSmNjRml0WXVCS1NPL1I0UT09", "(929) 205-6099 Passcode: 71091234","946 9972 8008", "sssh1994"), // Sag Harbor Spiritual Solution SATURDAY                       // Sag Harbor Spiritual Solution
+//    '262' => array(NULL, "(515) 604-9094","790 452 210", NULL),                         // Sag Harbor Spiritual Solution
+    '262' => array("//zoom.us/j/94193591147?pwd=SmxYVFFhUFN5L1dITWpJOURpRW5ldz09", "(929) 205-6099 Passcode: 80642895","941 9359 1147", "sssh1994"), // Sag Harbor Spiritual Solution M-F
+    '262.SA.00' => array("//zoom.us/j/94699728008?pwd=NXB0aVBiSmNjRml0WXVCS1NPL1I0UT09", "(929) 205-6099 Passcode: 71091234","946 9972 8008", "sssh1994"), // Sag Harbor Spiritual Solution SATURDAY
     '317.MN.00'  => array("//zoom.us/j/553131814",	"929 436 2866 Passcode: 860059","553 131 814", "letmein"), // Wainscott	Lincoln & Lee
     '317.WD.00'  => array("//zoom.us/j/553131814",	"929 436 2866 Passcode: 860059","553 131 814", "letmein"), // Wainscott	Lincoln & Lee
     '378' => array("//zoom.us/j/175307047",           NULL,"175 307 047", NULL),         // Wainscott MIRACLES HAPPEN
@@ -409,13 +410,16 @@ foreach ($result as $row) {
 	//add C whenever meeting is not O
 	//if (!in_array($types, 'O')) $types[] = 'C';
 
+	// append OUTDOOR to outdoor meetings
+	$meeting_name  = $row['group_name'];
+	$meeting_name .= (strpos($row['notes'], "OUTDOOR")!=false) ? " (OUTDOOR)" : "";
 
 	//build array
 	$return[] = array(
 		'slug' => $row['meeting_id'],
 		'day' => array_search($row['day'], $day_lookup),
 		'time' => date('H:i', strtotime($row['time'])),
-		'name' => $row['group_name'],
+		'name' => $meeting_name,
 //		'group' => $row['group_name'],
 		'types' => $types,
 		'location' => $row['locationName'],
