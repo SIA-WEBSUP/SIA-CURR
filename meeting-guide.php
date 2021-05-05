@@ -215,7 +215,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '125.TU.01' => array("//meet.google.com/cyn-npse-mto","(347) 773-0220", "266 098 222", NULL), // GREENLAWN HUNTINGTON STATION
     '125.TH.01' => array("//meet.google.com/cyn-npse-mto","(347) 773-0220", "266 098 222", NULL), // GREENLAWN HUNTINGTON STATION
     '149.MN.00' => array("//zoom.us/j/93114868696" , NULL, "931 1486 8696", "980540"),  // SOBRIETY HILL
-    '149.FR.00' => array("//zoom.us/j/81871381919" , NULL, "818 7138 1919", "056887"),  // SOBRIETY HILL
+    '149.FR.00' => array("//zoom.us/j/86872399413" , NULL, "868 7239 9413", "578572"),  // SOBRIETY HILL
     '152.SU.01' => array("//zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
     '152.MN.01' => array("//zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
     '152.TU.01' => array("//zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
