@@ -233,7 +233,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '203.TH.00' => array("//zoom.us/j/414657828", NULL, "575 115 331", "northport"),    // NORTHPORT FREE AT LAST
     '203.SA.00' => array("//zoom.us/j/414657828", NULL, "855 934 327", "northport"),    // NORTHPORT FREE AT LAST
     '250.SU.00' => array("//zoom.us/j/513760537?pwd=NzM1RGlNa05mL0lCSmloK09yUWNuZz09", NULL, "513 760 537", "bigbook"), // CLEARY SCHOOL
-    '250.TH.00' => array("//zoom.us/j/500561044", NULL, "500 561 044", "12steps"),      // CLEARY SCHOOL
+    '250.TH.00' => array("//zoom.us/j/500561044?pwd=UEV4NnF6LzhpYVFvK3FqSUJrcDVNQT09", NULL, "500 561 044", "12steps"), // CLEARY SCHOOL
     '285.MN.01' => array("//zoom.us/j/380514478", "(929) 436 2866", "380 514 478", "918048"),    // SOBRIETY UNLIMITED
     '285.FR.00' => array("//zoom.us/j/380514478", "(929) 436 2866", "380 514 478", "918048"),    // SOBRIETY UNLIMITED
     '304.WD.00' => array("//zoom.us/j/5907152081", NULL, "590 715 2081", "524283" ),    // SOUTHOLD SETTLERS
