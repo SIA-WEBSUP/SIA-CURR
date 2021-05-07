@@ -59,7 +59,8 @@ function get_online_meetings_phone_list() {
         }
     });
 
-    $return = '<table class="phone-table" style="width:100%"><tr>';
+    $return  = '<div style="overflow:auto;">';
+    $return .= '<table class="phone-table" style="width:100%"><tr>';
     $return .= "<tr></tr><th>Day</th></th><th>Name</th><th>Type</th></tr>";
     $return .= "<tr></tr><th>Time</th></th><th>Phone</th><th>Region</th>";
     foreach ($meetings as $meeting) {
@@ -90,6 +91,6 @@ function get_online_meetings_phone_list() {
             $return .= "<td>" . $notes . "</td>";
             $return .= "<td>" . $meeting['region']. "</td></tr>";
     }
-    $return .=  "</table>";
+    $return .=  "</table></div>";
     return $return;
 }

@@ -133,10 +133,10 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '168' => array("//zoom.us/j/85068453181","(646) 558-8656 Passcode: 535388", "850 6845 3181", "asolution"), // LAKE RONKONKOMA GROUP
     '173' => array("//us02web.zoom.us/j/699580490?pwd=YWwwUURkVTlENkl5ejBRc3NtbkZ0UT09"  , NULL, "699 580 490", "014700"), // LINDENHURST GROUP
     '176' => array("//meet.google.com/gbi-rsmn-odo","(502) 430-2829","389 359 014", NULL), // NEIGHBORHOOD SOBRIETY
-    '178' => array("//meet.google.com/nrp-ipeq-utg","(240) 397-5311","541 313 606",NULL),  // THE ONLY REQUIREMENT
-    '185' => array("//us02web.zoom.us/j/6819531957?pwd=MTBlalRTVGNRN3lvaGEwS1FZNnVldz09", NULL, "681 953 1957", "800330"),             // MELVILLE GROUP
-    '198' => array("//zoom.us/j/4666501565?pwd=V1FuTFJnMG1tcmVVdmxyaDhZbHNpdz09", "(929) 205-6099", "466 650 1565","595631"),    // NORTH BABYLON JUST FOR TODAY
-    '204' => array("//zoom.us/j/98973931417", "(929) 205-6099", "989 7393 1417","532292"),     // NORTHPORT TRINITY GROUP
+    '178' => array("//us02web.zoom.us/j/4614019987?pwd=VnhYaEQwenBIOVhibGd6akwrcjIyQT09","(929) 205-6099 Passcode: 59241764","461 401 9987","SERENITY"),  // THE ONLY REQUIREMENT
+    '185' => array("//us02web.zoom.us/j/6819531957?pwd=MTBlalRTVGNRN3lvaGEwS1FZNnVldz09", NULL, "681 953 1957", "800330"),   // MELVILLE GROUP
+    '198' => array("//zoom.us/j/4666501565?pwd=V1FuTFJnMG1tcmVVdmxyaDhZbHNpdz09", "(929) 205-6099", "466 650 1565","595631"),// NORTH BABYLON JUST FOR TODAY
+    '204' => array("//zoom.us/j/98973931417", "(929) 205-6099", "989 7393 1417","532292"), // NORTHPORT TRINITY GROUP
     '548' => array("//zoom.us/j/961398452?pwd=mZJvIwQu9xE", "(929) 205-6099", "961 398 452","018783"),     // NEW YEAR'S MEET-A-THON
     '589' => array("//zoom.us/j/961398452?pwd=mZJvIwQu9xE", "(929) 205-6099", "961 398 452","018783"),     // NEW YEAR'S MEET-A-THON
     '215' => array("//us02web.zoom.us/j/6913867484?pwd=Q1FGRTZCenM4OVJhR0o3bWwzcCs5UT09", "(646) 876 9923", "691 386 7484", "350155"), // PATCHOGUE GROUP
@@ -216,7 +216,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '125.TU.01' => array("//meet.google.com/cyn-npse-mto","(347) 773-0220", "266 098 222", NULL), // GREENLAWN HUNTINGTON STATION
     '125.TH.01' => array("//meet.google.com/cyn-npse-mto","(347) 773-0220", "266 098 222", NULL), // GREENLAWN HUNTINGTON STATION
     '149.MN.00' => array("//zoom.us/j/93114868696" , NULL, "931 1486 8696", "980540"),  // SOBRIETY HILL
-    '149.FR.00' => array("//zoom.us/j/81871381919" , NULL, "818 7138 1919", "056887"),  // SOBRIETY HILL
+    '149.FR.00' => array("//zoom.us/j/86872399413" , NULL, "868 7239 9413", "578572"),  // SOBRIETY HILL
     '152.SU.01' => array("//zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
     '152.MN.01' => array("//zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
     '152.TU.01' => array("//zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
@@ -234,7 +234,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '203.TH.00' => array("//zoom.us/j/414657828", NULL, "575 115 331", "northport"),    // NORTHPORT FREE AT LAST
     '203.SA.00' => array("//zoom.us/j/414657828", NULL, "855 934 327", "northport"),    // NORTHPORT FREE AT LAST
     '250.SU.00' => array("//zoom.us/j/513760537?pwd=NzM1RGlNa05mL0lCSmloK09yUWNuZz09", NULL, "513 760 537", "bigbook"), // CLEARY SCHOOL
-    '250.TH.00' => array("//zoom.us/j/500561044", NULL, "500 561 044", "12steps"),      // CLEARY SCHOOL
+    '250.TH.00' => array("//zoom.us/j/500561044?pwd=UEV4NnF6LzhpYVFvK3FqSUJrcDVNQT09", NULL, "500 561 044", "12steps"), // CLEARY SCHOOL
     '285.MN.01' => array("//zoom.us/j/380514478", "(929) 436 2866", "380 514 478", "918048"),    // SOBRIETY UNLIMITED
     '285.FR.00' => array("//zoom.us/j/380514478", "(929) 436 2866", "380 514 478", "918048"),    // SOBRIETY UNLIMITED
     '304.WD.00' => array("//zoom.us/j/5907152081", NULL, "590 715 2081", "524283" ),    // SOUTHOLD SETTLERS
