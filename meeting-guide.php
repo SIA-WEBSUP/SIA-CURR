@@ -79,7 +79,8 @@ $type_lookup = array(
 	'OS' => array('O', 'ST'), // Open, Step Meeting
 	//[24] => PROMISES = Promises
 	'S' => 'ST', // Step
-	'SP' => 'S', // Spanish
+    'SPAN' => 'S', // Speaker
+	'SP' => 'SP', // Speaker
 	'T' => 'TR', // Tradition
     'TC' => 'TC', // Temp Closure
 	'TOPIC' => 'D', // Topic
