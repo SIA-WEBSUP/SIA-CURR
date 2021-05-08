@@ -31,9 +31,10 @@ add_filter('widget_text','php_execute',100);
 /* Custom Function for TSML Plugin */
 
 if (function_exists('tsml_custom_flags')) {
-    tsml_custom_flags(array('M', 'W', 'ONL', 'BE', 'ST', 'B', 'A', 'MED', 'D', 'Y',
+    tsml_custom_flags(array('M', 'W', 'ONL', 'BE', 'ST', 'A', 'MED', 'Y',
         'TR', 'LGBTQ', 'GV', 'LS', 'DR', 'LIT', // do we really want these?
-        'TC', 'UNK', 'ROPN'));
+        'TC', 'UNK', 'ROPN',
+	    'SP'));
 }
 
 if (function_exists('tsml_custom_types')) {
@@ -41,6 +42,8 @@ if (function_exists('tsml_custom_types')) {
         'UNK' => 'COVID Reopen Status Unknown',
         'ROPN' => 'COVID Reopen Confirmed',
         'HY' => 'COVID Hybrid',
+        'BE' => 'Beginners',
+        'TPC' => 'Topic'
     ));
 }
 
