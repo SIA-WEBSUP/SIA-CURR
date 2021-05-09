@@ -182,6 +182,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '581' => array("//zoom.us/j/504706298", "(929) 205-6099", "504 706 298", NULL),        // FREEDOM FROM FEAR
     '572' => array("//zoom.us/j/2830231736", NULL, "283 023 1736", "253666"),              // HUNTINGTON STA WE CAN RECOVER
     '601' => array("//zoom.us/j/92838849973", NULL, "928 3884 9973", "164"),               // CONNECT THE DOTS
+    '601.SA.OO' =>array("//zoom.us/j/99440850855?pwd=S0UxeUlPVG5DRkV6VUtTNzBzaFZrUT09", NULL, "994 4085 0855", "164"),  // CONNECT THE DOTS
 //    '606' => array("//zoom.us/j/86781747581",NULL,"867 8174 7581", "Text for password access: 631-388-0876 or 631-889-1613"), // PORT JEFF TRUE FRIENDS WOMENS
     '606' => array("//zoom.us/j/98067219186",NULL,"980 6721 9186", "Serenity"), // PORT JEFF TRUE FRIENDS WOMENS
     '695' => array("//zoom.us/j/4458142615",NULL,"445 814 2615", "766504"),                // YOUNG AT HEART IN ISLIP
