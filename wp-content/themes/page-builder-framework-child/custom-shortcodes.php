@@ -14,7 +14,7 @@ function get_formatted_date_function($atts = array()) {
 
 	$d = strtotime($atts['date'] . $atts['time']);
 	if ($d){
-		if ($d < time()) {
+		if ($d < strtotime("today")) {
 			$d = strtotime( str_replace( 'this', 'next', $atts['date'] ) );
 		}
 		$d = date($atts['format'],$d);
@@ -29,3 +29,19 @@ function get_formatted_date_function($atts = array()) {
 		$d );
 }
 add_shortcode('get_date', 'get_formatted_date_function');
+
+
+function get_current_time ( $atts = array()) {
+	// set up default parameters
+	$atts = shortcode_atts(array(
+		'date' => 'today',
+		'time' => '',
+		'format' => 'D,  M jS @ gA'
+	), $atts);
+
+	if ($atts['time'] == '')
+		$atts['time'] = time();
+
+	return date($atts['format'],$atts['time']);
+}
+add_shortcode('get_current_time', 'get_current_time');

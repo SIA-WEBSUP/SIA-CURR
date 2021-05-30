@@ -182,6 +182,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '581' => array("//zoom.us/j/504706298", "(929) 205-6099", "504 706 298", NULL),        // FREEDOM FROM FEAR
     '572' => array("//zoom.us/j/2830231736", NULL, "283 023 1736", "253666"),              // HUNTINGTON STA WE CAN RECOVER
     '601' => array("//zoom.us/j/92838849973", NULL, "928 3884 9973", "164"),               // CONNECT THE DOTS
+    '601.SA.OO' =>array("//zoom.us/j/99440850855?pwd=S0UxeUlPVG5DRkV6VUtTNzBzaFZrUT09", NULL, "994 4085 0855", "164"),  // CONNECT THE DOTS
 //    '606' => array("//zoom.us/j/86781747581",NULL,"867 8174 7581", "Text for password access: 631-388-0876 or 631-889-1613"), // PORT JEFF TRUE FRIENDS WOMENS
     '606' => array("//zoom.us/j/98067219186",NULL,"980 6721 9186", "Serenity"), // PORT JEFF TRUE FRIENDS WOMENS
     '695' => array("//zoom.us/j/4458142615",NULL,"445 814 2615", "766504"),                // YOUNG AT HEART IN ISLIP
@@ -200,7 +201,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '726' => array("//us02web.zoom.us/j/817779951?pwd=byt3dHJrQ2UzMnFnTU1ZbVFWbkNtdz09", "(646) 558-8656", "817 779 951", "11782"), // CHERRY GROVE OFF-ISLAND GROUP (LGBTQ+)
     '728' => array("//us02web.zoom.us/j/2095091328", NULL, "209 509 1328", "sober2"),      // OUR COMMON JOURNEY
     '729' => array("//us02web.zoom.us/j/2387900906?pwd=V1Fhbm1sYVBQdzVCM1E5amVpZ0E1UT09", NULL, "238 7900 906", "e-mail GRAPEVINESTORYHOUR@gmail.com for Password"), // GRAPEVINE STORY HOUR
-    '730' => array("//zoom.us/j/", NULL, "TBA", "TBA"), // HUNTINGTON STA LIVING SOBER
+    '730' => array("//zoom.us/j/95532435350", NULL, "955 3243 5350", "777"),               // HUNTINGTON STA LIVING SOBER
 
     // Some meetings have different URLs per meeting
     '024.MN.00' => array("//us02web.zoom.us/j/86978146496?pwd=N2ppWFVzWndFcjZYSE5CMlVKK0Jidz09", NULL, "869 7814 6496", "456143"), // MIDDLE RD - Monday 06:45 PM - Beginners
@@ -232,8 +233,8 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '189.TU.00' => array("//zoom.us/j/852561412?pwd=dEttYmp6UXplYzVxUEF5YWttdUxaZz09", NULL, "852 561 412", "12345"), // LONGWOOD LOVE & SERVICE
     '189.TH.00' => array("//zoom.us/j/604011879?pwd=T2dsZy9IYlphQVlmUm1VSk5VMk5EUT09", NULL, NULL, NULL), // LONGWOOD LOVE & SERVICE
     '203.SU.00' => array("//zoom.us/j/414657828", NULL, "414 657 828", "northport"),    // NORTHPORT FREE AT LAST
-    '203.TH.00' => array("//zoom.us/j/414657828", NULL, "575 115 331", "northport"),    // NORTHPORT FREE AT LAST
-    '203.SA.00' => array("//zoom.us/j/414657828", NULL, "855 934 327", "northport"),    // NORTHPORT FREE AT LAST
+    '203.TH.00' => array("//zoom.us/j/575115331", NULL, "575 115 331", "northport"),    // NORTHPORT FREE AT LAST
+    '203.SA.00' => array("//zoom.us/j/855934327", NULL, "855 934 327", "northport"),    // NORTHPORT FREE AT LAST
     '250.SU.00' => array("//zoom.us/j/513760537?pwd=NzM1RGlNa05mL0lCSmloK09yUWNuZz09", NULL, "513 760 537", "bigbook"), // CLEARY SCHOOL
     '250.TH.00' => array("//zoom.us/j/500561044?pwd=UEV4NnF6LzhpYVFvK3FqSUJrcDVNQT09", NULL, "500 561 044", "12steps"), // CLEARY SCHOOL
     '285.MN.01' => array("//zoom.us/j/380514478", "(929) 436 2866", "380 514 478", "918048"),    // SOBRIETY UNLIMITED
