@@ -107,7 +107,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     // 'GROUPID'  => array("conf_URL","conf_telephone","mtg_id", "pwd"), // GROUP NAME
     '12'  => array("//us04web.zoom.us/j/284511426?pwd=OW01N1gxMHR2OE5LV1FCc2VQemJ1dz09"   , NULL, NULL, NULL),  // MASSAPEQUA AT AMITYVILLE BOTTOM LINE GROUP
     '20'  => array("//us02web.zoom.us/j/86070647539?pwd=M1lzbjhYTDZOMnRpRVpPK1pYSlFEUT09"  , NULL, "860 7064 7539", "bridge"),  // BABYLON BRIDGE TO SOBRIETY
-    '28'  => array("//zoom.us/j/81839874568", NULL, "818 3987 4568", "stlukes"),           // 12 STEPS OF HOPE
+    '28'  => array("//zoom.us/j/81839874568", NULL, "818 3987 4568", "stlukes"),          // 12 STEPS OF HOPE
     '37'  => array("//zoom.us/j/6052451111?pwd=UmpvbWJEcHhzbFpzckNnRGJLVjRuUT09", "(929) 205-6099 Passcode: 2043231","605 245 1111", "Sunrise"), // BAY SHORE SUNRISE SOBRIETY
     '40'  => array("//us02web.zoom.us/j/364969933?pwd=RUUzbW9nWWJtU2dJMFRxcmJETVpvQT09"  ,"(929) 205-6099", "364 969 933", "422921"),   // BELLPORT GROUP
     '49'  => array("//zoom.us/j/4925480677" ,"(646) 558-8656", "492 548 0677", NULL),      // BRENTWOOD LADIES GROUP
