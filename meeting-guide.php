@@ -83,7 +83,7 @@ $type_lookup = array(
 	'SP' => 'SP', // Speaker
 	'T' => 'TR', // Tradition
     'TC' => 'TC', // Temp Closure
-	'TOPIC' => 'D', // Topic
+	'TOPIC' => 'TPC', // Topic - custom type
  	'W' => 'W', // Womens
 	'WC' => array('W', 'C'), // Womens, Closed
 	'WCD' => array('W', 'C', 'D'), // Womens, Closed, Discussion
@@ -203,6 +203,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '728' => array("//us02web.zoom.us/j/2095091328", NULL, "209 509 1328", "sober2"),      // OUR COMMON JOURNEY
     '729' => array("//us02web.zoom.us/j/2387900906?pwd=V1Fhbm1sYVBQdzVCM1E5amVpZ0E1UT09", NULL, "238 7900 906", "e-mail GRAPEVINESTORYHOUR@gmail.com for Password"), // GRAPEVINE STORY HOUR
     '730' => array("//zoom.us/j/95532435350", "(929) 205-6099", "955 3243 5350", "777"),   // HUNTINGTON STA LIVING SOBER
+    '732' => array("//zoom.us/j/2095091328", "(929) 205-6099", "209 509 1328", "sober2"),  // RIVERHEAD WOMEN IN THE SOLUTION
 
     // Some meetings have different URLs per meeting
     '024.MN.00' => array("//us02web.zoom.us/j/86978146496?pwd=N2ppWFVzWndFcjZYSE5CMlVKK0Jidz09", NULL, "869 7814 6496", "456143"), // MIDDLE RD - Monday 06:45 PM - Beginners
