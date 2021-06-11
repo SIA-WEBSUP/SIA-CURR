@@ -84,6 +84,7 @@ $type_lookup = array(
 	'T' => 'TR', // Tradition
     'TC' => 'TC', // Temp Closure
 	'TOPIC' => 'TPC', // Topic - custom type
+    'TPC' => 'TPC', // Topic - custom type
  	'W' => 'W', // Womens
 	'WC' => array('W', 'C'), // Womens, Closed
 	'WCD' => array('W', 'C', 'D'), // Womens, Closed, Discussion
