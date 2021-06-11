@@ -57,10 +57,10 @@ if (function_exists('tsml_custom_types')) {
             'l75007ongitude' => 2.294481,
         ),
         'Southern State Parkway Exit 38, 11703, USA' => array(
-            'formatted_address' => 'Belmont Lake State Park',
-            'city' => 'North Babylon',
-            'latitude' => 40.737415,
-            'longitude' => -73.337733,
+	        'formatted_address' => 'Belmont Lake State Park',
+	        'city' => 'North Babylon',
+	        'latitude' => 40.737415,
+	        'longitude' => -73.337733,
         ),
         'Pond Ln, Southampton, NY 11968, USA' => array(
             'formatted_address' => 'Monument at Agawam Park',
