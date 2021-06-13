@@ -31,7 +31,7 @@ add_filter('widget_text','php_execute',100);
 /* Custom Function for TSML Plugin */
 
 if (function_exists('tsml_custom_flags')) {
-    tsml_custom_flags(array('M', 'W', 'ONL', 'BE', 'ST', 'A', 'MED', 'Y',
+    tsml_custom_flags(array('M', 'W', 'ONL', 'BB','BE', 'ST', 'A', 'MED', 'Y',
         'TR', 'LGBTQ', 'GV', 'LS', 'DR', 'LIT', // do we really want these?
         'TC', 'UNK', 'ROPN',
 	    'SP'));
