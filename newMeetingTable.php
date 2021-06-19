@@ -155,7 +155,7 @@ foreach ($old_table as $recnum=>$row) {
                 if ((strpos($mtg_notes, "GLBT") !== false) ||
                     (strpos($new_row['group_name'], "LGBTQ") !== false)) {
                     $newGLBTMtgs++;
-                    $mtg['types'] .= " LGBT";
+                    $mtg['types'] .= " LGBTQ";
                 }
 
                 // TEMP CLOSED meetings
