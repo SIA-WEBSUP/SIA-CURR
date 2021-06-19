@@ -130,6 +130,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '126' => array("//zoom.us/j/253179384?pwd=MUlYaGVQZ2lLczcvd1FnWFVRTWkyUT09", "(929) 436-2866", "253 179 384", "777"),    // HUNTINGTON STA NEW LIFE
     '142' => array("//zoom.us/j/7354181748?pwd=KzNvWnkwSXlPVGI0T01lL3JJOUFHUT09" , NULL, "735 418 1748", "HAUPPAUGE"), // TOUCHSTONES GROUP
     '145' => array("//zoom.us/j/5922356616", NULL, "592 2356 616", NULL),                  // HUNTINGTON GROUP
+    '152' => array("//zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
     '157' => array("//zoom.us/j/851329515?pwd=STFwM1dOQUZUZXdrTlFZK1hIMDlnUT09","(646) 876-9923", "851 329 515", "DIY"), // DOING IT YOUNG
     '160' => array("//zoom.us/j/9664942327", NULL, "966 494 2327", NULL),                  // ISLIP TERRACE GROUP
     '165' => array("//zoom.us/j/928611989", NULL, "928 611 989", "729964"),                // KINGS PARK GROUP
@@ -206,6 +207,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '729' => array("//us02web.zoom.us/j/2387900906?pwd=V1Fhbm1sYVBQdzVCM1E5amVpZ0E1UT09", NULL, "238 7900 906", "e-mail GRAPEVINESTORYHOUR@gmail.com for Password"), // GRAPEVINE STORY HOUR
     '730' => array("//zoom.us/j/95532435350", "(929) 205-6099", "955 3243 5350", "777"),   // HUNTINGTON STA LIVING SOBER
     '732' => array("//zoom.us/j/2095091328", "(929) 205-6099", "209 509 1328", "sober2"),  // RIVERHEAD WOMEN IN THE SOLUTION
+    '734' => array("//zoom.us/j/5011015434?pwd=ZWJJVUZNc0RIaW53bVcvQVNUNTFiQT09", "(646) 876-9923", "501 101 5434", "448049"),  // MELVILLE EARLY BIRD REFLECTIONS
 
     // Some meetings have different URLs per meeting
     '024.MN.00' => array("//us02web.zoom.us/j/86978146496?pwd=N2ppWFVzWndFcjZYSE5CMlVKK0Jidz09", NULL, "869 7814 6496", "456143"), // MIDDLE RD - Monday 06:45 PM - Beginners
@@ -223,13 +225,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '125.TH.01' => array("//meet.google.com/cyn-npse-mto","(347) 773-0220", "266 098 222", NULL), // GREENLAWN HUNTINGTON STATION
     '149.MN.00' => array("//zoom.us/j/93114868696" , NULL, "931 1486 8696", "980540"),  // SOBRIETY HILL
     '149.FR.00' => array("//zoom.us/j/86872399413" , NULL, "868 7239 9413", "578572"),  // SOBRIETY HILL
-    '152.SU.01' => array("//zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
-    '152.MN.01' => array("//zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
-    '152.TU.01' => array("//zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
-    '152.WD.02' => array("//zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
-    '152.TH.01' => array("//zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
-    '152.FR.01' => array("//zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
-    '152.SA.01' => array("//zoom.us/j/99621492360?pwd=cytGbFZmVjRNUjYySlFHVnBwdmNTUT09" , "(929) 436-2866", "996 2149 2360", "letmein"), // MELVILLE HIGH NOON
     '181.WD.01' => array("//zoom.us/j/682689475?pwd=Rzl1L0RRQmc2bEdaTjdkVzgzS0k4QT09", "(646) 558 8656", "682 689 475", "mattituck"), // MATTITUCK MID WEEK
     '187.SU.01' => array("//zoom.us/j/71228734268", NULL, "712 2873 4268", "serenity"),   // MELVILLE SWEET AIR - SUN DR
     '187.WD.01' => array("//zoom.us/j/71228734268", NULL, "712 2873 4268", "serenity"), // MELVILLE SWEET AIR - WED BE
