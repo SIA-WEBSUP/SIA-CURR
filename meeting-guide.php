@@ -63,7 +63,7 @@ $type_lookup = array(
 	'CD' => array('C', 'D'), // Closed, Discussion
 	'DR' => 'DR', // Daily Reflections
 	'GV' => 'GR', // Grapevine
-	'LGBT' => 'LGBTQ', // GLBT
+	'LGBTQ' => 'LGBTQ', // GLBT
 	'LIT' => 'LIT', // Literature
 	'LS' => 'LS', // Living Sober
 	'M' => 'M', // Mens
@@ -166,6 +166,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '315' => array("//us02web.zoom.us/j/8727414086?pwd=SmtrT0Q2NzBWYW1xZFdESXJ1K0dMUT09", NULL, "872 741 4086", "381491"), // WADING RIVER GROUP
     '316' => array("//zoom.us/j/4427989869?pwd=dEw4eG1FUnFHbVFHczVBZ1lCVmpaZz09a", "(929) 205-6099 Passcode: 543559", "442 798 9869", "BillW"), // 11th STEP MEDITATION WORKSHOP
     '324' => array("//us02web.zoom.us/j/173718981?pwd=eDg1NDRmOXJ0WkdPVmdRWFJpcTBUdz09", NULL, "173 718 981", "088492"),       // WEST ISLIP GOOD SOBRIETY
+    '331' => array("//us02web.zoom.us/j/428908754", NULL, "428 908 754", "088492"),        // WESTHAMPTON WOMEN'S DISCUSSION
     '351' => array("//us02web.zoom.us/j/86239050147?pwd=NmhOSkxLbXdMYlVYV1BDclhSOG50dz09", "(646) 558-8656", "862 3905 0147","502128"), // SOUTHAMPTON MONDAY CLOSED DISCUSSION GROUP
     '356' => array("//zoom.us/j/299922586", NULL, "299 922 586", "Home"),                  // MATTITUCK MEN'S GROUP
     '366' => array("//zoom.us/j/2888620729", NULL, "288 862 0729", "main"),                // NORTHPORT COW HARBOR
