@@ -207,7 +207,7 @@ foreach ($old_table as $recnum=>$row) {
 
                         // Required Stuff
                         $BYO = array_intersect([
-                            "Temperature Taken"=>"tt",
+                            "Temperature Taken at Door"=>"tt",
                             "Contact Tracing Log Kept"=>"log",
                             "Mask Required"=>"mask",
                             "Mask Optional if Fully Vaccinated"=>"maskopt",
@@ -219,7 +219,7 @@ foreach ($old_table as $recnum=>$row) {
                             explode(' ', strtolower($new_row['status'])));
                         if ($BYO) {
                             foreach($BYO as $k=>$v)
-                                $mtg['notes'] .= "<br><br>COVID " . $k;
+                                $mtg['notes'] .= "<br><br>" . $k;
                         }
 
                         // BYO Stuff
@@ -228,7 +228,7 @@ foreach ($old_table as $recnum=>$row) {
                                 explode(' ', strtolower($new_row['status']))));
                         if ($BYO) {
                             //var_dump(implode(" / ", $BYO));
-                            $mtg['notes'] .= "<br><br>COVID BYO " . implode(" / ", $BYO);
+                            $mtg['notes'] .= "<br><br>BYO " . implode(" / ", $BYO);
                         }
                     } // REOPENED
                 } // UNKNOWN or REOPENED

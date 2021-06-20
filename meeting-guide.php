@@ -77,6 +77,7 @@ $type_lookup = array(
 	'ODB' => array('O', 'D', 'BE'), // Open, Discussion, Newcomer
     'ONL' => 'ONL', // Temp Online Meeting
 	'OS' => array('O', 'ST'), // Open, Step Meeting
+    'OUT' => 'OUT', // Outdoor
 	//[24] => PROMISES = Promises
 	'S' => 'ST', // Step
     'SPAN' => 'S', // Speaker
