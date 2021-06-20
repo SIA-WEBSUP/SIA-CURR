@@ -194,6 +194,7 @@ foreach ($old_table as $recnum=>$row) {
 
                         // Meeting OUTDOOR
                         if(strpos($new_row['status'], "OUTDOOR") != false) {
+	                        $mtg['types'] .= " OUT";
                             $mtg['notes'] .= "<br><br>OUTDOOR MEETING";
                         }
 
