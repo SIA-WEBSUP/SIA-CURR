@@ -31,7 +31,7 @@ add_filter('widget_text','php_execute',100);
 /* Custom Function for TSML Plugin */
 
 if (function_exists('tsml_custom_flags')) {
-    tsml_custom_flags(array('M', 'W', 'ONL', 'BE', 'ST', 'A', 'MED', 'Y',
+    tsml_custom_flags(array('M', 'W', 'ONL', 'BE', 'ST', 'B', 'A', 'MED', 'Y',
         'TR', 'LGBTQ', 'GV', 'LS', 'DR', 'LIT', // do we really want these?
         'TC', 'UNK', 'ROPN',
 	    'SP'));
@@ -43,7 +43,8 @@ if (function_exists('tsml_custom_types')) {
         'ROPN' => 'COVID Reopen Confirmed',
         'HY' => 'COVID Hybrid',
         'BE' => 'Beginners',
-        'TPC' => 'Topic'
+        'TPC' => 'Topic',
+        'LGBTQ' => 'LGBTQ+'
     ));
 }
 
@@ -56,7 +57,7 @@ if (function_exists('tsml_custom_types')) {
             'latitude' => 48.858372,
             'l75007ongitude' => 2.294481,
         ),
-        'Southern State Parkway Exit 38, 11703, USA' => array(
+        '625 Belmont Ave, 11703, USA' => array(
 	        'formatted_address' => 'Belmont Lake State Park',
 	        'city' => 'North Babylon',
 	        'latitude' => 40.737415,
