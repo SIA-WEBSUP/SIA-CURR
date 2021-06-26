@@ -189,8 +189,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '601' => array("//zoom.us/j/92838849973", NULL, "928 3884 9973", "164"),               // CONNECT THE DOTS
     '601.SA.OO' =>array("//zoom.us/j/99440850855?pwd=S0UxeUlPVG5DRkV6VUtTNzBzaFZrUT09", NULL, "994 4085 0855", "164"),  // CONNECT THE DOTS
 //    '606' => array("//zoom.us/j/86781747581",NULL,"867 8174 7581", "Text for password access: 631-388-0876 or 631-889-1613"), // PORT JEFF TRUE FRIENDS WOMENS
-    '606' => array("//zoom.us/j/98067219186",NULL,"980 6721 9186", "Serenity"), // PORT JEFF TRUE FRIENDS WOMENS
-    '695' => array("//zoom.us/j/4458142615",NULL,"445 814 2615", "766504"),                // YOUNG AT HEART IN ISLIP
+//    '606' => array("//zoom.us/j/98067219186",NULL,"980 6721 9186", "Serenity"), /,                // YOUNG AT HEART IN EAST ISLIP
     '698' => array("//meet.google.com/bpy-aijb-aqi","(301) 845-5176","836 521 984", NULL), // SIA HOSTED
     '699' => array("//meet.google.com/ikn-poem-eba","(978) 435-0386","470 509 931", NULL), // WOMEN'S BACK TO BASICS
     '701' => array("//us02web.zoom.us/j/661443978?pwd=TDZMV2xkMjZuOUNDYkFpVnVBK2l3Zz09", "(646) 558-8656 Passcode: 356622327","661 443 978", "spiritual"), // THE SOLUTIONS GROUP ONLINE
