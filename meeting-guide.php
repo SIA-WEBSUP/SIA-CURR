@@ -174,7 +174,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '366' => array("//zoom.us/j/2888620729", NULL, "288 862 0729", "main"),                // NORTHPORT COW HARBOR
     '375' => array("//zoom.us/join", NULL, "617 988 572","For Password please text\n\r  DeeAnn (631) 495-4912 or\n\r  Besty (631) 525-1828"), // A NEW BEGINNING (WOMEN"S GROUP)
     '395' => array("//zoom.us/j/9014766046", NULL, "901 476 6046", "45196aa"),             // MANORVILLE SOUTH STREET SOBRIETY
-    '417' => array("//meet.google.com/zrf-ugcr-tfx", NULL, NULL, NULL),                    // BAY SHORE FREETHINKERS
+//    '417' => array("//meet.google.com/zrf-ugcr-tfx", NULL, NULL, NULL),                    // BAY SHORE FREETHINKERS
     '425' => array("//zoom.us/j/81599541140", NULL, "815 9954 1140","Godcalling"),         // GOD CALLING
     '437' => array("//us02web.zoom.us/j/909301594?pwd=U1c1eU9WQzhFUjVXb3hPYmM0VGh6QT09", NULL, "909 301 594","799633"), // THE ONE AND ONLY
     '447' => array("//zoom.us/j/2596701737", NULL, "259 670 1737","silkworth"),            // 10 AM GROUP
