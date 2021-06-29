@@ -119,7 +119,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '64'  => array("//zoom.us/j/92333840941?pwd=Y0liOWNzZ0ZTQ29IT3kyVXR2eHgvZz09", NULL, NULL, NULL), // CENTEREACH GROUP
     '69'  => array("//zoom.us/j/316148225", NULL, "316 148 225", "157363"),                // CENTEPORT NOON GROUP
     '82'  => array("//zoom.us/j/6311431023" ,"(631) 766-3661", "631 143 1023", "Cutchogue"), // CUTCHOGUE SUNDAY
-    '83'  => array("//zoom.us/j/94672171612?pwd=Y3owSW9Iaks2dHVZbTNDSk16RmQ4dz09", "(929) 205-6099", "946 7217 1612", "cutchogue"), // CUTCHOGUE STEP GROUP
+//    '83'  => array("//zoom.us/j/94672171612?pwd=Y3owSW9Iaks2dHVZbTNDSk16RmQ4dz09", "(929) 205-6099", "946 7217 1612", "cutchogue"), // CUTCHOGUE STEP GROUP
     '85'  => array("//zoom.us/j/86589024896"  , NULL, "865 8902 4896", "438051"),          // HOME FOR DINNER
     '88'  => array("//zoom.us/j/4234489821?pwd=eTlJRHpWa2tJNUVjS0gzRFArNlovQT09", NULL, "423 448 9821", "21212"), // DIX HILLS SUNDAY SOBRIETY
     '92'  => array("//zoom.us/j/97702600345?pwd=MTJneE1OSG1CVE9mWFFaMFJ2L2lkQT09", "(929) 436-2866", "977 0260 0345", "bonac"), // SPRINGS FIREPLACE GROUP
