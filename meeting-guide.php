@@ -260,7 +260,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '094.SU.00'  => array("//zoom.us/j/876167885",   NULL,"876 167 885", "Green123"),   // East Hampton Keep it Green
     '094.WD.00'  => array("//zoom.us/j/94867360733", NULL,"948 6736 0733", "Green123"), // East Hampton Keep it Green
     '392' => array("//zoom.us/j/995319793",	         NULL,"995 319 793", "#girlsrule"), // Hampton Bays Women's Group
-    '433' => array("//zoom.us/join",	             NULL,"483 772 9818", "980165"),    // Hampton Bays	Spiritual Awakening West - 11th Step Meditation Mtg
+//    '433' => array("//zoom.us/join",	             NULL,"483 772 9818", "980165"),    // Hampton Bays	Spiritual Awakening West - 11th Step Meditation Mtg
 //    '573'  => array("//zoom.us/j/207160635",	 NULL,"207 160 635", "sobriety#1"), // Hampton Bays Hampton Bay Sunday Night Group
     '573'  => array("//zoom.us/j/8270857742", "(646) 558-8656 Passcode: 3402171338", "827 085 7742", "sobriety#1"), // Hampton Bays Hampton Bay Sunday Night Group
     '700'  => array("//zoom.us/j/889817053?pwd=eFhpbkk0VEZFN0M2dndMcTdqSFJBZz09",	NULL,"889 817 053", "MTK1212"), // Montauk Montauk Group (ONLINE ONLY)
