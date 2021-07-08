@@ -234,7 +234,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '187.TH.00' => array("//zoom.us/j/9278322441", NULL, "927 8322 441", "YS650"),      // MELVILLE SWEET AIR - THU MED
     '189.TU.00' => array("//zoom.us/j/852561412?pwd=dEttYmp6UXplYzVxUEF5YWttdUxaZz09", NULL, "852 561 412", "12345"), // LONGWOOD LOVE & SERVICE
     '189.TH.00' => array("//zoom.us/j/604011879?pwd=T2dsZy9IYlphQVlmUm1VSk5VMk5EUT09", NULL, NULL, NULL), // LONGWOOD LOVE & SERVICE
-CON//    '203.SU.00' => array("//zoom.us/j/414657828", NULL, "414 657 828", "northport"),    // NORTHPORT FREE AT LAST
+//    '203.SU.00' => array("//zoom.us/j/414657828", NULL, "414 657 828", "northport"),    // NORTHPORT FREE AT LAST
 //    '203.TH.00' => array("//zoom.us/j/575115331", NULL, "575 115 331", "northport"),    // NORTHPORT FREE AT LAST
 //    '203.SA.00' => array("//zoom.us/j/855934327", NULL, "855 934 327", "northport"),    // NORTHPORT FREE AT LAST
     '250.SU.00' => array("//zoom.us/j/513760537?pwd=NzM1RGlNa05mL0lCSmloK09yUWNuZz09", NULL, "513 760 537", "bigbook"), // CLEARY SCHOOL
