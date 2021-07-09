@@ -211,6 +211,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '732' => array("//zoom.us/j/2095091328", "(929) 205-6099", "209 509 1328", "sober2"),  // RIVERHEAD WOMEN IN THE SOLUTION
     '734' => array("//zoom.us/j/5011015434?pwd=ZWJJVUZNc0RIaW53bVcvQVNUNTFiQT09", "(646) 876-9923", "501 101 5434", "448049"),  // MELVILLE EARLY BIRD REFLECTIONS
     '736' => array("//zoom.us/j/98973931417", NULL, "989 7393 1417", "532292"),            // WE STAY SOBER TOGETHER
+    '737' => array(NULL, "(978) 990-5000", "817579", NULL),                                // MEDFORD RULE 62
 
     // Some meetings have different URLs per meeting
     '024.MN.00' => array("//us02web.zoom.us/j/86978146496?pwd=N2ppWFVzWndFcjZYSE5CMlVKK0Jidz09", NULL, "869 7814 6496", "456143"), // MIDDLE RD - Monday 06:45 PM - Beginners
