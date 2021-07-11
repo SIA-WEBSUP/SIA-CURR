@@ -136,6 +136,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '160' => array("//zoom.us/j/9664942327", NULL, "966 494 2327", NULL),                  // ISLIP TERRACE GROUP
     '165' => array("//zoom.us/j/928611989", NULL, "928 611 989", "729964"),                // KINGS PARK GROUP
     '168' => array("//zoom.us/j/85068453181","(646) 558-8656 Passcode: 535388", "850 6845 3181", "asolution"), // LAKE RONKONKOMA GROUP
+    '172' => array("//zoom.us/j/318848962", NULL, "318 848 962", "freedom"),               // LINDENHURST FREEDOM GROUP
     '173' => array("//us02web.zoom.us/j/699580490?pwd=YWwwUURkVTlENkl5ejBRc3NtbkZ0UT09"  , NULL, "699 580 490", "014700"), // LINDENHURST GROUP
     '176' => array("//meet.google.com/gbi-rsmn-odo","(502) 430-2829","389 359 014", NULL), // NEIGHBORHOOD SOBRIETY
     '178' => array("//us02web.zoom.us/j/4614019987?pwd=VnhYaEQwenBIOVhibGd6akwrcjIyQT09","(929) 205-6099 Passcode: 59241764","461 401 9987","SERENITY"),  // THE ONLY REQUIREMENT
@@ -143,8 +144,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '185' => array("//us02web.zoom.us/j/6819531957?pwd=MTBlalRTVGNRN3lvaGEwS1FZNnVldz09", NULL, "681 953 1957", "800330"),   // MELVILLE GROUP
     '198' => array("//zoom.us/j/4666501565?pwd=V1FuTFJnMG1tcmVVdmxyaDhZbHNpdz09", "(929) 205-6099", "466 650 1565","595631"),// NORTH BABYLON JUST FOR TODAY
     '204' => array("//zoom.us/j/98973931417", "(929) 205-6099", "989 7393 1417","532292"), // NORTHPORT TRINITY GROUP
-    '548' => array("//zoom.us/j/961398452?pwd=mZJvIwQu9xE", "(929) 205-6099", "961 398 452","018783"),     // NEW YEAR'S MEET-A-THON
-    '589' => array("//zoom.us/j/961398452?pwd=mZJvIwQu9xE", "(929) 205-6099", "961 398 452","018783"),     // NEW YEAR'S MEET-A-THON
     '215' => array("//us02web.zoom.us/j/6913867484?pwd=Q1FGRTZCenM4OVJhR0o3bWwzcCs5UT09", "(646) 876 9923", "691 386 7484", "350155"), // PATCHOGUE GROUP
     '218' => array(NULL, "(978) 990-5000 Access Code: 817 579", NULL, NULL),               // PATCHOGUE MORNING GROUP
     '224' => array("//zoom.us/j/82893053985", NULL, "828 9305 3985", "522423"),            // PORT JEFF BIG BOOK
