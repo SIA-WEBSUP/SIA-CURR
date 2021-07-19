@@ -217,7 +217,7 @@ foreach ($old_table as $recnum=>$row) {
                             "No food or beverages allowed"=>"nofoodallowed",
                             "No food allowed / BYO beverage"=>"nofoodbevok",
                             "No smoking on grounds"=>"nosmoke",
-                            "No smoking or vaping on grounds"=>"novape",
+                            "No smoking or vaping on grounds"=>"nosmokeorvape",
 
                         ],
                             explode(' ', strtolower($new_row['status'])));
