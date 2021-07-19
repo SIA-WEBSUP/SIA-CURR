@@ -84,6 +84,7 @@ $type_lookup = array(
 	'SP' => 'SP', // Speaker
 	'T' => 'TR', // Tradition
     'TC' => 'TC', // Temp Closure
+    'TOP' => 'TPC', // Topic - custom type
 	'TOPIC' => 'TPC', // Topic - custom type
     'TPC' => 'TPC', // Topic - custom type
  	'W' => 'W', // Womens
@@ -185,6 +186,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '530' => array("//us02web.zoom.us/j/84350888563?pwd=MGZnaGNiYnEvQVRCT2RLZXdtVC8vdz09","(929) 436-2866","843 5088 8563", "297082"), // STONY BROOK FREETHINKERS
     '535' => array("//zoom.us/j", NULL, NULL, NULL), // FISHER ISLAND
     '538' => array("//us02web.zoom.us/j/3238843983?pwd=Y0c2V21LUnVQTkRTOUM1U3lPWGNvQT09", NULL, "323 884 3983", "592340"), // SELDEN ONE DAY AT A TIME
+    '551' => array("//us02web.zoom.us/j/83782979137?pwd=dXpvZjJxdEZobENnaEtSUjFxMk9ZZz09", "(929) 205-6099", "837 8297 9137", "403409 "), // SAYVILLE SUNLIGHT OF THE SPIRIT
     '581' => array("//zoom.us/j/504706298", "(929) 205-6099", "504 706 298", NULL),        // FREEDOM FROM FEAR
     '572' => array("//zoom.us/j/2830231736", NULL, "283 023 1736", "253666"),              // HUNTINGTON STA WE CAN RECOVER
     '601' => array("//zoom.us/j/92838849973", NULL, "928 3884 9973", "164"),               // CONNECT THE DOTS
@@ -208,7 +210,8 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '728' => array("//us02web.zoom.us/j/2095091328", NULL, "209 509 1328", "sober2"),      // OUR COMMON JOURNEY
     '729' => array("//us02web.zoom.us/j/2387900906?pwd=V1Fhbm1sYVBQdzVCM1E5amVpZ0E1UT09", NULL, "238 7900 906", "e-mail GRAPEVINESTORYHOUR@gmail.com for Password"), // GRAPEVINE STORY HOUR
     '730' => array("//zoom.us/j/95532435350", "(929) 205-6099", "955 3243 5350", "777"),   // HUNTINGTON STA LIVING SOBER
-    '732' => array("//zoom.us/j/2095091328", "(929) 205-6099", "209 509 1328", "sober2"),  // RIVERHEAD WOMEN IN THE SOLUTION
+    '732' => array("//zoom.us/j/83225774908", "(646) 876-9923", "501 101 5434", "448049"), // MELVILLE EARLY BIRD REFLECTIONS
+    '733' => array("//zoom.us/j/2095091328", NULL, "832 2577 4908", "PICKLES"),            // DIX HILLS ALIVE AGAIN
     '734' => array("//zoom.us/j/5011015434?pwd=ZWJJVUZNc0RIaW53bVcvQVNUNTFiQT09", "(646) 876-9923", "501 101 5434", "448049"),  // MELVILLE EARLY BIRD REFLECTIONS
     '736' => array("//zoom.us/j/98973931417?pwd=RFc1YlRoT0cwUGxXMHB6VWF6ZGlRQT09", NULL, "989 7393 1417", "532292"), // WE STAY SOBER TOGETHER
     '737' => array(NULL, "(978) 990-5000", "817579", NULL),                                // MEDFORD RULE 62
