@@ -48,6 +48,6 @@ add_shortcode('get_current_time', 'get_current_time');
 
 
 function get_all_phone_meetings () {
-    return file_get_contents("https://suffolkny-aa.org/phone-meetings.dump");
+    return file_get_contents("https://suffolkny-aa.org/phone-meetings-dump.php");
 }
 add_shortcode('get_all_phone_meetings', 'get_all_phone_meetings');
