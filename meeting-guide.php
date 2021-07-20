@@ -104,8 +104,10 @@ $day_lookup = array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Fri
 
 $all_types = array();
 
+include('./online-meetings.php');
 $cOnlineMeetings=0;
 
+/*
 $online_mtgs = array( // Most groups have one URL for all meetings, some have both group level URL and meeting URLs
     // 'GROUPID'  => array("conf_URL","conf_telephone","mtg_id", "pwd"), // GROUP NAME
     '12'  => array("//us04web.zoom.us/j/284511426?pwd=OW01N1gxMHR2OE5LV1FCc2VQemJ1dz09"   , NULL, NULL, NULL),  // MASSAPEQUA AT AMITYVILLE BOTTOM LINE GROUP
@@ -284,6 +286,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '692' => array("//zoom.us/j/4837729818",	      NULL,"483 772 9818", "980165"),    // On Awakening 11th Step Meditation Beach Meeting
     '711' => array("//zoom.us/j/6312831935",	      NULL,"631 283 1935", "1935"),      // Southampton First Things First (ONLINE)
 );
+*/
 
 //fetch data
 $return = array();
