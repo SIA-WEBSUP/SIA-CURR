@@ -60,6 +60,7 @@ $type_lookup = array(
 	'BBOD' => array('B', 'O', 'D'), // Big Book, Open, Discussion
 	'BYOC' => 'C', // Bring Your Own Closed
 	'C' => 'C', // Closed
+    'CAN' => 'CAN', // Candlelight
 	'CD' => array('C', 'D'), // Closed, Discussion
 	'DR' => 'DR', // Daily Reflections
 	'GV' => 'GR', // Grapevine
