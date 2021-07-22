@@ -17,7 +17,7 @@ include('./online-meetings.php');
 // note that if you make any edits to this list you must make
 // corresponding change to SQL state in create_new_table_PDO()
 global $headers;
-$headers = ['id','vm_url','vm_id','vm_pw','vm_phone',];
+$headers = ['id','vm_url', 'vm_id','vm_pw','vm_phone',];
 
 include "myutil.php";
 
