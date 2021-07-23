@@ -85,7 +85,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '572' => array("//zoom.us/j/2830231736", NULL, "283 023 1736", "253666"),              // HUNTINGTON STA WE CAN RECOVER
     '601' => array("//zoom.us/j/92838849973", NULL, "928 3884 9973", "164"),               // CONNECT THE DOTS
     '601.SA.OO' =>array("//zoom.us/j/99440850855?pwd=S0UxeUlPVG5DRkV6VUtTNzBzaFZrUT09", NULL, "994 4085 0855", "164"),  // CONNECT THE DOTS
-//    '606' => array("//zoom.us/j/86781747581",NULL,"867 8174 7581", "Text for password access: 631-388-0876 or 631-889-1613"), // PORT JEFF TRUE FRIENDS WOMENS
     '606' => array("//zoom.us/j/98067219186",NULL,"980 6721 9186", "Serenity"), // PORT JEFF TRUE FRIENDS WOMENS
 //    '695' => array("//zoom.us/j/4458142615",NULL,"445 814 2615", "766504"),                // YOUNG AT HEART IN ISLIP
     '698' => array("//meet.google.com/bpy-aijb-aqi","(301) 845-5176","836 521 984", NULL), // SIA HOSTED
@@ -105,7 +104,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '729' => array("//us02web.zoom.us/j/2387900906?pwd=V1Fhbm1sYVBQdzVCM1E5amVpZ0E1UT09", NULL, "238 7900 906", "e-mail GRAPEVINESTORYHOUR@gmail.com for Password"), // GRAPEVINE STORY HOUR
     '730' => array("//zoom.us/j/95532435350", "(929) 205-6099", "955 3243 5350", "777"),   // HUNTINGTON STA LIVING SOBER
     '732' => array("//zoom.us/j/5011015434", "(646) 876-9923", "501 101 5434", "448049"), // MELVILLE EARLY BIRD REFLECTIONS
-    '733' => array("//zoom.us/j/83225774908", NULL, "832 2577 4908", "PICKLES"),            // DIX HILLS ALIVE AGAIN
+    '733' => array("//zoom.us/j/83225774908?pwd=Y3NjVitPdXpEd3ZPUHo4Sm1POEJodz09", NULL, "832 2577 4908", "PICKLES"),            // DIX HILLS ALIVE AGAIN
     '734' => array("//zoom.us/j/5011015434?pwd=ZWJJVUZNc0RIaW53bVcvQVNUNTFiQT09", "(646) 876-9923", "501 101 5434", "448049"),  // MELVILLE EARLY BIRD REFLECTIONS
     '736' => array("//zoom.us/j/98973931417?pwd=RFc1YlRoT0cwUGxXMHB6VWF6ZGlRQT09", NULL, "989 7393 1417", "532292"), // WE STAY SOBER TOGETHER
     '737' => array(NULL, "(978) 990-5000", "817579", NULL),                                // MEDFORD RULE 62
