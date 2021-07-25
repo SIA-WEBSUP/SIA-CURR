@@ -145,11 +145,11 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '96'  => array("//zoom.us/j/625731737",	"(929) 436-2866","625 731 737", NULL),      // Sunday Step
     '97'  => array("//zoom.us/j/489358693",	         NULL,"489 358 693", "email the group at soberwomenseast@yahoo.com"), // Sober Woman's East
     '190'  => array("//zoom.us/j/92294740866","(929) 205-6099 Passcode: 4343233670","922 9474 0866", "Wilson1212"), // Montauk The Smith-Wilson Group
-    '365'  => array("//zoom.us/j/279125585",	     NULL,"279 125 585", "KISS"),       // East Hampton Keep It Simple
     '262' => array("//zoom.us/j/94193591147?pwd=SmxYVFFhUFN5L1dITWpJOURpRW5ldz09", "(929) 205-6099 Passcode: 80642895","941 9359 1147", "sssh1994"), // Sag Harbor Spiritual Solution M-F
     '262.SA.00' => array("//zoom.us/j/94699728008?pwd=NXB0aVBiSmNjRml0WXVCS1NPL1I0UT09", "(929) 205-6099 Passcode: 71091234","946 9972 8008", "sssh1994"), // Sag Harbor Spiritual Solution SATURDAY
     '317.MN.00'  => array("//zoom.us/j/553131814",	"929 436 2866 Passcode: 860059","553 131 814", "letmein"), // Wainscott	Lincoln & Lee
     '317.WD.00'  => array("//zoom.us/j/553131814",	"929 436 2866 Passcode: 860059","553 131 814", "letmein"), // Wainscott	Lincoln & Lee
+    '365'  => array("//zoom.us/j/279125585",	     NULL,"279 125 585", "KISS"),       // East Hampton Keep It Simple
     '378' => array("//zoom.us/j/175307047",          NULL,"175 307 047", NULL),         // Wainscott MIRACLES HAPPEN
     '392' => array("//zoom.us/j/995319793",	         NULL,"995 319 793", "#girlsrule"), // Hampton Bays Women's Group
     '418'  => array("//zoom.us/j/361007173",	     NULL,"361 007 173", "b2b001"),     // East Hampton Back to Basics
