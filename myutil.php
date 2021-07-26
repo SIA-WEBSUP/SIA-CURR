@@ -265,7 +265,7 @@ function notes_full($array_notes, $notes){
 
     foreach ($notes as $note) {
         if (array_key_exists($note, $array_notes))
-            $notes_full = $notes_full . $note . $array_notes[$note] . ' ';
+            $notes_full = $notes_full . $note . $array_notes[$note] . '<br>';
     }
     return trim($notes_full);
 
