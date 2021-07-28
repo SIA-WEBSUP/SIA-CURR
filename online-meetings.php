@@ -102,6 +102,7 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '732' => array("//zoom.us/j/5011015434", "(646) 876-9923", "501 101 5434", "448049"), // MELVILLE EARLY BIRD REFLECTIONS
     '733' => array("//zoom.us/j/83225774908?pwd=Y3NjVitPdXpEd3ZPUHo4Sm1POEJodz09", NULL, "832 2577 4908", "PICKLES"),            // DIX HILLS ALIVE AGAIN
     '734' => array("//zoom.us/j/5011015434?pwd=ZWJJVUZNc0RIaW53bVcvQVNUNTFiQT09", "(646) 876-9923", "501 101 5434", "448049"),  // MELVILLE EARLY BIRD REFLECTIONS
+    '735' => array("//zoom.us/j/6052451111?pwd=UmpvbWJEcHhzbFpzckNnRGJLVjRuUT09", "(929) 205-6099 Passcode: 2043231", "605 245 1111", "Sunrise"), // BAY SHORE MOVING FORWARD
     '736' => array("//zoom.us/j/98973931417?pwd=RFc1YlRoT0cwUGxXMHB6VWF6ZGlRQT09", NULL, "989 7393 1417", "532292"), // WE STAY SOBER TOGETHER
     '737' => array(NULL, "(978) 990-5000", "817579", NULL),                                // MEDFORD RULE 62
 
