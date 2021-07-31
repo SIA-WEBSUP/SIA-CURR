@@ -142,7 +142,6 @@ $online_mtgs = array( // Most groups have one URL for all meetings, some have bo
     '91'  => array("//zoom.us/j/7914635469","(929) 205-6099","791 463 5469", NULL),     // East Hampton Group
     '094.SA.00'  => array("//zoom.us/j/997866134",   NULL,"997 866 134", "Green123"),   // East Hampton Keep it Green
     '094.SU.00'  => array("//zoom.us/j/876167885",   NULL,"876 167 885", "Green123"),   // East Hampton Keep it Green
-    '094.WD.00'  => array("//zoom.us/j/94867360733", NULL,"948 6736 0733", "Green123"), // East Hampton Keep it Green
     '96'  => array("//zoom.us/j/625731737",	"(929) 436-2866","625 731 737", NULL),      // Sunday Step
     '97'  => array("//zoom.us/j/489358693",	         NULL,"489 358 693", "email the group at soberwomenseast@yahoo.com"), // Sober Woman's East
     '190'  => array("//zoom.us/j/92294740866","(929) 205-6099 Passcode: 4343233670","922 9474 0866", "Wilson1212"), // Montauk The Smith-Wilson Group
