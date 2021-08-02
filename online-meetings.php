@@ -1,5 +1,7 @@
 <?php
 
+$fDump = isset($_GET['dump']);
+
 $online_mtgs = array( // Most groups have one URL for all meetings, some have both group level URL and meeting URLs
     // 'GROUPID'  => array("conf_URL","conf_telephone","mtg_id", "pwd"), // GROUP NAME
     '12'  => array("//us04web.zoom.us/j/284511426?pwd=OW01N1gxMHR2OE5LV1FCc2VQemJ1dz09"   , NULL, NULL, NULL),  // MASSAPEQUA AT AMITYVILLE BOTTOM LINE GROUP

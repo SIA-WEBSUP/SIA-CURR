@@ -1,18 +1,20 @@
 <?php
 
-$fGetStats = isset($_GET['stats']) && $_GET['stats'] == 'true';
-$fUnknown = isset($_GET['unk']) && $_GET['unk'] == 'true';
-$fDebug = isset($_GET['debug']) && $_GET['debug'] == 'true';
-$fUseHardCodedVMTable = isset($_GET['hard-coded-vm-table']) && $_GET['hard-coded-vm-table'] == 'true';
-$fDumpVMTable = isset($_GET['dump-vm-table']) && $_GET['dump-vm-table'] == 'true';
-
+$fGetStats = isset($_GET['stats']) && $_GET['stats'] == 'true';  // dump stats instead of JSON
+$fUnknown = isset($_GET['unk']) && $_GET['unk'] == 'true';       // if false, all STATUS UNKNOWN meeting cast to TEMP CLOSED
+$fRebuild = !isset($_GET['rebuild']) || $_GET['unk'] == 'false'; // default to true !!!
+$fDebug = isset($_GET['debug']) && $_GET['debug'] == 'true';     // debug dump, slow and breaks JSON
 
 //make sure errors are being reported
 error_reporting(E_ALL);
 
-// flatten meeting list so there is one meeting per row
-//include("./newMeetingTable.php");
-$output = shell_exec('php newMeetingTable.php');
+// rebuild temp table new_meeting
+// which flattens meeting table so there is one meeting per row
+if ($fRebuild) {
+    if ($fDebug) echo "REBUILDING temp table by calling newMeetingTable.php";
+    $output = shell_exec('php newMeetingTable.php');
+}
+
 
 //connect to database
 include('./sql-connect.php');
@@ -158,7 +160,7 @@ foreach ($result as $row) {
     if (!$fUnknown) {
         if ( in_array("UNK",$types) ) {
             $types[] = "TC";
-            if ($fGetStats)
+            if ($fDebug)
                 printf("<br> %s %s UNK->TC",$row['meeting_id'], $row['group_name']);
         }
     }
@@ -270,7 +272,6 @@ function get_virtual_meeting(&$row,&$types,&$online_mtgs,&$conference_phone,&$co
     */
 
     global $cOnlineMeetings;
-    global $fUseHardCodedVMTable;
 
     $conference_info = NULL;
     if ( in_array("TC",$types) || in_array("ONL",$types) || in_array("HY",$types) ) {
@@ -288,22 +289,15 @@ function get_virtual_meeting(&$row,&$types,&$online_mtgs,&$conference_phone,&$co
                     (strpos($row['status'], 'HYBRID') === false))        // TC, unless it's HYBRID or it's ONLINE ONLY
                     $types[] = 'TC';
             }
+
             $cOnlineMeetings++;
-            if ($fUseHardCodedVMTable) {
-                $conference_url = $conference_info[0] ? "https:" . $conference_info[0] : NULL;
+            $conference_mtgID     = $conference_info[0];
+            $conference_pwd       = $conference_info[1];
 
-                $conference_mtgID = $conference_info[2];
-                $conference_pwd = $conference_info[3];
+            $conference_phone     = $conference_info[2];
+            $conference_phone_pwd = NULL;
 
-                $conference_phone = $conference_info[1];
-                $conference_phone_pwd = $conference_info[3];
-            } else {
-                $conference_url = $conference_info[4] ? "https:" . $conference_info[4] : NULL;
-                $conference_phone = $conference_info[2];
-                $conference_mtgID = $conference_info[0];
-                $conference_pwd = $conference_info[1];
-                $conference_phone_pwd = NULL;
-            }
+            $conference_url = $conference_info[4] ? "https:" . $conference_info[4] : NULL;
 
             if (strlen($row['notes']) > 0) $row['notes'] .= "\n\r\n\r"; // Assume we'll be appending something
 
