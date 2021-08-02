@@ -38,7 +38,8 @@ function get_online_meetings_phone_list() {
     $day_lookup = array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
     $type_keys = array_keys($type_lookup);
 
-    $meetings = file_get_contents("https://suffolkny-aa.org/meeting-guide.php");
+    // no need to rebuild new_meeting SQL table
+    $meetings = file_get_contents("https://suffolkny-aa.org/meeting-guide.php?rebuild=false");
     $meetings = json_decode($meetings, true);
     $TSMLRoot = "https://suffolkny-aa.org/meetings/";
 

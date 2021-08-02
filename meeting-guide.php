@@ -4,6 +4,7 @@ $fGetStats = isset($_GET['stats']) && $_GET['stats'] == 'true';  // dump stats i
 $fUnknown = isset($_GET['unk']) && $_GET['unk'] == 'true';       // if false, all STATUS UNKNOWN meeting cast to TEMP CLOSED
 $fRebuild = !isset($_GET['rebuild']) || $_GET['unk'] == 'false'; // default to true !!!
 $fDebug = isset($_GET['debug']) && $_GET['debug'] == 'true';     // debug dump, slow and breaks JSON
+$fDumpVMTable = isset($_GET['dump-vm-table']) && $_GET['dump-vm-table'] == 'true';
 
 //make sure errors are being reported
 error_reporting(E_ALL);
@@ -11,7 +12,7 @@ error_reporting(E_ALL);
 // rebuild temp table new_meeting
 // which flattens meeting table so there is one meeting per row
 if ($fRebuild) {
-    if ($fDebug) echo "REBUILDING temp table by calling newMeetingTable.php";
+    if ($fDebug) echo "REBUILDING temp table by calling newMeetingTable.php<br><br>";
     $output = shell_exec('php newMeetingTable.php');
 }
 
