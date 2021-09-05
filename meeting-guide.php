@@ -262,15 +262,6 @@ echo $return;
 
 
 function get_virtual_meeting(&$row,&$types,&$online_mtgs,&$conference_phone,&$conference_url) {
-    /*
-    $conference_url = NULL;
-    $conference_phone = NULL;
-    $conference_phone_pwd = NULL;
-    $conference_mtgID = NULL;
-    $conference_pwd = NULL;
-    $conference_info = NULL;
-    $access_num = NULL;
-    */
 
     global $cOnlineMeetings;
 
@@ -296,7 +287,7 @@ function get_virtual_meeting(&$row,&$types,&$online_mtgs,&$conference_phone,&$co
             $conference_pwd       = $conference_info[1];
 
             $conference_phone     = $conference_info[2];
-            $conference_phone_pwd = NULL;
+            $conference_phone_pwd = $conference_info[3];
 
             $conference_url = $conference_info[4] ? "https:" . $conference_info[4] : NULL;
 
@@ -318,7 +309,7 @@ function get_virtual_meeting(&$row,&$types,&$online_mtgs,&$conference_phone,&$co
                         // Special Instructions for password
                         $row['notes'] .= $conference_pwd . "\n\r\n\r";
                     else
-                        $row['notes'] .= "PWD: " . $conference_pwd . "\n\r\n\r";
+                        $row['notes'] .= "Zoom Passcode: " . $conference_pwd . "\n\r\n\r";
                 }
             }
             // append phone number to meeting notes
@@ -327,9 +318,13 @@ function get_virtual_meeting(&$row,&$types,&$online_mtgs,&$conference_phone,&$co
                 if ($conference_mtgID) {
                     $row['notes'] .= "\n\r\n\rDial-in Meeting ID: " . $conference_mtgID . "#";
                 }
+/*
+                if ($row['group_id']==267) printf("Group ID: %s, PHONE: %s MTG ID: %s, PWD: %s<br>",
+                    $row['group_id'], $conference_mtgID, $conference_phone,  $conference_phone_pwd);
+*/
                 // append pwd to meeting notes
                 if ($conference_phone_pwd) {
-                    $row['notes'] .= "\n\r\n\rPasscode: " . $conference_phone_pwd . "#";
+                    $row['notes'] .= "\n\r\n\rDial-in Passcode: " . $conference_phone_pwd . "#";
                 }
 
                 // encode phone with meeting ID and password for one tap number
@@ -337,9 +332,7 @@ function get_virtual_meeting(&$row,&$types,&$online_mtgs,&$conference_phone,&$co
                 $conference_phone = "+1" . $conference_phone . ",," . $conference_mtgID . "#,,,,,,0#";
                 if ($conference_phone_pwd) {
                     $conference_phone .= ",," . $conference_phone_pwd . "#"; // append access no if it exists
-                } /*else if ($conference_pwd){
-                    $conference_phone .= ",," . $conference_pwd . "#"; // append pwd if necessary
-                }*/
+                }
                 $conference_phone = str_replace(array('(', ')', '-', ' '), '', $conference_phone); //strip unnecessary chars
             }
         } // virtual meetings
