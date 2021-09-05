@@ -297,7 +297,7 @@ function get_virtual_meeting(&$row,&$types,&$online_mtgs,&$conference_phone,&$co
             if ($conference_mtgID) {
                 // Display the meeting ID
                 if (strpos($conference_url, "zoom")) {
-                    $row['notes'] .= "ZOOM Meeting ID: " . $conference_mtgID . "\n\r\n\r";
+                    $row['notes'] .= "Zoom Meeting ID: " . $conference_mtgID . "\n\r\n\r";
                 } else {
                     if (preg_match('@^.*/(.*)$@', $conference_url, $mtgID)) {
                         $row['notes'] .= "Google Meeting ID: " . $mtgID[1] . "\n\r\n\r";
