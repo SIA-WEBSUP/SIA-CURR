@@ -277,8 +277,11 @@ function get_virtual_meeting(&$row,&$types,&$online_mtgs,&$conference_phone,&$co
         if ($conference_info) {
             if (!in_array("ONL", $types)) $types[] = 'ONL'; // TC or HYBRID case
             if (!in_array("TC", $types)) {
-                if ((strpos($row['status'], 'ONLINE ONLY') == false) &&  // if it's ONLINE meeting, marks it as
-                    (strpos($row['status'], 'HYBRID') === false))        // TC, unless it's HYBRID or it's ONLINE ONLY
+                // if it's an ONLINE meeting, mark it as TC, unless it's HYBRID
+                // where previously we didn't mark ONLINE ONLY meetings as TC,
+                // as of 9/9/2021, we do want to mark them as TC, otherwise they will appear
+                // like a HYBRID meeting
+                if (strpos($row['status'], 'HYBRID') === false)
                     $types[] = 'TC';
             }
 
