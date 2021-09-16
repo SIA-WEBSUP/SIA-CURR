@@ -276,14 +276,13 @@ function get_virtual_meeting(&$row,&$types,&$online_mtgs,&$conference_phone,&$co
 
         if ($conference_info) {
             if (!in_array("ONL", $types)) $types[] = 'ONL'; // TC or HYBRID case
-            if (!in_array("TC", $types)) {
-                // if it's an ONLINE meeting, mark it as TC, unless it's HYBRID
-                // where previously we didn't mark ONLINE ONLY meetings as TC,
-                // as of 9/9/2021, we do want to mark them as TC, otherwise they will appear
-                // like a HYBRID meeting
-                if (strpos($row['status'], 'HYBRID') === false)
-                    $types[] = 'TC';
-            }
+            if (!in_array("TC", $types)) $types[] = 'TC'; // mark all ONL meetings as TC
+            if (strpos($row['status'], "HYBRID") != false || in_array("HY", $types))
+                {
+                // if it's a HYBRID meeting, make sure TC is not set!
+                $types = array_diff($types,["TC"]);
+                $row['notes'] .= "\n\r\n\rHYBRID MEETING (live and online portions held simultaneously as one meeting)";
+                }
 
             $cOnlineMeetings++;
             $conference_mtgID     = $conference_info[0];
@@ -339,9 +338,5 @@ function get_virtual_meeting(&$row,&$types,&$online_mtgs,&$conference_phone,&$co
                 $conference_phone = str_replace(array('(', ')', '-', ' '), '', $conference_phone); //strip unnecessary chars
             }
         } // virtual meetings
-    } else if ( in_array("ROPN",$types) ) {
-//        no longer needed now that STATUS UNKNOWN meetings are no longer being pushed to meeting guide app
-//        $row['group_name'] .= ' (REOPENED CONFIRMED)';
     }
-
 }

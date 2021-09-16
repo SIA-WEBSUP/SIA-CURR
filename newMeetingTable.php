@@ -185,8 +185,7 @@ foreach ($old_table as $recnum=>$row) {
                     strpos($mtg['types'], "NHY") === false &&
                     strpos($new_row['status'], "HYBRID") != false) {
                     $mtg['types'] .= " HY";
-                    $mtg['notes'] .= "<br><br>HYBRID MEETING (live and online portions held simultaneously as one meeting)";
-                }
+                    }
 
                 if (strpos($mtg['types'], "TC") === false && strpos($mtg['types'], "ONL") === false ) {
                     // REOPENED meetings
