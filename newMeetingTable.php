@@ -57,6 +57,7 @@ $newMedMtgs = 0;
 $newGLBTMtgs = 0;
 $cTempClosedMtgs = 0;
 $cReopenedMtgs = 0;
+$cMovedOnlineMtgs = 0;
 $cOnlineOnlyMtgs = 0;
 $cStatusUnknownMtgs = 0;
 $newHCMtgs = 0;
@@ -162,6 +163,12 @@ foreach ($old_table as $recnum=>$row) {
                 if ((strpos($new_row['status'], "TEMP CLOSED") !== false)) {
                     $cTempClosedMtgs++;
                     $mtg['types'] .= " TC";
+                }
+
+                // MOVED ONLINE meetings
+                if ((strpos($new_row['status'], "MOVED ONLINE") !== false)) {
+                    $cMovedOnlineMtgs++;
+                    $mtg['types'] .= " ONL TC";
                 }
 
                 // ONLINE ONLY meetings
@@ -286,6 +293,7 @@ try {
 echo '<br><h1>Success!!</h1>';
 
 // counters for different types of meetings
+printf("marked <b>%d</b> meetings as MOVED ONLINE<br>",$cMovedOnlineMtgs);
 printf("marked <b>%d</b> meetings as ONLINE ONLY<br>",$cOnlineOnlyMtgs);
 printf("marked <b>%d</b> meetings as SUSPENDED<br>",$cTempClosedMtgs);
 printf("marked <b>%d</b> meetings as RE-OPENED<br>",$cReopenedMtgs);
