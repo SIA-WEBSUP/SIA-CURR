@@ -33,7 +33,7 @@ add_filter('widget_text','php_execute',100);
 if (function_exists('tsml_custom_flags')) {
     tsml_custom_flags(array('M', 'W', 'ONL', 'BE', 'ST', 'B', 'A', 'MED', 'Y',
         'TR', 'LGBTQ', 'GV', 'LS', 'DR', 'LIT', // do we really want these?
-        'TC', 'UNK', 'ROPN',
+        'TC', 'UNK', 'HY',
 	    'SP'));
 }
 
