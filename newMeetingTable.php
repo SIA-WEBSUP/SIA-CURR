@@ -222,6 +222,7 @@ foreach ($old_table as $recnum=>$row) {
                             "No food or beverages served"=>"nofoodserved",
                             "No food or beverages allowed"=>"nofoodallowed",
                             "No food allowed / BYO beverage"=>"nofoodbevok",
+                            "No food or beverages allowed / Bottled Water OK"=>"nofoodh2ook",
                             "No smoking on grounds"=>"nosmoke",
                             "No smoking or vaping on grounds"=>"nosmokeorvape",
 
