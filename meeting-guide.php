@@ -181,6 +181,7 @@ foreach ($result as $row) {
 
     // append OUTDOOR to outdoor meetings
     $meeting_name  = $row['group_name'];
+    $meeting_name .= (strpos($row['status'], "SEASONAL")!=false) ? " (SEASONAL)" : "";
     $meeting_name .= (strpos($row['notes'], "OUTDOOR")!=false) ? " (OUTDOOR)" : "";
 
     //build array
