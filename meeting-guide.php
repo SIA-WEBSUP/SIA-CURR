@@ -86,8 +86,8 @@ $type_lookup = array(
     'OUT' => 'OUT', // Outdoor
     //[24] => PROMISES = Promises
     'S' => 'ST', // Step
-    'SPAN' => 'S', // Speaker
-    'SP' => 'SP', // Speaker
+    'SP' => 'S', // Spanish
+    'SPK' => 'SP', // Speaker
     'T' => 'TR', // Tradition
     'TC' => 'TC', // Temp Closure
     'TOP' => 'TPC', // Topic - custom type

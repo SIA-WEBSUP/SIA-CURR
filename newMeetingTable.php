@@ -141,6 +141,10 @@ foreach ($old_table as $recnum=>$row) {
                 if(strpos($new_row['status'], "MARKED FOR DELETION") !== false)
                     continue;
 
+                // if group is marked as inactive, skip all together
+                if(strpos($new_row['status'], "INACTIVE") !== false)
+                    continue;
+
                 // if 'meditation' or '11th step' occurs in notes or group name, add MED and 11 to types
                 // kluge, don't add meditation type if note says (begins with 5 min meditation)
                 if (((strpos($mtg_notes, "MEDITATION") !== false) &&
