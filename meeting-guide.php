@@ -177,7 +177,7 @@ foreach ($result as $row) {
 
 
     //add C whenever meeting is not O
-    //if (!in_array($types, 'O')) $types[] = 'C';
+    if (!in_array('O', $types)) $types[] = 'C';
 
     // append OUTDOOR to outdoor meetings
     $meeting_name  = $row['group_name'];
@@ -277,10 +277,14 @@ function get_virtual_meeting(&$row,&$types,&$online_mtgs,&$conference_phone,&$co
 
         if ($conference_info) {
             if (!in_array("ONL", $types)) $types[] = 'ONL'; // TC or HYBRID case
-            if (!in_array("TC", $types)) $types[] = 'TC'; // mark all ONL meetings as TC
-            if (strpos($row['status'], "HYBRID") != false || in_array("HY", $types))
+            if (!in_array("TC", $types) && strpos($row['status'], "ONLINE ONLY") == false)
                 {
-                // if it's a HYBRID meeting, make sure TC is not set!
+                // mark all ONLINE meetings as TC, except for ONLINE ONLY meetings
+                $types[] = 'TC'; // mark all ONL meetings as TC
+                }
+            if (strpos($row['status'], "HYBRID") !== false || in_array("HY", $types))
+                {
+                //  if it's a HYBRID meeting, make sure TC is not set!
                 $types = array_diff($types,["TC"]);
                 $row['notes'] .= "\n\r\n\rHYBRID MEETING (live and online portions held simultaneously as one meeting)";
                 }
