@@ -14,7 +14,7 @@ global $fDebug;
 $fDebug = isset($_GET['debug']);
 
 global $array_note_delimiter;
-$array_note_delimiter= ['****','***','**','*','##', '#'];
+$array_note_delimiter= ['****','***','**','*','####','###','##', '#',];
 
 global $day_short2long_lookup;
 $day_short2long_lookup = array(
