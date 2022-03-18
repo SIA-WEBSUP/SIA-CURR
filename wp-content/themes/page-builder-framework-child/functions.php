@@ -34,7 +34,7 @@ if (function_exists('tsml_custom_flags')) {
     tsml_custom_flags(array('M', 'W', 'ONL', 'BE', 'ST', 'B', 'A', 'MED', 'Y',
         'TR', 'LGBTQ', 'GV', 'LS', 'DR', 'LIT', // do we really want these?
         'TC', 'UNK', 'HY',
-	    'SP'));
+	    'O','S','SP',));
 }
 
 if (function_exists('tsml_custom_types')) {
