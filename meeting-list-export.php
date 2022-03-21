@@ -1,5 +1,6 @@
 <?php
 $format= isset($_GET['format']) ? $_GET['format'] : 'html';
+$download= isset($_GET['download']);
 
 switch ($_GET['county']) {
     case 'suffolk' :
@@ -65,7 +66,18 @@ if ($format == 'html') {
 
     echo '</table></div>';
 } else {
-    $buffer = fopen('php://output', 'r+');
+
+    if ($download)
+    {
+        $filename = 'meeting-list-' . date('Ymd') .'_' . date('His');
+        // Output CSV-specific headers
+        header("Content-Type: text/csv");
+        header("Content-Disposition: attachment;filename=\"$filename.csv\";" );
+        //header("Content-Transfer-Encoding: binary");
+    }
+
+    $buffer = fopen('php://output', 'W');
+    //$buffer = fopen('php://memory', 'w');
 
     $h2=array();
     foreach($headers as $header){$h2[]='['.$header.']';}
@@ -75,18 +87,23 @@ if ($format == 'html') {
     $row = array();
     foreach($meetings as $meeting) {
         foreach($headers as $key) {
-            $row[$key] = $meeting[$key];
-            if (is_array($meeting['types'])) {
-                $meeting['types'] = implode(',',$meeting['types']);
-            } else {
-                $meeting['types'] = NULL;
+            $value = $meeting[$key];
+            if ($value && $key == 'types') {
+                $value = implode(',',$value);
             }
+            $row[$key] = $value;
         }
         fputcsv($buffer, $row);
     }
 
-    rewind($buffer);
+    //rewind($buffer);
     $csv = fgets($buffer);
     fclose($buffer);
-    echo $csv;
+
+    if ($fdownload) {
+        fpassthru($csv);
+    } else {
+        echo $csv;
+    }
 }
+
