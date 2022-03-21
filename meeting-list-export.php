@@ -11,6 +11,9 @@ switch ($_GET['county']) {
     case 'queens' :
         $file = 'https://www.queensaa.org/wp-admin/admin-ajax.php?action=meetings';
         break;
+    case 'brooklyn' :
+        $file = 'https://brooklynintergroup.org/brooklyn/wp-admin/admin-ajax.php?action=meetings&key=fb04b40a559571c96147ec5a630f0b30';
+        break;
     default :
         echo 'Unsupported county';
         exit(0);
