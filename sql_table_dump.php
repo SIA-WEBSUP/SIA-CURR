@@ -15,20 +15,19 @@ switch ($table_type){
     case 'meeting':
     default:
         $headers = ['group_id','hc','group_name',
-            'note','note1','note2','note3','status',
-            'town','zone', 'address','locationName','locationNotes',
+            'note','status','town','locationName','locationNotes',
             'locationAddress','locationCity', 'locationState','locationZip',
             'SU','MN','TU','WD','TH','FR','SA',
-            'yearlyContact','dateCreated','lastUpdate','print_town_name'];
+            'yearlyContact','dateCreated','lastUpdate'];
         break;
     case 2:
         $table =  isset($_GET['table']) ? $_GET['table'] : "new_meeting";
     case 'new_meeting':
         $headers = ['group_id','meeting_id','hc','group_name',
             'day','time','types','notes','status',
-            'town','zone', 'address','locationName','locationNotes',
+            'town','locationName','locationNotes',
             'locationAddress','locationCity', 'locationState','locationZip',
-            'yearlyContact','dateCreated','lastUpdate','print_town_name'];
+            'yearlyContact','dateCreated','lastUpdate'];
         break;
     case 3:
         $table =  isset($_GET['table']) ? $_GET['table'] : "virtual_meeting";
@@ -67,9 +66,8 @@ if ($table == 'showtables')
 
     // cheap CSV dump to screen only
     foreach($tables as $table)
-        printf("%s,", $table[0]);
-    echo "\n";
-
+        printf("%s\n", $table[0]);
+    exit(0);
 } else {
     try {
         $result = $pdo->query('SELECT * FROM `' . $table . '`');

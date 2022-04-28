@@ -33,11 +33,10 @@ $dbpass 	= isset($_GET['jdv']) ? 'WEstaging2aa47' : $dbpass;
 // old table headers
 global $old_headers;
 $old_headers = ['group_id','hc','group_name',
-                'note','note1','note2','note3','status',
-                'town','zone', 'address','locationName','locationNotes',
+                'note','status','town','locationName','locationNotes',
                 'locationAddress','locationCity', 'locationState','locationZip',
                 'SU','MN','TU','WD','TH','FR','SA',
-                'yearlyContact','dateCreated','lastUpdate','print_town_name'];
+                'yearlyContact','dateCreated','lastUpdate'];
 
 // new table headers
 // note that if you make any edits to this list you must make
@@ -45,9 +44,9 @@ $old_headers = ['group_id','hc','group_name',
 global $new_headers;
 $new_headers = ['group_id','meeting_id','hc','group_name',
                 'day','time','types','notes','status',
-                'town','zone', 'address','locationName','locationNotes',
+                'town','locationName','locationNotes',
                 'locationAddress','locationCity', 'locationState','locationZip',
-                'yearlyContact','dateCreated','lastUpdate','print_town_name'];
+                'yearlyContact','dateCreated','lastUpdate'];
 
 //make sure errors are being reported
 error_reporting(E_ALL);
@@ -183,7 +182,7 @@ foreach ($old_table as $recnum=>$row) {
 
                 // HYBRID
                 // If the meeting is already typed as ONL, do NOT mark it as HYBRID
-                // this is an non-HYBRID ONL meeting in an otherwise HYBRID group
+                // this is a non-HYBRID ONL meeting in an otherwise HYBRID group
                 // otherwise all HYBRID meetings are also ONL
                 if(strpos($mtg['types'], "ONL") === false &&
                     strpos($mtg['types'], "NHY") === false &&
@@ -193,14 +192,10 @@ foreach ($old_table as $recnum=>$row) {
 
                 if (strpos($mtg['types'], "TC") === false && strpos($mtg['types'], "ONL") === false ) {
                     // REOPENED meetings
-                    if (strpos($new_row['status'], "REOPENED") === false) {
-                        // UNKNOWN meetings
-                        $cStatusUnknownMtgs++;
-                        $mtg['types'] .= " UNK";
-                    } else {
+
                         // REOPENED meetings
                         $cReopenedMtgs++;
-                        $mtg['types'] .= " ROPN";
+                        //$mtg['types'] .= " ROPN";
 
                         // Meeting OUTDOOR
                         if(strpos($new_row['status'], "OUTDOOR") != false) {
@@ -245,8 +240,7 @@ foreach ($old_table as $recnum=>$row) {
                             //var_dump(implode(" / ", $BYO));
                             $mtg['notes'] .= "<br><br>BYO " . implode(" / ", $BYO);
                         }
-                    } // REOPENED
-                } // UNKNOWN or REOPENED
+                } // REOPENED
 
                 // if 'hc'=='yes', add X to types
                 if (strtoupper($new_row['hc']) == 'YES') {
@@ -321,21 +315,18 @@ function create_new_table_PDO($pdo) {
             `day` CHAR(10) NOT NULL,
             `time` TIME NOT NULL,
             `types` VARCHAR(25) DEFAULT NULL,
-            `notes` VARCHAR(500) DEFAULT NULL,
-            `status` VARCHAR(50) DEFAULT NULL,
-            `town` VARCHAR(255) NOT NULL,
-            `zone` INT(2) DEFAULT NULL,
-            `address` VARCHAR(150) DEFAULT NULL,
-            `locationName` VARCHAR(255) DEFAULT NULL,
-            `locationNotes` VARCHAR(255) DEFAULT NULL,
-            `locationAddress` VARCHAR(255) DEFAULT NULL,
-            `locationCity` VARCHAR(255) DEFAULT NULL,
-            `locationState` VARCHAR(255) DEFAULT 'NY',
-            `locationZip` VARCHAR(10),
+            `notes` VARCHAR(150) DEFAULT NULL,
+            `status` VARCHAR(100) DEFAULT NULL,
+            `town` VARCHAR(25) NOT NULL,
+            `locationName` VARCHAR(100) DEFAULT NULL,
+            `locationNotes` VARCHAR(150) DEFAULT NULL,
+            `locationAddress` VARCHAR(50) DEFAULT NULL,
+            `locationCity` VARCHAR(50) DEFAULT NULL,
+            `locationState` CHAR(2) DEFAULT 'NY',
+            `locationZip` CHAR(5),
             `yearlyContact` DATE NOT NULL DEFAULT '0000-00-00' COMMENT 'This is the date that the has contacted us for the year.',
             `dateCreated` DATE NOT NULL DEFAULT '0000-00-00' COMMENT 'Use this only when adding a new meeting.',
-            `lastUpdate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'Do not edit this field.  This will automatically be updated any time a meeting is changed.',
-            `print_town_name` VARCHAR(4) DEFAULT NULL
+            `lastUpdate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'Do not edit this field.  This will automatically be updated any time a meeting is changed.'
             ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 SQL_CREATE_NEW_TABLE;
 

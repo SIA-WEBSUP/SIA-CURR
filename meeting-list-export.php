@@ -7,7 +7,7 @@ switch ($_GET['county']) {
         $file = 'https://suffolkny-aa.org/wp-admin/admin-ajax.php?action=meetings&key=157b22d8b2f797a7dcc8d4ae6aeb55cd';
         break;
     case 'nassau' :
-        $file = 'https://nassauaa.org/wp-admin/admin-ajax.php?action=meetings&key=2a45074c6fd4979ba789eb54a9789a8a';
+        $file = 'https://nassauaa.org/wp-admin/admin-ajax.php?action=meetings&key=b0c9aabf228cc07c1c60884ae915c8e3';
         break;
     case 'queens' :
         $file = 'https://www.queensaa.org/wp-admin/admin-ajax.php?action=meetings';
