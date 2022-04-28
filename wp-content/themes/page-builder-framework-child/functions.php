@@ -39,9 +39,9 @@ if (function_exists('tsml_custom_flags')) {
 
 if (function_exists('tsml_custom_types')) {
     tsml_custom_types(array(
-        'UNK' => 'COVID Reopen Status Unknown',
-        'ROPN' => 'COVID Reopen Confirmed',
-        'HY' => 'COVID Hybrid',
+        //'UNK' => 'COVID Reopen Status Unknown',
+        //'ROPN' => 'COVID Reopen Confirmed',
+        'HY' => 'Hybrid',
         'BE' => 'Beginners',
         'TPC' => 'Topic',
         'LGBTQ' => 'LGBTQ+'

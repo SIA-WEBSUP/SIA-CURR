@@ -56,6 +56,7 @@ $newMedMtgs = 0;
 $newGLBTMtgs = 0;
 $cTempClosedMtgs = 0;
 $cReopenedMtgs = 0;
+$cHybridMtgs = 0;
 $cMovedOnlineMtgs = 0;
 $cOnlineOnlyMtgs = 0;
 $cStatusUnknownMtgs = 0;
@@ -186,7 +187,8 @@ foreach ($old_table as $recnum=>$row) {
                 // otherwise all HYBRID meetings are also ONL
                 if(strpos($mtg['types'], "ONL") === false &&
                     strpos($mtg['types'], "NHY") === false &&
-                    strpos($new_row['status'], "HYBRID") != false) {
+                    strpos($new_row['status'], "HYBRID") !== false) {
+                    $cHybridMtgs++;
                     $mtg['types'] .= " HY";
                     }
 
@@ -291,10 +293,11 @@ try {
 echo '<br><h1>Success!!</h1>';
 
 // counters for different types of meetings
+printf("marked <b>%d</b> meetings as RE-OPENED<br>",$cReopenedMtgs);
+printf("marked <b>%d</b> meetings as HYBRID<br>",$cHybridMtgs);
 printf("marked <b>%d</b> meetings as MOVED ONLINE<br>",$cMovedOnlineMtgs);
 printf("marked <b>%d</b> meetings as ONLINE ONLY<br>",$cOnlineOnlyMtgs);
 printf("marked <b>%d</b> meetings as SUSPENDED<br>",$cTempClosedMtgs);
-printf("marked <b>%d</b> meetings as RE-OPENED<br>",$cReopenedMtgs);
 printf("marked <b>%d</b> meetings as COVID STATUS UNKNOWN<br>",$cStatusUnknownMtgs);
 printf("added <b>%d</b> new meditation meetings<br>",$newMedMtgs);
 printf("added <b>%d</b> new GLBT meetings<br>",$newGLBTMtgs);
