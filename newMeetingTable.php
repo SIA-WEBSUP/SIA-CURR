@@ -200,7 +200,7 @@ foreach ($old_table as $recnum=>$row) {
                         //$mtg['types'] .= " ROPN";
 
                         // Meeting OUTDOOR
-                        if(strpos($new_row['status'], "OUTDOOR") != false) {
+                        if(strpos($new_row['status'], "OUTDOOR") !== false) {
 	                        $mtg['types'] .= " OUT";
                             $mtg['notes'] .= "<br><br>OUTDOOR MEETING";
                         }
@@ -245,7 +245,7 @@ foreach ($old_table as $recnum=>$row) {
                 } // REOPENED
 
                 // if 'hc'=='yes', add X to types
-                if (strtoupper($new_row['hc']) == 'YES') {
+                if (strtoupper($new_row['hc']) == 'YES' && strpos($mtg['types'], "NHC") === false) {
                     $newHCMtgs++;
                     $mtg['types'] .= " X";
                 }
