@@ -38,7 +38,7 @@ $headers = ['id','attendance_option',
             'location', 'location_notes', 'formatted_address',
             'region','group','district',
             'url','location_url','conference_url',
-            'updated'];
+            'last_contact','updated'];
 
 $meetings = file_get_contents($file);
 $meetings = json_decode($meetings, true);
