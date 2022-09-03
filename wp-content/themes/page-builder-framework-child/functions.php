@@ -71,3 +71,25 @@ if (function_exists('tsml_custom_types')) {
         ),
         ));
 }
+
+
+/**
+ * wcustomize labels in WooCommerce checkout cart
+ */
+add_filter( 'woocommerce_default_address_fields' , 'woocommerce_custom_checkout_fields', 9999 );
+function woocommerce_custom_checkout_fields( $fields ) {
+    $fields['company']['label'] = 'Home Group';
+
+    return $fields;
+}
+/**
+ * customize labels in WooCommerce checkout cart
+ */
+add_filter( 'woocommerce_checkout_fields', 'woocommerce_custom_checkout_notes_fields' );
+function woocommerce_custom_checkout_notes_fields( $fields )
+{
+    $fields['order']['order_comments']['placeholder'] = 'TEST TEST TEST';
+    $fields['order']['order_comments']['label'] = 'Please indicate here if you would like to request vegetarian option';
+
+    return $fields;
+}
