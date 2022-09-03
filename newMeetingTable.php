@@ -318,7 +318,7 @@ function create_new_table_PDO($pdo) {
             `day` CHAR(10) NOT NULL,
             `time` TIME NOT NULL,
             `types` VARCHAR(25) DEFAULT NULL,
-            `notes` VARCHAR(150) DEFAULT NULL,
+inc            `notes` VARCHAR(500) DEFAULT NULL,
             `status` VARCHAR(100) DEFAULT NULL,
             `town` VARCHAR(25) NOT NULL,
             `locationName` VARCHAR(100) DEFAULT NULL,
